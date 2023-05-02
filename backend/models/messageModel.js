@@ -2,7 +2,7 @@
 const {MongoClient, WriteConcernError} = require("mongodb");
 const { InvalidInputError } = require('./InvalidInputError');
 const { DatabaseError } = require('./DatabaseError');
-const { checkValid, checkValidForEdit } = require("./validator");
+const { checkValid, checkValidForEdit } = require("./messageValidator");
 const logger = require("../logger");
 let client;
 let messageCollection;
@@ -64,9 +64,9 @@ async function close() {
  * @returns The message being added.
  * @throws InvalidInputError if messageId, message or user is not valid; Throws Database error.
  */
-async function postMessage(messageId, message, user) {
+async function postMessage(authorId, messageBody, chatId) {
     try {
-        await checkValid(messageCollection, messageId, message, user);
+        await checkValid(messageBody, authorId, chatId );
         await messageCollection.insertOne({messageId: messageId, message: message, user: user});
         return {messageId: messageId, message: message, user: user};
     }
