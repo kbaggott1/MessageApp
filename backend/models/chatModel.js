@@ -8,7 +8,7 @@ const {InvalidInputError} = require("./InvalidInputError");
 const pino = require('pino')
 const logger = pino();
 let client;
-let pokemonsCollection;
+let chatsCollection;
 
 
 /**
@@ -22,16 +22,16 @@ async function initialize(url, dbName, reset) {
       client = new MongoClient(url); // store connected client for use while the app is running
       await client.connect(); 
       logger.info("Connected to MongoDb");
-      db = client.db(dbName);
-      const pokemonsCollection = db.collection("Chats");
+      let db = client.db(dbName);
+      const chatsCollection = db.collection("Chats");
 
       if(reset){
-        await pokemonsCollection.drop();
+        await chatsCollection.drop();
       }
       
-      // Check to see if the pokemons collection exists
-      collectionCursor = await db.listCollections({ name: "Chats" });
-      collectionArray = await collectionCursor.toArray();
+      // Check to see if the chats collection exists
+      const collectionCursor = await db.listCollections({ name: "Chats" });
+      const collectionArray = await collectionCursor.toArray();
       if (collectionArray.length == 0) {  
       // collation specifying case-insensitive collection
       const collation = { locale: "en", strength: 1 };
@@ -55,8 +55,8 @@ async function addChat(id, userSenderId, userRecipientId){
     try{  
             if(validateUtils.isValid2(id, userSenderId, userRecipientId)){
               const db = client.db(dbName);
-              const chatCollection = db.collection("Chats")
-              const chat = await chatCollection.insertOne({ id, userSenderId, userRecipientId }); 
+              const chatsCollection = db.collection("Chats")
+              const chat = await chatsCollection.insertOne({ id, userSenderId, userRecipientId }); 
               return chat;
             }
             else {
@@ -105,7 +105,7 @@ async function getSingleChat(id, userSenderId, userRecipientId){
 }
 
 /**
- * Gets the list of all chats in the database collection and displays them in a table. Throws a DatabaseError exception if there are no pokemon in the database collection.
+ * Gets the list of all chats in the database collection and displays them in a table. Throws a DatabaseError exception if there are no chats in the database collection.
  */
 async function getAllChats(){
   const db = client.db(dbName);
@@ -127,25 +127,26 @@ async function getAllChats(){
   }
 }
 
-async function updateChat(oldName, oldType, newName, newType) {
+/**
+ * Deletes chat from database. 
+ * @param {*} username of user.
+ * @param {*} accountType 
+ * @returns True if chat was deleted. Throws a DatabaseError exception if chat not found in the database collection.
+ */
+async function deleteChat(id, userSenderId, userRecipientId) {
   const db = client.db(dbName);
-  const pokemonsCollection = db.collection("Chats");
-  const findPokemon = await pokemonsCollection.findOne({ name: oldName, type: oldType });
+  const chatsCollection = db.collection("users");
+  const findChat = await chatsCollection.findOne({ id, userSenderId, userRecipientId });
 
-  try{
-    if (findPokemon) {
-      const updatedPokemon = await pokemonsCollection.findOneAndUpdate(
-        { name: oldName, type: oldType },
-        { $set: { name: newName, type: newType } },
-        { returnOriginal: false }
-      );
-      return updatedPokemon.value;
-    } 
-    else {
-      throw new DatabaseError('Pokemon not found in database:' + ' Name: ' + oldName + ' Type: ' + oldType);  
+  try {
+    if (findChat) {
+      const deletedUser = { id: id, userSenderId: userSenderId, userRecipientId: userRecipientId };
+      await chatsCollection.deleteOne({ id, userSenderId, userRecipientId });
+      return deletedUser;
+    } else {
+      throw new DatabaseError(`Provided chat not found in database: Id: ${id}, AccountType: ${accountType}`);
     }
-  }
-  catch(err){
+  } catch (err) {
     logger.error(err.message);
     throw new DatabaseError(err.message);
   }
@@ -159,5 +160,5 @@ function getCollection(){
   const db = client.db(dbName);
   return db.collection("Chats");
 }
-module.exports = {initialize, addChat, getSingleChat, getAllChats, close, getCollection,updateChat};
+module.exports = {initialize, addChat, getSingleChat, getAllChats, close, getCollection, deleteChat};
   
