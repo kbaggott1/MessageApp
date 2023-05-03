@@ -2,7 +2,7 @@ const dbName = "Chats";
 //const dbNameTest = "pokemon_db_test";
 let mongod;
 const { MongoClient, Long } = require("mongodb");
-const validateUtils = require("./validateUtils");
+const validateUtils = require("./validateUtilsChatModel");
 const {DatabaseError} = require("./DatabaseError");
 const {InvalidInputError} = require("./InvalidInputError");
 const pino = require('pino')
@@ -46,17 +46,18 @@ async function initialize(url, dbName, reset) {
 }
 
 /**
- * Adds pokemon to the MongoDB database if name and type is valid. Throws a DatabaseError exception if invalid pokemon was passed.
- * @param {*} name of pokemon.
- * @param {*} type of pokemon.
+ * Adds chat to the MongoDB database if name and type is valid. Throws a DatabaseError exception if invalid pokemon was passed.
+ * @param {*} id of chat.
+ * @param {*} userSenderId of chat.
+ * @param {*} userRecipientId of chat.
  */
-async function addChat(name, type){
+async function addChat(id, userSenderId, userRecipientId){
     try{  
-            if(validateUtils.isValid2(name, type)){
+            if(validateUtils.isValid2(id, userSenderId, userRecipientId)){
               const db = client.db(dbName);
-              const pokemonsCollection = db.collection("Chats")
-              const pokemon = await pokemonsCollection.insertOne({ name, type }); 
-              return pokemon;
+              const chatCollection = db.collection("Chats")
+              const chat = await chatCollection.insertOne({ id, userSenderId, userRecipientId }); 
+              return chat;
             }
             else {
               throw new InvalidInputError("Name is required and has to be alpha, type cannot be anything else than Normal, Grass, Fire, Water, Electric and Psychic..");
@@ -85,17 +86,17 @@ async function close() {
  * @param {*} name Name of the chat.
  * @returns 
  */
-async function getSingleChat(name){
+async function getSingleChat(id, userSenderId, userRecipientId){
   try{
     const db = client.db(dbName);
-    pokemonsCollection = db.collection("Chats");
-    let pokemon = await pokemonsCollection.findOne({ name });
-    if(pokemon){
-      console.log(pokemon);
-      return pokemon; 
+    chatsCollection = db.collection("Chats");
+    let chat = await chatsCollection.findOne({ id, userSenderId, userRecipientId });
+    if(chat){
+      console.log(chat);
+      return chat; 
     }
     else{
-      throw new DatabaseError("Pokemon not found in database: " + name);
+      throw new DatabaseError("Chat not found in database: " + id + "" + userSenderId + "" + userRecipientId);
     }
   }
   catch(err){
@@ -108,12 +109,12 @@ async function getSingleChat(name){
  */
 async function getAllChats(){
   const db = client.db(dbName);
-  pokemonsCollection = db.collection("Chats");
+  chatsCollection = db.collection("Chats");
   try{
-    const pokemonsArray = await pokemonsCollection.find().toArray();
-    if(pokemonsArray.length != 0){
-      console.table(pokemonsArray);
-      return pokemonsArray;
+    const chatsArray = await chatsCollection.find().toArray();
+    if(chatsArray.length != 0){
+      console.table(chatsArray);
+      return chatsArray;
     }
     else{
       logger.error(err.message);
