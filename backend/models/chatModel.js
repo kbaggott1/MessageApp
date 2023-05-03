@@ -1,5 +1,5 @@
-const dbName = "pokemon_db";
-const dbNameTest = "pokemon_db_test";
+const dbName = "Chats";
+//const dbNameTest = "pokemon_db_test";
 let mongod;
 const { MongoClient, Long } = require("mongodb");
 const validateUtils = require("./validateUtils");
@@ -23,20 +23,20 @@ async function initialize(url, dbName, reset) {
       await client.connect(); 
       logger.info("Connected to MongoDb");
       db = client.db(dbName);
-      const pokemonsCollection = db.collection("pokemons");
+      const pokemonsCollection = db.collection("Chats");
 
       if(reset){
         await pokemonsCollection.drop();
       }
       
       // Check to see if the pokemons collection exists
-      collectionCursor = await db.listCollections({ name: "pokemons" });
+      collectionCursor = await db.listCollections({ name: "Chats" });
       collectionArray = await collectionCursor.toArray();
       if (collectionArray.length == 0) {  
       // collation specifying case-insensitive collection
       const collation = { locale: "en", strength: 1 };
       // No match was found, so create new collection
-      await db.createCollection("pokemons", { collation: collation });
+      await db.createCollection("Chats", { collation: collation });
       }    
     } 
     catch (err) {
@@ -50,11 +50,11 @@ async function initialize(url, dbName, reset) {
  * @param {*} name of pokemon.
  * @param {*} type of pokemon.
  */
-async function addPokemon(name, type){
+async function addChat(name, type){
     try{  
             if(validateUtils.isValid2(name, type)){
               const db = client.db(dbName);
-              const pokemonsCollection = db.collection("pokemons")
+              const pokemonsCollection = db.collection("Chats")
               const pokemon = await pokemonsCollection.insertOne({ name, type }); 
               return pokemon;
             }
@@ -81,14 +81,14 @@ async function close() {
 }
 
 /**
- * Finds the pokemon with the provided name in the database. Throws DatabaseError exception if the pokemon was not found in the database.
- * @param {*} name Name of the pokemon.
+ * Finds the chats with the provided name in the database. Throws DatabaseError exception if the chat was not found in the database.
+ * @param {*} name Name of the chat.
  * @returns 
  */
-async function getSinglePokemon(name){
+async function getSingleChat(name){
   try{
     const db = client.db(dbName);
-    pokemonsCollection = db.collection("pokemons");
+    pokemonsCollection = db.collection("Chats");
     let pokemon = await pokemonsCollection.findOne({ name });
     if(pokemon){
       console.log(pokemon);
@@ -104,11 +104,11 @@ async function getSinglePokemon(name){
 }
 
 /**
- * Gets the list of all pokemons in the database collection and displays them in a table. Throws a DatabaseError exception if there are no pokemon in the database collection.
+ * Gets the list of all chats in the database collection and displays them in a table. Throws a DatabaseError exception if there are no pokemon in the database collection.
  */
-async function getAllPokemon(){
+async function getAllChats(){
   const db = client.db(dbName);
-  pokemonsCollection = db.collection("pokemons");
+  pokemonsCollection = db.collection("Chats");
   try{
     const pokemonsArray = await pokemonsCollection.find().toArray();
     if(pokemonsArray.length != 0){
@@ -126,9 +126,9 @@ async function getAllPokemon(){
   }
 }
 
-async function updatePokemon(oldName, oldType, newName, newType) {
+async function updateChat(oldName, oldType, newName, newType) {
   const db = client.db(dbName);
-  const pokemonsCollection = db.collection("pokemons");
+  const pokemonsCollection = db.collection("Chats");
   const findPokemon = await pokemonsCollection.findOne({ name: oldName, type: oldType });
 
   try{
@@ -156,7 +156,7 @@ async function updatePokemon(oldName, oldType, newName, newType) {
  */
 function getCollection(){
   const db = client.db(dbName);
-  return db.collection("pokemons");
+  return db.collection("Chats");
 }
-module.exports = {initialize, addPokemon, getSinglePokemon, getAllPokemon, close, getCollection,updatePokemon};
+module.exports = {initialize, addChat, getSingleChat, getAllChats, close, getCollection,updateChat};
   
