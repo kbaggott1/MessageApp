@@ -9,17 +9,17 @@ const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST
 /**
  * Initializes models
  */
-    chatModel.initialize(url, "Message_App", false)
-    .then(
-        app.listen(port) // Run the server
-    );
+chatModel.initialize(url, "Message_App", false)
+.then(
+    app.listen(port) // Run the server
+);
 
-    messageModel.initialize(url, "Message_App", false)
-    .then(
-        app.listen(port) // Run the server
-    );
+messageModel.initialize(url, "Message_App", false)
+.then(
+    app.listen(port) // Run the server
+);
 
-    userModel.initialize(url, "Message_App", false)
-    .then(
-        app.listen(port) // Run the server
-    );
+userModel.initialize(url, "Message_App", false)
+.then(
+    app.listen(port) // Run the server
+);
