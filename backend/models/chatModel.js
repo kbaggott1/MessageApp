@@ -96,7 +96,7 @@ async function getSingleChat(id, userSenderId, userRecipientId){
       return chat; 
     }
     else{
-      throw new DatabaseError("Chat not found in database: " + id + "" + userSenderId + "" + userRecipientId);
+      throw new DatabaseError(`Chat not found in database: Id: ${id}, userSenderId: ${userSenderId} UserRecipientId: ${userRecipientId}`);
     }
   }
   catch(err){
@@ -144,7 +144,7 @@ async function deleteChat(id, userSenderId, userRecipientId) {
       await chatsCollection.deleteOne({ id, userSenderId, userRecipientId });
       return deletedUser;
     } else {
-      throw new DatabaseError(`Provided chat not found in database: Id: ${id}, AccountType: ${accountType}`);
+      throw new DatabaseError(`Provided chat not found in database: Id: ${id}, userSenderId: ${userSenderId} UserRecipientId: ${userRecipientId}`);
     }
   } catch (err) {
     logger.error(err.message);
