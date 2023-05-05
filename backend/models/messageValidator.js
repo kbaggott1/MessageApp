@@ -31,19 +31,20 @@ async function checkValidForEdit(collection, id, message) {
 }
 
 /**
- * Checks for a unique message id, a valid message, and a valid username.
+ * Checks for a valid message, and the user id and chat id exists.
  * Does not return anything. Will throw if message or id is invalid.
- * @param {*} collection The collection to check for matching message id.
- * @param {*} id The message id to validate.
- * @param {*} message The message to validate.
- * @param {*} user The username to validate.
+ * @param {*} userCollection The collection to check for the user id.
+ * @param {*} chatCollection The collection to check for the Chat id.
+ * @param {*} message The content of the message to check.
+ * @param {*} authorId The author id to verify exists.
+ * @param {*} chatId The chat id to verify exists.
  * @throws InvalidInputError and DatabaseError
  */
-async function checkValid(collection, message, authorId, chatId) {
+async function checkValid(userCollection, chatCollection, message, authorId, chatId) {
     try {
         checkMessage(message);
-        await checkAuthorId(collection, authorId);
-        await chechChatId(collection, chatId);
+        await checkAuthorId(userCollection, authorId);
+        await chechChatId(chatCollection, chatId);
     }
     catch(err) {
         logger.error(err.message);
@@ -54,17 +55,40 @@ async function checkValid(collection, message, authorId, chatId) {
     }
 }
 
-async function checkAuthorId(collection, id) {
-    try {
-        let authorId = await collection.findOne({authorId: id});
 
-        if(message == null)
-            return true;
+async function checkChatId(collection, id) {
+    try {
+        let chatId = await collection.findOne({chatId: id});
+
+        if(chatId == null)
+            throw new InvalidInputError("ChatId does not exist.")
 
         return false;
     }
     catch(err) {
+        logger.error(err.message);
+        if(err instanceof InvalidInputError)
+            throw new InvalidInputError(err.message);
+        else
+            throw new DatabaseError("Database error trying to check chatId:"+ err.message);
+    }
+}
 
+async function checkAuthorId(collection, id) {
+    try {
+        let authorId = await collection.findOne({authorId: id});
+
+        if(authorId == null)
+            throw new InvalidInputError("AuthorId does not exist.")
+
+        return false;
+    }
+    catch(err) {
+        logger.error(err.message);
+        if(err instanceof InvalidInputError)
+            throw new InvalidInputError(err.message);
+        else
+            throw new DatabaseError("Database error trying to check authorId:"+ err.message);
     }
 }
 

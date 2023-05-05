@@ -15,7 +15,6 @@ let messageCollection;
  */
 async function initialize(url, dbName, reset = false) {
     try{
-        //const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;
         client = new MongoClient(url);
 
         await client.connect();
@@ -58,17 +57,26 @@ async function close() {
 }
 /**
  * Adds a message to the messages collection
- * @param {*} messageId The messageId of the message. This must be unique.
- * @param {*} message The content of the message.
- * @param {*} user The author of the message.
+ * @param {*} messageBody The content of the message.
+ * @param {*} authorId The author id of the message.
+ * @param {*} chatId The chat id of the message.
  * @returns The message being added.
  * @throws InvalidInputError if messageId, message or user is not valid; Throws Database error.
  */
-async function postMessage(authorId, messageBody, chatId) {
+async function postMessage(messageBody, authorId, chatId) {
     try {
-        await checkValid(messageBody, authorId, chatId );
-        await messageCollection.insertOne({messageId: messageId, message: message, user: user});
-        return {messageId: messageId, message: message, user: user};
+        await checkValid(messageBody, authorId, chatId);
+
+        const date = new Date();
+
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+
+        let currentDate = day +"/"+month+"/"+year;
+
+        await messageCollection.insertOne({messageBody: messageBody, authorId: authorId, chatId: chatId, sentDate: currentDate});
+        return {messageBody: messageBody, authorId: authorId, chatId: chatId};
     }
     catch(err) {
         logger.error(err.message)
@@ -112,42 +120,24 @@ async function getMessageById(messageId) {
 
 /**
  * Gets an array of all messages sent by a specified user.
- * @param {*} user The author of the messages to retrieve.
+ * @param {*} chatId The chatId of the messages to retrieve.
  * @returns An array of message objects all posted from the user specified.
  * @throws Database Error when messages by user could not be found
  */
-async function getMessagesByUser(username) {
+async function getMessagesByChatId(chatId) {
     try {
         let messages = await messageCollection
-            .find({user: username})
+            .find({chatId: chatId})
             .toArray();
 
         return messages;
     }
     catch(err) {
-        logger.error("Could not get messages by user in model: " + err.message);
+        logger.error("Could not get messages by chatId in model: " + err.message);
         throw new DatabaseError(err.message);
     }
 }
 
-/**
- * Gets all messages in the collection
- * @returns An array of all messages in the collection.
- * @throws DatabaseError if messages could not be retrieved.
- */
-async function getAllMessages() {
-    try {
-        let messages = await messageCollection
-            .find()
-            .toArray();
-        
-        return messages;
-    }
-    catch(err) {
-        logger.error("Could not get all messages in model: " + err.message);
-        throw new DatabaseError(err.message);
-    }
-}
 
 /**
  * Updates the content of a message.
@@ -159,7 +149,7 @@ async function getAllMessages() {
 async function editMessage(messageId, newMessage) {
     try {
         await checkValidForEdit(messageCollection, messageId, newMessage);
-        await messageCollection.updateOne({messageId: messageId}, {$set: {message: newMessage}});
+        await messageCollection.updateOne({_id: messageId}, {$set: {message: newMessage}});
         return newMessage;
     }
     catch(err) {
@@ -178,7 +168,7 @@ async function editMessage(messageId, newMessage) {
  */
 async function deleteMessageById(id) {
     try {
-        await messageCollection.deleteOne({messageId: id});
+        await messageCollection.deleteOne({_id: id});
     }
     catch(err) {
         logger.error("Could not delete message in model: " + err.message);
@@ -204,8 +194,7 @@ module.exports = {
     initialize,
     postMessage,
     getMessageById,
-    getMessagesByUser,
-    getAllMessages,
+    getMessagesByChatId,
     editMessage,
     deleteMessageById,
     close,
