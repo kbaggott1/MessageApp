@@ -1,164 +1,118 @@
-const dbName = "Chats";
-//const dbNameTest = "pokemon_db_test";
-let mongod;
-const { MongoClient, Long } = require("mongodb");
-const validateUtils = require("./validateUtilsChatModel");
-const {DatabaseError} = require("./DatabaseError");
+const validateUtils = require('./validateUtilsChatModel');
 const {InvalidInputError} = require("./InvalidInputError");
-const pino = require('pino')
-const logger = pino();
-let client;
-let chatsCollection;
-
+const logger = require("../logs/logger.js");
+const DBError = require("./DatabaseError.js");
+let dbName;
+let mongoClient;
+let chatCollection;
 
 /**
- * Connect up to the online MongoDb database with the name and url passed in by the user. If reset is true, recreates database.
- * @param {*} dbName Name of MongoDB database.
- * @param {*} reset Drops and recreates database if true.
- * @param {*} url Client url to connect to.
+ * Connects to mongodb database and creates a collection if one doesn't already exist
+ * @param {*} dbName The name of the database.
+ * @param {*} url The url to the mongodb.
+ * @throws Database error if there was an issue connecting to the database
  */
-async function initialize(url, dbName, reset) {
-    try {
-      client = new MongoClient(url); // store connected client for use while the app is running
-      await client.connect(); 
-      logger.info("Connected to MongoDb");
-      let db = client.db(dbName);
-      const chatsCollection = db.collection("Chats");
+async function initialize(url, dbName, reset = false) {
+  try{
+      //const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;
+      client = new MongoClient(url);
 
-      if(reset){
-        await chatsCollection.drop();
-      }
+      await client.connect();
+      logger.info("connected to db");
+      let db = client.db(dbName);
       
-      // Check to see if the chats collection exists
-      const collectionCursor = await db.listCollections({ name: "Chats" });
-      const collectionArray = await collectionCursor.toArray();
-      if (collectionArray.length == 0) {  
-      // collation specifying case-insensitive collection
-      const collation = { locale: "en", strength: 1 };
-      // No match was found, so create new collection
-      await db.createCollection("Chats", { collation: collation });
-      }    
-    } 
-    catch (err) {
-    logger.error(err.message);
-    throw new DatabaseError(err.message);
-    }
+      let collectionCursor = await db.listCollections({name: "Chats" });
+      let collectionArray = await collectionCursor.toArray();
+
+      if(collectionArray.length == 0) {
+          const collation = {locale: "en", strength: 1}
+          await db.createCollection("Chats", {collation: collation});
+      }
+      else {
+          if(reset) {
+              db.collection("Chats").drop();
+
+              const collation = {locale: "en", strength: 1}
+              await db.createCollection("Chats", {collation: collation});
+          }
+      }
+
+      chatCollection = db.collection("Chats");
+  } catch(err) {
+      logger.error("Could not initialize db: " + err.message);
+      throw new DatabaseError("Could not initialize db: " + err.message);
+  }
 }
 
 /**
- * Adds chat to the MongoDB database if name and type is valid. Throws a DatabaseError exception if invalid pokemon was passed.
- * @param {*} id of chat.
+ * Adds chat to the MongoDB database if name and type is valid. Throws a DatabaseError exception if invalid chat was passed.
  * @param {*} userSenderId of chat.
  * @param {*} userRecipientId of chat.
  */
-async function addChat(id, userSenderId, userRecipientId){
-    try{  
-            if(validateUtils.isValid2(id, userSenderId, userRecipientId)){
-              const db = client.db(dbName);
-              const chatsCollection = db.collection("Chats")
-              const chat = await chatsCollection.insertOne({ id, userSenderId, userRecipientId }); 
-              return chat;
-            }
-            else {
-              throw new InvalidInputError("Name is required and has to be alpha, type cannot be anything else than Normal, Grass, Fire, Water, Electric and Psychic..");
-            }
-    }
-    catch(err){
+async function addChat(chatId, userSenderId, userRecipientId){
+  try{  
+      if(validateUtils.isValid2(userSenderId, userRecipientId)){
+          const chat = await chatCollection.insertOne({ _id: chatId, userSenderId, userRecipientId }); 
+          logger.info(`Added chat: ${chatId}`);
+          return chat;
+      }
+      else {
+          throw new InvalidInputError("");
+      }
+  }
+  catch(err){
+      logger.error(`Error adding chat: ${err.message}`);
       throw new InvalidInputError(err.message);
-    }
-
-}
-
-/**
- * Closes the connection to the MongoDB database.
- */
-async function close() {
-  try {
-    await client.close();
-    console.log("MongoDb connection closed");
-  } catch (err) {
-    console.log(err.message);
   }
 }
 
-/**
- * Finds the chats with the provided name in the database. Throws DatabaseError exception if the chat was not found in the database.
- * @param {*} name Name of the chat.
- * @returns 
- */
-async function getSingleChat(id, userSenderId, userRecipientId){
+async function getSingleChat(chatId){
   try{
-    const db = client.db(dbName);
-    chatsCollection = db.collection("Chats");
-    let chat = await chatsCollection.findOne({ id, userSenderId, userRecipientId });
-    if(chat){
-      console.log(chat);
-      return chat; 
-    }
-    else{
-      throw new DatabaseError(`Chat not found in database: Id: ${id}, userSenderId: ${userSenderId} UserRecipientId: ${userRecipientId}`);
-    }
+      let chat = await chatCollection.findOne({ _id: chatId });
+      if(chat){
+          logger.info(`Retrieved chat: ${chatId}`);
+          return chat; 
+      }
+      else{
+          throw new DatabaseError(`Chat not found in database: ChatId: ${chatId}`);
+      }
   }
   catch(err){
-    throw new DatabaseError(err.message);
-  }
-}
-
-/**
- * Gets the list of all chats in the database collection and displays them in a table. Throws a DatabaseError exception if there are no chats in the database collection.
- */
-async function getAllChats(){
-  const db = client.db(dbName);
-  chatsCollection = db.collection("Chats");
-  try{
-    const chatsArray = await chatsCollection.find().toArray();
-    if(chatsArray.length != 0){
-      console.table(chatsArray);
-      return chatsArray;
-    }
-    else{
-      logger.error(err.message);
+      logger.error(`Error retrieving chat: ${err.message}`);
       throw new DatabaseError(err.message);
-    }
+  }
+}
+
+async function deleteChat(chatId) {
+  try {
+      const findChat = await chatCollection.findOne({ _id: chatId });
+      if (findChat) {
+          const deletedChat = { _id: chatId };
+          await chatCollection.deleteOne({ _id: chatId });
+          logger.info(`Deleted chat: ${chatId}`);
+          return deletedChat;
+      } else {
+          throw new DatabaseError(`Provided chat not found in database: ChatId: ${chatId}`);
+      }
+  } catch (err) {
+      logger.error(`Error deleting chat: ${err.message}`);
+      throw new DatabaseError(err.message);
+  }
+}
+
+async function close() {
+  try{
+      await client.close();
+      logger.info("Database connection closed");
   }
   catch(err){
-    logger.error(err.message);
-    throw new DatabaseError(err.message);
+      logger.error("Error closing database connection: " + err.message);
+      throw new DatabaseError("Error! There was a problem closing the database. " + err.message);
   }
 }
 
-/**
- * Deletes chat from database. 
- * @param {*} username of user.
- * @param {*} accountType 
- * @returns True if chat was deleted. Throws a DatabaseError exception if chat not found in the database collection.
- */
-async function deleteChat(id, userSenderId, userRecipientId) {
-  const db = client.db(dbName);
-  const chatsCollection = db.collection("users");
-  const findChat = await chatsCollection.findOne({ id, userSenderId, userRecipientId });
-
-  try {
-    if (findChat) {
-      const deletedUser = { id: id, userSenderId: userSenderId, userRecipientId: userRecipientId };
-      await chatsCollection.deleteOne({ id, userSenderId, userRecipientId });
-      return deletedUser;
-    } else {
-      throw new DatabaseError(`Provided chat not found in database: Id: ${id}, userSenderId: ${userSenderId} UserRecipientId: ${userRecipientId}`);
-    }
-  } catch (err) {
-    logger.error(err.message);
-    throw new DatabaseError(err.message);
-  }
-}
-
-/**
- * Gets collection in the database.
- * @returns Collection in the database.
- */
 function getCollection(){
-  const db = client.db(dbName);
-  return db.collection("Chats");
+  return chatCollection;
 }
-module.exports = {initialize, addChat, getSingleChat, getAllChats, close, getCollection, deleteChat};
-  
+
+module.exports =  {initialize, addChat, getSingleChat, deleteChat, close, getCollection};
