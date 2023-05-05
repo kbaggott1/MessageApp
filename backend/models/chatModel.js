@@ -46,9 +46,10 @@ async function initialize(url, dbName, reset = false) {
   }
 }
 
-/**
+/** Adds chat to the database with a userSenderId and userRecipientId. 
  * @param {*} userSenderId of chat.
  * @param {*} userRecipientId of chat.
+ * @throws InvalidInputError if userSenderId or userRecipientId is not in Users collection.
  */
 async function addChat(userSenderId, userRecipientId){
   try{  
