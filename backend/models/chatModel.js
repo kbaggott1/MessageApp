@@ -1,12 +1,13 @@
 const { MongoClient, WriteError } = require("mongodb");
 const { DatabaseError } = require('./DatabaseError');
-const validateUtils = require('./validateUtilsChatModel');
+const validateUtils = require('../helperMethods/validateUtilsChatModel');
 const {InvalidInputError} = require("./InvalidInputError");
 const logger = require("../logs/logger.js");
-const DBError = require("./DatabaseError.js");
-let dbName;
-let mongoClient;
+let db;
+let client;
 let chatCollection;
+let collectionCursor;
+let collectionArray;
 
 /**
  * Connects to mongodb database and creates a collection if one doesn't already exist
@@ -16,15 +17,14 @@ let chatCollection;
  */
 async function initialize(url, dbName, reset = false) {
   try{
-      //const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;
       client = new MongoClient(url);
 
       await client.connect();
       logger.info("connected to db");
-      let db = client.db(dbName);
+      db = client.db(dbName);
       
-      let collectionCursor = await db.listCollections({name: "Chats" });
-      let collectionArray = await collectionCursor.toArray();
+      collectionCursor = await db.listCollections({name: "Chats" });
+      collectionArray = await collectionCursor.toArray();
 
       if(collectionArray.length == 0) {
           const collation = {locale: "en", strength: 1}
@@ -47,19 +47,18 @@ async function initialize(url, dbName, reset = false) {
 }
 
 /**
- * Adds chat to the MongoDB database if name and type is valid. Throws a DatabaseError exception if invalid chat was passed.
  * @param {*} userSenderId of chat.
  * @param {*} userRecipientId of chat.
  */
-async function addChat(id, userSenderId, userRecipientId){
+async function addChat(userSenderId, userRecipientId){
   try{  
-      if(validateUtils.isValid2(userSenderId, userRecipientId)){
-          const chat = await chatCollection.insertOne({ _id: id, userSenderId, userRecipientId }); 
-          logger.info(`Added chat: Id: ${id} userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
+      if(validateUtils.isValid(userSenderId, userRecipientId)){
+          const chat = await chatCollection.insertOne({ userSenderId, userRecipientId }); 
+          logger.info(`Added chat: userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
           return chat;
       }
       else {
-        throw new InvalidInputError("Invalid sender or recipient Id.");
+        throw new InvalidInputError(`Invalid sender or recipient Id. Passed userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
       }
   }
   catch(err){
@@ -75,18 +74,18 @@ async function addChat(id, userSenderId, userRecipientId){
  */
 async function getSingleChat(id){
   try{
-      let chat = await chatCollection.findOne({ _id: id });
+      const chat = await chatCollection.findOne({ _id: id });
       if(chat){
           logger.info(`Retrieved chat: ${id}`);
           return chat; 
       }
       else{
-          throw new DatabaseError(`Chat not found in database: Id: ${id}`);
+          throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
       }
   }
   catch(err){
       logger.error(`Error retrieving chat: ${err.message}`);
-      throw new DatabaseError(err.message);
+      throw new InvalidInputError(err.message);
   }
 }
 
@@ -104,11 +103,11 @@ async function deleteChat(id) {
           logger.info(`Deleted chat: ${id}`);
           return deletedChat;
       } else {
-          throw new DatabaseError(`Provided chat not found in database: Id: ${id}`);
+          throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
       }
   } catch (err) {
       logger.error(`Error deleting chat: ${err.message}`);
-      throw new DatabaseError(err.message);
+      throw new InvalidInputError(err.message);
   }
 }
 
