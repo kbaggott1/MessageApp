@@ -76,7 +76,7 @@ async function getSingleChat(id){
   try{
       const chat = await chatCollection.findOne({ _id: id });
       if(chat){
-          logger.info(`Retrieved chat: ${id}`);
+          logger.info(`Retrieved chat: Id: ${id}`);
           return chat; 
       }
       else{
@@ -100,7 +100,7 @@ async function deleteChat(id) {
       if (findChat) {
           const deletedChat = { _id: id };
           await chatCollection.deleteOne({ _id: id });
-          logger.info(`Deleted chat: ${id}`);
+          logger.info(`Deleted chat: Id: ${id}`);
           return deletedChat;
       } else {
           throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
