@@ -1,4 +1,5 @@
 const { MongoClient, WriteError } = require("mongodb");
+const { DatabaseError } = require('./DatabaseError');
 const validateUtils = require('./validateUtilsChatModel');
 const {InvalidInputError} = require("./InvalidInputError");
 const logger = require("../logs/logger.js");
@@ -50,15 +51,15 @@ async function initialize(url, dbName, reset = false) {
  * @param {*} userSenderId of chat.
  * @param {*} userRecipientId of chat.
  */
-async function addChat(chatId, userSenderId, userRecipientId){
+async function addChat(id, userSenderId, userRecipientId){
   try{  
       if(validateUtils.isValid2(userSenderId, userRecipientId)){
-          const chat = await chatCollection.insertOne({ _id: chatId, userSenderId, userRecipientId }); 
-          logger.info(`Added chat: ${chatId}`);
+          const chat = await chatCollection.insertOne({ _id: id, userSenderId, userRecipientId }); 
+          logger.info(`Added chat: Id: ${id} userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
           return chat;
       }
       else {
-          throw new InvalidInputError("");
+        throw new InvalidInputError("Invalid sender or recipient Id.");
       }
   }
   catch(err){
@@ -67,15 +68,20 @@ async function addChat(chatId, userSenderId, userRecipientId){
   }
 }
 
-async function getSingleChat(chatId){
+/**
+ * 
+ * @param {*} id 
+ * @returns 
+ */
+async function getSingleChat(id){
   try{
-      let chat = await chatCollection.findOne({ _id: chatId });
+      let chat = await chatCollection.findOne({ _id: id });
       if(chat){
-          logger.info(`Retrieved chat: ${chatId}`);
+          logger.info(`Retrieved chat: ${id}`);
           return chat; 
       }
       else{
-          throw new DatabaseError(`Chat not found in database: ChatId: ${chatId}`);
+          throw new DatabaseError(`Chat not found in database: Id: ${id}`);
       }
   }
   catch(err){
@@ -84,16 +90,21 @@ async function getSingleChat(chatId){
   }
 }
 
-async function deleteChat(chatId) {
+/**
+ * 
+ * @param {*} id 
+ * @returns 
+ */
+async function deleteChat(id) {
   try {
-      const findChat = await chatCollection.findOne({ _id: chatId });
+      const findChat = await chatCollection.findOne({ _id: id });
       if (findChat) {
-          const deletedChat = { _id: chatId };
-          await chatCollection.deleteOne({ _id: chatId });
-          logger.info(`Deleted chat: ${chatId}`);
+          const deletedChat = { _id: id };
+          await chatCollection.deleteOne({ _id: id });
+          logger.info(`Deleted chat: ${id}`);
           return deletedChat;
       } else {
-          throw new DatabaseError(`Provided chat not found in database: ChatId: ${chatId}`);
+          throw new DatabaseError(`Provided chat not found in database: Id: ${id}`);
       }
   } catch (err) {
       logger.error(`Error deleting chat: ${err.message}`);
@@ -101,6 +112,9 @@ async function deleteChat(chatId) {
   }
 }
 
+/**
+ * 
+ */
 async function close() {
   try{
       await client.close();
@@ -112,6 +126,10 @@ async function close() {
   }
 }
 
+/**
+ * 
+ * @returns 
+ */
 function getCollection(){
   return chatCollection;
 }
