@@ -1,3 +1,4 @@
+const { MongoClient, WriteError } = require("mongodb");
 const validateUtils = require('./validateUtilsChatModel');
 const {InvalidInputError} = require("./InvalidInputError");
 const logger = require("../logs/logger.js");
