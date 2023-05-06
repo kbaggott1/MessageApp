@@ -19,7 +19,7 @@ const bodyParser = require("body-parser");
 
 
 // Make sure errorController is last!
-const controllers = ['homeController', 'chatController', 'messageController', 'userController', 'errorController'] 
+const controllers = ['homeController', 'messageController', 'errorController'] 
 
 app.use(cors());
 app.use(express.json());

@@ -3,8 +3,8 @@ const { DatabaseError } = require('../models/DatabaseError');
 const { InvalidInputError } = require('../models/InvalidInputError');
 const router = express.Router();
 const routeRoot = '/messages';
-const MessagesModelMongoDb = require("../models/MessagesModelMongoDb");
-const logger = require("../logger");
+const MessagesModelMongoDb = require("../models/messageModel");
+const logger = require("../logs/logger");
 
 module.exports = {
     router,
