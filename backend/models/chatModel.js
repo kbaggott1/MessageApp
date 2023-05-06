@@ -36,8 +36,8 @@ async function initialize(url, dbName, reset = false) {
 
               const collation = {locale: "en", strength: 1}
               await db.createCollection("Chats", {collation: collation});
-          }
-      }
+            }
+    }
 
       chatCollection = db.collection("Chats");
   } catch(err) {
