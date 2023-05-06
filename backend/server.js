@@ -6,7 +6,6 @@ const messageModel = require("./models/messageModel");
 const userModel = require("./models/userModel");
 const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;
 
-
 /**
  * Initializes models
  */
