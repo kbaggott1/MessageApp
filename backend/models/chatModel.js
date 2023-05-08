@@ -8,6 +8,7 @@ let client;
 let chatCollection;
 let collectionCursor;
 let collectionArray;
+let database;
 
 /**
  * Connects to mongodb database and creates a collection if one doesn't already exist
@@ -18,7 +19,7 @@ let collectionArray;
 async function initialize(url, dbName, reset = false) {
   try{
       client = new MongoClient(url);
-
+      database = dbName;
       await client.connect();
       logger.info("connected to db");
       db = client.db(dbName);
@@ -68,10 +69,34 @@ async function addChat(userSenderId, userRecipientId){
   }
 }
 
+
 /**
- * 
- * @param {*} id 
- * @returns 
+ * Gets all the chats in the database.
+ * @returns Array containing all the chats in the database.
+ */
+async function getAllChats() {
+    try{
+        let chats = await chatCollection.find();
+        
+        if(chats == null){
+            throw new DatabaseError("Error! Unable to find any users in the " + database + " database.")
+        }
+        
+        let arr = await chats.toArray();
+        return arr;
+    }
+    catch(err){
+        if(err instanceof DatabaseError){
+            logger.error("Error! There was an error in the getAllChats method while trying to get all users from the " + database + " database");
+            throw new DatabaseError(err.message);
+        }
+    }
+}
+
+/**
+ * Gets a single chat from the database.
+ * @param {*} id of Chat.
+ * @returns found chat object.
  */
 async function getSingleChat(id){
   try{
@@ -91,9 +116,9 @@ async function getSingleChat(id){
 }
 
 /**
- * 
- * @param {*} id 
- * @returns 
+ * Deletes a chat from the database.
+ * @param {*} id of Chat.
+ * @returns deletedChat object.
  */
 async function deleteChat(id) {
   try {
@@ -113,7 +138,7 @@ async function deleteChat(id) {
 }
 
 /**
- * 
+ * Closes the mock database.
  */
 async function close() {
   try{
@@ -127,11 +152,11 @@ async function close() {
 }
 
 /**
- * 
- * @returns 
+ * Gets the Chats collection.
+ * @returns Chats collection.
  */
 function getCollection(){
   return chatCollection;
 }
 
-module.exports =  {initialize, addChat, getSingleChat, deleteChat, close, getCollection};
+module.exports =  {initialize, addChat, getSingleChat, deleteChat, close, getCollection, getAllChats};

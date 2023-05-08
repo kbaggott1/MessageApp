@@ -241,7 +241,7 @@ test("Reading all users from the database", async () => {
         expect(readUsers[i].lastName).toBe(usersArray[i].lastName);
         expect(readUsers[i].biography).toBe(usersArray[i].biography);
     }
-})
+});
 
 test("Reading all users when the database is inaccessible", async () => {
     const usersArray = [
@@ -406,7 +406,7 @@ test("Deleting a user from the database", async () => {
  */
 test("Deleting a user that does not exist in the database", async () => {
     expect(async () => await model.deleteUser("QTD19837510325")).rejects.toThrow();
-})
+});
 
 
 test("Deleting a user when the database is inaccessible", async () => {
@@ -420,4 +420,5 @@ test("Deleting a user when the database is inaccessible", async () => {
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
     await initialize("Test_Message_App", url, true);
-})
+});
+
