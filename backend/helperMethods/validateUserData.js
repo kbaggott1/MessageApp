@@ -25,7 +25,7 @@ function isValid(username, password, status, firstName, lastName, biography) {
     }
 
     if(status === undefined || status === null ){
-        if(status.toLower() !== "online" && status.toLower() !== "offline" && status.toLower() !== "away"){
+        if(status !== "online" && status !== "offline" && status !== "away"){
             logger.error("User status added has an invalid status " + status)
             return false;
         }
