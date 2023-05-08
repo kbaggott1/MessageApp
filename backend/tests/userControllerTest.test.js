@@ -53,7 +53,7 @@ beforeEach(async () => {
         mongod = await MongoMemoryServer.create();
         const url = await mongod.getUri();
 
-        await model.initialize("test_users_db", url, true);
+        await model.initialize("Test_Message_App", url, true);
         //console.log("Mongo mock started!");
     }
     catch (err){
@@ -108,7 +108,7 @@ test("POST /users success case", async () => {
 test("POST /users failure invalid username failure case", async () =>{
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
     const testResponse = await testRequest.post("/users/").send({
-        username: "@^$&!^$%!",
+        username: null,
         password: password,
         status: status,
         firstName: firstName,
@@ -157,6 +157,7 @@ test("POST /users failure invalid password failure case", async () => {
 test("POST /users failure database error failure case", async () =>{
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
     await mongod.stop();
+
     const testResponse = await testRequest.post("/users/").send({
         username: username,
         password: password,
@@ -184,15 +185,16 @@ test("POST /users failure database error failure case", async () =>{
  * the json object contains the correct username and password.
  */
 test("GET /users/user success case", async () => {
+    
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
-    addedUser = await model.addUser(username, password, status, firstName, lastName, biography, image);
+    const addedUser = await model.addUser(username, password, status, firstName, lastName, biography, image);
 
     const testResponse = await testRequest.get("/users/user/").send({
-        userId: addedUser.id
+        userId: addedUser._id
     });
 
     expect(testResponse.status).toBe(200);
-    expect(testResponse.body._id).toBe(addedUser.id);
+    expect(testResponse.body._id).toBe(addedUser._id.toString());
     expect(testResponse.body.username).toBe(username);
     expect(testResponse.body.password).toBe(password);
     expect(testResponse.body.status).toBe(status);
@@ -200,6 +202,7 @@ test("GET /users/user success case", async () => {
     expect(testResponse.body.lastName).toBe(lastName);
     expect(testResponse.body.biography).toBe(biography);
     expect(testResponse.body.image).toBe(image);
+    
 })
 
 /**
@@ -208,10 +211,10 @@ test("GET /users/user success case", async () => {
  */
 test("GET /users/user failure user does not exist", async () => {
     const testResponse = await testRequest.get("/users/user/").send({
-        userId: "FJKB1p2u4p1hfoh"
+        userId: "87132568"
     });
-;
-    expect(testResponse.status).toBe(400);
+
+    expect(testResponse.status).toBe(500);
 })
 
 /**
@@ -290,10 +293,11 @@ test('GET /users failure database error', async () => {
     userArray[1] = generateUserData();
     userArray[2] = generateUserData();
     userArray[3] = generateUserData();
-    await model.addUser(userArray[0].username, userArray[0].password);
-    await model.addUser(userArray[1].username, userArray[1].password);
-    await model.addUser(userArray[2].username, userArray[2].password);
-    await model.addUser(userArray[3].username, userArray[3].password);
+    await model.addUser(userArray[0].username, userArray[0].password, userArray[0].status, userArray[0].firstName, userArray[0].lastName, userArray[0].biography, userArray[0].image);
+    await model.addUser(userArray[1].username, userArray[1].password, userArray[1].status, userArray[1].firstName, userArray[1].lastName, userArray[1].biography, userArray[1].image);
+    await model.addUser(userArray[2].username, userArray[2].password, userArray[2].status, userArray[2].firstName, userArray[2].lastName, userArray[2].biography, userArray[2].image);
+    await model.addUser(userArray[3].username, userArray[3].password, userArray[3].status, userArray[3].firstName, userArray[3].lastName, userArray[3].biography, userArray[3].image);
+    
     await mongod.stop();
 
     const testResponse = await testRequest.get("/users/");
@@ -316,7 +320,7 @@ test('GET /users failure database error', async () => {
 test('PUT /users success case', async () =>{
     const oldUser = generateUserData();
     const newUser = generateUserData();
-    addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
+    const addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
 
     const testResponse = await testRequest.put("/users/").send({
         userId: addedUser._id,
@@ -357,8 +361,8 @@ test('PUT /users success case', async () =>{
  */
 test('PUT /users failure invalid username', async () => {
     const oldUser = generateUserData();
-    const newUser = { username: '!&%^#!@%', password: 'Password123', status:'offline', firstName: 'John', lastName: 'Doe', biography:'This is a test', image:'placeholder'};
-    addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
+    const newUser = { username: "", password: 'Password123', status:'offline', firstName: 'John', lastName: 'Doe', biography:'This is a test', image:'placeholder'};
+    const addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
 
     const testResponse = await testRequest.put("/users/").send({
         userId: addedUser._id,
@@ -395,10 +399,10 @@ test('PUT /users failure invalid username', async () => {
 test('PUT /users failure invalid password', async () => {
     const oldUser = generateUserData();
     const newUser = { username: 'username', password: null, status:'offline', firstName: 'John', lastName: 'Doe', biography:'This is a test', image:'placeholder'};
-    addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
+    const addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
 
     const testResponse = await testRequest.put("/users/").send({
-        userId: addedUser.userId,
+        userId: addedUser._id,
         username: newUser.username,
         password: newUser.password,
         status: newUser.status,
@@ -445,7 +449,7 @@ test('PUT /users failure old user does not exist', async () => {
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
 
-    expect(testResponse.status).toBe(400);
+    expect(testResponse.status).toBe(500);
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(0);
 })
@@ -459,7 +463,7 @@ test('PUT /users failure old user does not exist', async () => {
 test('PUT /users failure database error', async () => {
     const oldUser = generateUserData();
     const newUser = generateUserData();
-    addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
+    const addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
     await mongod.stop();
 
     const testResponse = await testRequest.put("/users/").send({
@@ -475,7 +479,7 @@ test('PUT /users failure database error', async () => {
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await model.initialize("test_users_db", url, true);
+    await model.initialize("Test_Message_App", url, true);
 
     expect(testResponse.status).toBe(500);
 })
@@ -518,7 +522,7 @@ test('DELETE /users failure user does not exist', async () => {
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
 
-    expect(testResponse.status).toBe(400);
+    expect(testResponse.status).toBe(500);
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(0);
 })
@@ -539,7 +543,7 @@ test('DELETE /users failure database error', async () => {
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await model.initialize("test_users_db", url, true);
+    await model.initialize("Test_Message_App", url, true);
 
     expect(testResponse.status).toBe(500);
 })

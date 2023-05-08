@@ -1,11 +1,11 @@
 const e = require('express');
-const express = require('express');5
+const express = require('express');
 const { DatabaseError } = require('../models/DatabaseError');
 const { InvalidInputError } = require('../models/InvalidInputError');
 const router = express.Router();
 const routeRoot = '/users';
 const models = require('../models/userModel.js');
-const logger = require("../logger");
+const logger = require("../logs/logger.js");
 
 
 /**
@@ -67,19 +67,19 @@ async function handleReadSingleUser(request, response) {
             response.json(foundUser);
         }
         else{
-            logger.error("User with ID " + request.params.userId + " was not found in the database for unknown reasons.");
+            logger.error("User with ID " + request.body.userId + " was not found in the database for unknown reasons.");
             response.status("400");
-            response.send({ errorMessage: "Error! Failed to find user with ID " + request.params.userId + " in the database."});
+            response.send({ errorMessage: "Error! Failed to find user with ID " + request.body.userId + " in the database."});
         }
     }
     catch(err){
         if(err instanceof InvalidInputError){
-            logger.error("User with ID " + request.params.userId + " could not be found in the database. ");
+            logger.error("User with ID " + request.body.userId + " could not be found in the database. ");
             response.status("400");
-            response.send({ errorMessage: "Error! the user with ID " + request.params.userId + " could not be found in the database " + err.message});
+            response.send({ errorMessage: "Error! the user with ID " + request.body.userId + " could not be found in the database " + err.message});
         }
         else if(err instanceof DatabaseError){
-            logger.error("Database error was encountered while trying to find user with ID " + request.params.userId + " in the database");
+            logger.error("Database error was encountered while trying to find user with ID " + request.body.userId + " in the database");
             response.status("500");
             response.send({ errorMessage: "Error! There was an error connecting the database while trying to find user with ID " + request.params.userId + ". " + err.message});
         }
@@ -149,7 +149,7 @@ async function handleReadAllUsers(request, response){
 router.put('/', handleUpdateSingleUser);
 async function handleUpdateSingleUser(request, response){
     try{
-        const updatedUser = await models.updateUser(request.body.userId, request.body.username, request.body.password, request.body.status, request.body.body.firstName, request.body.lastName, request.body.biography, request.body.image);
+        const updatedUser = await models.updateUser(request.body.userId, request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
         if(updatedUser){
             response.status("200");
             response.json(updatedUser);

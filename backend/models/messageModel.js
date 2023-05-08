@@ -2,8 +2,8 @@
 const {MongoClient, WriteConcernError} = require("mongodb");
 const { InvalidInputError } = require('./InvalidInputError');
 const { DatabaseError } = require('./DatabaseError');
-const { checkValid, checkValidForEdit } = require("./validator");
-const logger = require("../logger");
+const { checkValid, checkValidForEdit } = require("validator");
+const logger = require("../logs/logger");
 let client;
 let messageCollection;
 
