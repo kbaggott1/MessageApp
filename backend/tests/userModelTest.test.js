@@ -1,3 +1,4 @@
+
 require('dotenv').config();
 jest.setTimeout(10000);
 const { MongoMemoryServer } = require('mongodb-memory-server');
@@ -420,5 +421,4 @@ test("Deleting a user when the database is inaccessible", async () => {
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
     await initialize("Test_Message_App", url, true);
-});
-
+})

@@ -1,4 +1,4 @@
-const { MongoClient, WriteError } = require("mongodb");
+const { MongoClient, WriteError, ObjectId } = require("mongodb");
 const InputError = require("./InvalidInputError.js");
 const DBError = require("./DatabaseError.js");
 const validateUtils = require("../helperMethods/validateUserData.js");
@@ -26,19 +26,19 @@ async function initialize(database, url,  resetFlag = false) {
         db = mongoClient.db(dbName);
 
         //Check to see if the users collection already exists
-        collectionCursor = await db.listCollections({ name: "users" });
+        collectionCursor = await db.listCollections({ name: "Users" });
         collectionArray = await collectionCursor.toArray();
         if(collectionArray.length == 0){
             const collation = { locale: "en", strength: 2 };
 
-            await db.createCollection("users", { collation: collation });
+            await db.createCollection("Users", { collation: collation });
         }
-        usersCollection = db.collection("users")
+        usersCollection = db.collection("Users")
         logger.info("Connected successfully to the MongoDB database!");
 
         if(resetFlag == true){
             await usersCollection.drop();
-            logger.info("Collection users from database " + database + "dropped!");
+            logger.info("Collection Users from database " + database + "dropped!");
         }
     }
     catch(err){
@@ -68,7 +68,7 @@ async function addUser(username, password, status, firstName, lastName, biograph
     try{
         if(validateUtils.isValid(username, password, status, firstName, lastName, biography)){
             let createDate = Date();
-            let newUser = { username: username, password: password, create_date: createDate, status: status, firstName: firstName, lastName: lastName, biography: biography};
+            let newUser = { username: username, password: password, create_date: createDate, status: status, firstName: firstName, lastName: lastName, biography: biography, image: image};
             await usersCollection.insertOne(newUser);
             return newUser;
         }
@@ -100,7 +100,8 @@ async function addUser(username, password, status, firstName, lastName, biograph
  */
 async function getUser(id) {
     try{
-        let user = await usersCollection.findOne({ _id: id });
+        let object_id = new ObjectId(id);
+        let user = await usersCollection.findOne({ _id: object_id });
 
         if(!user){
             throw new InputError.InvalidInputError("Error! User with ID '" + id + "' could not be found in the database.");
@@ -168,13 +169,14 @@ async function getAllUsers() {
 async function updateUser(id, newUsername, newPassword, newStatus, newFirstName, newLastName, newBiography, newImage) {
     try{
         if(validateUtils.isValid(newUsername, newPassword, newStatus, newFirstName, newLastName, newBiography)){
-            let updatedUser = await usersCollection.updateOne({ _id: id }, { $set: { password: newPassword, username: newUsername, status: newStatus, firstName: newFirstName, lastName: newLastName, biography: newBiography} });
+            let object_id = new ObjectId(id);
+            let updatedUser = await usersCollection.updateOne({ _id: object_id }, { $set: { password: newPassword, username: newUsername, status: newStatus, firstName: newFirstName, lastName: newLastName, biography: newBiography} });
             
             if(updatedUser.modifiedCount <= 0){
                 throw new InputError.InvalidInputError("Error! User with ID '" + id + "' could not be found in the database. Therefore nothing was updated.");
             }
 
-            return await usersCollection.findOne({ _id: id });
+            return await usersCollection.findOne({ _id: object_id });
         }
         else{
             throw new InputError.InvalidInputError("Error! Username '" + newUsername + "' and/or password '" + newPassword + "' and/or status " + newStatus + " and/or first name " + newFirstName + " and/or last name " + newLastName + " and/or biography " + newBiography + " were invalid. Therefore user with '" + id + "' was not updated.");
@@ -203,7 +205,8 @@ async function updateUser(id, newUsername, newPassword, newStatus, newFirstName,
  */
 async function deleteUser(id) {
     try{
-        let deletedUser = await usersCollection.deleteOne({ _id: id });
+        let object_id = new ObjectId(id);
+        let deletedUser = await usersCollection.deleteOne({ _id: object_id });
             
         if(deletedUser.deletedCount <= 0){
             throw new InputError.InvalidInputError("Error! User with '" + id + "' could not be found in the database. Therefore nothing was deleted.");
