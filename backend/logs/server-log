@@ -7534,3 +7534,83 @@
 {"level":50,"time":1683551038711,"pid":12732,"hostname":"CRISTIANO-PC","msg":"Unknown error encountered while deleting user with id6458f33eff02fd30aa3d8905 from the database."}
 {"level":30,"time":1683551038946,"pid":12732,"hostname":"CRISTIANO-PC","msg":"Connected successfully to the MongoDB database!"}
 {"level":30,"time":1683551038947,"pid":12732,"hostname":"CRISTIANO-PC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676195315,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676195317,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676195663,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676195664,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676195664,"pid":20792,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683676195664,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683676196026,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676196027,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676196028,"pid":20792,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683676196028,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683676196341,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676196342,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676196349,"pid":20792,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683676196659,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676196660,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676196660,"pid":20792,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683676196661,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683676196973,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676196974,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676196975,"pid":20792,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683676196975,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683676197292,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676197293,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676197294,"pid":20792,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683676197294,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683676197608,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676197609,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676197624,"pid":20792,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Jackson."}
+{"level":30,"time":1683676197942,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676197943,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676198280,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676198281,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676198587,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676198588,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676198901,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676198902,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676199228,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676199229,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676199540,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676199540,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676199869,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676199869,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676200229,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676200230,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676200560,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676200561,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676200880,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676200881,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676201218,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676201219,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676201536,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676201536,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676201537,"pid":20792,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683676201538,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'AppleTree123' and/or status offline and/or first name Chad and/or last name Treyvon and/or biography #Football is life were invalid. Therefore user with ID 645adc292a52c01d0c28fab6 was not updated"}
+{"level":30,"time":1683676201866,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676201867,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676201869,"pid":20792,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683676201869,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username 'Fiona' and/or password 'f' and/or status offline and/or first name Fiona and/or last name Ogre and/or biography Orge of the castle were invalid. Therefore user with ID 645adc292a52c01d0c28fab7 was not updated"}
+{"level":30,"time":1683676202203,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676202204,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676202560,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676202561,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676202562,"pid":20792,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683676202562,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username 'MagicMirror' and/or password 'FairestOfThemAll' and/or status away and/or first name null and/or last name Mirror and/or biography Nope were invalid. Therefore user with ID 645adc2a2a52c01d0c28fab9 was not updated"}
+{"level":30,"time":1683676202883,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676202884,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676202886,"pid":20792,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683676202886,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username 'Chris' and/or password 'FighterPlane16' and/or status offline and/or first name Chris and/or last name null and/or biography flying high were invalid. Therefore user with ID 645adc2a2a52c01d0c28faba was not updated"}
+{"level":30,"time":1683676203208,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676203209,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683676203211,"pid":20792,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683676203211,"pid":20792,"hostname":"KevinsPC","msg":"Error! Username 'Thelonious' and/or password 'JudgeJuryAndExecutioner321' and/or status away and/or first name Thelonious and/or last name Mastermead and/or biography undefined were invalid. Therefore user with ID 645adc2b2a52c01d0c28fabb was not updated"}
+{"level":30,"time":1683676203537,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676203538,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676203878,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676203878,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676204196,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676204197,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683676204527,"pid":20792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683676204528,"pid":20792,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
