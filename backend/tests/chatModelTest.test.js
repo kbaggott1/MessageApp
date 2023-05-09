@@ -83,11 +83,31 @@ test("Adding chat with valid user data", async () => {
     expect(retrievedChat.userRecipientId.toString()).toBe(addedUser2._id.toString());
 });
 
-test("Adding chat with invalid user data", async () => {
+test("Adding chat with invalid sender Id", async () => {
     const invalidUserId1 = null;
+    const user2 = generateValidUserData();
+    let addedUser2 = await userModel.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
+
+    await expect(chatModel.addChat(invalidUserId1, addedUser2)).rejects.toThrow(chatModel.InvalidInputError);
+
+    const addedChat = await chatModel.addChat(invalidUserId1, invalidUserId2).catch(() => null);
+
+    if (addedChat) {
+        const foundChat = await chatModel.getSingleChat(addedChat.insertedId).catch(() => null);
+
+        expect(foundChat).toBeNull();
+    } else {
+        expect(addedChat).toBeNull();
+    }
+});
+
+test("Adding chat with invalid recipient ID", async () => {
+    const user = generateValidUserData();
     const invalidUserId2 = null;
 
-    await expect(chatModel.addChat(invalidUserId1, invalidUserId2)).rejects.toThrow(chatModel.InvalidInputError);
+    let addedUser1 = await userModel.addUser(user.username, user.password, user.status, user.firstName, user.lastName, user.biography, user.image);
+
+    await expect(chatModel.addChat(addedUser1, invalidUserId2)).rejects.toThrow(chatModel.InvalidInputError);
 
     const addedChat = await chatModel.addChat(invalidUserId1, invalidUserId2).catch(() => null);
 
