@@ -6,6 +6,7 @@ const userModel = require("../models/userModel.js");
 const { initialize } = require('../models/chatModel.js');
 const utils = require("../helperMethods/validateUtilsChatModel.js");
 const {InvalidInputError} = require("../models/InvalidInputError");
+const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;
 
 const userData = [
     { username: "admin", password: "superSafePassword123", status: 'online', firstName: 'admin', lastName: 'admin' , biography: 'Admin of the page', image:'placeholder'},
@@ -183,7 +184,7 @@ test("Get all chats successfully", async () => {
 });
 
 test("Get all chats when there are no chats in the database", async () => {
-    await chatModel.chatCollection.deleteMany({});
+    await chatModel.initialize(url,"Message_App", false)
 
     const allChats = await chatModel.getAllChats();
 

@@ -7534,3 +7534,274 @@
 {"level":50,"time":1683551038711,"pid":12732,"hostname":"CRISTIANO-PC","msg":"Unknown error encountered while deleting user with id6458f33eff02fd30aa3d8905 from the database."}
 {"level":30,"time":1683551038946,"pid":12732,"hostname":"CRISTIANO-PC","msg":"Connected successfully to the MongoDB database!"}
 {"level":30,"time":1683551038947,"pid":12732,"hostname":"CRISTIANO-PC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683672982762,"pid":16792,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}
+{"level":30,"time":1683672982788,"pid":16792,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}
+{"level":30,"time":1683672982799,"pid":16792,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":50,"time":1683673669686,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683673669697,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Thelonious."}
+{"level":30,"time":1683673669738,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673669742,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673669742,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673669745,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673670241,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683673670242,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user FirstLittlePig."}
+{"level":30,"time":1683673670292,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673670294,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673670295,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683673670295,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683673670449,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673670450,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673670455,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683673670456,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'null' and/or password 'ReadingRainbow' and/or status online and/or first name Levar and/or last name Burton and/or biography Reading is the key were invalid."}
+{"level":50,"time":1683673670456,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Username null and/or new password ReadingRainbow and/or new status online and/or new first name Levar and/or new last name Burton and/or new biography Reading is the key was/were invalid"}
+{"level":50,"time":1683673670734,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683673670735,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user ThisIsReally."}
+{"level":30,"time":1683673670825,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673670827,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673670828,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683673670828,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683673670942,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673670944,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673670949,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1683673670949,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'FirstLittlePig' and/or password 'undefined' and/or status online and/or first name Piggie and/or last name Little and/or biography Best building material is straw were invalid."}
+{"level":50,"time":1683673670949,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Username FirstLittlePig and/or new password undefined and/or new status online and/or new first name Piggie and/or new last name Little and/or new biography Best building material is straw was/were invalid"}
+{"level":50,"time":1683673671217,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683673671217,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jason."}
+{"level":30,"time":1683673671311,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673671312,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673671324,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683673671452,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673671454,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673671476,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Teddy."}
+{"level":50,"time":1683673671477,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Database error was encountered while trying to add user Teddy to the database"}
+{"level":50,"time":1683673671704,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683673671704,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Error retrieving chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":30,"time":1683673671818,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673671819,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673671820,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683673671820,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683673671951,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673671952,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673672181,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683673672182,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jane."}
+{"level":30,"time":1683673672302,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673672304,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673672304,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683673672304,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683673672434,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673672435,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673672658,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683673672658,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Error deleting chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":30,"time":1683673672782,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673672784,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673672785,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683673672785,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683673672924,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673672925,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673672929,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error finding user in the database. database is not defined"}
+{"level":50,"time":1683673673134,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683673673134,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user thirdLittlePig."}
+{"level":30,"time":1683673673268,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673673268,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673673282,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jacob."}
+{"level":30,"time":1683673673417,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673673418,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673673605,"pid":8528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":30,"time":1683673673756,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673673757,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673674223,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673674224,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673674664,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673674665,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673675118,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673675119,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673675570,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673675571,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673676009,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673676010,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673676462,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673676463,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673676906,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673676906,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673677355,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673677356,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673677790,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673677791,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673678243,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673678244,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673678689,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673678690,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673678692,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683673678692,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'null' and/or password 'FighterPlane16' and/or status offline and/or first name Chris and/or last name Rodinos and/or biography flying high were invalid. Therefore user with ID 645ad24e3beda3fc51cfb0c6 was not updated"}
+{"level":30,"time":1683673679122,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673679123,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673679125,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683673679125,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'Levar' and/or password 'f' and/or status online and/or first name Levar and/or last name Burton and/or biography Reading is the key were invalid. Therefore user with ID 645ad24f3beda3fc51cfb0c7 was not updated"}
+{"level":30,"time":1683673679569,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673679570,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673680001,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673680002,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673680004,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683673680004,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'Jason' and/or password 'JavaEnthusiast' and/or status offline and/or first name null and/or last name Lastname and/or biography Yep, that's my last name were invalid. Therefore user with ID 645ad2503beda3fc51cfb0c9 was not updated"}
+{"level":30,"time":1683673680472,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673680473,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673680475,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683673680475,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'MagicMirror' and/or password 'FairestOfThemAll' and/or status away and/or first name Magic and/or last name null and/or biography Nope were invalid. Therefore user with ID 645ad2503beda3fc51cfb0ca was not updated"}
+{"level":30,"time":1683673680923,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673680924,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673680925,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683673680925,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'GingerbreadMan' and/or password 'LoserOfLegs222' and/or status away and/or first name Ginger and/or last name Bread and/or biography undefined were invalid. Therefore user with ID 645ad2503beda3fc51cfb0cb was not updated"}
+{"level":30,"time":1683673681355,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673681355,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673681795,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673681795,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673682232,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673682233,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673682690,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673682691,"pid":20784,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673703454,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1683673706191,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673706192,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673706625,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673706626,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673707084,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673707085,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673707089,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Couldn't find any users"}
+{"level":30,"time":1683673707529,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673707531,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673737564,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error finding users in the database."}
+{"level":30,"time":1683673740276,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673740277,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673740715,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673740715,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673741179,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673741180,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673741185,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"User being added had an Invalid username "}
+{"level":50,"time":1683673741185,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username '' and/or password 'Password123' and/or status offline and/or first name John and/or last name Doe and/or biography This is a test were invalid. Therefore user with ID 645ad28d39bea517462a486b was not updated"}
+{"level":50,"time":1683673741185,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"New username  and/or new password Password123 and/or new status offline and/or new first name John and/or new last name Doe and/or new biography This is a test was/were invalid"}
+{"level":30,"time":1683673741646,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673741646,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673741651,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683673741651,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error! Username 'username' and/or password 'null' and/or status offline and/or first name John and/or last name Doe and/or biography This is a test were invalid. Therefore user with ID 645ad28d39bea517462a486c was not updated"}
+{"level":50,"time":1683673741651,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"New username username and/or new password null and/or new status offline and/or new first name John and/or new last name Doe and/or new biography This is a test was/were invalid"}
+{"level":30,"time":1683673742090,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673742091,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673742094,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error updating the user with ID FGD781274 from the database"}
+{"level":30,"time":1683673742532,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673742532,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673742549,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Error updating the user with ID 645ad28e39bea517462a486d from the database"}
+{"level":30,"time":1683673742979,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673742980,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673743417,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673743418,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683673743856,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673743857,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673743861,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Unknown error encountered while deleting user with idWF12085124 from the database."}
+{"level":30,"time":1683673744297,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673744298,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683673744316,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Unknown error encountered while deleting user with id645ad29039bea517462a486f from the database."}
+{"level":30,"time":1683673744734,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683673744735,"pid":20876,"hostname":"DESKTOP-MLQM1UA","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683675265505,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683675265512,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user MagicMirror."}
+{"level":50,"time":1683675265975,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683675265976,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user thirdLittlePig."}
+{"level":50,"time":1683675266401,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683675266402,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user GingerbreadMan."}
+{"level":50,"time":1683675266829,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683675266829,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user ThisIsReally."}
+{"level":50,"time":1683675267264,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683675267265,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Error retrieving chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683675267697,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683675267698,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Levar."}
+{"level":50,"time":1683675268133,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683675268133,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Error deleting chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683675268573,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683675268574,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jason."}
+{"level":50,"time":1683675269004,"pid":14156,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677080046,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677080051,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user admin."}
+{"level":50,"time":1683677080528,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677080528,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Sarah."}
+{"level":50,"time":1683677080968,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677080969,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Cristiano."}
+{"level":50,"time":1683677081415,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677081415,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Shrek."}
+{"level":50,"time":1683677081850,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677081852,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Error retrieving chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683677082301,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677082302,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Fiona."}
+{"level":50,"time":1683677082733,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677082734,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Error deleting chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683677083162,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677083162,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user John."}
+{"level":50,"time":1683677083591,"pid":25800,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677159709,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677159718,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user John."}
+{"level":50,"time":1683677160216,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677160217,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jacob."}
+{"level":50,"time":1683677160653,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677160654,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user SecondLittlePig."}
+{"level":50,"time":1683677161096,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677161097,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user FirstLittlePig."}
+{"level":50,"time":1683677161529,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677161530,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Error retrieving chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683677161967,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677161968,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user admin."}
+{"level":50,"time":1683677162410,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677162411,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Error deleting chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683677162848,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677162849,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Maurice."}
+{"level":50,"time":1683677163299,"pid":24528,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677205126,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677205134,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Maurice."}
+{"level":50,"time":1683677205633,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677205634,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user John."}
+{"level":50,"time":1683677206075,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677206075,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jason."}
+{"level":50,"time":1683677206522,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677206523,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user FirstLittlePig."}
+{"level":50,"time":1683677206953,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677206954,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Error retrieving chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683677207391,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677207392,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user admin."}
+{"level":50,"time":1683677207828,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677207829,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Error deleting chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683677208281,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677208282,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jane."}
+{"level":50,"time":1683677208744,"pid":26564,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677543644,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677543649,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user John."}
+{"level":50,"time":1683677544150,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677544150,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Shrek."}
+{"level":50,"time":1683677544621,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677544622,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user MagicMirror."}
+{"level":50,"time":1683677545053,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677545054,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Thelonious."}
+{"level":50,"time":1683677545507,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677545508,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Error retrieving chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683677545946,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677545946,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Cristiano."}
+{"level":50,"time":1683677546386,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677546387,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Error deleting chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683677546831,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677546832,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user ThisIsReally."}
+{"level":50,"time":1683677547284,"pid":23028,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683681017679,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683681017687,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jackson."}
+{"level":50,"time":1683681018144,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683681018145,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Fiona."}
+{"level":50,"time":1683681018592,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683681018593,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Teddy."}
+{"level":50,"time":1683681019022,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683681019023,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jacob."}
+{"level":50,"time":1683681019454,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683681019455,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Error retrieving chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683681019895,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683681019896,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Jason."}
+{"level":50,"time":1683681020336,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683681020337,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Error deleting chat: Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1683681020779,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683681020780,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Pinochio."}
+{"level":50,"time":1683681021211,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":30,"time":1683681021537,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}

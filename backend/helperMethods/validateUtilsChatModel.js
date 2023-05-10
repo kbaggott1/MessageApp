@@ -3,9 +3,9 @@ const userModel = require("../models/userModel");
 const logger = require("../logs/logger.js");
 
 /**
- * 
- * @param {*} 
- * @param {*} 
+ * Checks if both the userSenderId and the userRecipientId are in the database. Returns true or false and logs error otherwise.
+ * @param {*} userSenderId of chat.
+ * @param {*} userRecipientId of chat.
  * 
  */
 function isValid(userSenderId, userRecipientId)

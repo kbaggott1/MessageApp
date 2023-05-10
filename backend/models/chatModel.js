@@ -159,4 +159,5 @@ function getCollection(){
   return chatCollection;
 }
 
-module.exports =  {initialize, addChat, getSingleChat, deleteChat, close, getCollection, getAllChats};
+module.exports = {initialize, addChat, getSingleChat, deleteChat, close, getCollection, getAllChats};
+
