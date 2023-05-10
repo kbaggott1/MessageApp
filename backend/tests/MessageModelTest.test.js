@@ -1,6 +1,8 @@
 require("dotenv").config();
 const { MongoMemoryServer } = require("mongodb-memory-server");
-let model = require("./models/messagesModel");
+let model = require("../models/messageModel");
+let userModel = require("../models/userModel");
+let chatModel = require("../models/chatModel");
 jest.setTimeout(5000);
 let mongodb;
 
@@ -38,9 +40,11 @@ test('Can add message to DB', async () => {
     const messageBody = "hello!"
 
     //insert new user for authorId
+    let authorId = await userModel.addUser("username", "password", "Online", "tester", "guy", "hello world", "sample")._id;
+    let userId2 = await userModel.addUser("username", "password", "Online", "tester", "guy", "hello world", "sample")._id;
 
     //insert new chat for chatId
-
+    let chatId = await chatModel.addChat(authorId, userId2)._id;
 
     await model.postMessage(messageBody, authorId, chatId);
     

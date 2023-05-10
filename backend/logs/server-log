@@ -1,0 +1,1026 @@
+{"level":30,"time":1683677180236,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677180237,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677180551,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677180551,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677180552,"pid":5548,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683677180552,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677180879,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677180880,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677180880,"pid":5548,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683677180880,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677181177,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677181178,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677181185,"pid":5548,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683677181487,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677181488,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677181488,"pid":5548,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677181488,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677181784,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677181785,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677181785,"pid":5548,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683677181785,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683677182078,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677182079,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677182079,"pid":5548,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677182079,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683677182378,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677182379,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677182393,"pid":5548,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Levar."}
+{"level":30,"time":1683677182683,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677182684,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677182982,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677182983,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677183282,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677183283,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677183580,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677183581,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677183879,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677183879,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677184174,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677184175,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677184477,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677184478,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677184788,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677184788,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677185087,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677185088,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677185387,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677185388,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677185691,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677185691,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677185986,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677185986,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677185988,"pid":5548,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683677185988,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'Ogress' and/or status offline and/or first name Fiona and/or last name Ogre and/or biography Orge of the castle were invalid. Therefore user with ID 645ae0010596547f4f3048a5 was not updated"}
+{"level":30,"time":1683677186284,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677186285,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677186286,"pid":5548,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683677186286,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username 'MagicMirror' and/or password 'f' and/or status away and/or first name Magic and/or last name Mirror and/or biography Nope were invalid. Therefore user with ID 645ae0020596547f4f3048a6 was not updated"}
+{"level":30,"time":1683677186589,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677186590,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677186895,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677186895,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677186897,"pid":5548,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677186897,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username 'BigBadWolf' and/or password 'pigsaredleicious' and/or status online and/or first name null and/or last name Dog and/or biography Blowing the little pigs were invalid. Therefore user with ID 645ae0020596547f4f3048a8 was not updated"}
+{"level":30,"time":1683677187200,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677187201,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677187202,"pid":5548,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683677187202,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username 'Maurice' and/or password 'MoveIt' and/or status online and/or first name Maurice and/or last name null and/or biography Owner of madagascar were invalid. Therefore user with ID 645ae0030596547f4f3048a9 was not updated"}
+{"level":30,"time":1683677187493,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677187494,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677187495,"pid":5548,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677187495,"pid":5548,"hostname":"KevinsPC","msg":"Error! Username 'Thelonious' and/or password 'JudgeJuryAndExecutioner321' and/or status away and/or first name Thelonious and/or last name Mastermead and/or biography undefined were invalid. Therefore user with ID 645ae0030596547f4f3048aa was not updated"}
+{"level":30,"time":1683677187800,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677187801,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677188096,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677188097,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677188403,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677188404,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677188702,"pid":5548,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677188702,"pid":5548,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677222092,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677222094,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677222414,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677222415,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677222416,"pid":10056,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683677222416,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677222740,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677222743,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677222744,"pid":10056,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683677222744,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677223036,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677223037,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677223043,"pid":10056,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683677223340,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677223340,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677223341,"pid":10056,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677223341,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677223651,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677223652,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677223652,"pid":10056,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683677223652,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683677223954,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677223955,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677223956,"pid":10056,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677223956,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683677224260,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677224261,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677224273,"pid":10056,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Jane."}
+{"level":30,"time":1683677224566,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677224567,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677224862,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677224863,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677225160,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677225160,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677225456,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677225457,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677225756,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677225756,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677226058,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677226059,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677226355,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677226356,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677226660,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677226661,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677226958,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677226959,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677227256,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677227257,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677227558,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677227559,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677227857,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677227857,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677227859,"pid":10056,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683677227859,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'FighterPlane16' and/or status offline and/or first name Chris and/or last name Rodinos and/or biography flying high were invalid. Therefore user with ID 645ae02b421c10718d5f5346 was not updated"}
+{"level":30,"time":1683677228158,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677228159,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677228162,"pid":10056,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683677228162,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username 'Cristiano' and/or password 'f' and/or status online and/or first name Cristiano and/or last name Fazi and/or biography Please give me a good grade please were invalid. Therefore user with ID 645ae02c421c10718d5f5347 was not updated"}
+{"level":30,"time":1683677228463,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677228464,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677228760,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677228761,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677228762,"pid":10056,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677228762,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username 'Thelonious' and/or password 'JudgeJuryAndExecutioner321' and/or status away and/or first name null and/or last name Mastermead and/or biography   were invalid. Therefore user with ID 645ae02c421c10718d5f5349 was not updated"}
+{"level":30,"time":1683677229062,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677229062,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677229063,"pid":10056,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683677229063,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username 'Shrek' and/or password 'GetOutOfMySwamp' and/or status offline and/or first name Shrek and/or last name null and/or biography Get out of my swamp were invalid. Therefore user with ID 645ae02d421c10718d5f534a was not updated"}
+{"level":30,"time":1683677229360,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677229361,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677229362,"pid":10056,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677229362,"pid":10056,"hostname":"KevinsPC","msg":"Error! Username 'Jacob' and/or password 'kingsAndQueens' and/or status away and/or first name Jacob and/or last name Foucher and/or biography undefined were invalid. Therefore user with ID 645ae02d421c10718d5f534b was not updated"}
+{"level":30,"time":1683677229666,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677229666,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677229964,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677229965,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677230261,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677230261,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677230563,"pid":10056,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677230564,"pid":10056,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677284030,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677284032,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677284346,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677284347,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677284348,"pid":7780,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683677284348,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677284671,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677284672,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677284673,"pid":7780,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683677284673,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677284977,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677284977,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677284984,"pid":7780,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683677285276,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677285277,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677285278,"pid":7780,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677285278,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677285578,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677285579,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677285579,"pid":7780,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683677285579,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683677285879,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677285880,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677285881,"pid":7780,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677285881,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683677286182,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677286183,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677286196,"pid":7780,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Sarah."}
+{"level":30,"time":1683677286480,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677286481,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677286772,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677286772,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677287070,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677287070,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677287366,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677287367,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677287657,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677287658,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677287958,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677287960,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677288254,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677288254,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677288551,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677288552,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677288858,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677288859,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677289149,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677289150,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677289450,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677289451,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677289750,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677289750,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677289751,"pid":7780,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683677289752,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'GettingOutOfHand' and/or status online and/or first name Help and/or last name TooMany and/or biography I don't know what to do anymore were invalid. Therefore user with ID 645ae069399987d5542fe612 was not updated"}
+{"level":30,"time":1683677290047,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677290048,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677290049,"pid":7780,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683677290049,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username 'admin' and/or password 'f' and/or status online and/or first name admin and/or last name admin and/or biography Admin of the page were invalid. Therefore user with ID 645ae06a399987d5542fe613 was not updated"}
+{"level":30,"time":1683677290350,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677290350,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677290647,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677290647,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677290648,"pid":7780,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677290649,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username 'Teddy' and/or password 'BearLover098' and/or status away and/or first name null and/or last name Roosevelt and/or biography President of the USA! were invalid. Therefore user with ID 645ae06a399987d5542fe615 was not updated"}
+{"level":30,"time":1683677290939,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677290939,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677290941,"pid":7780,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683677290941,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username 'Jane' and/or password 'Banana07$' and/or status offline and/or first name Jane and/or last name null and/or biography An anonymous user looking for a good time were invalid. Therefore user with ID 645ae06a399987d5542fe616 was not updated"}
+{"level":30,"time":1683677291237,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677291237,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677291238,"pid":7780,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677291239,"pid":7780,"hostname":"KevinsPC","msg":"Error! Username 'LordFarquad' and/or password 'ShortKing' and/or status away and/or first name Faquad and/or last name Farquid and/or biography undefined were invalid. Therefore user with ID 645ae06b399987d5542fe617 was not updated"}
+{"level":30,"time":1683677291541,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677291542,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677291846,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677291846,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677292146,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677292146,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677292443,"pid":7780,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677292444,"pid":7780,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677304552,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677304554,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677304623,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304624,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304640,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304640,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304641,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304641,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304657,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304659,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304659,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304659,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304659,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304664,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304665,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304665,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304665,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304666,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304670,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304671,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304672,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304672,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304672,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304675,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304676,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304677,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304677,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304677,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304677,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304678,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304678,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304678,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304678,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304678,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304678,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304679,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304679,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304679,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304679,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304679,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304680,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304680,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304680,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304680,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304680,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304681,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304681,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304681,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304681,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304681,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304682,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304682,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304682,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304682,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677304682,"pid":3260,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677304683,"pid":3260,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677304683,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304683,"pid":3260,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677304683,"pid":3260,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":30,"time":1683677304898,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677304899,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677304899,"pid":16000,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683677304899,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677305220,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677305221,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677305221,"pid":16000,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683677305222,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677305544,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677305545,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677305552,"pid":16000,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683677305843,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677305843,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677305844,"pid":16000,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677305844,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677306146,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677306146,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677306147,"pid":16000,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683677306147,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683677306441,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677306442,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677306442,"pid":16000,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677306442,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683677306732,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677306733,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677306746,"pid":16000,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user FirstLittlePig."}
+{"level":30,"time":1683677307037,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677307038,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677307332,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677307332,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677307635,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677307635,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677307935,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677307936,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677308244,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677308245,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677308548,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677308548,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677308841,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677308842,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677309143,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677309144,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677309448,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677309449,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677309748,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677309748,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677310052,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677310053,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677310351,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677310351,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677310352,"pid":16000,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683677310353,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'kingsAndQueens' and/or status away and/or first name Jacob and/or last name Foucher and/or biography Working hard or hardly working were invalid. Therefore user with ID 645ae07e4568c771b6329013 was not updated"}
+{"level":30,"time":1683677310652,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677310653,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677310654,"pid":16000,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683677310654,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username 'Chad' and/or password 'f' and/or status offline and/or first name Chad and/or last name Treyvon and/or biography #Football is life were invalid. Therefore user with ID 645ae07e4568c771b6329014 was not updated"}
+{"level":30,"time":1683677310957,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677310957,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677311254,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677311254,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677311255,"pid":16000,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677311255,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username 'Chris' and/or password 'FighterPlane16' and/or status offline and/or first name null and/or last name Rodinos and/or biography flying high were invalid. Therefore user with ID 645ae07f4568c771b6329016 was not updated"}
+{"level":30,"time":1683677311557,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677311558,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677311559,"pid":16000,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683677311559,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username 'Jane' and/or password 'Banana07$' and/or status offline and/or first name Jane and/or last name null and/or biography An anonymous user looking for a good time were invalid. Therefore user with ID 645ae07f4568c771b6329017 was not updated"}
+{"level":30,"time":1683677311853,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677311854,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677311855,"pid":16000,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677311855,"pid":16000,"hostname":"KevinsPC","msg":"Error! Username 'Teddy' and/or password 'BearLover098' and/or status away and/or first name Teddy and/or last name Roosevelt and/or biography undefined were invalid. Therefore user with ID 645ae07f4568c771b6329018 was not updated"}
+{"level":30,"time":1683677312157,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677312158,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677312459,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677312459,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677312759,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677312760,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677313065,"pid":16000,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677313065,"pid":16000,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677633261,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677633263,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677633417,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633419,"pid":8240,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username."}
+{"level":50,"time":1683677633419,"pid":8240,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username."}
+{"level":30,"time":1683677633419,"pid":8240,"hostname":"KevinsPC","msg":"userSenderId: undefined anduserRecipientId: undefined sucessfully validated."}
+{"level":50,"time":1683677633419,"pid":8240,"hostname":"KevinsPC","msg":"Error adding chat: Cannot read properties of undefined (reading 'insertOne')"}
+{"level":50,"time":1683677633420,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633435,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633436,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633436,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633437,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633453,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633455,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633456,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633456,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633456,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633459,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633460,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633460,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633460,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633460,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633465,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633466,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633466,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633466,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633466,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633469,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633469,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633470,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633470,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633470,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633470,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633470,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633470,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633470,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633470,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633471,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633471,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633471,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633471,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633471,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633471,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633472,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633472,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633472,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633472,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633473,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633473,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633473,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633473,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633473,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633474,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633474,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633474,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633474,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633474,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633474,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677633475,"pid":8240,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677633475,"pid":8240,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677633475,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633475,"pid":8240,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677633475,"pid":8240,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":30,"time":1683677633649,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677633650,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677633651,"pid":7980,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683677633651,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677633976,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677633977,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677633977,"pid":7980,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683677633977,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677634272,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677634273,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677634280,"pid":7980,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683677634571,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677634572,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677634572,"pid":7980,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677634572,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677634873,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677634874,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677634875,"pid":7980,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683677634875,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683677635178,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677635179,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677635180,"pid":7980,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677635180,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683677635481,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677635482,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677635495,"pid":7980,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user GingerbreadMan."}
+{"level":30,"time":1683677635781,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677635781,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677636089,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677636089,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677636395,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677636395,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677636696,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677636696,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677637000,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677637001,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677637303,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677637304,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677637599,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677637600,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677637907,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677637908,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677638203,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677638203,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677638505,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677638506,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677638804,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677638804,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677639100,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677639101,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677639102,"pid":7980,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683677639102,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'Banana07$' and/or status offline and/or first name Jane and/or last name Doe and/or biography An anonymous user looking for a good time were invalid. Therefore user with ID 645ae1c7b6e32c43961b7d24 was not updated"}
+{"level":30,"time":1683677639396,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677639396,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677639398,"pid":7980,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683677639398,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username 'Pinochio' and/or password 'f' and/or status online and/or first name Pinochio and/or last name Giupetto and/or biography My nose will grow were invalid. Therefore user with ID 645ae1c7b6e32c43961b7d25 was not updated"}
+{"level":30,"time":1683677639698,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677639699,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677639999,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677639999,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677640001,"pid":7980,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677640001,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username 'Jason' and/or password 'JavaEnthusiast' and/or status offline and/or first name null and/or last name Lastname and/or biography Yep, that's my last name were invalid. Therefore user with ID 645ae1c8b6e32c43961b7d27 was not updated"}
+{"level":30,"time":1683677640312,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677640313,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677640314,"pid":7980,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683677640314,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username 'BigBadWolf' and/or password 'pigsaredleicious' and/or status online and/or first name Wolf and/or last name null and/or biography Blowing the little pigs were invalid. Therefore user with ID 645ae1c8b6e32c43961b7d28 was not updated"}
+{"level":30,"time":1683677640611,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677640611,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677640612,"pid":7980,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677640612,"pid":7980,"hostname":"KevinsPC","msg":"Error! Username 'Thelonious' and/or password 'JudgeJuryAndExecutioner321' and/or status away and/or first name Thelonious and/or last name Mastermead and/or biography undefined were invalid. Therefore user with ID 645ae1c8b6e32c43961b7d29 was not updated"}
+{"level":30,"time":1683677640914,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677640915,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677641219,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677641220,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677641517,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677641518,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677641813,"pid":7980,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677641813,"pid":7980,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677663317,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":30,"time":1683677663339,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677663341,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677663319,"pid":12568,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username."}
+{"level":50,"time":1683677663320,"pid":12568,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username."}
+{"level":30,"time":1683677663320,"pid":12568,"hostname":"KevinsPC","msg":"userSenderId: undefined anduserRecipientId: undefined sucessfully validated."}
+{"level":50,"time":1683677663320,"pid":12568,"hostname":"KevinsPC","msg":"Error adding chat: Cannot read properties of undefined (reading 'insertOne')"}
+{"level":50,"time":1683677663320,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663334,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663335,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663336,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663336,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663353,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663355,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663356,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663356,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663356,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663359,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663360,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663360,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663361,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663361,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663363,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663364,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663365,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663365,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663365,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663368,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663368,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663369,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663369,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663369,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663369,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663369,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663370,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663370,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663370,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663370,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663370,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663371,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663371,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663371,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663371,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663371,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663373,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663374,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663374,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663374,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663374,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663375,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663375,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663375,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663375,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663375,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663376,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663376,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663376,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663376,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677663376,"pid":12568,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677663376,"pid":12568,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677663377,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663377,"pid":12568,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677663377,"pid":12568,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":30,"time":1683677663691,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677663692,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677663692,"pid":1228,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683677663692,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677664017,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677664018,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677664019,"pid":1228,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683677664019,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677664314,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677664315,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677664321,"pid":1228,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683677664613,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677664613,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677664614,"pid":1228,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677664614,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677664906,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677664907,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677664907,"pid":1228,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683677664907,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683677665203,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677665204,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677665205,"pid":1228,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677665205,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683677665507,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677665507,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677665520,"pid":1228,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user FirstLittlePig."}
+{"level":30,"time":1683677665808,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677665808,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677666103,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677666104,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677666401,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677666402,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677666700,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677666700,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677667002,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677667003,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677667311,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677667312,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677667608,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677667609,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677667917,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677667917,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677668226,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677668227,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677668530,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677668531,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677668831,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677668831,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677669135,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677669136,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677669137,"pid":1228,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683677669137,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'ShreksBestFriend' and/or status online and/or first name Donkey and/or last name TheDonkey and/or biography I <3 Shrek were invalid. Therefore user with ID 645ae1e51a45ee46f7b5a5ea was not updated"}
+{"level":30,"time":1683677669433,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677669433,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677669434,"pid":1228,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683677669435,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username 'John' and/or password 'f' and/or status away and/or first name John and/or last name Doe and/or biography From Alabama were invalid. Therefore user with ID 645ae1e51a45ee46f7b5a5eb was not updated"}
+{"level":30,"time":1683677669734,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677669735,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677670040,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677670041,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677670042,"pid":1228,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677670042,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username 'LordFarquad' and/or password 'ShortKing' and/or status away and/or first name null and/or last name Farquid and/or biography Mirror mirror on the wall were invalid. Therefore user with ID 645ae1e61a45ee46f7b5a5ed was not updated"}
+{"level":30,"time":1683677670333,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677670333,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677670334,"pid":1228,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683677670335,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username 'GingerbreadMan' and/or password 'LoserOfLegs222' and/or status away and/or first name Ginger and/or last name null and/or biography I like cookies were invalid. Therefore user with ID 645ae1e61a45ee46f7b5a5ee was not updated"}
+{"level":30,"time":1683677670634,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677670635,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677670636,"pid":1228,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677670636,"pid":1228,"hostname":"KevinsPC","msg":"Error! Username 'Chad' and/or password 'AppleTree123' and/or status offline and/or first name Chad and/or last name Treyvon and/or biography undefined were invalid. Therefore user with ID 645ae1e61a45ee46f7b5a5ef was not updated"}
+{"level":30,"time":1683677670928,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677670928,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677671230,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677671231,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677671532,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677671533,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677671836,"pid":1228,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677671837,"pid":1228,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677694141,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677694143,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677694247,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694249,"pid":21296,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username."}
+{"level":50,"time":1683677694249,"pid":21296,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username."}
+{"level":30,"time":1683677694249,"pid":21296,"hostname":"KevinsPC","msg":"userSenderId: undefined anduserRecipientId: undefined sucessfully validated."}
+{"level":50,"time":1683677694249,"pid":21296,"hostname":"KevinsPC","msg":"Error adding chat: Cannot read properties of undefined (reading 'insertOne')"}
+{"level":50,"time":1683677694250,"pid":21296,"hostname":"KevinsPC","msg":"Cannot read properties of undefined (reading 'length')"}
+{"level":50,"time":1683677694250,"pid":21296,"hostname":"KevinsPC","msg":"Cannot read properties of undefined (reading 'length')"}
+{"level":50,"time":1683677694250,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694272,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694272,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694273,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694273,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694289,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694292,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694292,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694292,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694292,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694299,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694299,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694300,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694300,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694300,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694302,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694303,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694303,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694304,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694304,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694306,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694306,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694307,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694307,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694307,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694307,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694307,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694308,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694308,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694308,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694308,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694308,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694309,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694309,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694309,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694309,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694309,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694309,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694309,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694309,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694310,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694310,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694310,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694310,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694310,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694311,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694311,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694311,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694311,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694311,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694311,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677694312,"pid":21296,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677694312,"pid":21296,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677694312,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694312,"pid":21296,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677694312,"pid":21296,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":30,"time":1683677694504,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677694505,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677694506,"pid":20496,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683677694506,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677694834,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677694835,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677694835,"pid":20496,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683677694836,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677695138,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677695139,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677695145,"pid":20496,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683677695432,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677695433,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677695433,"pid":20496,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677695433,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677695735,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677695736,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677695737,"pid":20496,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683677695737,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683677696030,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677696031,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677696031,"pid":20496,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677696031,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683677696328,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677696328,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677696342,"pid":20496,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user ThisIsReally."}
+{"level":30,"time":1683677696632,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677696633,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677696937,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677696937,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677697239,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677697239,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677697539,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677697540,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677697839,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677697840,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677698145,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677698146,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677698444,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677698445,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677698751,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677698752,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677699059,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677699060,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677699356,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677699357,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677699656,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677699656,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677699951,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677699952,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677699953,"pid":20496,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683677699953,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'kingsAndQueens' and/or status away and/or first name Jacob and/or last name Foucher and/or biography Working hard or hardly working were invalid. Therefore user with ID 645ae20314dde3f0629c8a44 was not updated"}
+{"level":30,"time":1683677700250,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677700251,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677700252,"pid":20496,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683677700252,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username 'Chris' and/or password 'f' and/or status offline and/or first name Chris and/or last name Rodinos and/or biography flying high were invalid. Therefore user with ID 645ae20414dde3f0629c8a45 was not updated"}
+{"level":30,"time":1683677700551,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677700551,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677700849,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677700850,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677700851,"pid":20496,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677700851,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username 'FirstLittlePig' and/or password 'StrawIsBest' and/or status online and/or first name null and/or last name Little and/or biography Best building material is straw were invalid. Therefore user with ID 645ae20414dde3f0629c8a47 was not updated"}
+{"level":30,"time":1683677701149,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677701149,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677701150,"pid":20496,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683677701151,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username 'Jackson' and/or password 'Online67' and/or status away and/or first name Jackson and/or last name null and/or biography bruh bruh bruh were invalid. Therefore user with ID 645ae20514dde3f0629c8a48 was not updated"}
+{"level":30,"time":1683677701453,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677701453,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677701454,"pid":20496,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677701454,"pid":20496,"hostname":"KevinsPC","msg":"Error! Username 'Teddy' and/or password 'BearLover098' and/or status away and/or first name Teddy and/or last name Roosevelt and/or biography undefined were invalid. Therefore user with ID 645ae20514dde3f0629c8a49 was not updated"}
+{"level":30,"time":1683677701752,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677701753,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677702053,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677702053,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677702351,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677702352,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677702650,"pid":20496,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677702650,"pid":20496,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677776090,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677776094,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677776164,"pid":2096,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":30,"time":1683677776505,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677776507,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677776507,"pid":15104,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683677776507,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677776860,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677776862,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677776863,"pid":15104,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683677776863,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677777205,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677777206,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677777215,"pid":15104,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683677777535,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677777536,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677777537,"pid":15104,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677777537,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677777856,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677777857,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677777858,"pid":15104,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683677777858,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683677778182,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677778183,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677778184,"pid":15104,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677778184,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683677778512,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677778513,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677778529,"pid":15104,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Thelonious."}
+{"level":30,"time":1683677778838,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677778839,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677779159,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677779160,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677779496,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677779498,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677779834,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677779835,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677780170,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677780171,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677780504,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677780506,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677780821,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677780822,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677781159,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677781160,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677781497,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677781498,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677781818,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677781819,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677782154,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677782155,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677782482,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677782483,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677782485,"pid":15104,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683677782486,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'LoserOfLegs222' and/or status away and/or first name Ginger and/or last name Bread and/or biography I like cookies were invalid. Therefore user with ID 645ae25679a9a79b7b543d7e was not updated"}
+{"level":30,"time":1683677782814,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677782815,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677782817,"pid":15104,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683677782817,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username 'Sarah' and/or password 'f' and/or status online and/or first name Sara and/or last name Leroux and/or biography  English words  were invalid. Therefore user with ID 645ae25679a9a79b7b543d7f was not updated"}
+{"level":30,"time":1683677783144,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677783145,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677783518,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677783519,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677783521,"pid":15104,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677783522,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username 'BigBadWolf' and/or password 'pigsaredleicious' and/or status online and/or first name null and/or last name Dog and/or biography Blowing the little pigs were invalid. Therefore user with ID 645ae25779a9a79b7b543d81 was not updated"}
+{"level":30,"time":1683677783848,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677783850,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677783852,"pid":15104,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683677783852,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username 'admin' and/or password 'superSafePassword123' and/or status online and/or first name admin and/or last name null and/or biography Admin of the page were invalid. Therefore user with ID 645ae25779a9a79b7b543d82 was not updated"}
+{"level":30,"time":1683677784187,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677784188,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677784190,"pid":15104,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677784190,"pid":15104,"hostname":"KevinsPC","msg":"Error! Username 'LordFarquad' and/or password 'ShortKing' and/or status away and/or first name Faquad and/or last name Farquid and/or biography undefined were invalid. Therefore user with ID 645ae25879a9a79b7b543d83 was not updated"}
+{"level":30,"time":1683677784523,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677784525,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677784853,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677784854,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677785176,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677785177,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677785505,"pid":15104,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677785507,"pid":15104,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677812363,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":30,"time":1683677812388,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677812391,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677812761,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677812762,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677812763,"pid":19832,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1683677812763,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677813134,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677813136,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677813136,"pid":19832,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1683677813136,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677813485,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677813487,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677813496,"pid":19832,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1683677813821,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677813822,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677813823,"pid":19832,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677813823,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1683677814163,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677814165,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677814166,"pid":19832,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1683677814166,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1683677814517,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677814519,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677814520,"pid":19832,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677814520,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1683677814842,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677814844,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677814862,"pid":19832,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Maurice."}
+{"level":30,"time":1683677815190,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677815191,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677815519,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677815521,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677815854,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677815855,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677816177,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677816178,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677816510,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677816511,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677816845,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677816847,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677817185,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677817187,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677817541,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677817542,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677817898,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677817899,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677818230,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677818232,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677818575,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677818576,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677818900,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677818901,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677818903,"pid":19832,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1683677818903,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'BearLover098' and/or status away and/or first name Teddy and/or last name Roosevelt and/or biography President of the USA! were invalid. Therefore user with ID 645ae27ab32a3c893cc341cd was not updated"}
+{"level":30,"time":1683677819248,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677819249,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677819251,"pid":19832,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1683677819251,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username 'Sarah' and/or password 'f' and/or status online and/or first name Sara and/or last name Leroux and/or biography  English words  were invalid. Therefore user with ID 645ae27bb32a3c893cc341ce was not updated"}
+{"level":30,"time":1683677819594,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677819595,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677819922,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677819923,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677819925,"pid":19832,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1683677819925,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username 'Jacob' and/or password 'kingsAndQueens' and/or status away and/or first name null and/or last name Foucher and/or biography Working hard or hardly working were invalid. Therefore user with ID 645ae27bb32a3c893cc341d0 was not updated"}
+{"level":30,"time":1683677820273,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677820274,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677820277,"pid":19832,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1683677820277,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username 'John' and/or password 'AlabamaSunshine06' and/or status away and/or first name John and/or last name null and/or biography From Alabama were invalid. Therefore user with ID 645ae27cb32a3c893cc341d1 was not updated"}
+{"level":30,"time":1683677820621,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677820622,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677820625,"pid":19832,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1683677820625,"pid":19832,"hostname":"KevinsPC","msg":"Error! Username 'admin' and/or password 'superSafePassword123' and/or status online and/or first name admin and/or last name admin and/or biography undefined were invalid. Therefore user with ID 645ae27cb32a3c893cc341d2 was not updated"}
+{"level":30,"time":1683677820977,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677820978,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677821328,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677821330,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677821658,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677821660,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":30,"time":1683677822019,"pid":19832,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683677822020,"pid":19832,"hostname":"KevinsPC","msg":"Collection users from database Test_Message_Appdropped!"}
+{"level":50,"time":1683677821162,"pid":20812,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username."}
+{"level":50,"time":1683677823677,"pid":20812,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username."}
+{"level":30,"time":1683677826063,"pid":20812,"hostname":"KevinsPC","msg":"userSenderId: undefined anduserRecipientId: undefined sucessfully validated."}
+{"level":50,"time":1683677826064,"pid":20812,"hostname":"KevinsPC","msg":"Error adding chat: Cannot read properties of undefined (reading 'insertOne')"}
+{"level":50,"time":1683677839228,"pid":20812,"hostname":"KevinsPC","msg":"Cannot read properties of undefined (reading 'length')"}
+{"level":50,"time":1683677873672,"pid":20812,"hostname":"KevinsPC","msg":"Cannot read properties of undefined (reading 'length')"}
+{"level":50,"time":1683677873673,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873686,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873686,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873687,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873687,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873702,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873703,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873704,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873704,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873704,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873708,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873709,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873709,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873709,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873709,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873716,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873717,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873717,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873718,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873718,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873720,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873721,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873722,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873722,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873722,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873725,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873727,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873728,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873728,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873728,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873729,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873730,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873731,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873731,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873731,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873731,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873732,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873733,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873733,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873733,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873733,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873735,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873737,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873737,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873737,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873737,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873738,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873739,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873739,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873739,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873739,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}
+{"level":50,"time":1683677873740,"pid":20812,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":50,"time":1683677873741,"pid":20812,"hostname":"KevinsPC","msg":"collection.findOne is not a function"}
+{"level":50,"time":1683677873741,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873741,"pid":20812,"hostname":"KevinsPC","msg":"Database error trying to check authorId:collection.findOne is not a function"}
+{"level":50,"time":1683677873741,"pid":20812,"hostname":"KevinsPC","msg":"Error closing database: Cannot read properties of undefined (reading 'close')"}

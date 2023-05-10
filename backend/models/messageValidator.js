@@ -1,7 +1,7 @@
 const validator = require("validator");
 const { DatabaseError } = require("./DatabaseError");
 const {InvalidInputError} = require("./InvalidInputError");
-const logger = require("../logger");
+const logger = require("../logs/logger");
 
 /**
  * Checks if id exists in the collection, and the message is valid. 

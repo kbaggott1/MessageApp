@@ -3,7 +3,7 @@ const {MongoClient, WriteConcernError} = require("mongodb");
 const { InvalidInputError } = require('./InvalidInputError');
 const { DatabaseError } = require('./DatabaseError');
 const { checkValid, checkValidForEdit } = require("./messageValidator");
-const logger = require("../logger");
+const logger = require("../logs/logger");
 let client;
 let messageCollection;
 
