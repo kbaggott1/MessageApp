@@ -13,14 +13,8 @@ const chatModel = require("./chatModel");
  * @param {*} message The message to validate.
  * @throws InvalidInputError and DatabaseError
  */
-async function checkValidForEdit(collection, id, message) {
+async function checkValidForEdit(message) {
     try {
-        if(!validator.isNumeric(id.toString()))
-            throw new InvalidInputError("Invalid id: " + id + ". Ids must be numeric.");
-
-        if((await isMessageIdUnique(collection, id)))
-            throw new InvalidInputError("Message id: " + id + " does not exist.");
-
         checkMessage(message);
     }
     catch(err) {

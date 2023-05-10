@@ -3800,3 +3800,32 @@
 {"level":30,"time":1683683691674,"pid":3184,"hostname":"KevinsPC","msg":"connected to db"}
 {"level":30,"time":1683683692077,"pid":3184,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
 {"level":30,"time":1683683692342,"pid":3184,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683684679723,"pid":15792,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683684680088,"pid":15792,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683684680358,"pid":15792,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683685339250,"pid":22840,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683685339571,"pid":22840,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683685339836,"pid":22840,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683685456338,"pid":9508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683685456700,"pid":9508,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683685456986,"pid":9508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683685690712,"pid":15188,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683685691025,"pid":15188,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683685691283,"pid":15188,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1683685730889,"pid":15188,"hostname":"KevinsPC","msg":"Could not get messageId in model: Could not find message with id: 645afaf57cc81875398495a9"}
+{"level":50,"time":1683685730890,"pid":15188,"hostname":"KevinsPC","msg":"Invalid input trying to get message: Could not find message with id: 645afaf57cc81875398495a9"}
+{"level":30,"time":1683685947053,"pid":6424,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683685947409,"pid":6424,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683685947673,"pid":6424,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683686005895,"pid":10876,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683686006208,"pid":10876,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683686006475,"pid":10876,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1683686051597,"pid":10876,"hostname":"KevinsPC","msg":"Invalid id: 645b02947a0496cbbacd30e6. Ids must be numeric."}
+{"level":50,"time":1683686051598,"pid":10876,"hostname":"KevinsPC","msg":"Could not edit message in model: Invalid id: 645b02947a0496cbbacd30e6. Ids must be numeric."}
+{"level":50,"time":1683686051599,"pid":10876,"hostname":"KevinsPC","msg":"Invalid input trying to edit message: Invalid id: 645b02947a0496cbbacd30e6. Ids must be numeric."}
+{"level":30,"time":1683686154465,"pid":18660,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683686154779,"pid":18660,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683686155051,"pid":18660,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683686227663,"pid":17032,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1683686227958,"pid":17032,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1683686228270,"pid":17032,"hostname":"KevinsPC","msg":"connected to db"}

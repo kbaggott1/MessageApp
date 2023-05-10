@@ -76,8 +76,9 @@ async function postMessage(messageBody, authorId, chatId) {
 
         let currentDate = day +"/"+month+"/"+year;
 
-        await messageCollection.insertOne({messageBody: messageBody, authorId: authorId, chatId: chatId, sentDate: currentDate});
-        return {messageBody: messageBody, authorId: authorId, chatId: chatId};
+        let message = {messageBody: messageBody, authorId: authorId, chatId: chatId, sentDate: currentDate};
+        await messageCollection.insertOne(message);
+        return message;
     }
     catch(err) {
         logger.error(err.message)
@@ -124,8 +125,6 @@ async function getMessageById(messageId) {
  */
 async function getMessagesByChatId(chatId) {
     try {
-        chatId = new ObjectId(chatId);
-
         let messages = await messageCollection
             .find({chatId: chatId})
             .toArray();
@@ -149,9 +148,9 @@ async function getMessagesByChatId(chatId) {
 async function editMessage(messageId, newMessage) {
     try {
         messageId = new ObjectId(messageId);
-        await checkValidForEdit(messageCollection, messageId, newMessage);
-        await messageCollection.updateOne({_id: messageId}, {$set: {message: newMessage}});
-        return newMessage;
+        await checkValidForEdit(newMessage);
+        //await messageCollection.updateOne({_id: messageId}, {$set: {messageBody: newMessage}});
+        return await messageCollection.updateOne({_id: messageId}, {$set: {messageBody: newMessage}});
     }
     catch(err) {
         logger.error("Could not edit message in model: " + err.message);
