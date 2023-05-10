@@ -1,5 +1,5 @@
 //const dbName = "pokemon_db";
-const {MongoClient, WriteConcernError} = require("mongodb");
+const {MongoClient, WriteConcernError, WriteError, ObjectId} = require("mongodb");
 const { InvalidInputError } = require('./InvalidInputError');
 const { DatabaseError } = require('./DatabaseError');
 const { checkValid, checkValidForEdit } = require("./messageValidator");
@@ -13,31 +13,32 @@ let messageCollection;
  * @param {*} url The url to the mongodb.
  * @throws Database error if there was an issue connecting to the database
  */
-async function initialize(url, dbName, reset = false) {
+async function initialize(dbName, url, reset = false) {
     try{
+        console.log("HERE IS THE URL: "  + url )
         client = new MongoClient(url);
 
         await client.connect();
         logger.info("connected to db");
         let db = client.db(dbName);
         
-        let collectionCursor = await db.listCollections({name: "messages" });
+        let collectionCursor = await db.listCollections({name: "Messages" });
         let collectionArray = await collectionCursor.toArray();
 
         if(collectionArray.length == 0) {
             const collation = {locale: "en", strength: 1}
-            await db.createCollection("messages", {collation: collation});
+            await db.createCollection("Messages", {collation: collation});
         }
         else {
             if(reset) {
-                db.collection("messages").drop();
+                db.collection("Messages").drop();
 
                 const collation = {locale: "en", strength: 1}
-                await db.createCollection("messages", {collation: collation});
+                await db.createCollection("Messages", {collation: collation});
             }
         }
 
-        messageCollection = db.collection("messages");
+        messageCollection = db.collection("Messages");
     } catch(err) {
         logger.error("Could not initialize db: " + err.message);
         throw new DatabaseError("Could not initialize db: " + err.message);
@@ -82,10 +83,6 @@ async function postMessage(messageBody, authorId, chatId) {
         logger.error(err.message)
         if(err instanceof InvalidInputError)
             throw new InvalidInputError(err.message);
-        if(err instanceof WriteError)
-            throw new DatabaseError(err.message);
-        if(err instanceof WriteConcernError)
-            throw new DatabaseError(err.message);
 
         throw new DatabaseError(err.message);
         
@@ -101,6 +98,7 @@ async function postMessage(messageBody, authorId, chatId) {
  */
 async function getMessageById(messageId) {
     try {
+        messageId = new ObjectId(messageId);
         let message = await messageCollection.findOne({_id: messageId});
 
         if(message == null)
@@ -126,6 +124,8 @@ async function getMessageById(messageId) {
  */
 async function getMessagesByChatId(chatId) {
     try {
+        chatId = new ObjectId(chatId);
+
         let messages = await messageCollection
             .find({chatId: chatId})
             .toArray();
@@ -148,6 +148,7 @@ async function getMessagesByChatId(chatId) {
  */
 async function editMessage(messageId, newMessage) {
     try {
+        messageId = new ObjectId(messageId);
         await checkValidForEdit(messageCollection, messageId, newMessage);
         await messageCollection.updateOne({_id: messageId}, {$set: {message: newMessage}});
         return newMessage;
@@ -168,6 +169,7 @@ async function editMessage(messageId, newMessage) {
  */
 async function deleteMessageById(id) {
     try {
+        id = new ObjectId(id);
         await messageCollection.deleteOne({_id: id});
     }
     catch(err) {

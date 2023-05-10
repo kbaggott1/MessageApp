@@ -1,8 +1,10 @@
 const validator = require("validator");
 const { DatabaseError } = require("./DatabaseError");
 const {InvalidInputError} = require("./InvalidInputError");
+const { ObjectId } = require("mongodb");
 const logger = require("../logs/logger");
-
+const userModel = require("./userModel");
+const chatModel = require("./chatModel");
 /**
  * Checks if id exists in the collection, and the message is valid. 
  * Does not return anything. Will throw if message or id is invalid.
@@ -40,11 +42,11 @@ async function checkValidForEdit(collection, id, message) {
  * @param {*} chatId The chat id to verify exists.
  * @throws InvalidInputError and DatabaseError
  */
-async function checkValid(userCollection, chatCollection, message, authorId, chatId) {
+async function checkValid(message, authorId, chatId) {
     try {
         checkMessage(message);
-        await checkAuthorId(userCollection, authorId);
-        await chechChatId(chatCollection, chatId);
+        await checkAuthorId(authorId);
+        await checkChatId(chatId);
     }
     catch(err) {
         logger.error(err.message);
@@ -56,9 +58,10 @@ async function checkValid(userCollection, chatCollection, message, authorId, cha
 }
 
 
-async function checkChatId(collection, id) {
+async function checkChatId(id) {
     try {
-        let chatId = await collection.findOne({chatId: id});
+        id = new ObjectId(id);
+        let chatId = await chatModel.getCollection().findOne({_id: id});
 
         if(chatId == null)
             throw new InvalidInputError("ChatId does not exist.")
@@ -74,9 +77,12 @@ async function checkChatId(collection, id) {
     }
 }
 
-async function checkAuthorId(collection, id) {
+async function checkAuthorId(id) {
     try {
-        let authorId = await collection.findOne({authorId: id});
+        console.log(id);
+        id = new ObjectId(id);
+        let authorId = await userModel.getCollection().findOne({_id: id});
+
 
         if(authorId == null)
             throw new InvalidInputError("AuthorId does not exist.")

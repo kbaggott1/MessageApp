@@ -3,8 +3,9 @@ const { DatabaseError } = require('../models/DatabaseError');
 const { InvalidInputError } = require('../models/InvalidInputError');
 const router = express.Router();
 const routeRoot = '/messages';
-const MessagesModelMongoDb = require("../models/MessagesModel");
-const logger = require("../logger");
+const MessagesModelMongoDb = require("../models/messageModel");
+const logger = require("../logs/logger");
+const userModel = require("../models/userModel");
 
 module.exports = {
     router,
@@ -24,7 +25,7 @@ async function createMessage(req, res) {
         let message = await MessagesModelMongoDb.postMessage(req.body.messageBody, req.body.authorId, req.body.chatId);
         if(message) {
             res.status("200");
-            res.send("Successfully added message: "+message.message+".");
+            res.send("Successfully added message: "+message.messageBody+".");
         }
         else {
             res.status("400");
@@ -101,7 +102,7 @@ async function getMessage(req, res) {
 
         if(message) {
             res.status("200");
-            res.send("message Found: \""+message.message+"\" sent by: "+message.user);
+            res.send("message Found: \""+message.messageBody+"\" sent by: "+ (await userModel.getUser(message.authorId)).username);
         } else {
             res.status("400");
             res.send("Unable to find message");
@@ -180,7 +181,7 @@ async function deleteMessage(req, res) {
     try {
         await MessagesModelMongoDb.deleteMessageById(req.body.messageId);
         res.status("200");
-        res.send("Deleted pokemon of id: " + req.body.messageId);
+        res.send("Deleted message of id: " + req.body.messageId);
     }
     catch(err) {
         if(err instanceof DatabaseError) {

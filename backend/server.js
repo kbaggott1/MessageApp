@@ -7,21 +7,14 @@ const chatModel = require("./models/chatModel");
 const messageModel = require("./models/messageModel");
 const userModel = require("./models/userModel");
 const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;
-
+initializeModels();
 /**
  * Initializes models
  */
-chatModel.initialize(url, "Message_App", false)
-.then(
-    app.listen(port1) // Run the server
-);
+async function initializeModels() {
+    await messageModel.initialize("Message_App", url, false);
+    await userModel.initialize("Message_App", url, false);
+    await chatModel.initialize(url, "Message_App", false);
+    await app.listen(port3); // Run the server
 
-messageModel.initialize(url, "Message_App", false)
-.then(
-    app.listen(port2) // Run the server
-);
-
-userModel.initialize("Message_App", url, false)
-.then(
-    app.listen(port3) // Run the server
-);
+}

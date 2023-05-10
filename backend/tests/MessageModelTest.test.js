@@ -17,7 +17,7 @@ beforeEach(async () => {
         await model.initialize("messages_db_test", url, true);
     }
     catch(err) {
-        console.log(err.message);
+        console.log(err.message + "IN MESSAGESSS");
     }
 });
 
@@ -40,8 +40,8 @@ test('Can add message to DB', async () => {
     const messageBody = "hello!"
 
     //insert new user for authorId
-    let authorId = await userModel.addUser("username", "password", "Online", "tester", "guy", "hello world", "sample")._id;
-    let userId2 = await userModel.addUser("username", "password", "Online", "tester", "guy", "hello world", "sample")._id;
+    let authorId = await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample");
+    let userId2 = await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample")._id;
 
     //insert new chat for chatId
     let chatId = await chatModel.addChat(authorId, userId2)._id;
