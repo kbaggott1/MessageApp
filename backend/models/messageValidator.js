@@ -6,10 +6,8 @@ const logger = require("../logs/logger");
 const userModel = require("./userModel");
 const chatModel = require("./chatModel");
 /**
- * Checks if id exists in the collection, and the message is valid. 
- * Does not return anything. Will throw if message or id is invalid.
- * @param {*} collection The collection to check for matching message id.
- * @param {*} id The id of the message to validate.
+ * Checks if message is valid. 
+ * Does not return anything. Will throw if message is invalid.
  * @param {*} message The message to validate.
  * @throws InvalidInputError and DatabaseError
  */
