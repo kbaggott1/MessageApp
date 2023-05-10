@@ -27,8 +27,6 @@ async function checkValidForEdit(message) {
 /**
  * Checks for a valid message, and the user id and chat id exists.
  * Does not return anything. Will throw if message or id is invalid.
- * @param {*} userCollection The collection to check for the user id.
- * @param {*} chatCollection The collection to check for the Chat id.
  * @param {*} message The content of the message to check.
  * @param {*} authorId The author id to verify exists.
  * @param {*} chatId The chat id to verify exists.
