@@ -11,181 +11,147 @@ module.exports = {
     routeRoot
 }
 
-
-router.post("/", createUser);
-/**
- * Called on post
- * @param {*} req Requests with body params: messageId, message, user
- * @param {*} res Resolves with status 200, 400, or 500
- * @throws InvalidInputError when input was not in a valid format; Throws Database Error.
- */
-async function createUser(req, res) { 
-    try {
-        let message = await MessagesModelMongoDb.postMessage(req.body.messageId, req.body.message, req.body.user);
-        if(message) {
-            res.status("200");
-            res.send("Successfully added message: "+message.message+".");
-        }
-        else {
-            res.status("400");
-            res.send("Could not add message to database.");
-            logger.error("Could not add message in controller.");
-        }
-    }
-    catch(err) {
-        if(err instanceof DatabaseError) {
-            res.status("500");
-            res.send("Database Error trying to add message");
-            logger.error("Database Error trying to add message in controller: "+err.message);
-        }
-        else 
-        if(err instanceof InvalidInputError) {
-            res.status("400");
-            res.send("Invalid input, cant add message");
-            logger.error("Invalid input trying to add message: "+err.message);
-        }
-        else {
-            res.status("500");
-            res.send("Error trying to add message");
-            logger.error("Error try to add in controller: "+err.message);
-        }
-    }
-}
-
-router.get("/", getUsers)
-/**
- * Called on get to retrieve all messages
- * @param {*} req Request no params required
- * @param {*} res Responds with all messages via json. Resovles with status 200 or 500.
- * @throw InvalidInputError and DatabaseError
- */
-async function getUsers(req, res) {
-    try {
-        let messages = await MessagesModelMongoDb.getAllMessages();
-
-        res.status("200");
-        res.json(messages);
-        
-    }
-    catch(err) {
-        if(err instanceof DatabaseError) {
-            res.status("500");
-            res.send("Database Error trying to get messages");
-            logger.error("Database Error trying to get all messages in controller: "+err.message);
-        }
-        else {
-            res.status("500");
-            res.send("Error trying to get messages");
-            logger.error("Error trying to get all messages in controller: "+err.message);
-        }
-    }
-}
-
-
-router.get("/:id", getUsers);
-/**
- * Called on get with message id
- * @param {*} req Requests with parameter: id
+/** Adds a chat to a database.
+ * @param {*} req Requests body parameters: userSenderId, userRecipientId
  * @param {*} res Resolves with status 200, 400 or 500.
- * @throws InvalidInputError and DatabaseError
+ * @throws InvalidInputError or DatabaseError.
  */
-async function getUsers(req, res) {
+router.post("/", createChat);
+async function createChat(req, res) { 
     try {
-        let message = await MessagesModelMongoDb.getMessageById(req.params.id);
-
-        if(message) {
-            res.status("200");
-            res.send("message Found: \""+message.message+"\" sent by: "+message.user);
+        let chat = await ChatsModelMongoDb.addChat(req.body.userSenderId, req.body.userRecipientId);
+        if(chat) {
+            res.status(200);
+            res.send(`Successfully added chat: senderId: ${req.body.userSenderId}, recipientId: ${req.body.userRecipientId}`);
         } else {
-            res.status("400");
-            res.send("Unable to find message");
-            logger.error("Unable to find message in controller");
+            let message = `Could not add chat to database with senderId: ${req.body.userSenderId}, recipientId: ${req.body.userRecipientId}`;
+            res.status(400);
+            res.send(message);
+            logger.error("In controller: " + message);
         }
     }
     catch(err) {
         if(err instanceof DatabaseError) {
-            res.status("500");
-            res.send("Database Error trying to get message");
-            logger.error("Database Error trying to get in controller: "+err.message);
-        }
-        else
-        if(err instanceof InvalidInputError) {
-            res.status("400");
-            res.send("Can't find message");
-            logger.error("Invalid input trying to get message: "+err.message);
-        }
-        else {
-            res.status("500");
-            res.send("Error trying to get message");
-            logger.error("Error trying to get message in controller: "+err.message);
+            let message = "Database Error while adding chat with senderId: " + req.body.userSenderId + ", recipientId: " + req.body.userRecipientId + ": " + err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
+        } else if(err instanceof InvalidInputError) {
+            let message = "Invalid Input Error while adding chat with senderId: " + req.body.userSenderId + ", recipientId: " + req.body.userRecipientId + ": " + err.message;
+            res.status(400);
+            res.send(message);
+            logger.error("In controller: " + message);
+        } else {
+            let message = "Unexpected Error while adding chat with senderId: " + req.body.userSenderId + ", recipientId: " + req.body.userRecipientId + ": " + err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
         }
     }
 }
 
-
-router.put("/", updateUser);
-/**
- * Called on put to update a message
- * @param {*} req Requests with body parameters: messageId, message
+/** Gets all chats from database.
+ * 
  * @param {*} res Resolves with status 200, 400 or 500.
- * @throws InvalidInputError and DatabaseError.
+ * @throws InvalidInputError or DatabaseError.
  */
-async function updateUser(req, res) {
+router.get("/", getChats)
+async function getChats(req, res) {
     try {
-        let message = await MessagesModelMongoDb.editMessage(req.body.messageId, req.body.message);
-        if(message) {
-            res.status("200");
-            res.send("Successfully edited message: "+message+".");
-        }
-        else {
-            res.status("400");
-            res.send("Could not edit message to database.");
-            logger.error("Could not edit message in controller.");
-        }
+        let chats = await ChatsModelMongoDb.getAllChats();
+        res.status(200);
+        res.json(chats);
     }
     catch(err) {
         if(err instanceof DatabaseError) {
-            res.status("500");
-            res.send("Database Error trying to edit message");
-            logger.error("Database Error trying to edit message in controller: "+err.message);
+            let message = "Database Error while getting all chats: "+err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
         }
-        else 
-        if(err instanceof InvalidInputError) {
-            res.status("400");
-            res.send("Invalid input, cant edit message");
-            logger.error("Invalid input trying to edit message: "+err.message);
+        else if(err instanceof InvalidInputError) {
+            let message = "Invalid input while getting all chats: "+err.message;
+            res.status(400);
+            res.send(message);
+            logger.error("In controller: " + message);
         }
         else {
-            res.status("500");
-            res.send("Error trying to edit message");
-            logger.error("Error trying to edit in controller: "+err.message);
+            let message = "Unexpected error in controller while getting all chats: "+err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
         }
     }
 }
 
-router.delete("/", deleteUser);
-/**
- * Called on delete to delete a messsage by id
- * @param {*} req Requests body parameter: messageId
- * @param {*} res Resolves with status 200 or 500.
- * @throws InvalidInputError and DatabaseError.
- */
-async function deleteUser(req, res) {
+/** Gets single chat.
+ * @param {*} req Requests params parameter: id
+ * @param {*} res Resolves with status 200, 400 or 500.
+ * @throws InvalidInputError or DatabaseError.
+ */ 
+router.get("/:id", getChat);
+async function getChat(req, res) {
     try {
-        await MessagesModelMongoDb.deleteMessageById(req.body.messageId);
-        res.status("200");
-        res.send("Deleted pokemon of id: " + req.body.messageId);
+        let chat = await ChatsModelMongoDb.getSingleChat(req.params.id);
+        if(chat) {
+            res.status(200);
+            res.json(chat);
+        } else {
+            let message = `Unable to find chat with id: ${req.params.id}`;
+            res.status(400);
+            res.send(message);
+            logger.error("In controller: " + message);
+        }
     }
     catch(err) {
         if(err instanceof DatabaseError) {
-            res.status("500");
-            res.send("Database Error trying to delete message");
-            logger.error("Database Error trying to delete in controller: "+err.message);
+            let message = "Database Error while getting chat with id: " + req.params.id + ": " + err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
+        } else if(err instanceof InvalidInputError) {
+            let message = "Invalid input while getting chat with id: " + req.params.id + ": " + err.message;
+            res.status(400);
+            res.send(message);
+            logger.error("In controller: " + message);
+        } else {
+            let message = "Unexpected error in controller while getting chat with id: " + req.params.id + ": " + err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
         }
-        else {
-            res.status("500");
-            res.send("Error trying to delete message");
-            logger.error("Error trying to delete message in controller: "+err.message);
+    }
+}
+
+/**
+ * Deletes a chat from the database.
+ * @param {*} req Requests body parameter: id
+ * @param {*} res Resolves with status 200, 400 or 500.
+ * @throws InvalidInputError or DatabaseError.
+ */
+router.delete("/", deleteChat);
+async function deleteChat(req, res) {
+    try {
+        await ChatsModelMongoDb.deleteChat(req.body._id);
+        res.status(200);
+        res.send("Deleted chat of id: " + req.body._id);
+    }
+    catch(err) {
+        if(err instanceof DatabaseError) {
+            let message = "Database Error while deleting chat with id: "+req.body._id+": "+err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
+        } else if(err instanceof InvalidInputError) {
+            let message = "Invalid input while deleting chat with id: "+req.body._id+": "+err.message;
+            res.status(400);
+            res.send(message);
+            logger.error("In controller: " + message);
+        } else {
+            let message = "Unexpected error in controller while deleting chat with id: "+req.body._id+": "+err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
         }
     }
 }
