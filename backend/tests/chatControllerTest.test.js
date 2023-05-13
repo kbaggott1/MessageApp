@@ -3,8 +3,6 @@ const ChatsModelMongoDb = require('../models/chatModel');
 const testRequest = require('supertest');
 const app = require('../app');
 
-let mongod;
-
 const userData = [
     { username: "admin", password: "superSafePassword123", status: 'online', firstName: 'admin', lastName: 'admin' , biography: 'Admin of the page', image:'placeholder'},
     { username: "John", password: "AlabamaSunshine06", status: 'away', firstName: 'John', lastName: 'Doe', biography: 'From Alabama', image: 'placeholder'},
@@ -34,21 +32,35 @@ const userData = [
     { username: "ThisIsReally", password: "GettingOutOfHand", status: "online", firstName: "Help", lastName: "TooMany", biography: "I don't know what to do anymore", image: "placeholder"}
 ]
 
+/**
+ * This function picks a random user from a list of valid user data and returns a single user object
+ * @returns a random valid user object from the userData array
+ */
 const generateValidUserData = () => userData.splice(Math.floor(Math.random() * userData.length), 1)[0];
 
-beforeAll(async () => {
-  mongod = await MongoMemoryServer.create();
-});
+let mongod;
 
+/**
+ * This function initializes the database to use the dummy database and throws an error if there was a problem.
+ * It is run each before each test and resets the database each time.
+ */
 beforeEach(async () => {
-  const uri = mongod.getUri();
-  await ChatsModelMongoDb.initialize(uri, 'chats_db', false);
-});
+    try {
+        mongod = await MongoMemoryServer.create();
+        const url = await mongod.getUri();
 
+        await initialize("Test_Message_App", url, true);
+        console.log("Mongo mock started!");
+    }
+    catch (err){
+        console.log(err.message);
+    }
+})
+
+/**
+ * Closes the connection to the database after each test.
+ */
 afterEach(async () => {
-  await ChatsModelMongoDb.close();
-});
-
-afterAll(async () => {
-  await mongod.stop();
+    await mongod.stop();
+    console.log("Mongo mock connection stopped");
 });
