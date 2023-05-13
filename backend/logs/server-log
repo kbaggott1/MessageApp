@@ -7805,3 +7805,6 @@
 {"level":50,"time":1683681020780,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Error! There was a database error while trying to add user Pinochio."}
 {"level":50,"time":1683681021211,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
 {"level":30,"time":1683681021537,"pid":18584,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}
+{"level":30,"time":1683995256602,"pid":11952,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}
+{"level":30,"time":1683995256609,"pid":11952,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}
+{"level":30,"time":1683995256628,"pid":11952,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
