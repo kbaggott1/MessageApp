@@ -15,16 +15,16 @@ module.exports = {
 router.post("/", createMessage);
 /**
  * Called on post
- * @param {*} req Requests with body params: messageId, message, user
+ * @param {*} req Requests with body params: messageBody, authorId, chatId
  * @param {*} res Resolves with status 200, 400, or 500
  * @throws InvalidInputError when input was not in a valid format; Throws Database Error.
  */
 async function createMessage(req, res) { 
     try {
-        let message = await MessagesModelMongoDb.postMessage(req.body.messageId, req.body.message, req.body.user);
+        let message = await MessagesModelMongoDb.postMessage(req.body.messageBody, req.body.authorId, req.body.chatId);
         if(message) {
             res.status("200");
-            res.send("Successfully added message: "+message.message+".");
+            res.json(message);
         }
         else {
             res.status("400");
@@ -54,17 +54,23 @@ async function createMessage(req, res) {
 
 router.get("/", getMessages)
 /**
- * Called on get to retrieve all messages
- * @param {*} req Request no params required
+ * Called on get to retrieve all messages from a specific chatId
+ * @param {*} req Request with body params chatId.
  * @param {*} res Responds with all messages via json. Resovles with status 200 or 500.
  * @throw InvalidInputError and DatabaseError
  */
 async function getMessages(req, res) {
     try {
-        let messages = await MessagesModelMongoDb.getAllMessages();
 
-        res.status("200");
-        res.json(messages);
+        let messages = await MessagesModelMongoDb.getMessagesByChatId(req.body.chatId);
+        if(Array.from(messages).length == 0) {
+            res.status(400);
+        }
+        else {
+            res.status("200");
+            res.json(messages);
+        }
+
         
     }
     catch(err) {
@@ -95,7 +101,7 @@ async function getMessage(req, res) {
 
         if(message) {
             res.status("200");
-            res.send("message Found: \""+message.message+"\" sent by: "+message.user);
+            res.json(message);
         } else {
             res.status("400");
             res.send("Unable to find message");
@@ -132,10 +138,10 @@ router.put("/", updateMessage);
  */
 async function updateMessage(req, res) {
     try {
-        let message = await MessagesModelMongoDb.editMessage(req.body.messageId, req.body.message);
+        let message = await MessagesModelMongoDb.editMessage(req.body.messageId, req.body.messageBody);
         if(message) {
             res.status("200");
-            res.send("Successfully edited message: "+message+".");
+            res.json(message);
         }
         else {
             res.status("400");
@@ -174,7 +180,7 @@ async function deleteMessage(req, res) {
     try {
         await MessagesModelMongoDb.deleteMessageById(req.body.messageId);
         res.status("200");
-        res.send("Deleted pokemon of id: " + req.body.messageId);
+        res.send("Deleted message of id: " + req.body.messageId);
     }
     catch(err) {
         if(err instanceof DatabaseError) {
