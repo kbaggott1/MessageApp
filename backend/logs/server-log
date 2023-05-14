@@ -3835,3 +3835,6 @@
 {"level":30,"time":1684031345679,"pid":21376,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}
 {"level":30,"time":1684031345988,"pid":21376,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
 {"level":30,"time":1684031346254,"pid":21376,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}
+{"level":30,"time":1684080672294,"pid":14980,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}
+{"level":30,"time":1684080672644,"pid":14980,"hostname":"DESKTOP-MLQM1UA","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684080672940,"pid":14980,"hostname":"DESKTOP-MLQM1UA","msg":"connected to db"}
