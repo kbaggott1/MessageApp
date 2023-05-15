@@ -3829,3 +3829,1251 @@
 {"level":30,"time":1683686227663,"pid":17032,"hostname":"KevinsPC","msg":"connected to db"}
 {"level":30,"time":1683686227958,"pid":17032,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
 {"level":30,"time":1683686228270,"pid":17032,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684173157526,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684173157531,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173157534,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173157542,"pid":19972,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username12."}
+{"level":30,"time":1684173157577,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157588,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157589,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157589,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157621,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157627,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157628,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157628,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157642,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684173157645,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173157650,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173157654,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157655,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157655,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157666,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157674,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157674,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157674,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157683,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157689,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157690,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157690,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157696,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157702,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157702,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157702,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157706,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157711,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157711,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157711,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157717,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157723,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157723,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157723,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157731,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157745,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157745,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157746,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157754,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157763,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157763,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157763,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173157769,"pid":19972,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173157777,"pid":19972,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157777,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173157777,"pid":19972,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173158000,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173158002,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173158003,"pid":12668,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684173158003,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684173158126,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173158127,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173158130,"pid":11628,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684173158130,"pid":11628,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'Banana07$' and/or status offline and/or first name Jane and/or last name Doe and/or biography An anonymous user looking for a good time were invalid."}
+{"level":50,"time":1684173158130,"pid":11628,"hostname":"KevinsPC","msg":"Username null and/or new password Banana07$ and/or new status offline and/or new first name Jane and/or new last name Doe and/or new biography An anonymous user looking for a good time was/were invalid"}
+{"level":30,"time":1684173158388,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173158389,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173158390,"pid":12668,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684173158390,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684173158475,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173158476,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173158479,"pid":11628,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684173158479,"pid":11628,"hostname":"KevinsPC","msg":"Error! Username 'thirdLittlePig' and/or password 'undefined' and/or status offline and/or first name Piggie and/or last name Little and/or biography Best building material is brick were invalid."}
+{"level":50,"time":1684173158479,"pid":11628,"hostname":"KevinsPC","msg":"Username thirdLittlePig and/or new password undefined and/or new status offline and/or new first name Piggie and/or new last name Little and/or new biography Best building material is brick was/were invalid"}
+{"level":30,"time":1684173158726,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173158727,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173158737,"pid":12668,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684173158818,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173158819,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173158836,"pid":11628,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Pinochio."}
+{"level":50,"time":1684173158836,"pid":11628,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user Pinochio to the database"}
+{"level":30,"time":1684173159072,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173159073,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173159074,"pid":12668,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684173159074,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684173159165,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173159166,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173159425,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173159426,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173159427,"pid":12668,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1684173159427,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1684173159501,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173159502,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173159776,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173159777,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173159778,"pid":12668,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684173159778,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1684173159851,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173159851,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173159854,"pid":11628,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684173160125,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173160126,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173160141,"pid":12668,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Shrek."}
+{"level":30,"time":1684173160194,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173160195,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173160454,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173160455,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173160788,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173160789,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173161115,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173161116,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173161444,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173161445,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173161775,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173161777,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173162121,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173162121,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173162467,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173162468,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173162804,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173162805,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173163133,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173163134,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173163471,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173163472,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173163795,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173163796,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173164119,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173164121,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173164122,"pid":12668,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684173164122,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'AppleTree123' and/or status offline and/or first name Chad and/or last name Treyvon and/or biography #Football is life were invalid. Therefore user with ID 6462716cf6ff00aeddf04a82 was not updated"}
+{"level":30,"time":1684173164459,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173164459,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173164461,"pid":12668,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1684173164461,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username 'BigBadWolf' and/or password 'f' and/or status online and/or first name Wolf and/or last name Dog and/or biography Blowing the little pigs were invalid. Therefore user with ID 6462716cf6ff00aeddf04a83 was not updated"}
+{"level":30,"time":1684173164779,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173164780,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173165096,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173165096,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173165098,"pid":12668,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684173165098,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username 'Pinochio' and/or password 'LongNose99' and/or status online and/or first name null and/or last name Giupetto and/or biography My nose will grow were invalid. Therefore user with ID 6462716df6ff00aeddf04a85 was not updated"}
+{"level":30,"time":1684173165409,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173165410,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173165412,"pid":12668,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1684173165412,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username 'SecondLittlePig' and/or password 'WoodIsBest' and/or status offline and/or first name Piggie and/or last name null and/or biography Best building material is wood were invalid. Therefore user with ID 6462716df6ff00aeddf04a86 was not updated"}
+{"level":30,"time":1684173165736,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173165736,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173165738,"pid":12668,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684173165738,"pid":12668,"hostname":"KevinsPC","msg":"Error! Username 'Chris' and/or password 'FighterPlane16' and/or status offline and/or first name Chris and/or last name Rodinos and/or biography undefined were invalid. Therefore user with ID 6462716df6ff00aeddf04a87 was not updated"}
+{"level":30,"time":1684173166053,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173166053,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173166375,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173166376,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173166699,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173166699,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173167024,"pid":12668,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173167025,"pid":12668,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173190223,"pid":11628,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684173190523,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173190523,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173190835,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173190835,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173191154,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173191155,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173191158,"pid":11628,"hostname":"KevinsPC","msg":"Couldn't find any users"}
+{"level":30,"time":1684173191471,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173191472,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173221499,"pid":11628,"hostname":"KevinsPC","msg":"Error finding users in the database."}
+{"level":30,"time":1684173221827,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173221828,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173222169,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173222170,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173222519,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173222520,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173222524,"pid":11628,"hostname":"KevinsPC","msg":"User being added had an Invalid username "}
+{"level":50,"time":1684173222524,"pid":11628,"hostname":"KevinsPC","msg":"Error! Username '' and/or password 'Password123' and/or status offline and/or first name John and/or last name Doe and/or biography This is a test were invalid. Therefore user with ID 646271a6c8905f8b4463e11b was not updated"}
+{"level":50,"time":1684173222525,"pid":11628,"hostname":"KevinsPC","msg":"New username  and/or new password Password123 and/or new status offline and/or new first name John and/or new last name Doe and/or new biography This is a test was/were invalid"}
+{"level":30,"time":1684173222867,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173222867,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173222870,"pid":11628,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684173222870,"pid":11628,"hostname":"KevinsPC","msg":"Error! Username 'username' and/or password 'null' and/or status offline and/or first name John and/or last name Doe and/or biography This is a test were invalid. Therefore user with ID 646271a6c8905f8b4463e11c was not updated"}
+{"level":50,"time":1684173222870,"pid":11628,"hostname":"KevinsPC","msg":"New username username and/or new password null and/or new status offline and/or new first name John and/or new last name Doe and/or new biography This is a test was/were invalid"}
+{"level":30,"time":1684173223229,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173223229,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173223231,"pid":11628,"hostname":"KevinsPC","msg":"Error updating the user with ID FGD781274 from the database"}
+{"level":30,"time":1684173223575,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173223576,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173223595,"pid":11628,"hostname":"KevinsPC","msg":"Error updating the user with ID 646271a7c8905f8b4463e11d from the database"}
+{"level":30,"time":1684173223916,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173223917,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173224266,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173224266,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173224617,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173224618,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173224620,"pid":11628,"hostname":"KevinsPC","msg":"Unknown error encountered while deleting user with idWF12085124 from the database."}
+{"level":30,"time":1684173224968,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173224968,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173224988,"pid":11628,"hostname":"KevinsPC","msg":"Unknown error encountered while deleting user with id646271a8c8905f8b4463e11f from the database."}
+{"level":30,"time":1684173225310,"pid":11628,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173225311,"pid":11628,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173303965,"pid":19648,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173303968,"pid":19648,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684173304148,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304165,"pid":19400,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username12."}
+{"level":50,"time":1684173304165,"pid":19400,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username21."}
+{"level":30,"time":1684173304166,"pid":19400,"hostname":"KevinsPC","msg":"userSenderId: undefined anduserRecipientId: undefined sucessfully validated."}
+{"level":50,"time":1684173304166,"pid":19400,"hostname":"KevinsPC","msg":"Error adding chat: Cannot read properties of undefined (reading 'insertOne')"}
+{"level":50,"time":1684173304167,"pid":19400,"hostname":"KevinsPC","msg":"Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1684173304167,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1684173304167,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Cannot read properties of undefined (reading 'findOne')"}
+{"level":30,"time":1684173304222,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304231,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304232,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304232,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304259,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304271,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304271,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304271,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304286,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304296,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304296,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304296,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304308,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304316,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304316,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304316,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304334,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304343,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304343,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304343,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304349,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304355,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304355,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304355,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304360,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304370,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304370,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304370,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304379,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304390,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304390,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304390,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304396,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304401,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304401,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304401,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304406,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684173304409,"pid":17012,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173304411,"pid":17012,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173304412,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304412,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304412,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304417,"pid":19400,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684173304423,"pid":19400,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684173304424,"pid":19648,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173304427,"pid":19648,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173304423,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304423,"pid":19400,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684173304427,"pid":19648,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684173304428,"pid":19648,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684173304945,"pid":19648,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173304946,"pid":19648,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173304946,"pid":19648,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684173304947,"pid":19648,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684173304948,"pid":17012,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173304949,"pid":17012,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173304954,"pid":17012,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684173304954,"pid":17012,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'ComputerScientist' and/or status online and/or first name Cristiano and/or last name Fazi and/or biography Please give me a good grade please were invalid."}
+{"level":50,"time":1684173304954,"pid":17012,"hostname":"KevinsPC","msg":"Username null and/or new password ComputerScientist and/or new status online and/or new first name Cristiano and/or new last name Fazi and/or new biography Please give me a good grade please was/were invalid"}
+{"level":30,"time":1684173305318,"pid":19648,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173305319,"pid":19648,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173305329,"pid":19648,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684173305329,"pid":17012,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173305331,"pid":17012,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173305334,"pid":17012,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684173305334,"pid":17012,"hostname":"KevinsPC","msg":"Error! Username 'MagicMirror' and/or password 'undefined' and/or status away and/or first name Magic and/or last name Mirror and/or biography Nope were invalid."}
+{"level":50,"time":1684173305334,"pid":17012,"hostname":"KevinsPC","msg":"Username MagicMirror and/or new password undefined and/or new status away and/or new first name Magic and/or new last name Mirror and/or new biography Nope was/were invalid"}
+{"level":30,"time":1684173305690,"pid":19648,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173305691,"pid":19648,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173305691,"pid":19648,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684173305691,"pid":19648,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684173305725,"pid":17012,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684173305726,"pid":17012,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684173305746,"pid":17012,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Thelonious."}
+{"level":50,"time":1684173305746,"pid":17012,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user Thelonious to the database"}
+{"level":30,"time":1684174852652,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684174852663,"pid":2724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":50,"time":1684174852664,"pid":14292,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username12."}
+{"level":30,"time":1684174852664,"pid":2724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174852664,"pid":14292,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username21."}
+{"level":30,"time":1684174852665,"pid":14292,"hostname":"KevinsPC","msg":"userSenderId: undefined anduserRecipientId: undefined sucessfully validated."}
+{"level":50,"time":1684174852665,"pid":14292,"hostname":"KevinsPC","msg":"Error adding chat: Cannot read properties of undefined (reading 'insertOne')"}
+{"level":50,"time":1684174852667,"pid":14292,"hostname":"KevinsPC","msg":"Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1684174852667,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Cannot read properties of undefined (reading 'findOne')"}
+{"level":50,"time":1684174852667,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Cannot read properties of undefined (reading 'findOne')"}
+{"level":30,"time":1684174852726,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852735,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852736,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852736,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852765,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852773,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852773,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852773,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852786,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852794,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852794,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852794,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852800,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852805,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852806,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852806,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852813,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852818,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852818,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852818,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852823,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852830,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852830,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852830,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852835,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852840,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852840,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852840,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852846,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852852,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852852,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852852,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852857,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852862,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852862,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852862,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852866,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852874,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852874,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852874,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174852880,"pid":14292,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174852886,"pid":14292,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852887,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684174852887,"pid":14292,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684174853095,"pid":2724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174853096,"pid":2724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174853102,"pid":22412,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174853104,"pid":22412,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174853097,"pid":2724,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684174853097,"pid":2724,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684174853454,"pid":2724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174853455,"pid":2724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174853456,"pid":2724,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684174853456,"pid":2724,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684174853487,"pid":22412,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174853488,"pid":22412,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174853492,"pid":22412,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684174853492,"pid":22412,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'CitesAndPsudeoCities' and/or status online and/or first name Sara and/or last name Leroux and/or biography  English words  were invalid."}
+{"level":50,"time":1684174853493,"pid":22412,"hostname":"KevinsPC","msg":"Username null and/or new password CitesAndPsudeoCities and/or new status online and/or new first name Sara and/or new last name Leroux and/or new biography  English words  was/were invalid"}
+{"level":30,"time":1684174853788,"pid":2724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174853789,"pid":2724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174853797,"pid":2724,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684174853822,"pid":22412,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174853823,"pid":22412,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174853825,"pid":22412,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684174853825,"pid":22412,"hostname":"KevinsPC","msg":"Error! Username 'admin' and/or password 'undefined' and/or status online and/or first name admin and/or last name admin and/or biography Admin of the page were invalid."}
+{"level":50,"time":1684174853825,"pid":22412,"hostname":"KevinsPC","msg":"Username admin and/or new password undefined and/or new status online and/or new first name admin and/or new last name admin and/or new biography Admin of the page was/were invalid"}
+{"level":30,"time":1684174854108,"pid":2724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174854109,"pid":2724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174854110,"pid":2724,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684174854110,"pid":2724,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684174854143,"pid":22412,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174854144,"pid":22412,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174854156,"pid":22412,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user John."}
+{"level":50,"time":1684174854156,"pid":22412,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user John to the database"}
+{"level":30,"time":1684174978695,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174978700,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174979409,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174979412,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174979459,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684174979413,"pid":13744,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684174979413,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684174979521,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174979526,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174980103,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174980107,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174980108,"pid":13744,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684174980108,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684174980190,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174980194,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174980202,"pid":20284,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684174980202,"pid":20284,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'GettingOutOfHand' and/or status online and/or first name Help and/or last name TooMany and/or biography I don't know what to do anymore were invalid."}
+{"level":50,"time":1684174980203,"pid":20284,"hostname":"KevinsPC","msg":"Username null and/or new password GettingOutOfHand and/or new status online and/or new first name Help and/or new last name TooMany and/or new biography I don't know what to do anymore was/were invalid"}
+{"level":30,"time":1684174980617,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174980619,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174980637,"pid":13744,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684174980703,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174980706,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174980710,"pid":20284,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684174980711,"pid":20284,"hostname":"KevinsPC","msg":"Error! Username 'SecondLittlePig' and/or password 'undefined' and/or status offline and/or first name Piggie and/or last name Little and/or biography Best building material is wood were invalid."}
+{"level":50,"time":1684174980712,"pid":20284,"hostname":"KevinsPC","msg":"Username SecondLittlePig and/or new password undefined and/or new status offline and/or new first name Piggie and/or new last name Little and/or new biography Best building material is wood was/were invalid"}
+{"level":30,"time":1684174981120,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174981121,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174981123,"pid":13744,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684174981123,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684174981185,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174981188,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174981215,"pid":20284,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user LordFarquad."}
+{"level":50,"time":1684174981215,"pid":20284,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user LordFarquad to the database"}
+{"level":30,"time":1684174981572,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174981574,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174981576,"pid":13744,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1684174981576,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1684174981672,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174981675,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174982017,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174982019,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174982020,"pid":13744,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684174982020,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1684174982122,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174982125,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174982470,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174982472,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174982499,"pid":13744,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user ThisIsReally."}
+{"level":30,"time":1684174982574,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174982576,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174982581,"pid":20284,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684174982918,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174982919,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174983017,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174983019,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174983321,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174983322,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174983709,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174983711,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174984072,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174984074,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174984443,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174984444,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174984801,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174984803,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174985183,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174985184,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174985555,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174985557,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174985924,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174985926,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174986262,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174986263,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174986613,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174986615,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174986956,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174986957,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174986959,"pid":13744,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684174986960,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'JudgeJuryAndExecutioner321' and/or status away and/or first name Thelonious and/or last name Mastermead and/or biography   were invalid. Therefore user with ID 6462788a248aa6902174fb3f was not updated"}
+{"level":30,"time":1684174987320,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174987322,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174987325,"pid":13744,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1684174987325,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username 'LordFarquad' and/or password 'f' and/or status away and/or first name Faquad and/or last name Farquid and/or biography Mirror mirror on the wall were invalid. Therefore user with ID 6462788b248aa6902174fb40 was not updated"}
+{"level":30,"time":1684174987661,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174987662,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174987995,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174987996,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174987998,"pid":13744,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684174987999,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username 'Donkey' and/or password 'ShreksBestFriend' and/or status online and/or first name null and/or last name TheDonkey and/or biography I <3 Shrek were invalid. Therefore user with ID 6462788b248aa6902174fb42 was not updated"}
+{"level":30,"time":1684174988343,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174988345,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174988347,"pid":13744,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1684174988347,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username 'Cristiano' and/or password 'ComputerScientist' and/or status online and/or first name Cristiano and/or last name null and/or biography Please give me a good grade please were invalid. Therefore user with ID 6462788c248aa6902174fb43 was not updated"}
+{"level":30,"time":1684174988676,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174988678,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684174988680,"pid":13744,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684174988680,"pid":13744,"hostname":"KevinsPC","msg":"Error! Username 'Sarah' and/or password 'CitesAndPsudeoCities' and/or status online and/or first name Sara and/or last name Leroux and/or biography undefined were invalid. Therefore user with ID 6462788c248aa6902174fb44 was not updated"}
+{"level":30,"time":1684174989017,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174989018,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174989361,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174989362,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174989761,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174989762,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684174990099,"pid":13744,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684174990101,"pid":13744,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175000111,"pid":10964,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username12."}
+{"level":50,"time":1684175013056,"pid":20284,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684175013154,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013193,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013194,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013194,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013235,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013243,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013244,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013245,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013268,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013281,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013281,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013281,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013296,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013305,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013306,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013306,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013321,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013329,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013330,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013330,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013340,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013349,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013351,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013351,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013357,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013365,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013365,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013365,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013371,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013379,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013379,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013380,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013388,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013395,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013395,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013396,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013403,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013415,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013415,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013415,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013421,"pid":10964,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175013431,"pid":10964,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013431,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175013431,"pid":10964,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175013510,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175013511,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175013905,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175013906,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175014256,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175014256,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175014260,"pid":20284,"hostname":"KevinsPC","msg":"Couldn't find any users"}
+{"level":30,"time":1684175014589,"pid":20284,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175014590,"pid":20284,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175025407,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175025411,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175025679,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684175025913,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175025915,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175025916,"pid":13680,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684175025916,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175025996,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175026002,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175026384,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175026387,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175026388,"pid":13680,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684175026388,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175026528,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175026530,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175026538,"pid":16672,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684175026539,"pid":16672,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'AlabamaSunshine06' and/or status away and/or first name John and/or last name Doe and/or biography From Alabama were invalid."}
+{"level":50,"time":1684175026539,"pid":16672,"hostname":"KevinsPC","msg":"Username null and/or new password AlabamaSunshine06 and/or new status away and/or new first name John and/or new last name Doe and/or new biography From Alabama was/were invalid"}
+{"level":30,"time":1684175026855,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175026857,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175026865,"pid":13680,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684175026971,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175026973,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175026978,"pid":16672,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684175026979,"pid":16672,"hostname":"KevinsPC","msg":"Error! Username 'Jacob' and/or password 'undefined' and/or status away and/or first name Jacob and/or last name Foucher and/or biography Working hard or hardly working were invalid."}
+{"level":50,"time":1684175026980,"pid":16672,"hostname":"KevinsPC","msg":"Username Jacob and/or new password undefined and/or new status away and/or new first name Jacob and/or new last name Foucher and/or new biography Working hard or hardly working was/were invalid"}
+{"level":30,"time":1684175027294,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175027297,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175027297,"pid":13680,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684175027298,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175027423,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175027426,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175027453,"pid":16672,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user LordFarquad."}
+{"level":50,"time":1684175027453,"pid":16672,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user LordFarquad to the database"}
+{"level":30,"time":1684175027750,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175027752,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175027754,"pid":13680,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1684175027754,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1684175027901,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175027903,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175028199,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175028202,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175028203,"pid":13680,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684175028203,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1684175028355,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175028359,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175028649,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175028650,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175028665,"pid":13680,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Shrek."}
+{"level":30,"time":1684175028808,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175028809,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175028818,"pid":16672,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684175029068,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175029070,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175029253,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175029254,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175029482,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175029483,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175029836,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175029838,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175030182,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175030184,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175030554,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175030555,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175030910,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175030912,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175031270,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175031271,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175031627,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175031628,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175031926,"pid":2432,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username12."}
+{"level":30,"time":1684175031973,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175031975,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175032319,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175032321,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175032686,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175032687,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175033030,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175033032,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175033035,"pid":13680,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684175033035,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'pigsaredleicious' and/or status online and/or first name Wolf and/or last name Dog and/or biography Blowing the little pigs were invalid. Therefore user with ID 646278b9755e7b7b5387ddd4 was not updated"}
+{"level":30,"time":1684175033370,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175033371,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175033375,"pid":13680,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1684175033375,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username 'Pinochio' and/or password 'f' and/or status online and/or first name Pinochio and/or last name Giupetto and/or biography My nose will grow were invalid. Therefore user with ID 646278b9755e7b7b5387ddd5 was not updated"}
+{"level":30,"time":1684175033715,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175033716,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175034069,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175034071,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175034073,"pid":13680,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684175034073,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username 'Chad' and/or password 'AppleTree123' and/or status offline and/or first name null and/or last name Treyvon and/or biography #Football is life were invalid. Therefore user with ID 646278ba755e7b7b5387ddd7 was not updated"}
+{"level":30,"time":1684175034409,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175034411,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175034413,"pid":13680,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1684175034413,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username 'Levar' and/or password 'ReadingRainbow' and/or status online and/or first name Levar and/or last name null and/or biography Reading is the key were invalid. Therefore user with ID 646278ba755e7b7b5387ddd8 was not updated"}
+{"level":30,"time":1684175034785,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175034786,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175034789,"pid":13680,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684175034789,"pid":13680,"hostname":"KevinsPC","msg":"Error! Username 'Maurice' and/or password 'MoveIt' and/or status online and/or first name Maurice and/or last name King and/or biography undefined were invalid. Therefore user with ID 646278ba755e7b7b5387ddd9 was not updated"}
+{"level":30,"time":1684175035134,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175035135,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175035476,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175035478,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175035818,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175035820,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175036169,"pid":13680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175036171,"pid":13680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175049220,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049248,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049249,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049250,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049280,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049289,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049290,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049290,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049304,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049315,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049315,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049316,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049331,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049343,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049343,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049343,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049355,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049363,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049364,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049364,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049372,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049381,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049381,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049381,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049390,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049400,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049400,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049400,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049410,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049419,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049419,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049419,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049427,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049436,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049437,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049437,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049446,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049454,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049454,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049454,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175049462,"pid":2432,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175049471,"pid":2432,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049471,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175049472,"pid":2432,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175059280,"pid":16672,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684175059598,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175059599,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175059945,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175059946,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175060295,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175060296,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175060300,"pid":16672,"hostname":"KevinsPC","msg":"Couldn't find any users"}
+{"level":30,"time":1684175060628,"pid":16672,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175060628,"pid":16672,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175068257,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068280,"pid":21728,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username12."}
+{"level":30,"time":1684175068327,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684175068339,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175068344,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175068348,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068350,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068350,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068392,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068412,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068413,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068413,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068433,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068448,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068451,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068451,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068467,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068481,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068482,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068483,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068501,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068513,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068513,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068513,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068522,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068532,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068533,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068533,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068545,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068563,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068564,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068564,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068576,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068590,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068591,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068591,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068604,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068616,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068617,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068617,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068632,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068642,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068643,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068643,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068654,"pid":21728,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175068664,"pid":21728,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068664,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175068665,"pid":21728,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175068870,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175068872,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175068890,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175068894,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175068873,"pid":11724,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684175068873,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175069327,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175069329,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175069330,"pid":11724,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684175069330,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175069390,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175069392,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175069398,"pid":4680,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684175069398,"pid":4680,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'kingsAndQueens' and/or status away and/or first name Jacob and/or last name Foucher and/or biography Working hard or hardly working were invalid."}
+{"level":50,"time":1684175069399,"pid":4680,"hostname":"KevinsPC","msg":"Username null and/or new password kingsAndQueens and/or new status away and/or new first name Jacob and/or new last name Foucher and/or new biography Working hard or hardly working was/were invalid"}
+{"level":30,"time":1684175069745,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175069746,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175069757,"pid":11724,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684175069819,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175069820,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175069824,"pid":4680,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684175069824,"pid":4680,"hostname":"KevinsPC","msg":"Error! Username 'Chad' and/or password 'undefined' and/or status offline and/or first name Chad and/or last name Treyvon and/or biography #Football is life were invalid."}
+{"level":50,"time":1684175069825,"pid":4680,"hostname":"KevinsPC","msg":"Username Chad and/or new password undefined and/or new status offline and/or new first name Chad and/or new last name Treyvon and/or new biography #Football is life was/were invalid"}
+{"level":30,"time":1684175070158,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175070160,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175070161,"pid":11724,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684175070161,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175070254,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175070257,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175070286,"pid":4680,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Jackson."}
+{"level":50,"time":1684175070287,"pid":4680,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user Jackson to the database"}
+{"level":30,"time":1684175070579,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175070581,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175070583,"pid":11724,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1684175070583,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1684175070704,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175070706,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175070995,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175070998,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175070999,"pid":11724,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684175071000,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1684175071119,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175071121,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175071414,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175071416,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175071431,"pid":11724,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Shrek."}
+{"level":30,"time":1684175071583,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175071585,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175071592,"pid":4680,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684175071889,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175071892,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175072059,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175072061,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175072281,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175072283,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175072627,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175072629,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175072980,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175072982,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175073343,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175073344,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175073694,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175073695,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175074044,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175074046,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175074400,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175074401,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175074774,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175074776,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175075114,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175075116,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175075460,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175075461,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175075801,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175075802,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175075805,"pid":11724,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684175075805,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'ShreksBestFriend' and/or status online and/or first name Donkey and/or last name TheDonkey and/or biography I <3 Shrek were invalid. Therefore user with ID 646278e3518e62fddc4ee633 was not updated"}
+{"level":30,"time":1684175076158,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175076159,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175076163,"pid":11724,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1684175076163,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username 'Fiona' and/or password 'f' and/or status offline and/or first name Fiona and/or last name Ogre and/or biography Orge of the castle were invalid. Therefore user with ID 646278e4518e62fddc4ee634 was not updated"}
+{"level":30,"time":1684175076501,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175076502,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175076849,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175076851,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175076853,"pid":11724,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684175076854,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username 'ThisIsReally' and/or password 'GettingOutOfHand' and/or status online and/or first name null and/or last name TooMany and/or biography I don't know what to do anymore were invalid. Therefore user with ID 646278e4518e62fddc4ee636 was not updated"}
+{"level":30,"time":1684175077189,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175077190,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175077193,"pid":11724,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1684175077194,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username 'Pinochio' and/or password 'LongNose99' and/or status online and/or first name Pinochio and/or last name null and/or biography My nose will grow were invalid. Therefore user with ID 646278e5518e62fddc4ee637 was not updated"}
+{"level":30,"time":1684175077552,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175077553,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175077556,"pid":11724,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684175077556,"pid":11724,"hostname":"KevinsPC","msg":"Error! Username 'admin' and/or password 'superSafePassword123' and/or status online and/or first name admin and/or last name admin and/or biography undefined were invalid. Therefore user with ID 646278e5518e62fddc4ee638 was not updated"}
+{"level":30,"time":1684175077891,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175077893,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175078233,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175078234,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175078575,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175078576,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175078915,"pid":11724,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175078917,"pid":11724,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175102096,"pid":4680,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684175102421,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175102423,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175102777,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175102778,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175103186,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175103187,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175103192,"pid":4680,"hostname":"KevinsPC","msg":"Couldn't find any users"}
+{"level":30,"time":1684175103533,"pid":4680,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175103534,"pid":4680,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175138814,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684175138814,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175138818,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175138835,"pid":7456,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username12."}
+{"level":30,"time":1684175138888,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175138901,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175138903,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175138903,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175138950,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175138972,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175138972,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175138972,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175138994,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175139015,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139016,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139016,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175139034,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175139047,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139048,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139048,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175139069,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175139086,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139086,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139087,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175139100,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175139110,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139111,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139111,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175139120,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175139135,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139136,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139136,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175139149,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175139158,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139159,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139159,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175139170,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175139185,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139186,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139187,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175139201,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175139216,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139217,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139217,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175139231,"pid":7456,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175139247,"pid":7456,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139247,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175139247,"pid":7456,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175139347,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175139348,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175139349,"pid":9408,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684175139350,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175139513,"pid":8652,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175139517,"pid":8652,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175139828,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175139830,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175139830,"pid":9408,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684175139830,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175139993,"pid":8652,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175139995,"pid":8652,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175140003,"pid":8652,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684175140005,"pid":8652,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'LongNose99' and/or status online and/or first name Pinochio and/or last name Giupetto and/or biography My nose will grow were invalid."}
+{"level":50,"time":1684175140005,"pid":8652,"hostname":"KevinsPC","msg":"Username null and/or new password LongNose99 and/or new status online and/or new first name Pinochio and/or new last name Giupetto and/or new biography My nose will grow was/were invalid"}
+{"level":30,"time":1684175140249,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175140252,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175140264,"pid":9408,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684175140456,"pid":8652,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175140458,"pid":8652,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175140464,"pid":8652,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684175140465,"pid":8652,"hostname":"KevinsPC","msg":"Error! Username 'Jason' and/or password 'undefined' and/or status offline and/or first name Jason and/or last name Lastname and/or biography Yep, that's my last name were invalid."}
+{"level":50,"time":1684175140466,"pid":8652,"hostname":"KevinsPC","msg":"Username Jason and/or new password undefined and/or new status offline and/or new first name Jason and/or new last name Lastname and/or new biography Yep, that's my last name was/were invalid"}
+{"level":30,"time":1684175140668,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175140670,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175140671,"pid":9408,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684175140671,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175140888,"pid":8652,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175140890,"pid":8652,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175140914,"pid":8652,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Cristiano."}
+{"level":50,"time":1684175140915,"pid":8652,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user Cristiano to the database"}
+{"level":30,"time":1684175141080,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175141082,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175141082,"pid":9408,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1684175141082,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1684175141325,"pid":8652,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175141330,"pid":8652,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175141504,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175141505,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175141507,"pid":9408,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684175141507,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1684175141739,"pid":8652,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175141741,"pid":8652,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175141916,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175141918,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175141933,"pid":9408,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Pinochio."}
+{"level":30,"time":1684175142155,"pid":8652,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175142157,"pid":8652,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175142163,"pid":8652,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684175142355,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175142357,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175142632,"pid":8652,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175142634,"pid":8652,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175142789,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175142791,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175143154,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175143156,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175143522,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175143524,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175143897,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175143898,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175144256,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175144257,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175144630,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175144632,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175144984,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175144985,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175145350,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175145353,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175145689,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175145691,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175146037,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175146038,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175146373,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175146375,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175146377,"pid":9408,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684175146377,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'JavaEnthusiast' and/or status offline and/or first name Jason and/or last name Lastname and/or biography Yep, that's my last name were invalid. Therefore user with ID 6462792a07dea144f73f1c20 was not updated"}
+{"level":30,"time":1684175146723,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175146724,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175146727,"pid":9408,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1684175146727,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username 'Sarah' and/or password 'f' and/or status online and/or first name Sara and/or last name Leroux and/or biography  English words  were invalid. Therefore user with ID 6462792a07dea144f73f1c21 was not updated"}
+{"level":30,"time":1684175147068,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175147070,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175147416,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175147418,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175147420,"pid":9408,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684175147420,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username 'thirdLittlePig' and/or password 'BrickIsBest' and/or status offline and/or first name null and/or last name Little and/or biography Best building material is brick were invalid. Therefore user with ID 6462792b07dea144f73f1c23 was not updated"}
+{"level":30,"time":1684175147764,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175147766,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175147768,"pid":9408,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1684175147768,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username 'SecondLittlePig' and/or password 'WoodIsBest' and/or status offline and/or first name Piggie and/or last name null and/or biography Best building material is wood were invalid. Therefore user with ID 6462792b07dea144f73f1c24 was not updated"}
+{"level":30,"time":1684175148113,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175148114,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175148117,"pid":9408,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684175148117,"pid":9408,"hostname":"KevinsPC","msg":"Error! Username 'MagicMirror' and/or password 'FairestOfThemAll' and/or status away and/or first name Magic and/or last name Mirror and/or biography undefined were invalid. Therefore user with ID 6462792c07dea144f73f1c25 was not updated"}
+{"level":30,"time":1684175148507,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175148509,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175148858,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175148859,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175149200,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175149201,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175149546,"pid":9408,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175149547,"pid":9408,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175165837,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684175165926,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175165929,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175166375,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175166377,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175166378,"pid":8368,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684175166378,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175166499,"pid":4572,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175166503,"pid":4572,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175166833,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175166835,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175166836,"pid":8368,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684175166836,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175166990,"pid":4572,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175166993,"pid":4572,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175167000,"pid":4572,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684175167001,"pid":4572,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'BrickIsBest' and/or status offline and/or first name Piggie and/or last name Little and/or biography Best building material is brick were invalid."}
+{"level":50,"time":1684175167002,"pid":4572,"hostname":"KevinsPC","msg":"Username null and/or new password BrickIsBest and/or new status offline and/or new first name Piggie and/or new last name Little and/or new biography Best building material is brick was/were invalid"}
+{"level":30,"time":1684175167275,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175167277,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175167290,"pid":8368,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684175167514,"pid":4572,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175167516,"pid":4572,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175167521,"pid":4572,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684175167522,"pid":4572,"hostname":"KevinsPC","msg":"Error! Username 'Pinochio' and/or password 'undefined' and/or status online and/or first name Pinochio and/or last name Giupetto and/or biography My nose will grow were invalid."}
+{"level":50,"time":1684175167523,"pid":4572,"hostname":"KevinsPC","msg":"Username Pinochio and/or new password undefined and/or new status online and/or new first name Pinochio and/or new last name Giupetto and/or new biography My nose will grow was/were invalid"}
+{"level":30,"time":1684175167785,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175167789,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175167790,"pid":8368,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684175167790,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175168047,"pid":4572,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175168050,"pid":4572,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175168077,"pid":4572,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Jacob."}
+{"level":50,"time":1684175168077,"pid":4572,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user Jacob to the database"}
+{"level":30,"time":1684175168283,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175168285,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175168286,"pid":8368,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1684175168286,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1684175168504,"pid":4572,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175168506,"pid":4572,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175168719,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175168721,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175168722,"pid":8368,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684175168722,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1684175168926,"pid":4572,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175168927,"pid":4572,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175169141,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175169143,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175169164,"pid":8368,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user SecondLittlePig."}
+{"level":30,"time":1684175169359,"pid":4572,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175169361,"pid":4572,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175169366,"pid":4572,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684175169577,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175169580,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175169789,"pid":4572,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175169790,"pid":4572,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175169970,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175169971,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175170349,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175170351,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175170697,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175170699,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175171057,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175171059,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175171425,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175171426,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175171765,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175171766,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175172144,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175172145,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175172509,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175172511,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175172852,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175172854,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175173197,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175173198,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175173552,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175173554,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175173557,"pid":8368,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684175173557,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'ReadingRainbow' and/or status online and/or first name Levar and/or last name Burton and/or biography Reading is the key were invalid. Therefore user with ID 646279450563bec022798830 was not updated"}
+{"level":30,"time":1684175173906,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175173909,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175173911,"pid":8368,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1684175173912,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username 'LordFarquad' and/or password 'f' and/or status away and/or first name Faquad and/or last name Farquid and/or biography Mirror mirror on the wall were invalid. Therefore user with ID 646279450563bec022798831 was not updated"}
+{"level":30,"time":1684175174267,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175174268,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175174606,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175174607,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175174610,"pid":8368,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684175174611,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username 'Chris' and/or password 'FighterPlane16' and/or status offline and/or first name null and/or last name Rodinos and/or biography flying high were invalid. Therefore user with ID 646279460563bec022798833 was not updated"}
+{"level":30,"time":1684175174950,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175174952,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175174955,"pid":8368,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1684175174956,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username 'Fiona' and/or password 'Ogress' and/or status offline and/or first name Fiona and/or last name null and/or biography Orge of the castle were invalid. Therefore user with ID 646279460563bec022798834 was not updated"}
+{"level":30,"time":1684175175290,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175175291,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175175294,"pid":8368,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684175175294,"pid":8368,"hostname":"KevinsPC","msg":"Error! Username 'Chad' and/or password 'AppleTree123' and/or status offline and/or first name Chad and/or last name Treyvon and/or biography undefined were invalid. Therefore user with ID 646279470563bec022798835 was not updated"}
+{"level":30,"time":1684175175646,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175175647,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175176004,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175176006,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175176357,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175176359,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175176706,"pid":8368,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175176707,"pid":8368,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175179282,"pid":16500,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username12."}
+{"level":30,"time":1684175179319,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179345,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179346,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179346,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179377,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179389,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179390,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179390,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179408,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179420,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179421,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179421,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179433,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179443,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179443,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179443,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179456,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179464,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179464,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179465,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179473,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179480,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179481,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179481,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179488,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179496,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179496,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179496,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179508,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179518,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179519,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179519,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179529,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179538,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179538,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179539,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179549,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179556,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179556,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179556,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175179564,"pid":16500,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175179572,"pid":16500,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179573,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175179573,"pid":16500,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175762153,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684175762186,"pid":11856,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175762190,"pid":11856,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175762717,"pid":1164,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175762719,"pid":1164,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175765457,"pid":20508,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user username12."}
+{"level":30,"time":1684175765512,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765531,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765533,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765533,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765578,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765593,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765593,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765593,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765612,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765625,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765625,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765625,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765639,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765646,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765647,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765647,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765660,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765671,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765671,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765671,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765683,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765696,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765696,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765696,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765709,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765718,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765718,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765718,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765725,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765733,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765733,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765733,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765743,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765753,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765753,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765753,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765761,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765769,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765769,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765769,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765775,"pid":20508,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684175765785,"pid":20508,"hostname":"KevinsPC","msg":"Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765785,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":50,"time":1684175765785,"pid":20508,"hostname":"KevinsPC","msg":"Database error trying to check authorId:Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"}
+{"level":30,"time":1684175765969,"pid":1164,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175765969,"pid":11856,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175765971,"pid":1164,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175765971,"pid":11856,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175765977,"pid":1164,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684175765977,"pid":1164,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'FighterPlane16' and/or status offline and/or first name Chris and/or last name Rodinos and/or biography flying high were invalid."}
+{"level":50,"time":1684175765978,"pid":1164,"hostname":"KevinsPC","msg":"Username null and/or new password FighterPlane16 and/or new status offline and/or new first name Chris and/or new last name Rodinos and/or new biography flying high was/were invalid"}
+{"level":50,"time":1684175765972,"pid":11856,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684175765973,"pid":11856,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175766358,"pid":1164,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175766360,"pid":1164,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175766363,"pid":1164,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684175766363,"pid":1164,"hostname":"KevinsPC","msg":"Error! Username 'Chad' and/or password 'undefined' and/or status offline and/or first name Chad and/or last name Treyvon and/or biography #Football is life were invalid."}
+{"level":50,"time":1684175766363,"pid":1164,"hostname":"KevinsPC","msg":"Username Chad and/or new password undefined and/or new status offline and/or new first name Chad and/or new last name Treyvon and/or new biography #Football is life was/were invalid"}
+{"level":30,"time":1684175766400,"pid":11856,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175766403,"pid":11856,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175766403,"pid":11856,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684175766403,"pid":11856,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175766721,"pid":1164,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175766722,"pid":1164,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175766737,"pid":1164,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Teddy."}
+{"level":50,"time":1684175766737,"pid":1164,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user Teddy to the database"}
+{"level":30,"time":1684175766768,"pid":11856,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175766769,"pid":11856,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175766780,"pid":11856,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684175767070,"pid":1164,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175767071,"pid":1164,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175767121,"pid":11856,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175767122,"pid":11856,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175767123,"pid":11856,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684175767123,"pid":11856,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684175767416,"pid":1164,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175767417,"pid":1164,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175767457,"pid":11856,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175767459,"pid":11856,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175767460,"pid":11856,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1684175767460,"pid":11856,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1684175767770,"pid":1164,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175767771,"pid":1164,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175767774,"pid":1164,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684175767816,"pid":11856,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175767817,"pid":11856,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175767818,"pid":11856,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684175767818,"pid":11856,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1684175768129,"pid":1164,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175768130,"pid":1164,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684175768171,"pid":11856,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684175768172,"pid":11856,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684175768187,"pid":11856,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user LordFarquad."}

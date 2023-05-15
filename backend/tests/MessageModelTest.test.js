@@ -41,7 +41,7 @@ test('Can add message to DB', async () => {
 
     //insert new user for authorId
     let authorId = await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample");
-    let userId2 = await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample")._id;
+    //let userId2 = await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample")._id;
 
     //insert new chat for chatId
     let chatId = await chatModel.addChat(authorId, userId2)._id;
