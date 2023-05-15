@@ -15,7 +15,6 @@ let messageCollection;
  */
 async function initialize(dbName, url, reset = false) {
     try{
-        console.log("HERE IS THE URL: "  + url )
         client = new MongoClient(url);
 
         await client.connect();

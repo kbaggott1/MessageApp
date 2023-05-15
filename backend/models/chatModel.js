@@ -15,7 +15,7 @@ let collectionArray;
  * @param {*} url The url to the mongodb.
  * @throws Database error if there was an issue connecting to the database
  */
-async function initialize(url, dbName, reset = false) {
+async function initialize(dbName, url, reset = false) {
   try{
       client = new MongoClient(url);
 
@@ -53,7 +53,8 @@ async function initialize(url, dbName, reset = false) {
 async function addChat(userSenderId, userRecipientId){
   try{  
       if(validateUtils.isValid(userSenderId, userRecipientId)){
-          const chat = await chatCollection.insertOne({ userSenderId, userRecipientId }); 
+          let chat = {userSenderId, userRecipientId};
+          await chatCollection.insertOne(chat); 
           logger.info(`Added chat: userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
           return chat;
       }

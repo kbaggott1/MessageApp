@@ -69,7 +69,6 @@ async function checkChatId(id) {
 
 async function checkAuthorId(id) {
     try {
-        console.log(id);
         id = new ObjectId(id);
         let authorId = await userModel.getCollection().findOne({_id: id});
 
