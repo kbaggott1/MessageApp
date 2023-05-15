@@ -247,4 +247,33 @@ test('DELETE /chats success case', async () => {
     expect(results.length).toBe(0);
 });
 
+test('DELETE /chats failure chat does not exist', async () => {
+    const testResponse = await testRequest.delete("/chats/").send({
+        chatId: "WF12085124",
+    });
+
+    const cursor = await model.getCollection().find();
+    const results = await cursor.toArray();
+
+    expect(testResponse.status).toBe(500);
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(0);
+});
+
+test('DELETE /chats failure database error', async () => {
+    const senderId = generateValidUserId();
+    const recipientId = generateValidUserId();
+    const addedChat = await model.addChat(senderId, recipientId);
+    await mongod.stop();
+    
+    const testResponse = await testRequest.delete("/chats/").send({
+        chatId: addedChat._id,
+    });
+
+    mongod = await MongoMemoryServer.create();
+    const url = await mongod.getUri();
+    await model.initialize("Test_Message_App", url, true);
+
+    expect(testResponse.status).toBe(500);
+});
 
