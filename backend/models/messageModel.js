@@ -128,6 +128,9 @@ async function getMessagesByChatId(chatId) {
             .find({chatId: chatId})
             .toArray();
 
+        if(messages.length == 0)
+            throw new InvalidInputError("Could not find messages with chat id: " + chatId);
+
         return messages;
     }
     catch(err) {
