@@ -6,7 +6,7 @@ const streams = [
     },
     {
         level: "trace",
-        stream: pino.destination("logs/server-log.log"),
+        stream: pino.destination("logs/server.log"),
     },
 ];
 
