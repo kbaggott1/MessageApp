@@ -1,7 +1,11 @@
 const { MongoMemoryServer } = require('mongodb-memory-server');
 const ChatsModelMongoDb = require('../models/chatModel');
-const testRequest = require('supertest');
-const app = require('../app');
+const UserModelMongoDb = require("../models/userModel.js");
+const request = require('supertest');
+const app = require('../app'); 
+jest.setTimeout(1000000);//Increase the timeout since the database connection may take time 5000
+const testRequest = request(app);
+const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;
 
 const userData = [
     { username: "admin", password: "superSafePassword123", status: 'online', firstName: 'admin', lastName: 'admin' , biography: 'Admin of the page', image:'placeholder'},
@@ -49,11 +53,12 @@ beforeEach(async () => {
         mongod = await MongoMemoryServer.create();
         const url = await mongod.getUri();
 
-        await initialize("Test_Message_App", url, true);
+        await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
+        await UserModelMongoDb.initialize("Test_Message_App", url, true);
         console.log("Mongo mock started!");
     }
     catch (err){
-        console.log(err.message);
+        console.log(err.message + "In chats");
     }
 })
 
@@ -81,7 +86,7 @@ test("POST /chats success case", async () => {
         userRecipientId: user2Id
     });
 
-    const cursor = await model.getCollection().find();
+    const cursor = await ChatsModelMongoDb.getCollection().find();
     const results = await cursor.toArray();
 
     expect(chatResponse.status).toBe(200);
@@ -107,7 +112,7 @@ test("POST /chats failure invalid userSenderId failure case", async () => {
         userRecipientId: user2Id
     });
 
-    const cursor = await model.getCollection().find();
+    const cursor = await ChatsModelMongoDb.getCollection().find();
     const results = await cursor.toArray();
 
     expect(chatResponse.status).toBe(400);
@@ -152,7 +157,7 @@ test("GET /chats/:id success case", async () => {
     const user1Id = user1Response.body.id;
     const user2Id = user2Response.body.id;
 
-    const addedChat = await model.addChat(user1Id, user2Id);
+    const addedChat = await ChatsModelMongoDb.addChat(user1Id, user2Id);
 
     const testResponse = await testRequest.get(`/chats/${addedChat._id}`);
 
@@ -207,6 +212,7 @@ test('GET /chats success case', async () => {
 })
 
 test('GET /chats failure no chats in the database', async () => {
+    await chatModel.initialize(url,"Message_App", true)
     const testResponse = await testRequest.get("/chats/");
     expect(testResponse.status).toBe(400);
 });

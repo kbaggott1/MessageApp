@@ -7,12 +7,15 @@ const userModel = require("./userModel");
 const chatModel = require("./chatModel");
 /**
  * Checks if message is valid. 
- * Does not return anything. Will throw if message is invalid.
+ * Does not return anything. Will throw if message is invalid or message does not exist.
+ * @param {*} collection The collection for the messages.
+ * @param {*} messageId The id of the message to verify it exists.
  * @param {*} message The message to validate.
  * @throws InvalidInputError and DatabaseError
  */
-async function checkValidForEdit(message) {
+async function checkValidForEdit(collection, messageId, message) {
     try {
+        await checkMessageId(collection, messageId);
         checkMessage(message);
     }
     catch(err) {
@@ -21,6 +24,23 @@ async function checkValidForEdit(message) {
             throw new InvalidInputError(err.message);
         else 
             throw new DatabaseError(err.message);
+    }
+}
+
+async function checkMessageId(collection, messageId) {
+    try {
+        let message = await collection.findOne({_id: messageId})
+
+        if(!message) 
+            throw new InvalidInputError("Could not find message with id in validator: " + messageId);
+    }
+    catch (err) {
+        logger.error(err.message);
+        if(err instanceof InvalidInputError) {
+            throw new InvalidInputError("Invalid input error in validator: " + err.message);
+        }
+        else 
+            throw new DatabaseError("Database error in validator: " + err.message);
     }
 }
 
@@ -69,7 +89,6 @@ async function checkChatId(id) {
 
 async function checkAuthorId(id) {
     try {
-        console.log(id);
         id = new ObjectId(id);
         let authorId = await userModel.getCollection().findOne({_id: id});
 

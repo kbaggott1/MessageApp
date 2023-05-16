@@ -54,11 +54,12 @@ beforeEach(async () => {
         mongod = await MongoMemoryServer.create();
         const url = await mongod.getUri();
 
-        await initialize("Test_Message_App", url, true);
+        await chatModel.initialize(url,"Test_Message_App", true);
+        await userModel.initialize("Test_Message_App", url, true);
         console.log("Mongo mock started!");
     }
     catch (err){
-        console.log(err.message);
+        console.log(err.message + "In chats");
     }
 })
 
@@ -89,13 +90,12 @@ test("Adding chat with invalid sender Id", async () => {
     const user2 = generateValidUserData();
     let addedUser2 = await userModel.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
 
-    await expect(chatModel.addChat(invalidUserId1, addedUser2)).rejects.toThrow(chatModel.InvalidInputError);
+    await expect(chatModel.addChat(invalidUserId1, addedUser2._id)).rejects.toThrow(chatModel.InvalidInputError);
 
-    const addedChat = await chatModel.addChat(invalidUserId1, invalidUserId2).catch(() => null);
+    const addedChat = await chatModel.addChat(invalidUserId1, addedUser2._id).catch(() => null);
 
     if (addedChat) {
-        const foundChat = await chatModel.getSingleChat(addedChat.insertedId).catch(() => null);
-
+        const foundChat = await chatModel.getSingleChat(addedChat._id).catch(() => null);
         expect(foundChat).toBeNull();
     } else {
         expect(addedChat).toBeNull();
@@ -108,9 +108,9 @@ test("Adding chat with invalid recipient ID", async () => {
 
     let addedUser1 = await userModel.addUser(user.username, user.password, user.status, user.firstName, user.lastName, user.biography, user.image);
 
-    await expect(chatModel.addChat(addedUser1, invalidUserId2)).rejects.toThrow(chatModel.InvalidInputError);
+    await expect(chatModel.addChat(addedUser1._id, invalidUserId2)).rejects.toThrow(chatModel.InvalidInputError);
 
-    const addedChat = await chatModel.addChat(invalidUserId1, invalidUserId2).catch(() => null);
+    const addedChat = await chatModel.addChat(addedUser1._id, invalidUserId2).catch(() => null);
 
     if (addedChat) {
         const foundChat = await chatModel.getSingleChat(addedChat.insertedId).catch(() => null);
@@ -121,19 +121,22 @@ test("Adding chat with invalid recipient ID", async () => {
     }
 });
 
-test("Get single chat from the database", async () => {
-    const user = generateValidUserData();
 
-    let addedUser1 = await userModel.addUser(user.username, user.password, user.status, user.firstName, user.lastName, user.biography, user.image);
+test("Get single chat from the database", async () => {
+    const user1 = generateValidUserData();
+    const user2 = generateValidUserData();
+
+    let addedUser1 = await userModel.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
     let addedUser2 = await userModel.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
 
-    const addedChat = await chatModel.addChat(addedUser1.insertedId);
+    const addedChat = await chatModel.addChat(addedUser1._id, addedUser2._id);
 
     const foundChat = await chatModel.getSingleChat(addedChat.insertedId);
 
-    expect(foundChat.userSenderId).toEqual(addedUser1.insertedId);
-    expect(foundChat.userRecipientId).toEqual(addedUser2.insertedId);
+    expect(foundChat.userSenderId).toEqual(addedUser1._id);
+    expect(foundChat.userRecipientId).toEqual(addedUser2._id);
 });
+
 
 test("Get single chat with invalid ID", async () => {
     const invalidId = null;
@@ -184,7 +187,7 @@ test("Get all chats successfully", async () => {
 });
 
 test("Get all chats when there are no chats in the database", async () => {
-    await chatModel.initialize(url,"Message_App", false)
+    await chatModel.initialize(url,"Message_App", true)
 
     const allChats = await chatModel.getAllChats();
 

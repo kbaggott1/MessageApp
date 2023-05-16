@@ -15,7 +15,6 @@ let messageCollection;
  */
 async function initialize(dbName, url, reset = false) {
     try{
-        console.log("HERE IS THE URL: "  + url )
         client = new MongoClient(url);
 
         await client.connect();
@@ -125,15 +124,22 @@ async function getMessageById(messageId) {
  */
 async function getMessagesByChatId(chatId) {
     try {
+        chatId = new ObjectId(chatId);
         let messages = await messageCollection
             .find({chatId: chatId})
             .toArray();
+
+        if(messages.length == 0)
+            throw new InvalidInputError("Could not find messages with chat id: " + chatId);
 
         return messages;
     }
     catch(err) {
         logger.error("Could not get messages by chatId in model: " + err.message);
-        throw new DatabaseError(err.message);
+        if(err instanceof InvalidInputError)
+            throw new InvalidInputError(err.message);
+        else
+            throw new DatabaseError(err.message);
     }
 }
 
@@ -143,12 +149,12 @@ async function getMessagesByChatId(chatId) {
  * @param {*} messageId The message id of the message to edit.
  * @param {*} newMessage The new message to replace the old one with.
  * @returns The new message content.
- * @throws InvalidInputError if messageId isn't in the database; throws Database error.
+ * @throws InvalidInputError if messageId isn't in the database or the message is invalid; throws Database error.
  */
 async function editMessage(messageId, newMessage) {
     try {
         messageId = new ObjectId(messageId);
-        await checkValidForEdit(newMessage);
+        await checkValidForEdit(messageCollection, messageId, newMessage);
         //await messageCollection.updateOne({_id: messageId}, {$set: {messageBody: newMessage}});
         return await messageCollection.updateOne({_id: messageId}, {$set: {messageBody: newMessage}});
     }

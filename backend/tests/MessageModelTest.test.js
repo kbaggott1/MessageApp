@@ -1,5 +1,6 @@
 require("dotenv").config();
 const { MongoMemoryServer } = require("mongodb-memory-server");
+const { ObjectId } = require("mongodb");
 let model = require("../models/messageModel");
 let userModel = require("../models/userModel");
 let chatModel = require("../models/chatModel");
@@ -14,16 +15,21 @@ beforeAll(async () => {
 beforeEach(async () => {
     try {
         const url = mongodb.getUri();
-        await model.initialize("messages_db_test", url, true);
+        await model.initialize("Test_Message_App", url, true);
+        await userModel.initialize("Test_Message_App", url, true);
+        await chatModel.initialize("Test_Message_App", url, true);
     }
     catch(err) {
         console.log(err.message + "IN MESSAGESSS");
+        logger.error(err.message + "IN MESSAGESSS");
     }
 });
 
 afterEach(async () => {
     try {
         await model.close();
+        await userModel.close();
+        await chatModel.close();
     }
     catch(err) {
         console.log(err.message);
@@ -36,15 +42,15 @@ afterAll(async () => {
 });
 //CREATE
 
-test('Can add message to DB', async () => {
+test('ADD: Can add message to DB', async () => {
     const messageBody = "hello!"
 
     //insert new user for authorId
-    let authorId = await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample");
-    let userId2 = await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample")._id;
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
 
     //insert new chat for chatId
-    let chatId = await chatModel.addChat(authorId, userId2)._id;
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
 
     await model.postMessage(messageBody, authorId, chatId);
     
@@ -53,205 +59,439 @@ test('Can add message to DB', async () => {
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(1);
     expect(results[0].messageBody.toLowerCase() == messageBody.toLowerCase()).toBe(true);
-    expect(results[0].authorId == authorId).toBe(true);
-    expect(results[0].chatId == chatId).toBe(true);
+
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
 });
      
+test("ADD: message at max characters passes", async () => {
 
-test("Invalid id throws", async () => {
-    const id = "34abc", message = "hello!", user = "kbaggott";
+    const messageBody = "expansedawdd galaxies collide, unveiling the secrets of the universe. Through the eons, civilizations rise and fall, leaving traces of their existence. We ponder the mysteries of life, searching for meaning in the infinite tapestry of time and space.";
 
-    await expect(model.postMessage(id, message, user))
-    .rejects
-    .toThrow("Invalid id: " + id + ". Ids must be numeric.");
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
+
+    await model.postMessage(messageBody, authorId, chatId);
+    
+    const cursor = await model.getCollection().find();
+    const results = await cursor.toArray();
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == messageBody.toLowerCase()).toBe(true);
+
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
 });
 
-test("Empty message throws", async () => {
-    const id = "12", message = "", user = "bigdude33";
+test("ADD: message surpassing max characters throws", async () => {
+    const MAX_CHAR = 250;
+    const messageBody = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life";
 
-    await expect(model.postMessage(id, message, user))
+    //insert users
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
+
+
+    await expect(model.postMessage(messageBody, authorId, chatId))
+    .rejects
+    .toThrow("Message is over the character limit of " + MAX_CHAR);
+
+});
+
+test("ADD: Can't add empty message", async () => {
+    const messageBody = ""
+
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
+
+    await expect(model.postMessage(messageBody, authorId, chatId))
     .rejects
     .toThrow("Message cannot be empty");
 });
 
-test("message surpassing max characters throws", async () => {
-    const MAX_CHAR = 500;
 
-    const id = "12", message = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life", 
-    user = "bigdude33";
+test("ADD: Invalid chatId throws", async () => {
+    const messageBody = "hello there";
 
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
 
-    await expect(model.postMessage(id, message, user))
+    //insert new chat for chatId
+    let chatId = "FFFFFFFFFFFFFFFFFFFFFFFF";
+
+    await expect(model.postMessage(messageBody, authorId, chatId))
     .rejects
-    .toThrow("Message is over the character limit of " + MAX_CHAR);
+    .toThrow("ChatId does not exist.");
 });
 
 
-test("Illegal username throws", async () => {
-    const id = "12", message = "blue", user = "???!1!!!!";
+test("ADD: Invalid authorId throws", async () => {
+    const messageBody = "hello there";
 
-    await expect(model.postMessage(id, message, user))
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
+
+    let badAuthId = "FFFFFFFFFFFFFFFFFFFFFFFF";
+
+    await expect(model.postMessage(messageBody, badAuthId, chatId))
     .rejects
-    .toThrow("Illegal characters in username: " + user);
+    .toThrow("AuthorId does not exist.");
 });
+
+
 //READ
+test('READ: Can read message by id from DB', async () => {
+    const messageBody = "hello!"
 
-test("Get message by id", async () => {
-    const id = "1", message = "message1", user = "helloooo";
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
 
-    await model.postMessage(id, message, user);
-    await model.postMessage(id2, message2, user);
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
 
-    const results = await collectionFindArray();
-    expect(Array.isArray(results)).toBe(true);
-    expect(results.length).toBe(2);
-
-
-    await expect(model.getMessageById(id)).resolves.toHaveProperty("message", message);
-    await expect(model.getMessageById(id2)).resolves.toHaveProperty("message", message2);
-
-});
-
-test("getMessageById throws when id isn't in the db", async () => {
-
-    await model.postMessage("1", "goodie", "kirby55");
-
-    const results = await collectionFindArray();
+    let messageId = (await model.postMessage(messageBody, authorId, chatId))._id;
+    
+    const cursor = await model.getCollection().find();
+    const results = await cursor.toArray();
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == messageBody.toLowerCase()).toBe(true);
 
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
 
-    await expect(model.getMessageById("2"))
+    //AFTER SUCCESFULLY ADDING TO DB
+
+    let message = await model.getMessageById(messageId);
+
+    expect(results[0].messageBody == message.messageBody).toBe(true);
+    expect(results[0].authorId.toString() == message.authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == message.chatId.toString()).toBe(true);
+});
+
+test('READ: Read message by id throws with bad id from DB', async () => {
+    //AFTER SUCCESFULLY ADDING TO DB
+
+    let badMessageId = "ffffffffffffffffffffffff";
+
+    await expect(model.getMessageById(badMessageId))
     .rejects
-    .toThrow("Could not find message with id: 2");
-});
+    .toThrow("Could not find message with id: " + badMessageId);
 
-test("Get all messages by username", async () => {
-    const id = "1", message = "testing 12345", user = "helloooo";
-    const id2 = "2", message2 = "test for diff";
-    const id3 = "3", user2 = "ldutton";
-
-    await model.postMessage(id, message, user);
-    await model.postMessage(id2, message2, user);
-    await model.postMessage(id3, message, user2);
-
-    const results = await collectionFindArray();
-    expect(Array.isArray(results)).toBe(true);
-    expect(results.length).toBe(3);
-
-    const userPosts = await model.getMessagesByUser(user);
-
-    expect(userPosts.length).toBe(2);
-
-    expect(userPosts[0].user).toBe(user);
-    expect(userPosts[0].message).toBe(message);
-
-    expect(userPosts[1].user).toBe(user);
-    expect(userPosts[1].message).toBe(message2);
 });
 
 
-test("Get all messages", async () => {
-    const id = "1", message = "message1", user = "helloooo";
-    const id2 = "2", message2 = "message2", user2 = "genericUser";
-    const id3 = "3", message3 = "message3", user3 = "batman29";
-    const id4 = "4", message4 = "message4", user4 = "JavaScriptSucks";
+//READ
+test('READ: Can read message by chat id from DB', async () => {
+    const messageBody1 = "hello";
+    const messageBody2 = "world!";
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
 
-    await model.postMessage(id, message, user);
-    await model.postMessage(id2, message2, user2);
-    await model.postMessage(id3, message3, user3);
-    await model.postMessage(id4, message4, user4);
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
 
-    const results = await collectionFindArray();
+    await model.postMessage(messageBody1, authorId, chatId);
+    await model.postMessage(messageBody2, authorId, chatId);
+    
+    const cursor = await model.getCollection().find();
+    const results = await cursor.toArray();
     expect(Array.isArray(results)).toBe(true);
-    expect(results.length).toBe(4);
+    expect(results.length).toBe(2);
+    expect(results[0].messageBody.toLowerCase() == messageBody1.toLowerCase()).toBe(true);
 
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
 
-    const allMessages = await model.getAllMessages();
+    expect(results[1].messageBody.toLowerCase() == messageBody2.toLowerCase()).toBe(true);
 
-    expect(allMessages.length).toBe(4);
+    expect(results[1].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[1].chatId.toString() == chatId.toString()).toBe(true);
 
-    expect(allMessages[0].user).toBe(user);
-    expect(allMessages[1].user).toBe(user2);
-    expect(allMessages[2].user).toBe(user3);
-    expect(allMessages[3].user).toBe(user4);
+    //AFTER SUCCESFULLY ADDING TO DB
+
+    let messages = await model.getMessagesByChatId(chatId);
+
+    expect(Array.isArray(messages)).toBe(true);
+    expect(messages.length).toBe(2);
+
+    expect(results[0].messageBody == messages[0].messageBody).toBe(true);
+    expect(results[0].authorId.toString() == messages[0].authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == messages[0].chatId.toString()).toBe(true);
+
+    expect(results[1].messageBody == messages[1].messageBody).toBe(true);
+    expect(results[1].authorId.toString() == messages[1].authorId.toString()).toBe(true);
+    expect(results[1].chatId.toString() == messages[1].chatId.toString()).toBe(true);
+});
+
+test('READ: Can read message by chat id throws with bad id from DB', async () => {
+
+    let badChatId = "ffffffffffffffffffffffff";
+
+    await expect(model.getMessagesByChatId(badChatId))
+    .rejects
+    .toThrow("Could not find messages with chat id: " + badChatId);
 
 });
 
 //UPDATE
 
-test("Edit message", async () => {
-    const id = "1", message = "message1", user = "helloooo";
-    const id2 = "2", message2 = "message2", user2 = "genericUser";
+test('UPDATE: Can update message in DB', async () => {
+    const messageBody = "hello";
+    const newMessage = "world!";
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
 
-    await model.postMessage(id, message, user);
-    await model.postMessage(id2, message, user2);
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
 
-    let results = await collectionFindArray();
+    let messageId = (await model.postMessage(messageBody, authorId, chatId))._id;
+    
+    let cursor = await model.getCollection().find();
+    let results = await cursor.toArray();
     expect(Array.isArray(results)).toBe(true);
-    expect(results.length).toBe(2);
+    expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == messageBody.toLowerCase()).toBe(true);
 
-    expect(results[0].message).toBe(message);
-    expect(results[1].message).toBe(message);
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
 
-    await model.editMessage(id, message2);
+    //AFTER SUCCESFULLY ADDING TO DB
 
-    results = await collectionFindArray();
+    await model.editMessage(messageId, newMessage);
 
-    expect(results[0].message).toBe(message2);
-    expect(results[1].message).toBe(message);
-   
+    cursor = await model.getCollection().find();
+    results = await cursor.toArray();
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == newMessage.toLowerCase()).toBe(true);
+
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
+});
+
+test('UPDATE: Can update message in DB with exact char limit', async () => {
+    const messageBody = "hello";
+    const newMessage = "expansedawdd galaxies collide, unveiling the secrets of the universe. Through the eons, civilizations rise and fall, leaving traces of their existence. We ponder the mysteries of life, searching for meaning in the infinite tapestry of time and space.";
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
+
+    let messageId = (await model.postMessage(messageBody, authorId, chatId))._id;
+    
+    let cursor = await model.getCollection().find();
+    let results = await cursor.toArray();
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == messageBody.toLowerCase()).toBe(true);
+
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
+
+    //AFTER SUCCESFULLY ADDING TO DB
+
+    await model.editMessage(messageId, newMessage);
+
+    cursor = await model.getCollection().find();
+    results = await cursor.toArray();
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == newMessage.toLowerCase()).toBe(true);
+
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
+});
+
+
+
+test('UPDATE: Update message in DB throws with empty message', async () => {
+    const messageBody = "hello";
+    const newMessage = "";
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
+
+    let messageId = (await model.postMessage(messageBody, authorId, chatId))._id;
+    
+    let cursor = await model.getCollection().find();
+    let results = await cursor.toArray();
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == messageBody.toLowerCase()).toBe(true);
+
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
+
+    //AFTER SUCCESFULLY ADDING TO DB
+
+    await expect(model.editMessage(messageId, newMessage))
+    .rejects
+    .toThrow("Message cannot be empty");
 
 });
 
-test("editMessage throws when message does not exist", async () => {
-    const id = "1", message = "message1", user = "helloooo";
+test('UPDATE: Update message in DB throws with message over character limit', async () => {
+    const MAX_CHAR = 250;
+    const messageBody = "hello";
+    const newMessage = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life";
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
 
-    await model.postMessage(id, message, user);
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
 
-    let results = await collectionFindArray();
+    let messageId = (await model.postMessage(messageBody, authorId, chatId))._id;
+    
+    let cursor = await model.getCollection().find();
+    let results = await cursor.toArray();
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == messageBody.toLowerCase()).toBe(true);
 
-    expect(results[0].message).toBe(message);
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
 
-    await model.editMessage(id, "message has changed");
+    //AFTER SUCCESFULLY ADDING TO DB
 
-    results = await collectionFindArray();
-
-    expect(results[0].message).toBe("message has changed");
-    
-    await expect(model.editMessage("2", "this should throw"))
+    await expect(model.editMessage(messageId, newMessage))
     .rejects
-    .toThrow("Message id: 2 does not exist.");
+    .toThrow("Message is over the character limit of " + MAX_CHAR);
 
 });
 
 //DELETE
 
-test("Delete message from database", async () => {
-    const id = "1", message = "testing 12345", user = "helloooo";
-    const id2 = "2", message2 = "test for diff";
-    const id3 = "3", user2 = "ldutton";
+test('DELETE: Can delete message from DB', async () => {
+    const messageBody = "hello!"
 
-    await model.postMessage(id, message, user);
-    await model.postMessage(id2, message2, user);
-    await model.postMessage(id3, message, user2);
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
 
-    let results = await collectionFindArray();
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
+
+    let messageId = (await model.postMessage(messageBody, authorId, chatId))._id;
+    
+    let cursor = await model.getCollection().find();
+    let results = await cursor.toArray();
     expect(Array.isArray(results)).toBe(true);
-    expect(results.length).toBe(3);
+    expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == messageBody.toLowerCase()).toBe(true);
 
-    await model.deleteMessageById(id);
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
 
-    results = await collectionFindArray();
-    expect(results.length).toBe(2);
+    //AFTER SUCCESFULLY ADDING TO DB
 
-    expect(results[0].messageId).toBe(id2);
-    expect(results[1].messageId).toBe(id3);
+    await model.deleteMessageById(messageId);
+
+    cursor = await model.getCollection().find();
+    results = await cursor.toArray();
+    
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(0);
 });
 
+test('DELETE: Deletes right message from DB', async () => {
+    const messageBody1 = "hello";
+    const messageBody2 = "world!";
 
-async function collectionFindArray() {
-    return await model.getCollection().find().toArray();
-}
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
+
+    let messageId = (await model.postMessage(messageBody1, authorId, chatId))._id;
+    await model.postMessage(messageBody2, authorId, chatId);
+    
+    let cursor = await model.getCollection().find();
+    let results = await cursor.toArray();
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(2);
+
+    expect(results[0].messageBody.toLowerCase() == messageBody1.toLowerCase()).toBe(true);
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
+
+    expect(results[1].messageBody.toLowerCase() == messageBody2.toLowerCase()).toBe(true);
+    expect(results[1].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[1].chatId.toString() == chatId.toString()).toBe(true);
+
+    //AFTER SUCCESFULLY ADDING TO DB
+
+    await model.deleteMessageById(messageId);
+
+    cursor = await model.getCollection().find();
+    results = await cursor.toArray();
+    
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == messageBody2.toLowerCase()).toBe(true);
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
+});
+
+test('DELETE: Delete message from DB with bad Id doesnt throw', async () => {
+    const messageBody = "hello!"
+
+    //insert new user for authorId
+    let authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+    let userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
+
+    //insert new chat for chatId
+    let chatId = (await chatModel.addChat(authorId, userId2))._id;
+
+    await model.postMessage(messageBody, authorId, chatId);
+
+
+    
+    let cursor = await model.getCollection().find();
+    let results = await cursor.toArray();
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(1);
+    expect(results[0].messageBody.toLowerCase() == messageBody.toLowerCase()).toBe(true);
+
+    expect(results[0].authorId.toString() == authorId.toString()).toBe(true);
+    expect(results[0].chatId.toString() == chatId.toString()).toBe(true);
+
+    //AFTER SUCCESFULLY ADDING TO DB
+
+
+    let badMessageId = "ffffffffffffffffffffffff";
+    await model.deleteMessageById(badMessageId);
+
+    cursor = await model.getCollection().find();
+    results = await cursor.toArray();
+    
+    expect(Array.isArray(results)).toBe(true);
+    expect(results.length).toBe(1);
+});

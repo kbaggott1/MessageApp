@@ -115,7 +115,7 @@ async function getUser(id) {
             throw new InputError.InvalidInputError(err.message);
         }
         else{
-            logger.error("Error! There was an issue trying to find the user with ID " + id + " in the " + database + " database.")
+            logger.error("Error! There was an issue trying to find the user with ID " + id + " in the " + dbName + " database.")
             throw new DBError.DatabaseError(err.message);
         }
     }
@@ -134,7 +134,7 @@ async function getAllUsers() {
         let users = await usersCollection.find();
         
         if(users == null){
-            throw new DBError.DatabaseError("Error! Unable to find any users in the " + database + " database.")
+            throw new DBError.DatabaseError("Error! Unable to find any users in the " + dbName + " database.")
         }
         
         let arr = await users.toArray();
@@ -188,7 +188,7 @@ async function updateUser(id, newUsername, newPassword, newStatus, newFirstName,
             throw new InputError.InvalidInputError(err.message);
         }
         else{
-            logger.error("Error! There was an error trying to the update user with the id '" + id + "' in the " + database + " database.");
+            logger.error("Error! There was an error trying to the update user with the id '" + id + "' in the " + dbName + " database.");
             throw new DBError.DatabaseError(err.message);
         }
     }
@@ -220,7 +220,7 @@ async function deleteUser(id) {
             throw new InputError.InvalidInputError(err.message);
         }
         else{
-            logger.error("Error! There was an issue trying to delete the user with id '" + id + "' from the " + database + " database");
+            logger.error("Error! There was an issue trying to delete the user with id '" + id + "' from the " + dbName + " database");
             throw new DBError.DatabaseError(err.message);
         }
     }

@@ -1,4 +1,4 @@
-const { MongoClient, WriteError } = require("mongodb");
+const { MongoClient, WriteError, ObjectId } = require("mongodb");
 const { DatabaseError } = require('./DatabaseError');
 const validateUtils = require('../helperMethods/validateUtilsChatModel');
 const {InvalidInputError} = require("./InvalidInputError");
@@ -54,6 +54,9 @@ async function initialize(url, dbName, reset = false) {
  */
 async function addChat(userSenderId, userRecipientId){
   try{  
+        if (!userSenderId || !userRecipientId) {
+            throw new InvalidInputError('Sender and Receiver IDs must be provided.');
+        }
       if(validateUtils.isValid(userSenderId, userRecipientId)){
           const chat = await chatCollection.insertOne({ userSenderId, userRecipientId }); 
           logger.info(`Added chat: userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
@@ -100,7 +103,8 @@ async function getAllChats() {
  */
 async function getSingleChat(id){
   try{
-      const chat = await chatCollection.findOne({ _id: id });
+      let object_id = new ObjectId(id);
+      const chat = await chatCollection.findOne({ _id: object_id  });
       if(chat){
           logger.info(`Retrieved chat: Id: ${id}`);
           return chat; 
@@ -137,6 +141,23 @@ async function deleteChat(id) {
   }
 }
 
+async function getChatsBySenderId(senderId) {
+    try {
+        let chats = await chatCollection
+            .find({userSenderId: senderId})
+            .toArray();
+
+        if(chats.length == 0)
+            throw new InvalidInputError("Could not find chats with sender id: " + senderId);
+
+        return chats;
+    }
+    catch(err) {
+        logger.error("Could not get chats by senderId in model: " + err.message);
+        throw new DatabaseError(err.message);
+    }
+}
+
 /**
  * Closes the mock database.
  */
@@ -159,5 +180,5 @@ function getCollection(){
   return chatCollection;
 }
 
-module.exports = {initialize, addChat, getSingleChat, deleteChat, close, getCollection, getAllChats};
+module.exports = {initialize, addChat, getSingleChat, deleteChat, close, getCollection, getAllChats, getChatsBySenderId};
 

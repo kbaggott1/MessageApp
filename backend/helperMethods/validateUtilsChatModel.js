@@ -8,11 +8,11 @@ const logger = require("../logs/logger.js");
  * @param {*} userRecipientId of chat.
  * 
  */
-function isValid(userSenderId, userRecipientId)
+async function isValid(userSenderId, userRecipientId)
 {
     try{
-        userModel.getUser(userSenderId);  
-        userModel.getUser(userRecipientId);  
+        await userModel.getUser(userSenderId);  
+        await userModel.getUser(userRecipientId);  
         logger.info("userSenderId: " + userSenderId + " and" + "userRecipientId: " + userRecipientId + " sucessfully validated.")
         return true;
     }

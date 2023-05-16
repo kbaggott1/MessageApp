@@ -5,6 +5,7 @@ const router = express.Router();
 const routeRoot = '/messages';
 const MessagesModelMongoDb = require("../models/messageModel");
 const logger = require("../logs/logger");
+const userModel = require("../models/userModel");
 
 module.exports = {
     router,
@@ -74,10 +75,10 @@ async function getMessages(req, res) {
         
     }
     catch(err) {
-        if(err instanceof DatabaseError) {
-            res.status("500");
-            res.send("Database Error trying to get messages");
-            logger.error("Database Error trying to get all messages in controller: "+err.message);
+        if(err instanceof InvalidInputError) {
+            res.status("400");
+            res.send("InvalidInputError Error trying to get messages");
+            logger.error("InvalidInputError trying to get all messages in controller: "+err.message);
         }
         else {
             res.status("500");
