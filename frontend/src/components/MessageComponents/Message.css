@@ -1,0 +1,31 @@
+.messageBox {
+    background-color: #3f6b6b;
+    margin: 2vh;
+    margin-bottom: 1vh;
+
+    border-color: #243d3d;
+    border-style: solid;
+}
+
+
+.messageBody {
+    border-color: #243d3d;
+    border-bottom-style: double;
+    display: block;
+
+}
+
+.messageButton {
+    background-color: #2C3333;
+    border-style: none;
+    color: whitesmoke;
+    margin: 5px;
+}
+
+.messageButton:hover {
+    cursor: pointer;
+}
+
+.messageButton:active {
+    cursor: wait;
+}

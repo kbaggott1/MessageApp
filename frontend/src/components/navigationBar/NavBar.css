@@ -1,0 +1,25 @@
+.nav-menu-items {
+    padding: 50px;
+    padding-left: 0;
+    padding-left: 0pt;
+    list-style-type: none;
+}
+
+.nav-menu-items li {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 80px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background-color: #2E4F4F;
+}
+
+.nav-menu-items button {
+    background-color: #2E4F4F;
+    border: none;
+}
+
+.navButton:hover {
+    color: darkblue;
+    cursor: pointer;
+}

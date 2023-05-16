@@ -8347,3 +8347,428 @@
 {"level":50,"time":1684199912835,"pid":32080,"hostname":"KevinsPC","msg":"Unknown error encountered while deleting user with id6462d9e854bfdabacffce4a0 from the database."}
 {"level":30,"time":1684199913117,"pid":32080,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
 {"level":30,"time":1684199913118,"pid":32080,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019392,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019392,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019394,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019417,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019419,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019424,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019441,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da53cfa49399aed4aa5d userRecipientId: 6462da53cfa49399aed4aa5e"}
+{"level":30,"time":1684200019443,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da53cfa49399aed4aa5d anduserRecipientId: 6462da53cfa49399aed4aa5e sucessfully validated."}
+{"level":30,"time":1684200019460,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019462,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019475,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019489,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019491,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019495,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019511,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da53cfa49399aed4aa61 userRecipientId: 6462da53cfa49399aed4aa62"}
+{"level":30,"time":1684200019513,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da53cfa49399aed4aa61 anduserRecipientId: 6462da53cfa49399aed4aa62 sucessfully validated."}
+{"level":30,"time":1684200019526,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019528,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019532,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019542,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019543,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019547,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019558,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da53cfa49399aed4aa65 userRecipientId: 6462da53cfa49399aed4aa66"}
+{"level":50,"time":1684200019558,"pid":30084,"hostname":"KevinsPC","msg":"Message is over the character limit of 250"}
+{"level":50,"time":1684200019559,"pid":30084,"hostname":"KevinsPC","msg":"Message is over the character limit of 250"}
+{"level":30,"time":1684200019600,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da53cfa49399aed4aa65 anduserRecipientId: 6462da53cfa49399aed4aa66 sucessfully validated."}
+{"level":30,"time":1684200019603,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019605,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019610,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019625,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019626,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019629,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019640,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da53cfa49399aed4aa68 userRecipientId: 6462da53cfa49399aed4aa69"}
+{"level":50,"time":1684200019640,"pid":30084,"hostname":"KevinsPC","msg":"Message cannot be empty"}
+{"level":50,"time":1684200019641,"pid":30084,"hostname":"KevinsPC","msg":"Message cannot be empty"}
+{"level":30,"time":1684200019644,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da53cfa49399aed4aa68 anduserRecipientId: 6462da53cfa49399aed4aa69 sucessfully validated."}
+{"level":30,"time":1684200019646,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019647,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019650,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019659,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019660,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019663,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684200019673,"pid":30084,"hostname":"KevinsPC","msg":"ChatId does not exist."}
+{"level":50,"time":1684200019673,"pid":30084,"hostname":"KevinsPC","msg":"ChatId does not exist."}
+{"level":50,"time":1684200019673,"pid":30084,"hostname":"KevinsPC","msg":"ChatId does not exist."}
+{"level":30,"time":1684200019676,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019677,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019680,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019688,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019689,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019691,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019700,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da53cfa49399aed4aa6d userRecipientId: 6462da53cfa49399aed4aa6e"}
+{"level":30,"time":1684200019701,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da53cfa49399aed4aa6d anduserRecipientId: 6462da53cfa49399aed4aa6e sucessfully validated."}
+{"level":50,"time":1684200019704,"pid":30084,"hostname":"KevinsPC","msg":"AuthorId does not exist."}
+{"level":50,"time":1684200019704,"pid":30084,"hostname":"KevinsPC","msg":"AuthorId does not exist."}
+{"level":50,"time":1684200019704,"pid":30084,"hostname":"KevinsPC","msg":"AuthorId does not exist."}
+{"level":30,"time":1684200019707,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019709,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019713,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019725,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019727,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019731,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019742,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da53cfa49399aed4aa70 userRecipientId: 6462da53cfa49399aed4aa71"}
+{"level":30,"time":1684200019744,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da53cfa49399aed4aa70 anduserRecipientId: 6462da53cfa49399aed4aa71 sucessfully validated."}
+{"level":30,"time":1684200019757,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019758,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019775,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019835,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019837,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019869,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684200019884,"pid":30084,"hostname":"KevinsPC","msg":"Could not get messageId in model: Could not find message with id: ffffffffffffffffffffffff"}
+{"level":30,"time":1684200019887,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019888,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019911,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019925,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019927,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019933,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019942,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019943,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019946,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da53cfa49399aed4aa74 userRecipientId: 6462da53cfa49399aed4aa75"}
+{"level":30,"time":1684200019947,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da53cfa49399aed4aa74 anduserRecipientId: 6462da53cfa49399aed4aa75 sucessfully validated."}
+{"level":30,"time":1684200019960,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019962,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019965,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200019975,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200019977,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200019980,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684200019987,"pid":30084,"hostname":"KevinsPC","msg":"Could not get messages by chatId in model: Could not find messages with chat id: ffffffffffffffffffffffff"}
+{"level":50,"time":1684200019944,"pid":33236,"hostname":"KevinsPC","msg":"User being added had an Invalid username  "}
+{"level":50,"time":1684200019944,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username ' ' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684200019989,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200019990,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200019995,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020013,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020014,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020019,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020029,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da54cfa49399aed4aa79 userRecipientId: 6462da54cfa49399aed4aa7a"}
+{"level":30,"time":1684200020030,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da54cfa49399aed4aa79 anduserRecipientId: 6462da54cfa49399aed4aa7a sucessfully validated."}
+{"level":30,"time":1684200020040,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020044,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020044,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020046,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020050,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020067,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020069,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020072,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020084,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da54cfa49399aed4aa7d userRecipientId: 6462da54cfa49399aed4aa7e"}
+{"level":30,"time":1684200020085,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da54cfa49399aed4aa7d anduserRecipientId: 6462da54cfa49399aed4aa7e sucessfully validated."}
+{"level":30,"time":1684200020098,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020099,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020103,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020111,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020112,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020114,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020127,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da54cfa49399aed4aa81 userRecipientId: 6462da54cfa49399aed4aa82"}
+{"level":30,"time":1684200020128,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da54cfa49399aed4aa81 anduserRecipientId: 6462da54cfa49399aed4aa82 sucessfully validated."}
+{"level":30,"time":1684200020129,"pid":31352,"hostname":"KevinsPC","msg":"Mock db started."}
+{"level":50,"time":1684200020135,"pid":30084,"hostname":"KevinsPC","msg":"Message cannot be empty"}
+{"level":50,"time":1684200020135,"pid":30084,"hostname":"KevinsPC","msg":"Could not edit message in model: Message cannot be empty"}
+{"level":30,"time":1684200020138,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020139,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020143,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020157,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020161,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020161,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020168,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020183,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da54cfa49399aed4aa85 userRecipientId: 6462da54cfa49399aed4aa86"}
+{"level":30,"time":1684200020184,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da54cfa49399aed4aa85 anduserRecipientId: 6462da54cfa49399aed4aa86 sucessfully validated."}
+{"level":50,"time":1684200020190,"pid":30084,"hostname":"KevinsPC","msg":"Message is over the character limit of 250"}
+{"level":30,"time":1684200020191,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020194,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200020190,"pid":30084,"hostname":"KevinsPC","msg":"Could not edit message in model: Message is over the character limit of 250"}
+{"level":30,"time":1684200020193,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020195,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020198,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020199,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020209,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020210,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020213,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020215,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc11c userRecipientId: 6462da547534f037e8ddc11d"}
+{"level":30,"time":1684200020222,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da54cfa49399aed4aa89 userRecipientId: 6462da54cfa49399aed4aa8a"}
+{"level":30,"time":1684200020223,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da54cfa49399aed4aa89 anduserRecipientId: 6462da54cfa49399aed4aa8a sucessfully validated."}
+{"level":30,"time":1684200020224,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc11c anduserRecipientId: 6462da547534f037e8ddc11d sucessfully validated."}
+{"level":30,"time":1684200020231,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020233,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020236,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020246,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020247,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020249,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020256,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da54cfa49399aed4aa8d userRecipientId: 6462da54cfa49399aed4aa8e"}
+{"level":30,"time":1684200020257,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da54cfa49399aed4aa8d anduserRecipientId: 6462da54cfa49399aed4aa8e sucessfully validated."}
+{"level":30,"time":1684200020264,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020268,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020269,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020273,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020266,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020280,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020285,"pid":30084,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020286,"pid":30084,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020289,"pid":30084,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020295,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020296,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020298,"pid":30084,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da54cfa49399aed4aa92 userRecipientId: 6462da54cfa49399aed4aa93"}
+{"level":30,"time":1684200020299,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020299,"pid":30084,"hostname":"KevinsPC","msg":"userSenderId: 6462da54cfa49399aed4aa92 anduserRecipientId: 6462da54cfa49399aed4aa93 sucessfully validated."}
+{"level":30,"time":1684200020308,"pid":30084,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020310,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc120 userRecipientId: 6462da547534f037e8ddc121"}
+{"level":30,"time":1684200020313,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc120 anduserRecipientId: 6462da547534f037e8ddc121 sucessfully validated."}
+{"level":30,"time":1684200020313,"pid":30084,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":50,"time":1684200020315,"pid":31352,"hostname":"KevinsPC","msg":"Message cannot be empty"}
+{"level":50,"time":1684200020316,"pid":31352,"hostname":"KevinsPC","msg":"Message cannot be empty"}
+{"level":50,"time":1684200020317,"pid":31352,"hostname":"KevinsPC","msg":"Invalid input trying to add message: Message cannot be empty"}
+{"level":30,"time":1684200020322,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020324,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020329,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020347,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020348,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020353,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020363,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc123 userRecipientId: 6462da547534f037e8ddc124"}
+{"level":30,"time":1684200020368,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc123 anduserRecipientId: 6462da547534f037e8ddc124 sucessfully validated."}
+{"level":50,"time":1684200020372,"pid":31352,"hostname":"KevinsPC","msg":"Client must be connected before running operations"}
+{"level":50,"time":1684200020373,"pid":31352,"hostname":"KevinsPC","msg":"Database Error trying to add message in controller: Client must be connected before running operations"}
+{"level":30,"time":1684200020375,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020377,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020380,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020395,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020396,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020400,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684200020409,"pid":31352,"hostname":"KevinsPC","msg":"Could not get messageId in model: Could not find message with id: ffffffffffffffffffffffff"}
+{"level":50,"time":1684200020409,"pid":31352,"hostname":"KevinsPC","msg":"Invalid input trying to get message: Could not find message with id: ffffffffffffffffffffffff"}
+{"level":30,"time":1684200020413,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020414,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020418,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020430,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020430,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020433,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020441,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc128 userRecipientId: 6462da547534f037e8ddc129"}
+{"level":30,"time":1684200020442,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc128 anduserRecipientId: 6462da547534f037e8ddc129 sucessfully validated."}
+{"level":50,"time":1684200020451,"pid":31352,"hostname":"KevinsPC","msg":"Could not get messageId in model: Client must be connected before running operations"}
+{"level":50,"time":1684200020451,"pid":31352,"hostname":"KevinsPC","msg":"Database Error trying to get in controller: Client must be connected before running operations"}
+{"level":30,"time":1684200020454,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020456,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020459,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020462,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020464,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200020465,"pid":33236,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684200020465,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'null' and/or status online and/or first name test and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684200020469,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020470,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020472,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020481,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc12c userRecipientId: 6462da547534f037e8ddc12d"}
+{"level":30,"time":1684200020482,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc12c anduserRecipientId: 6462da547534f037e8ddc12d sucessfully validated."}
+{"level":30,"time":1684200020494,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020496,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020500,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020511,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020512,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020514,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020524,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc130 userRecipientId: 6462da547534f037e8ddc131"}
+{"level":30,"time":1684200020526,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc130 anduserRecipientId: 6462da547534f037e8ddc131 sucessfully validated."}
+{"level":30,"time":1684200020542,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020544,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020547,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020557,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020558,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020560,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020567,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc136 userRecipientId: 6462da547534f037e8ddc137"}
+{"level":30,"time":1684200020568,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020568,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc136 anduserRecipientId: 6462da547534f037e8ddc137 sucessfully validated."}
+{"level":30,"time":1684200020569,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200020572,"pid":26676,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684200020572,"pid":26676,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'JavaEnthusiast' and/or status offline and/or first name Jason and/or last name Lastname and/or biography Yep, that's my last name were invalid."}
+{"level":50,"time":1684200020573,"pid":26676,"hostname":"KevinsPC","msg":"Username null and/or new password JavaEnthusiast and/or new status offline and/or new first name Jason and/or new last name Lastname and/or new biography Yep, that's my last name was/were invalid"}
+{"level":50,"time":1684200020580,"pid":31352,"hostname":"KevinsPC","msg":"Could not get messages by chatId in model: Client must be connected before running operations"}
+{"level":50,"time":1684200020581,"pid":31352,"hostname":"KevinsPC","msg":"Error trying to get all messages in controller: Client must be connected before running operations"}
+{"level":30,"time":1684200020583,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020585,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020589,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020602,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020603,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020606,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684200020617,"pid":31352,"hostname":"KevinsPC","msg":"Could not get messages by chatId in model: Could not find messages with chat id: ffffffffffffffffffffffff"}
+{"level":50,"time":1684200020618,"pid":31352,"hostname":"KevinsPC","msg":"InvalidInputError trying to get all messages in controller: Could not find messages with chat id: ffffffffffffffffffffffff"}
+{"level":30,"time":1684200020621,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020624,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020628,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020639,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020640,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020642,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020648,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc13c userRecipientId: 6462da547534f037e8ddc13d"}
+{"level":30,"time":1684200020649,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc13c anduserRecipientId: 6462da547534f037e8ddc13d sucessfully validated."}
+{"level":30,"time":1684200020659,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020661,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020665,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020673,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020674,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020676,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020687,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc140 userRecipientId: 6462da547534f037e8ddc141"}
+{"level":30,"time":1684200020688,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc140 anduserRecipientId: 6462da547534f037e8ddc141 sucessfully validated."}
+{"level":50,"time":1684200020694,"pid":31352,"hostname":"KevinsPC","msg":"Client must be connected before running operations"}
+{"level":50,"time":1684200020694,"pid":31352,"hostname":"KevinsPC","msg":"Database error in validator: Client must be connected before running operations"}
+{"level":50,"time":1684200020694,"pid":31352,"hostname":"KevinsPC","msg":"Could not edit message in model: Database error in validator: Client must be connected before running operations"}
+{"level":50,"time":1684200020695,"pid":31352,"hostname":"KevinsPC","msg":"Database Error trying to edit message in controller: Database error in validator: Client must be connected before running operations"}
+{"level":30,"time":1684200020699,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020701,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020704,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020722,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020723,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020725,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684200020733,"pid":31352,"hostname":"KevinsPC","msg":"Could not find message with id in validator: ffffffffffffffffffffffff"}
+{"level":50,"time":1684200020733,"pid":31352,"hostname":"KevinsPC","msg":"Invalid input error in validator: Could not find message with id in validator: ffffffffffffffffffffffff"}
+{"level":50,"time":1684200020733,"pid":31352,"hostname":"KevinsPC","msg":"Could not edit message in model: Invalid input error in validator: Could not find message with id in validator: ffffffffffffffffffffffff"}
+{"level":50,"time":1684200020733,"pid":31352,"hostname":"KevinsPC","msg":"Invalid input trying to edit message: Invalid input error in validator: Could not find message with id in validator: ffffffffffffffffffffffff"}
+{"level":30,"time":1684200020737,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020738,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020742,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020755,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020756,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020759,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020767,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc144 userRecipientId: 6462da547534f037e8ddc145"}
+{"level":30,"time":1684200020768,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc144 anduserRecipientId: 6462da547534f037e8ddc145 sucessfully validated."}
+{"level":30,"time":1684200020791,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020792,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020795,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020806,"pid":31352,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020807,"pid":31352,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200020809,"pid":31352,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684200020818,"pid":31352,"hostname":"KevinsPC","msg":"Added chat: userSenderId: 6462da547534f037e8ddc14a userRecipientId: 6462da547534f037e8ddc14b"}
+{"level":30,"time":1684200020819,"pid":31352,"hostname":"KevinsPC","msg":"userSenderId: 6462da547534f037e8ddc14a anduserRecipientId: 6462da547534f037e8ddc14b sucessfully validated."}
+{"level":50,"time":1684200020825,"pid":31352,"hostname":"KevinsPC","msg":"Could not delete message in model: Client must be connected before running operations"}
+{"level":50,"time":1684200020826,"pid":31352,"hostname":"KevinsPC","msg":"Error trying to delete message in controller: Right-hand side of 'instanceof' is not an object"}
+{"level":30,"time":1684200020828,"pid":31352,"hostname":"KevinsPC","msg":"Disconnected from the MongoDB database!"}
+{"level":30,"time":1684200020828,"pid":31352,"hostname":"KevinsPC","msg":"Database connection closed"}
+{"level":30,"time":1684200020844,"pid":31352,"hostname":"KevinsPC","msg":"Mock db stopped."}
+{"level":30,"time":1684200020869,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020870,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200020881,"pid":33236,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Username."}
+{"level":30,"time":1684200020972,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200020973,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200020975,"pid":26676,"hostname":"KevinsPC","msg":"User being added had an Invalid password undefined"}
+{"level":50,"time":1684200020975,"pid":26676,"hostname":"KevinsPC","msg":"Error! Username 'Jane' and/or password 'undefined' and/or status offline and/or first name Jane and/or last name Doe and/or biography An anonymous user looking for a good time were invalid."}
+{"level":50,"time":1684200020975,"pid":26676,"hostname":"KevinsPC","msg":"Username Jane and/or new password undefined and/or new status offline and/or new first name Jane and/or new last name Doe and/or new biography An anonymous user looking for a good time was/were invalid"}
+{"level":30,"time":1684200021198,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200021199,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200021200,"pid":33236,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684200021200,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name null and/or last name test and/or biography This is a test were invalid."}
+{"level":30,"time":1684200021302,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200021303,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200021320,"pid":26676,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Chris."}
+{"level":50,"time":1684200021320,"pid":26676,"hostname":"KevinsPC","msg":"Database error was encountered while trying to add user Chris to the database"}
+{"level":30,"time":1684200021540,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200021541,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200021542,"pid":33236,"hostname":"KevinsPC","msg":"User being added has an invalid last name "}
+{"level":50,"time":1684200021542,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name  and/or biography This is a test were invalid."}
+{"level":30,"time":1684200021632,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200021632,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200021865,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200021866,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200021866,"pid":33236,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684200021867,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username 'Username' and/or password 'password123' and/or status online and/or first name test and/or last name test and/or biography undefined were invalid."}
+{"level":30,"time":1684200021958,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200021959,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200022192,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200022193,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200022207,"pid":33236,"hostname":"KevinsPC","msg":"Error! There was a database error while trying to add user Chad."}
+{"level":30,"time":1684200022311,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200022312,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200022315,"pid":26676,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684200022525,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200022525,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200022658,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200022659,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200022840,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200022841,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200023174,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200023175,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200023488,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200023489,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200023787,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200023787,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200024101,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200024102,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200024397,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200024398,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200024710,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200024711,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200025024,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200025025,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200025330,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200025331,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200025639,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200025640,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200025933,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200025933,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200025935,"pid":33236,"hostname":"KevinsPC","msg":"User being added had an Invalid username null"}
+{"level":50,"time":1684200025935,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username 'null' and/or password 'GettingOutOfHand' and/or status online and/or first name Help and/or last name TooMany and/or biography I don't know what to do anymore were invalid. Therefore user with ID 6462da595bfddd61587f47c9 was not updated"}
+{"level":30,"time":1684200026228,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200026228,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200026230,"pid":33236,"hostname":"KevinsPC","msg":"User being added had an Invalid password f"}
+{"level":50,"time":1684200026230,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username 'John' and/or password 'f' and/or status away and/or first name John and/or last name Doe and/or biography From Alabama were invalid. Therefore user with ID 6462da5a5bfddd61587f47ca was not updated"}
+{"level":30,"time":1684200026531,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200026531,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200026827,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200026828,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200026829,"pid":33236,"hostname":"KevinsPC","msg":"User being added has an invalid first name null"}
+{"level":50,"time":1684200026829,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username 'Jason' and/or password 'JavaEnthusiast' and/or status offline and/or first name null and/or last name Lastname and/or biography Yep, that's my last name were invalid. Therefore user with ID 6462da5a5bfddd61587f47cc was not updated"}
+{"level":30,"time":1684200027126,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200027126,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200027127,"pid":33236,"hostname":"KevinsPC","msg":"User being added has an invalid last name null"}
+{"level":50,"time":1684200027127,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username 'FirstLittlePig' and/or password 'StrawIsBest' and/or status online and/or first name Piggie and/or last name null and/or biography Best building material is straw were invalid. Therefore user with ID 6462da5b5bfddd61587f47cd was not updated"}
+{"level":30,"time":1684200027429,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200027430,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200027431,"pid":33236,"hostname":"KevinsPC","msg":"User being added has an invalid biography undefined"}
+{"level":50,"time":1684200027431,"pid":33236,"hostname":"KevinsPC","msg":"Error! Username 'Donkey' and/or password 'ShreksBestFriend' and/or status online and/or first name Donkey and/or last name TheDonkey and/or biography undefined were invalid. Therefore user with ID 6462da5b5bfddd61587f47ce was not updated"}
+{"level":30,"time":1684200027729,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200027729,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200028029,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200028029,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200028391,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200028392,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200028693,"pid":33236,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200028694,"pid":33236,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200052678,"pid":26676,"hostname":"KevinsPC","msg":"Error finding user in the database. database is not defined"}
+{"level":30,"time":1684200052970,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200052970,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200053269,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200053270,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200053575,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200053576,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200053579,"pid":26676,"hostname":"KevinsPC","msg":"Couldn't find any users"}
+{"level":30,"time":1684200053877,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200053878,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200083902,"pid":26676,"hostname":"KevinsPC","msg":"Error finding users in the database."}
+{"level":30,"time":1684200084191,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200084192,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200084488,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200084488,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200084798,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200084799,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200084802,"pid":26676,"hostname":"KevinsPC","msg":"User being added had an Invalid username "}
+{"level":50,"time":1684200084802,"pid":26676,"hostname":"KevinsPC","msg":"Error! Username '' and/or password 'Password123' and/or status offline and/or first name John and/or last name Doe and/or biography This is a test were invalid. Therefore user with ID 6462da943ca342b49b0e3f93 was not updated"}
+{"level":50,"time":1684200084802,"pid":26676,"hostname":"KevinsPC","msg":"New username  and/or new password Password123 and/or new status offline and/or new first name John and/or new last name Doe and/or new biography This is a test was/were invalid"}
+{"level":30,"time":1684200085101,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200085102,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200085104,"pid":26676,"hostname":"KevinsPC","msg":"User being added had an Invalid password null"}
+{"level":50,"time":1684200085104,"pid":26676,"hostname":"KevinsPC","msg":"Error! Username 'username' and/or password 'null' and/or status offline and/or first name John and/or last name Doe and/or biography This is a test were invalid. Therefore user with ID 6462da953ca342b49b0e3f94 was not updated"}
+{"level":50,"time":1684200085105,"pid":26676,"hostname":"KevinsPC","msg":"New username username and/or new password null and/or new status offline and/or new first name John and/or new last name Doe and/or new biography This is a test was/were invalid"}
+{"level":30,"time":1684200085417,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200085418,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200085420,"pid":26676,"hostname":"KevinsPC","msg":"Error updating the user with ID FGD781274 from the database"}
+{"level":30,"time":1684200085747,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200085748,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200085767,"pid":26676,"hostname":"KevinsPC","msg":"Error updating the user with ID 6462da953ca342b49b0e3f95 from the database"}
+{"level":30,"time":1684200086065,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200086065,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200086358,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200086359,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684200086662,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200086663,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200086665,"pid":26676,"hostname":"KevinsPC","msg":"Unknown error encountered while deleting user with idWF12085124 from the database."}
+{"level":30,"time":1684200086961,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200086961,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":50,"time":1684200086978,"pid":26676,"hostname":"KevinsPC","msg":"Unknown error encountered while deleting user with id6462da963ca342b49b0e3f97 from the database."}
+{"level":30,"time":1684200087270,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684200087271,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
