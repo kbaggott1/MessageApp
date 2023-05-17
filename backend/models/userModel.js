@@ -105,7 +105,6 @@ async function hashPassword(username, password) {
  */
 async function checkCredentials(username, password) {
     try{
-        //CHANGE TO WORK WITH BCRYPT
         let user = await usersCollection.findOne({ username: username });
 
         if(!user){
@@ -326,5 +325,6 @@ module.exports = {
     updateUser,
     deleteUser,
     getCollection,
+    checkCredentials,
     close
 }
