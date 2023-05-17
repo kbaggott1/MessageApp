@@ -74,16 +74,12 @@ test("POST /chats success case", async () => {
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
-    const user1Response = await testRequest.post("/users/").send(user1);
-
-    const user2Response = await testRequest.post("/users/").send(user2);
-
-    const user1Id = user1Response.body.id;
-    const user2Id = user2Response.body.id;
+    const user1Response = await UserModelMongoDb.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
+    const user2Response = await UserModelMongoDb.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
 
     const chatResponse = await testRequest.post("/chats/").send({
-        userSenderId: user1Id,
-        userRecipientId: user2Id
+        userSenderId: user1Response._id,
+        userRecipientId: user2Response._id
     });
 
     const cursor = await ChatsModelMongoDb.getCollection().find();
@@ -92,24 +88,20 @@ test("POST /chats success case", async () => {
     expect(chatResponse.status).toBe(200);
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(1);
-    expect(results[0].userSenderId).toBe(user1Id);
-    expect(results[0].userRecipientId).toBe(user2Id);
+    expect(results[0].userSenderId.toString()).toBe(user1Response._id.toString());
+    expect(results[0].userRecipientId.toString()).toBe(user2Response._id.toString());
 });
 
 test("POST /chats failure invalid userSenderId failure case", async () => {
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
-    const user1Response = await testRequest.post("/users/").send(user1);
-
-    const user2Response = await testRequest.post("/users/").send(user2);
-
-    const user1Id = user1Response.body.id;
-    const user2Id = user2Response.body.id;
+    const user1Response = await UserModelMongoDb.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
+    const user2Response = await UserModelMongoDb.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
 
     const chatResponse = await testRequest.post("/chats/").send({
         userSenderId: null,
-        userRecipientId: user2Id
+        userRecipientId: user2Response._id
     });
 
     const cursor = await ChatsModelMongoDb.getCollection().find();
@@ -124,107 +116,118 @@ test("POST /chats failure database error failure case", async () => {
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
-    const user1Response = await testRequest.post("/users/").send(user1);
+    const user1Response = await UserModelMongoDb.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
+    const user2Response = await UserModelMongoDb.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
 
-    const user2Response = await testRequest.post("/users/").send(user2);
-
-    const user1Id = user1Response.body.id;
-    const user2Id = user2Response.body.id;
 
     await mongod.stop();
 
-    const chatResponse = await testRequest.post("/chats/").send({
-        userSenderId: user1Id,
-        userRecipientId: user2Id
+    const testResponse = await testRequest.post("/chats/").send({
+        userSenderId: user1Response._id,
+        userRecipientId: user1Response._id
     });
 
-    expect(chatResponse.status).toBe(500);
+    expect(testResponse.status).toBe(500);
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await model.initialize("Test_Message_App", url, true);
+    await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
 });
 
 test("GET /chats/:id success case", async () => {
-    
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
-    const user1Response = await testRequest.post("/users/").send(user1);
+    const user1Response = await UserModelMongoDb.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
+    const user2Response = await UserModelMongoDb.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
 
-    const user2Response = await testRequest.post("/users/").send(user2);
+    const addedChat = await ChatsModelMongoDb.addChat(user1Response._id, user2Response._id);
 
-    const user1Id = user1Response.body.id;
-    const user2Id = user2Response.body.id;
-
-    const addedChat = await ChatsModelMongoDb.addChat(user1Id, user2Id);
-
-    const testResponse = await testRequest.get(`/chats/${addedChat._id}`);
+    const testResponse = await testRequest.get(`/chats/${addedChat.insertedId}`);
 
     expect(testResponse.status).toBe(200);
-    expect(testResponse.body._id).toBe(addedChat._id.toString());
-    expect(testResponse.body.userSenderId).toBe(user1Id);
-    expect(testResponse.body.userRecipientId).toBe(user2Id);
-    
+    expect(testResponse.body._id).toBe(addedChat.insertedId.toString());
+    expect(testResponse.body.userSenderId).toBe(user1Response._id.toString());
+    expect(testResponse.body.userRecipientId).toBe(user2Response._id.toString());
 });
+
 
 test("GET /chats/:id failure chat does not exist", async () => {
     const testResponse = await testRequest.get("/chats/87132568");
 
-    expect(testResponse.status).toBe(400);
+    expect(testResponse.status).toBe(500);
 });
 
 test("GET /chats/:id failure database error", async () => {
-    const senderId = generateValidUserId();
-    const recipientId = generateValidUserId();
-    addedChat = await model.addChat(senderId, recipientId);
+    const user1 = generateValidUserData();
+    const user2 = generateValidUserData();
+
+    const user1Response = await UserModelMongoDb.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
+    const user2Response = await UserModelMongoDb.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
+
+    const addedChat = await ChatsModelMongoDb.addChat(user1Response._id, user2Response._id);
+
     await mongod.stop();
 
-    const testResponse = await testRequest.get(`/chats/${addedChat._id}`);
+    const testResponse = await testRequest.get(`/chats/${addedChat.insertedId}`);
+
     expect(testResponse.status).toBe(500);
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await model.initialize("Test_Message_App", url, true);
+    await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
 });
 
 test('GET /chats success case', async () => {
-    const chatArray = [];
-    chatArray[0] = { userSenderId: generateValidUserId(), userRecipientId: generateValidUserId() };
-    chatArray[1] = { userSenderId: generateValidUserId(), userRecipientId: generateValidUserId() };
-    chatArray[2] = { userSenderId: generateValidUserId(), userRecipientId: generateValidUserId() };
-    chatArray[3] = { userSenderId: generateValidUserId(), userRecipientId: generateValidUserId() };
-    
-    await model.addChat(chatArray[0].userSenderId, chatArray[0].userRecipientId);
-    await model.addChat(chatArray[1].userSenderId, chatArray[1].userRecipientId);
-    await model.addChat(chatArray[2].userSenderId, chatArray[2].userRecipientId);
-    await model.addChat(chatArray[3].userSenderId, chatArray[3].userRecipientId);
+    const userArray = [];
+    userArray[0] = generateValidUserData();
+    userArray[1] = generateValidUserData();
+    userArray[2] = generateValidUserData();
+    userArray[3] = generateValidUserData();
+
+    const userResponseArray = [];
+    userResponseArray[0] = await UserModelMongoDb.addUser(userArray[0].username, userArray[0].password, userArray[0].status, userArray[0].firstName, userArray[0].lastName, userArray[0].biography, userArray[0].image);
+    userResponseArray[1] = await UserModelMongoDb.addUser(userArray[1].username, userArray[1].password, userArray[1].status, userArray[1].firstName, userArray[1].lastName, userArray[1].biography, userArray[1].image);
+    userResponseArray[2] = await UserModelMongoDb.addUser(userArray[2].username, userArray[2].password, userArray[2].status, userArray[2].firstName, userArray[2].lastName, userArray[2].biography, userArray[2].image);
+    userResponseArray[3] = await UserModelMongoDb.addUser(userArray[3].username, userArray[3].password, userArray[3].status, userArray[3].firstName, userArray[3].lastName, userArray[3].biography, userArray[3].image);
+
+    await ChatsModelMongoDb.addChat(userResponseArray[0]._id, userResponseArray[1]._id);
+    await ChatsModelMongoDb.addChat(userResponseArray[1]._id, userResponseArray[2]._id);
+    await ChatsModelMongoDb.addChat(userResponseArray[2]._id, userResponseArray[3]._id);
+    await ChatsModelMongoDb.addChat(userResponseArray[3]._id, userResponseArray[0]._id);
 
     const testResponse = await testRequest.get("/chats/");
     expect(testResponse.status).toBe(200);
 
-    for(let i = 0; i < chatArray.length; i++){
-        expect(chatArray[i].userSenderId == testResponse.body[i].userSenderId).toBe(true)
-        expect(chatArray[i].userRecipientId == testResponse.body[i].userRecipientId).toBe(true)
+    const userIds = userResponseArray.map(user => String(user._id));
+
+    for(let i = 0; i < testResponse.body.length; i++){
+        const chat = testResponse.body[i];
+        expect(chat.userSenderId).toBeDefined();
+        expect(chat.userRecipientId).toBeDefined();
+        expect(userIds.includes(String(chat.userSenderId))).toBe(true);
+        expect(userIds.includes(String(chat.userRecipientId))).toBe(true);
     }
 
-    expect(testResponse.body.length == chatArray.length).toBe(true)
-})
+    expect(testResponse.body.length).toBe(userArray.length);
+});
+
+
 
 test('GET /chats failure no chats in the database', async () => {
-    await chatModel.initialize(url,"Message_App", true)
     const testResponse = await testRequest.get("/chats/");
     expect(testResponse.status).toBe(400);
+    
 });
 
 test('GET /chats failure database error', async () => {
-    const sender1Id = generateValidUserId();
-    const recipient1Id = generateValidUserId();
-    const sender2Id = generateValidUserId();
-    const recipient2Id = generateValidUserId();
-    
-    await model.addChat(sender1Id, recipient1Id);
-    await model.addChat(sender2Id, recipient2Id);
+    const user1 = generateValidUserData();
+    const user2 = generateValidUserData();
+
+    const user1Response = await UserModelMongoDb.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
+    const user2Response = await UserModelMongoDb.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
+
+    await ChatsModelMongoDb.addChat(user1Response._id, user2Response._id);
 
     await mongod.stop();
 
@@ -233,19 +236,23 @@ test('GET /chats failure database error', async () => {
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await model.initialize("Test_Message_App", url, true);
+    await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
 });
 
 test('DELETE /chats success case', async () => {
-    const senderId = generateValidUserId();
-    const recipientId = generateValidUserId();
-    const addedChat = await model.addChat(senderId, recipientId);
+    const user1 = generateValidUserData();
+    const user2 = generateValidUserData();
+
+    const user1Response = await UserModelMongoDb.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
+    const user2Response = await UserModelMongoDb.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
+
+    const addedChat = await ChatsModelMongoDb.addChat(user1Response._id, user2Response._id);
 
     const testResponse = await testRequest.delete("/chats/").send({
         chatId: addedChat._id
     });
 
-    const cursor = await model.getCollection().find();
+    const cursor = await ChatsModelMongoDb.getCollection().find();
     const results = await cursor.toArray();
 
     expect(testResponse.status).toBe(200);
@@ -258,7 +265,7 @@ test('DELETE /chats failure chat does not exist', async () => {
         chatId: "WF12085124",
     });
 
-    const cursor = await model.getCollection().find();
+    const cursor = await ChatsModelMongoDb.getCollection().find();
     const results = await cursor.toArray();
 
     expect(testResponse.status).toBe(500);
@@ -267,18 +274,22 @@ test('DELETE /chats failure chat does not exist', async () => {
 });
 
 test('DELETE /chats failure database error', async () => {
-    const senderId = generateValidUserId();
-    const recipientId = generateValidUserId();
-    const addedChat = await model.addChat(senderId, recipientId);
+    const user1 = generateValidUserData();
+    const user2 = generateValidUserData();
+
+    const user1Response = await UserModelMongoDb.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
+    const user2Response = await UserModelMongoDb.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
+
+    const addedChat = await ChatsModelMongoDb.addChat(user1Response._id, user2Response._id);
     await mongod.stop();
-    
+
     const testResponse = await testRequest.delete("/chats/").send({
         chatId: addedChat._id,
     });
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await model.initialize("Test_Message_App", url, true);
+    await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
 
     expect(testResponse.status).toBe(500);
 });

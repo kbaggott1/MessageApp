@@ -67,8 +67,13 @@ async function addChat(userSenderId, userRecipientId){
       }
   }
   catch(err){
-      logger.error(`Error adding chat: ${err.message}`);
-      throw new InvalidInputError(err.message);
+    if(err instanceof InvalidInputError){
+        logger.error(`Invalid input: ${err.message}`);
+        throw new InvalidInputError(err.message);
+    } else {
+        logger.error(`Database error: ${err.message}`);
+        throw new DatabaseError(err.message);
+    }  
   }
 }
 
@@ -79,18 +84,22 @@ async function addChat(userSenderId, userRecipientId){
  */
 async function getAllChats() {
     try{
-        let chats = await chatCollection.find();
+        let chats = await chatCollection.find().toArray();
         
-        if(chats == null){
-            throw new DatabaseError("Error! Unable to find any users in the " + database + " database.")
+        if(!chats || chats.length == 0){
+            throw new InvalidInputError("Error! Unable to find any users in the " + database + " database.")
         }
         
-        let arr = await chats.toArray();
+        let arr = await chats;
         return arr;
     }
     catch(err){
-        if(err instanceof DatabaseError){
+        if(err instanceof InvalidInputError){
             logger.error("Error! There was an error in the getAllChats method while trying to get all users from the " + database + " database");
+            throw new InvalidInputError(err.message);
+        }
+        else{
+            logger.error(`Database error: ${err.message}`);
             throw new DatabaseError(err.message);
         }
     }
@@ -105,17 +114,19 @@ async function getSingleChat(id){
   try{
       let object_id = new ObjectId(id);
       const chat = await chatCollection.findOne({ _id: object_id  });
-      if(chat){
-          logger.info(`Retrieved chat: Id: ${id}`);
-          return chat; 
-      }
-      else{
-          throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
-      }
+        if(!chat){
+            throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
+        }
+        return chat;   
   }
   catch(err){
-      logger.error(`Error retrieving chat: ${err.message}`);
-      throw new InvalidInputError(err.message);
+    if(err instanceof InvalidInputError){
+        logger.error(`Invalid input: ${err.message}`);
+        throw new InvalidInputError(err.message);
+      } else {
+        logger.error(`Database error: ${err.message}`);
+        throw new DatabaseError(err.message);
+      }
   }
 }
 
@@ -126,7 +137,9 @@ async function getSingleChat(id){
  */
 async function deleteChat(id) {
   try {
-      const findChat = await chatCollection.findOne({ _id: id });
+        
+      let object_id = new ObjectId(id);
+      const findChat = await chatCollection.findOne({ _id: object_id });
       if (findChat) {
           const deletedChat = { _id: id };
           await chatCollection.deleteOne({ _id: id });
@@ -136,8 +149,13 @@ async function deleteChat(id) {
           throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
       }
   } catch (err) {
-      logger.error(`Error deleting chat: ${err.message}`);
-      throw new InvalidInputError(err.message);
+    if(err instanceof InvalidInputError){
+        logger.error(`Invalid input: ${err.message}`);
+        throw new InvalidInputError(err.message);
+      } else {
+        logger.error(`Database error: ${err.message}`);
+        throw new DatabaseError(err.message);
+      }
   }
 }
 
@@ -153,8 +171,13 @@ async function getChatsBySenderId(senderId) {
         return chats;
     }
     catch(err) {
-        logger.error("Could not get chats by senderId in model: " + err.message);
-        throw new DatabaseError(err.message);
+        if(err instanceof InvalidInputError){
+            logger.error(`Invalid input: ${err.message}`);
+            throw new InvalidInputError(err.message);
+          } else {
+            logger.error(`Database error: ${err.message}`);
+            throw new DatabaseError(err.message);
+          }
     }
 }
 
