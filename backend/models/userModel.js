@@ -3,6 +3,8 @@ const InputError = require("./InvalidInputError.js");
 const DBError = require("./DatabaseError.js");
 const validateUtils = require("../helperMethods/validateUserData.js");
 const logger = require("../logs/logger.js");
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 let dbName;
 let mongoClient;
 let usersCollection;
@@ -66,8 +68,9 @@ async function initialize(database, url,  resetFlag = false) {
  */
 async function addUser(username, password, status, firstName, lastName, biography , image) {
     try{
-        if(validateUtils.isValid(username, password, status, firstName, lastName, biography)){
+        if(await validateUtils.isValidForAdd(usersCollection, username, password, status, firstName, lastName, biography)){
             let createDate = Date();
+            password = await hashPassword(username, password);
             let newUser = { username: username, password: password, create_date: createDate, status: status, firstName: firstName, lastName: lastName, biography: biography, image: image};
             await usersCollection.insertOne(newUser);
             return newUser;
@@ -88,12 +91,45 @@ async function addUser(username, password, status, firstName, lastName, biograph
     }
 }
 
+async function hashPassword(username, password) {
+    return await bcrypt.hash(password + username + process.env.PASSWORD_PEPPER, saltRounds);
+}
 
 /**
- * Finds and returns a single user object that has the given username. It finds the first user
+ * checks credentials entered to verify the credentials of a user.
+ * If an error occurs, a corresponding error is thrown.
+ * @param {string} username The username to be verified
+ * @param {string} password The password to check if is correct
+ * @throws {DatabaseError} If there is an error reading from the database this error is thrown.
+ * @returns True when credentials are good, false if username is invalid or password does not match
+ */
+async function checkCredentials(username, password) {
+    try{
+        //CHANGE TO WORK WITH BCRYPT
+        let user = await usersCollection.findOne({ username: username });
+
+        if(!user){
+            return false;
+        }
+
+        if(user.password != await hashPassword(user.username, password)) {
+            return false;
+        }
+
+        return true;
+    }
+    catch(err){
+        logger.error("Error! There was an issue trying to find the user with ID " + id + " in the " + database + " database.")
+        throw new DBError.DatabaseError(err.message);
+    }
+}
+
+
+/**
+ * Finds and returns a single user object that has the given id. It finds the first user
  * with that specific username. Meaning if there are multiple it will only return the first one.
  * If an error occurs, a corresponding error is thrown.
- * @param {string} username Username of the user that will be searched for.
+ * @param {string} id id of the user that will be searched for.
  * @throws {InvalidInputError} If the user could not be found in the database this error is thrown.
  * @throws {DatabaseError} If there is an error reading from the database this error is thrown.
  * @returns A user object representing the user with the provided username.
@@ -121,6 +157,36 @@ async function getUser(id) {
     }
 }
 
+/**
+ * Finds and returns a single user object that has the given username. It finds the first user
+ * with that specific username. Meaning if there are multiple it will only return the first one.
+ * If an error occurs, a corresponding error is thrown.
+ * @param {string} username username of the user that will be searched for.
+ * @throws {InvalidInputError} If the user could not be found in the database this error is thrown.
+ * @throws {DatabaseError} If there is an error reading from the database this error is thrown.
+ * @returns A user object representing the user with the provided username.
+ */
+async function getUserByUsername(username) {
+    try{
+        let user = await usersCollection.findOne({ username: username });
+
+        if(!user){
+            throw new InputError.InvalidInputError("Error! User with username '" + username + "' could not be found in the database.");
+        }
+
+        return user;
+    }
+    catch(err){
+        if(err instanceof InputError.InvalidInputError){
+            logger.error("Error! User with username " + username + " is invalid.");
+            throw new InputError.InvalidInputError(err.message);
+        }
+        else{
+            logger.error("Error! There was an issue trying to find the user with username " + username + " in the " + database + " database.")
+            throw new DBError.DatabaseError(err.message);
+        }
+    }
+}
 
 /**
  * Gets all the users in the database. If an error occurs, a corresponding database error is thrown.
@@ -168,7 +234,7 @@ async function getAllUsers() {
  */
 async function updateUser(id, newUsername, newPassword, newStatus, newFirstName, newLastName, newBiography, newImage) {
     try{
-        if(validateUtils.isValid(newUsername, newPassword, newStatus, newFirstName, newLastName, newBiography)){
+        if(validateUtils.isValidForEdit(newUsername, newPassword, newStatus, newFirstName, newLastName, newBiography)){
             let object_id = new ObjectId(id);
             let updatedUser = await usersCollection.updateOne({ _id: object_id }, { $set: { password: newPassword, username: newUsername, status: newStatus, firstName: newFirstName, lastName: newLastName, biography: newBiography} });
             
@@ -255,6 +321,7 @@ module.exports = {
     initialize,
     addUser,
     getUser,
+    getUserByUsername,
     getAllUsers,
     updateUser,
     deleteUser,

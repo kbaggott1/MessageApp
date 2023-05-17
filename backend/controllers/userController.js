@@ -91,6 +91,46 @@ async function handleReadSingleUser(request, response) {
     }
 }
 
+/**
+ * Finds a user in the database. The username of the user needs to be provided through the request body. Whether or not
+ * the user is found an appropriate message is sent back and the status of the response is also modified to reflect 
+ * the outcome of the read operation.
+ * @param {*} request The request object. Should contain the username of the user in the body
+ * @param {*} response If the user was successfully found they are returned in the response
+ *                     as a JSON. Otherwise the response contains a descriptive error message
+ */
+router.get('/:username', handleReadSingleUserByUsername);
+async function handleReadSingleUserByUsername(request, response) {
+    try{
+        let foundUser = await models.getUserByUsername(request.params.username);
+        if(foundUser){
+            response.status("200");
+            response.json(foundUser);
+        }
+        else{
+            logger.error("User with username " + request.params.username + " was not found in the database for unknown reasons.");
+            response.status("400");
+            response.send({ errorMessage: "Error! Failed to find user with username " + request.params.username + " in the database."});
+        }
+    }
+    catch(err){
+        if(err instanceof InvalidInputError){
+            logger.error("User with username " + request.params.username + " could not be found in the database. ");
+            response.status("400");
+            response.send({ errorMessage: "Error! the user with username " + request.params.username + " could not be found in the database " + err.message});
+        }
+        else if(err instanceof DatabaseError){
+            logger.error("Database error was encountered while trying to find user with username " + request.params.username + " in the database");
+            response.status("500");
+            response.send({ errorMessage: "Error! There was an error connecting the database while trying to find user with username " + request.params.username + ". " + err.message});
+        }
+        else{
+            logger.error("Error finding user in the database. " + err.message);
+            response.status("500");
+            response.send({ errorMessage: "There was an issue find the user in the database. " + err.message});
+        }
+    }
+}
 
 /**
  * Searches the database for all users. No parameters need to be passed to the function since it gets all users.
