@@ -7,6 +7,37 @@ const routeRoot = '/users';
 const models = require('../models/userModel.js');
 const logger = require("../logs/logger.js");
 
+/**
+ * 
+ */
+router.post('/register', registerUser);
+async function registerUser(request, response) {
+    try{
+        const username = request.body.username;
+        const password = request.body.password;
+
+        if(username && password){
+            const userExists = users[username];
+
+            if(userExists){
+                console.log("Invalid registration - username " + username + " already exists");
+            } else {
+                hashedPassword = await bcrypt.hash(password, saltRounds);
+                users[username] = hashedPassword;
+                console.log("Successfully registered username " + username);
+                response.send({ success: true });
+                return;
+            }
+        } else {
+            console.log("Unsuccessful registration: Empty username or password");
+        }
+    } catch (error){
+        console.log(error.message);
+    }
+    response.send({success: false});
+}
+
+
 
 /**
  * Handles the addition of a new user to the database. This method takes in a request and response object
