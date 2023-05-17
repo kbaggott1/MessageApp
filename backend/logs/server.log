@@ -8772,3 +8772,86 @@
 {"level":50,"time":1684200086978,"pid":26676,"hostname":"KevinsPC","msg":"Unknown error encountered while deleting user with id6462da963ca342b49b0e3f97 from the database."}
 {"level":30,"time":1684200087270,"pid":26676,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
 {"level":30,"time":1684200087271,"pid":26676,"hostname":"KevinsPC","msg":"Collection Users from database Test_Message_Appdropped!"}
+{"level":30,"time":1684332998290,"pid":29940,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684332998596,"pid":29940,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":50,"time":1684332998597,"pid":29940,"hostname":"KevinsPC","msg":"Could not initialize db: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":30,"time":1684333059825,"pid":5712,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333060193,"pid":5712,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684333060447,"pid":5712,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684333141832,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333141833,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333190826,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333190826,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333202837,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333202837,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333203867,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333203867,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333204028,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333204028,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333219086,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333219086,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333262941,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333262941,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":30,"time":1684333395459,"pid":13756,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333395789,"pid":13756,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684333396059,"pid":13756,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684333402860,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333402861,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333403618,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333403618,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333403759,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333403759,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333403922,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333403923,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333436161,"pid":5712,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333436161,"pid":5712,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":30,"time":1684333477509,"pid":33924,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333477894,"pid":33924,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684333478174,"pid":33924,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684333484669,"pid":33924,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333484670,"pid":33924,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333487728,"pid":33924,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333487729,"pid":33924,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333488316,"pid":33924,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333488317,"pid":33924,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333488472,"pid":33924,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333488472,"pid":33924,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":50,"time":1684333488626,"pid":33924,"hostname":"KevinsPC","msg":"Error! User with username undefined is invalid."}
+{"level":50,"time":1684333488626,"pid":33924,"hostname":"KevinsPC","msg":"User with username undefined could not be found in the database. "}
+{"level":30,"time":1684333541539,"pid":19528,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333541918,"pid":19528,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684333542208,"pid":19528,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684333546123,"pid":19528,"hostname":"KevinsPC","msg":"Error! User with id undefined is invalid."}
+{"level":50,"time":1684333546123,"pid":19528,"hostname":"KevinsPC","msg":"User with ID undefined could not be found in the database. "}
+{"level":30,"time":1684333585340,"pid":32248,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333585642,"pid":32248,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684333585897,"pid":32248,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684333638035,"pid":32248,"hostname":"KevinsPC","msg":"Error! Username 'Levar' and/or password 'ReadingRainbow' and/or status online and/or first name Levar and/or last name Smith and/or biography I do cool stuff were invalid."}
+{"level":50,"time":1684333638036,"pid":32248,"hostname":"KevinsPC","msg":"Username Levar and/or new password ReadingRainbow and/or new status online and/or new first name Levar and/or new last name Smith and/or new biography I do cool stuff was/were invalid"}
+{"level":30,"time":1684333734126,"pid":33632,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333734431,"pid":33632,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684333734738,"pid":33632,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333772590,"pid":32036,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333772886,"pid":32036,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684333773146,"pid":32036,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333827846,"pid":11556,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333828167,"pid":11556,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684333828428,"pid":11556,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333982523,"pid":24212,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684333982848,"pid":24212,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684333983158,"pid":24212,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684334145955,"pid":12412,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684334146327,"pid":12412,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684334146584,"pid":12412,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684334327476,"pid":12412,"hostname":"KevinsPC","msg":"User being added has a username thgat is already taken: Levar"}
+{"level":30,"time":1684334438036,"pid":19372,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684334438407,"pid":19372,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684334438671,"pid":19372,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":50,"time":1684334447757,"pid":19372,"hostname":"KevinsPC","msg":"User being added has a username that is already taken: Levar"}
+{"level":50,"time":1684334447757,"pid":19372,"hostname":"KevinsPC","msg":"Error! Username 'Levar' and/or password 'ReadingRainbow' and/or status online and/or first name Levar and/or last name Smith and/or biography I do cool stuff were invalid."}
+{"level":50,"time":1684334447757,"pid":19372,"hostname":"KevinsPC","msg":"Username Levar and/or new password ReadingRainbow and/or new status online and/or new first name Levar and/or new last name Smith and/or new biography I do cool stuff was/were invalid"}
+{"level":50,"time":1684334757093,"pid":19372,"hostname":"KevinsPC","msg":"Error! User with username levar is invalid."}
+{"level":50,"time":1684334757094,"pid":19372,"hostname":"KevinsPC","msg":"User with username levar could not be found in the database. "}
+{"level":30,"time":1684336687389,"pid":25300,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684336687711,"pid":25300,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684336687968,"pid":25300,"hostname":"KevinsPC","msg":"connected to db"}
