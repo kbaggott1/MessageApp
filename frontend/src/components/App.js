@@ -11,7 +11,7 @@ function App() {
     <Routes>
       <Route path="/" element={ <MainLayout/>}>
         <Route index element={ <Home /> } />
-        <Route path="/messages" element={ <Messages/>} />
+        <Route path="/messages" element={ <Messages/>} /> {/*use outlet*/}
         <Route path="/settings" element={ <Settings/> } />
         <Route path="*" element={<Navigate to="/" />} />
       </Route>
