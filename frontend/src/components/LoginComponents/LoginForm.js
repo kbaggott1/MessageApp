@@ -16,6 +16,10 @@ export function LoginForm() {
             const requestOptions = {
                 method: "POST",
                 credentials: "include",
+                mode: 'cors', // this cannot be 'no-cors'
+                headers: {
+                  'Content-Type': 'application/json',
+                },
                 body: JSON.stringify({
                     username: username,
                     password: password,

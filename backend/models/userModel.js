@@ -92,7 +92,8 @@ async function addUser(username, password, status, firstName, lastName, biograph
 }
 
 async function hashPassword(username, password) {
-    return await bcrypt.hash(password + username + process.env.PASSWORD_PEPPER, saltRounds);
+    const hashed = await bcrypt.hash(password + username + process.env.PASSWORD_PEPPER, saltRounds)
+    return hashed;
 }
 
 /**
@@ -111,7 +112,7 @@ async function checkCredentials(username, password) {
             return false;
         }
 
-        if(user.password != await hashPassword(user.username, password)) {
+        if(await bcrypt.compare(user.password, password + username + process.env.PASSWORD_PEPPER)) {
             return false;
         }
 
