@@ -1,0 +1,20 @@
+.ModifyPersonalInfoBox {
+    background-color: #0e8388;
+    padding: 20px;
+    border-radius: 30px;
+    border-left: 200px;
+}
+
+.UsernameInputBox {
+    display: flex;
+    align-items: flex-start;
+    width: 95%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.UsernameInputBoxLabel {
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
