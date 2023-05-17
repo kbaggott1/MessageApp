@@ -249,7 +249,7 @@ test('DELETE /chats success case', async () => {
     const addedChat = await ChatsModelMongoDb.addChat(user1Response._id, user2Response._id);
 
     const testResponse = await testRequest.delete("/chats/").send({
-        chatId: addedChat._id
+        _id: addedChat._id
     });
 
     const cursor = await ChatsModelMongoDb.getCollection().find();
@@ -268,7 +268,7 @@ test('DELETE /chats failure chat does not exist', async () => {
     const cursor = await ChatsModelMongoDb.getCollection().find();
     const results = await cursor.toArray();
 
-    expect(testResponse.status).toBe(500);
+    expect(testResponse.status).toBe(400);
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(0);
 });
@@ -284,7 +284,7 @@ test('DELETE /chats failure database error', async () => {
     await mongod.stop();
 
     const testResponse = await testRequest.delete("/chats/").send({
-        chatId: addedChat._id,
+        _id: addedChat._id
     });
 
     mongod = await MongoMemoryServer.create();
