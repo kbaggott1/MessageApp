@@ -100,9 +100,8 @@ async function hashPassword(username, password) {
  * If an error occurs, a corresponding error is thrown.
  * @param {string} username The username to be verified
  * @param {string} password The password to check if is correct
- * @throws {InvalidInputError} If the user could not be found in the database this error is thrown.
  * @throws {DatabaseError} If there is an error reading from the database this error is thrown.
- * @returns A user object representing the user with the provided username.
+ * @returns True when credentials are good, false if username is invalid or password does not match
  */
 async function checkCredentials(username, password) {
     try{
@@ -110,24 +109,18 @@ async function checkCredentials(username, password) {
         let user = await usersCollection.findOne({ username: username });
 
         if(!user){
-            throw new InputError.InvalidInputError("Could not find user: " + username +" in the database.");
+            return false;
         }
 
         if(user.password != await hashPassword(user.username, password)) {
-            throw new InputError.InvalidInputError("Password is incorrect.");
+            return false;
         }
 
         return true;
     }
     catch(err){
-        if(err instanceof InputError.InvalidInputError){
-            logger.error("Error! User with id " + id + " is invalid.");
-            throw new InputError.InvalidInputError(err.message);
-        }
-        else{
-            logger.error("Error! There was an issue trying to find the user with ID " + id + " in the " + database + " database.")
-            throw new DBError.DatabaseError(err.message);
-        }
+        logger.error("Error! There was an issue trying to find the user with ID " + id + " in the " + database + " database.")
+        throw new DBError.DatabaseError(err.message);
     }
 }
 
