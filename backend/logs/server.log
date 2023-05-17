@@ -8855,3 +8855,6 @@
 {"level":30,"time":1684336687389,"pid":25300,"hostname":"KevinsPC","msg":"connected to db"}
 {"level":30,"time":1684336687711,"pid":25300,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
 {"level":30,"time":1684336687968,"pid":25300,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684337043363,"pid":11600,"hostname":"KevinsPC","msg":"connected to db"}
+{"level":30,"time":1684337043666,"pid":11600,"hostname":"KevinsPC","msg":"Connected successfully to the MongoDB database!"}
+{"level":30,"time":1684337043935,"pid":11600,"hostname":"KevinsPC","msg":"connected to db"}
