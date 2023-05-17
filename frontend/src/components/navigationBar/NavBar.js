@@ -5,6 +5,8 @@ import * as FaIcons from "react-icons/fa"
 import { Link, useResolvedPath, NavLink, useMatch } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { IoSendSharp, IoSettings } from "react-icons/io5";
+import { CgLogIn } from "react-icons/cg";
+import { MdOutlineLogout } from 'react-icons/md'
 
 /**
  * A component for the navigation bar.
@@ -15,6 +17,13 @@ export function NavBar(){
         <>
             <nav className="navbar">
                 <ul className="nav-menu-items">
+                    <li>
+                        <NavLink to="/login">
+                            <button className="navButton">
+                                    <CgLogIn size={70}/>
+                            </button>
+                        </NavLink>
+                    </li>
                     <li>
                         <NavLink to="/">
                             <button className="navButton">
@@ -31,9 +40,16 @@ export function NavBar(){
                         </NavLink>
                     </li>
                     <li>
-                    <NavLink to="/settings">
+                        <NavLink to="/settings">
                             <button className="navButton">
                                 <IoSettings size={70}/>
+                            </button>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/logout">
+                            <button className="navButton">
+                                    <MdOutlineLogout size={70}/>
                             </button>
                         </NavLink>
                     </li>

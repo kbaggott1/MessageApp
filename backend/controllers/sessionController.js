@@ -1,21 +1,21 @@
 const express = require("express");
-const { Session, createSession, getSession, deleteSession } = require("./Session");
+const { Session, createSession, getSession, deleteSession } = require("../models/Session.js");
 const { checkCredentials } = require("../models/userModel.js");
 const router = express.Router();
 const routeRoot = '/session';
 
 /** Log a user in and create a session cookie that will expire in 2 minutes */
 router.post('/login', loginUser);
-function loginUser(request, response) {
+async function loginUser(request, response) {
     const username = request.body.username;
     const password = request.body.password;
 
     if(username && password) {
-        if(checkCredentials(username, password)) {
+        if(await checkCredentials(username, password)) {
             console.log("Successful login for user " + username);
 
             // Create a session object that will expire in 2 minutes
-            const sessionId = createSession(username, 5);
+            const sessionId = await createSession(username, 5);
 
             //Save cookie that will expire
             response.cookie("sessionId", sessionId, { expires: getSession(sessionId).expiresAt , httpOnly: true });
