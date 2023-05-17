@@ -20,9 +20,7 @@ export function LoginForm() {
                     username: username,
                     password: password,
                 }),
-                headers: {
-                    "Content-Type": "application/json; charset=UTF-8",
-                }
+
             };
             
             const response = await fetch("http://localhost:1337/session/login", requestOptions);
@@ -31,6 +29,7 @@ export function LoginForm() {
                 setIsLoggedIn(true);
                 navigate('/');
             }
+            console.log(response.status);
         }
         catch(err){
             alert("Error Loggin in! " + err.message);
