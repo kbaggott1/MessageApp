@@ -20,7 +20,6 @@ export function LoginForm() {
                     username: username,
                     password: password,
                 }),
-
             };
             
             const response = await fetch("http://localhost:1337/session/login", requestOptions);
@@ -39,20 +38,20 @@ export function LoginForm() {
 
     return(
         <>
-        <form onSubmit={handleSubmit}>
-            <div className='LoginInputBox'>
-                <label htmlFor='username'> Username </label>
-                <input type="text" placeholder='Username Goes here' onChange={(e) => setUsername(e.target.value)}/>
-                <br/>
-                <label htmlFor='password'> Password </label>
-                <input type="text" placeholder='Password Goes here' onChange={(e) => setPassword(e.target.value)}/>
-                {username && password && <button type="submit"> Login </button>} 
-            </div>
-        </form>
+            <form onSubmit={handleSubmit}>
+                <div className='LoginInputBox'>
+                    <label htmlFor='username'> Username </label>
+                    <input type="text" placeholder='Username Goes here' onChange={(e) => setUsername(e.target.value)}/>
+                    <br/>
+                    <label htmlFor='password'> Password </label>
+                    <input type="text" placeholder='Password Goes here' onChange={(e) => setPassword(e.target.value)}/>
+                    {username && password && <button type="submit"> Login </button>} 
+                </div>
+            </form>
 
-        <div>
-            {isLoggedin ? <h1> bruh </h1> : <h1> not brtuh </h1>}
-        </div>
+            <div>
+                {isLoggedin ? <h1> bruh </h1> : <h1> not brtuh </h1>}
+            </div>
         </>
 
     )
