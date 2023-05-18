@@ -7,7 +7,7 @@ export function Chat({chat}) {
     
     useEffect(() => {
         getUsername(chat, setUser);
-    }, [])
+    }, [getUsername])
 
     
     return(

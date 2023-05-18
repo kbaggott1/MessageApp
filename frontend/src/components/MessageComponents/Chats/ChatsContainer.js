@@ -3,14 +3,16 @@ import { LoggedInUserContext } from "../../App"
 import { useContext, useState, useEffect } from "react";
 import { Chat } from "./Chat";
 
-export function ChatsContainer() {
+export function ChatsContainer({chats, setChats}) {
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
-    const [chats, setChats] = useState([]);
+    //const [chats, setChats] = useState();
 
+    /*
     useEffect(() => {
         getChats(userData, setChats);
-    }, [chats]); //doesnt refresh on add
+    }, [chats, getChats]); //doesnt refresh on add
 
+    */
     //setInterval(() => {getChats(userData, setChats)}, 10000)
     //getChats(userData, setChats); //NO AWAIT??
     //let chats = getChats(userData);
@@ -18,7 +20,7 @@ export function ChatsContainer() {
     return <div>
         <h1>Chats</h1>
         <NewChat refreshChats={() => {getChats(userData, setChats)}}/>
-        {chats.length > 0 ? chats.map(chat => (
+        {chats && chats.length > 0 ? chats.map(chat => (
             <Chat key={chat.senderId} chat={chat}/>
         )) : <h2>No chats yet!</h2>}
     </div>
