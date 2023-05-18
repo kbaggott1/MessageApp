@@ -6,6 +6,7 @@ import { LoggedInContext, LoggedInUserContext } from "../App.js"
 export function PersonalInfo(props) {
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
+    const [buttonDisabled, setButtonDisabled] = useState(true);
     const [firstName, setFirstName] = useState(userData.firstName);
     const [lastName, setLastName] = useState(userData.lastName);
     const [username, setUsername] = useState(userData.username);
@@ -83,16 +84,16 @@ export function PersonalInfo(props) {
         <form onSubmit={handleSubmit} className='ModifyPersonalInfoBox'>
             <label htmlFor='firstName' className='FirstNameAndLastNameSettingsLabel'> First Name </label>
             <label htmlFor='lastName' className='FirstNameAndLastNameSettingsLabel'> Last Name </label>
-            <input type="text" placeholder={userData.firstName}  className='FirstAndLastNameInputBox' onChange={(e) => setFirstName(e.target.value)}/>
-            <input type="text" placeholder={userData.lastName}  className='FirstAndLastNameInputBox' onChange={(e) => setLastName(e.target.value)}/>
+            <input type="text" placeholder={userData.firstName}  className='FirstAndLastNameInputBox' onChange={(e) => {setFirstName(e.target.value); e.target.value == "" ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            <input type="text" placeholder={userData.lastName}  className='FirstAndLastNameInputBox' onChange={(e) => {setLastName(e.target.value); e.target.value == "" ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
 
             <label htmlFor='username' className='UsernameInputBoxLabel'> Username </label>
-            <input type="text" placeholder={userData.username}  className='UsernameInputBox' onChange={(e) => setUsername(e.target.value)}/>
+            <input type="text" placeholder={userData.username}  className='UsernameInputBox' onChange={(e) => {setUsername(e.target.value); e.target.value == "" ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
 
             <label htmlFor='biography' className='BiographyInputBoxLabel'> Biography </label>
-            <input type="text" placeholder={userData.biography}  className='BiographyInputBox' onChange={(e) => setBiography(e.target.value)}/>
+            <input type="text" placeholder={userData.biography}  className='BiographyInputBox' onChange={(e) => {setBiography(e.target.value); e.target.value == "" ?  setButtonDisabled(true) : setButtonDisabled(false)} }/>
 
-            <button type="submit" className='ModifyNamesSubmitButton'> Modify Settings </button>
+            <button type="submit" className={buttonDisabled ? 'ModifyNamesSubmitButtonDisabled' : 'ModifyNamesSubmitButtonActive' } disabled={buttonDisabled}> Modify Settings </button>
         </form>
     )
 

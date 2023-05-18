@@ -16,20 +16,18 @@ export function MessagesLayout() {
     useEffect(() => {
         getChats(userData, setChats);
     }, [chats]); //doesnt refresh on add
-
     */
 
     return (
         <>
-        <div className="container">
-            <div className="chats">
-                <ChatsContainer />
+            <div className="container">
+                <div className="chats">
+                    <ChatsContainer />
+                </div>
+                <div className="messagesContent">
+                    <Messages />
+                </div>
             </div>
-            <div className="messagesContent">
-                <Messages />
-            </div>
-        </div>
-
         </>
 
     )
