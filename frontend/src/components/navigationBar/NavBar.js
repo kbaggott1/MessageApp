@@ -8,6 +8,7 @@ import { IoSendSharp, IoSettings } from "react-icons/io5";
 import { CgLogIn } from "react-icons/cg";
 import { MdOutlineLogout } from 'react-icons/md'
 import { LoggedInContext, LoggedInUserContext } from "../App.js"
+import { useCookies } from "react-cookie";
 
 /**
  * A component for the navigation bar.
@@ -17,6 +18,8 @@ export function NavBar(){
 
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
+    const [cookies, setCookie, removeCookie ] = useCookies(['username']);
+
     return (
         <>
             <nav className="navbar">
@@ -25,7 +28,7 @@ export function NavBar(){
                         {
                         isLoggedin ? 
                         <NavLink to="/">
-                            <button className="navButton" onClick={() => {logout(setIsLoggedIn, setUserData)}}>
+                            <button className="navButton" onClick={() => {logout(setIsLoggedIn, setUserData, removeCookie)}}>
                                 <MdOutlineLogout size={70}/>
                             </button>
                         </NavLink>
@@ -70,7 +73,7 @@ export function NavBar(){
     );
 }
 
-async function logout(setIsLoggedIn, setUserData) {
+async function logout(setIsLoggedIn, setUserData, removeCookie) {
     const requestOptions = {
         method: "GET",
         credentials: "include",
@@ -83,4 +86,6 @@ async function logout(setIsLoggedIn, setUserData) {
 
     setIsLoggedIn(false);
     setUserData(null);   
+    removeCookie('username');
+
 }

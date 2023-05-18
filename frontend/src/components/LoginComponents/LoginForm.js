@@ -1,12 +1,14 @@
 import { useContext, useState } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
 import { LoggedInContext, LoggedInUserContext } from "../App.js"
+import { useCookies } from 'react-cookie';
 
 export function LoginForm() {
     const [username, setUsername] = useState(null);
     const [password, setPassword] = useState(null);
     const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
+    const [cookies, setCookie, removeCookie ] = useCookies(['username']);
     const navigate = useNavigate();
 
     //Handles the request to create a user
@@ -33,6 +35,7 @@ export function LoginForm() {
                 const userByUsername = await getUserByUsername(username);
                 setUserData(userByUsername);
                 setIsLoggedIn(true);
+                setCookie('username', username);
                 navigate('/');
             }
             else {
