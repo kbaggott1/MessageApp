@@ -5,9 +5,9 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 
 // Make sure errorController is last! 
-const controllers = ['homeController', 'messageController', 'chatController', 'userController', 'errorController'] 
+const controllers = ['homeController', 'sessionController', 'messageController', 'chatController', 'userController', 'errorController'] 
 
-app.use(cors());
+
 app.use(express.json());
 // Configuring body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
