@@ -32,7 +32,6 @@ export function LoginForm() {
                 alert("Success! You have been logged in");
                 const userByUsername = await getUserByUsername(username);
                 setUserData(userByUsername);
-                console.log(userData);
                 setIsLoggedIn(true);
                 navigate('/');
             }

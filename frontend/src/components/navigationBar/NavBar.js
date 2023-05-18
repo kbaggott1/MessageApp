@@ -71,8 +71,15 @@ export function NavBar(){
 }
 
 async function logout(setIsLoggedIn, setUserData) {
-    
-    const response = await fetch("http://localhost:1337/logout/");
+    const requestOptions = {
+        method: "GET",
+        credentials: "include",
+        mode: 'cors', // this cannot be 'no-cors'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    }
+    const response = await fetch("http://localhost:1337/session/logout/", requestOptions);
     setIsLoggedIn(false);
     setUserData(null);
     

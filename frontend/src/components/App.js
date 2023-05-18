@@ -28,9 +28,9 @@ function App() {
 
   return (
     <div className='App'>
-        <LoggedInUserContext.Provider value={userDataGetterAndSetter}>
-      <LoggedInContext.Provider value={loggedInValueAndSetter}>
-    <Routes>
+          <LoggedInUserContext.Provider value={userDataGetterAndSetter}>
+        <LoggedInContext.Provider value={loggedInValueAndSetter}>
+      <Routes>
     <Route path="/" element={ <MainLayout/>}>
   <Route index element={ <Home /> } />
   <Route path="/login" element={ <LoginPage/> } />
@@ -39,9 +39,9 @@ function App() {
   <Route path="/register" element={<Register />} />
   <Route path="*" element={<Navigate to="/" />} />
     </Route>
-    </Routes>
-      </LoggedInContext.Provider>
-        </LoggedInUserContext.Provider>
+      </Routes>
+        </LoggedInContext.Provider>
+          </LoggedInUserContext.Provider>
     </div>
   );
 }
