@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 import { IoSendSharp, IoSettings } from "react-icons/io5";
 import { CgLogIn } from "react-icons/cg";
 import { MdOutlineLogout } from 'react-icons/md'
-import { LoggedInContext } from "../App"
+import { LoggedInContext, LoggedInUserContext } from "../App.js"
 
 /**
  * A component for the navigation bar.
@@ -15,6 +15,7 @@ import { LoggedInContext } from "../App"
  */
 export function NavBar(){
 
+    const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
     return (
         <>
@@ -24,7 +25,7 @@ export function NavBar(){
                         {
                         isLoggedin ? 
                         <NavLink to="/">
-                            <button className="navButton" onClick={() => {setIsLoggedIn(false)}}>
+                            <button className="navButton" onClick={() => {logout(setIsLoggedIn, setUserData)}}>
                                 <MdOutlineLogout size={70}/>
                             </button>
                         </NavLink>
@@ -67,4 +68,12 @@ export function NavBar(){
             </nav>
         </>
     );
+}
+
+async function logout(setIsLoggedIn, setUserData) {
+    
+    const response = await fetch("http://localhost:1337/logout/");
+    setIsLoggedIn(false);
+    setUserData(null);
+    
 }
