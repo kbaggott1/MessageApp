@@ -154,9 +154,9 @@ test("Delete chat successfully", async () => {
 
     const deletedChat = await chatModel.deleteChat(addedChat.insertedId);
 
-    expect(deletedChat._id).toEqual(addedChat.insertedId);
+    expect(deletedChat.deletedCount).toEqual(1);
 
-    await expect(chatModel.getSingleChat(deletedChat._id)).rejects.toThrow(chatModel.InvalidInputError);
+    await expect(chatModel.getSingleChat(addedChat.insertedId)).rejects.toThrow(chatModel.InvalidInputError);
 });
 
 test("Delete chat with invalid ID", async () => {
@@ -187,9 +187,7 @@ test("Get all chats successfully", async () => {
 });
 
 test("Get all chats when there are no chats in the database", async () => {
-    await chatModel.initialize(url,"Message_App", true)
+    await chatModel.initialize(url,"Message_App", true);
 
-    const allChats = await chatModel.getAllChats();
-
-    expect(allChats.length).toBe(0);
+    await expect(chatModel.getAllChats()).rejects.toThrow(InvalidInputError);
 });

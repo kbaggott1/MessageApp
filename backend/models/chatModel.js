@@ -53,23 +53,26 @@ async function initialize(dbName, url, reset = false) {
  * @throws InvalidInputError if userSenderId or userRecipientId is not in Users collection.
  */
 async function addChat(userSenderId, userRecipientId){
-  try{  
-        if (!userSenderId || !userRecipientId) {
-            throw new InvalidInputError('Sender and Receiver IDs must be provided.');
-        }
-      if(validateUtils.isValid(userSenderId, userRecipientId)){
-          let chat = {userSenderId, userRecipientId};
-          await chatCollection.insertOne(chat); 
-          logger.info(`Added chat: userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
-          return chat;
-      }
-      else {
+  try {  
+    if (!userSenderId || !userRecipientId) {
+        throw new InvalidInputError('Sender and Receiver IDs must be provided.');
+    }
+    if(await validateUtils.isValid(userSenderId, userRecipientId)){
+        const chat = await chatCollection.insertOne({ userSenderId, userRecipientId }); 
+        logger.info(`Added chat: userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
+        return chat;
+    }
+    else {
         throw new InvalidInputError(`Invalid sender or recipient Id. Passed userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
-      }
-  }
-  catch(err){
-      logger.error(`Error adding chat: ${err.message}`);
-      throw new InvalidInputError(err.message);
+    }
+  } catch(err) {
+    if(err instanceof InvalidInputError){
+        logger.error(`Invalid input: ${err.message}`);
+        throw new InvalidInputError(err.message);
+    } else {
+        logger.error(`Database error: ${err.message}`);
+        throw new DatabaseError(err.message);
+    }  
   }
 }
 
@@ -80,18 +83,22 @@ async function addChat(userSenderId, userRecipientId){
  */
 async function getAllChats() {
     try{
-        let chats = await chatCollection.find();
+        let chats = await chatCollection.find().toArray();
         
-        if(chats == null){
-            throw new DatabaseError("Error! Unable to find any users in the " + database + " database.")
+        if(!chats || chats.length == 0){
+            throw new InvalidInputError("Error! Unable to find any chats in the " + database + " database.")
         }
         
-        let arr = await chats.toArray();
+        let arr = await chats;
         return arr;
     }
     catch(err){
-        if(err instanceof DatabaseError){
-            logger.error("Error! There was an error in the getAllChats method while trying to get all users from the " + database + " database");
+        if(err instanceof InvalidInputError){
+            logger.error("Error! There was an error in the getAllChats method while trying to get all chats from the " + database + " database");
+            throw new InvalidInputError(err.message);
+        }
+        else{
+            logger.error(`Database error: ${err.message}`);
             throw new DatabaseError(err.message);
         }
     }
@@ -106,17 +113,19 @@ async function getSingleChat(id){
   try{
       let object_id = new ObjectId(id);
       const chat = await chatCollection.findOne({ _id: object_id  });
-      if(chat){
-          logger.info(`Retrieved chat: Id: ${id}`);
-          return chat; 
-      }
-      else{
-          throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
-      }
+        if(!chat){
+            throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
+        }
+        return chat;   
   }
   catch(err){
-      logger.error(`Error retrieving chat: ${err.message}`);
-      throw new InvalidInputError(err.message);
+    if(err instanceof InvalidInputError){
+        logger.error(`Invalid input: ${err.message}`);
+        throw new InvalidInputError(err.message);
+      } else {
+        logger.error(`Database error: ${err.message}`);
+        throw new DatabaseError(err.message);
+      }
   }
 }
 
@@ -127,18 +136,22 @@ async function getSingleChat(id){
  */
 async function deleteChat(id) {
   try {
-      const findChat = await chatCollection.findOne({ _id: id });
-      if (findChat) {
-          const deletedChat = { _id: id };
-          await chatCollection.deleteOne({ _id: id });
-          logger.info(`Deleted chat: Id: ${id}`);
-          return deletedChat;
-      } else {
-          throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
+        
+      let object_id = new ObjectId(id);
+      let deletedChat = await chatCollection.deleteOne({ _id: object_id });
+      if(deletedChat.deletedCount <= 0){
+        throw new InvalidInputError(`Provided chat not found in database: Id: ${id}`);
       }
-  } catch (err) {
-      logger.error(`Error deleting chat: ${err.message}`);
-      throw new InvalidInputError(err.message);
+
+      return deletedChat;
+    } catch (err) {
+    if(err instanceof InvalidInputError){
+        logger.error(`Invalid input: ${err.message}`);
+        throw new InvalidInputError(err.message);
+      } else {
+        logger.error(`Database error: ${err.message}`);
+        throw new DatabaseError(err.message);
+      }
   }
 }
 
@@ -149,13 +162,20 @@ async function getChatsBySenderId(senderId) {
             .toArray();
 
         if(chats.length == 0)
-            throw new InvalidInputError("Could not find chats with sender id: " + senderId);
+        {
+          throw new InvalidInputError("Could not find chats with sender id: " + senderId);
+        }
 
         return chats;
     }
     catch(err) {
-        logger.error("Could not get chats by senderId in model: " + err.message);
-        throw new DatabaseError(err.message);
+        if(err instanceof InvalidInputError){
+            logger.error(`Invalid input: ${err.message}`);
+            throw new InvalidInputError(err.message);
+          } else {
+            logger.error(`Database error: ${err.message}`);
+            throw new DatabaseError(err.message);
+          }
     }
 }
 

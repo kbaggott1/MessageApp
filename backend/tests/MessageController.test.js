@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const app = require("../app"); 
 const supertest = require("supertest");
 const testRequest = supertest(app); 
@@ -354,3 +355,5 @@ test("DELETE /messages/ 500 fail case", async () => {
 });
 
 
+=======
+>>>>>>> 907602d3f2f72608bdd806b8578a661daa16ddbd

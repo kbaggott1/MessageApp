@@ -22,7 +22,7 @@ async function createChat(req, res) {
         let chat = await ChatsModelMongoDb.addChat(req.body.userSenderId, req.body.userRecipientId);
         if(chat) {
             res.status(200);
-            res.send(`Successfully added chat: senderId: ${req.body.userSenderId}, recipientId: ${req.body.userRecipientId}`);
+            res.send(chat);
         } else {
             let message = `Could not add chat to database with senderId: ${req.body.userSenderId}, recipientId: ${req.body.userRecipientId}`;
             res.status(400);
@@ -132,9 +132,9 @@ async function getChat(req, res) {
 router.delete("/", deleteChat);
 async function deleteChat(req, res) {
     try {
-        await ChatsModelMongoDb.deleteChat(req.body._id);
-        res.status(200);
-        res.send("Deleted chat of id: " + req.body._id);
+        const deletedChat = await ChatsModelMongoDb.deleteChat(req.body._id);
+        res.status(200)
+        res.json(deletedChat);
     }
     catch(err) {
         if(err instanceof DatabaseError) {
@@ -149,6 +149,45 @@ async function deleteChat(req, res) {
             logger.error("In controller: " + message);
         } else {
             let message = "Unexpected error in controller while deleting chat with id: "+req.body._id+": "+err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
+        }
+    }
+}
+
+/** Gets all chats for a specific sender.
+ * @param {*} req Requests params parameter: senderId
+ * @param {*} res Resolves with status 200, 400 or 500.
+ * @throws InvalidInputError or DatabaseError.
+ */
+router.get("/chatsBySenderId/:senderId", getChatsBySenderId);
+async function getChatsBySenderId(req, res) {
+    try {
+        let chats = await ChatsModelMongoDb.getChatsBySenderId(req.params.senderId);
+        if(chats && chats.length > 0) {
+            res.status(200);
+            res.json(chats);
+        } else {
+            let message = `Unable to find chats with senderId: ${req.params.senderId}`;
+            res.status(400);
+            res.send(message);
+            logger.error("In controller: " + message);
+        }
+    }
+    catch(err) {
+        if(err instanceof DatabaseError) {
+            let message = "Database Error while getting chats with senderId: " + req.params.senderId + ": " + err.message;
+            res.status(500);
+            res.send(message);
+            logger.error("In controller: " + message);
+        } else if(err instanceof InvalidInputError) {
+            let message = "Invalid input while getting chats with senderId: " + req.params.senderId + ": " + err.message;
+            res.status(400);
+            res.send(message);
+            logger.error("In controller: " + message);
+        } else {
+            let message = "Unexpected error in controller while getting chats with senderId: " + req.params.senderId + ": " + err.message;
             res.status(500);
             res.send(message);
             logger.error("In controller: " + message);

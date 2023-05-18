@@ -15,13 +15,11 @@ async function isValid(userSenderId, userRecipientId)
         await userModel.getUser(userRecipientId);  
         logger.info("userSenderId: " + userSenderId + " and" + "userRecipientId: " + userRecipientId + " sucessfully validated.")
         return true;
-    }
-    catch(err)
-    {
+    } catch(err) {
         logger.error("Invalid userSenderId: " + userSenderId + " or" + "userRecipientId: " + userRecipientId);
-        return false;
+        throw err;
     }
-     
 }
+
 
 module.exports = { isValid };
