@@ -20,18 +20,17 @@ const logger = require("../logs/logger.js");
 router.post('/', handleAddSingleUser);
 async function handleAddSingleUser(request, response) {
     try{
-        if(refreshSession(request, response) != null){
-            const user = await models.addUser(request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
-            if(user){
-                response.status("200");
-                response.send(user);
-            }
-            else{
-                logger.error("User " + request.body.username + " failed to be added to the database for an unknown reasons.");
-                response.status("400");
-                response.send({ errorMessage: "Error! failed to add User " + request.body.username + " with password " + request.body.password + " to the database. "});
-            }
+        const user = await models.addUser(request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
+        if(user){
+            response.status("200");
+            response.send(user);
         }
+        else{
+            logger.error("User " + request.body.username + " failed to be added to the database for an unknown reasons.");
+            response.status("400");
+            response.send({ errorMessage: "Error! failed to add User " + request.body.username + " with password " + request.body.password + " to the database. "});
+        }
+        
     }
     catch(err){
         if(err instanceof InvalidInputError){
