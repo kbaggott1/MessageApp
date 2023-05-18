@@ -30,7 +30,6 @@ async function handleAddSingleUser(request, response) {
             response.status("400");
             response.send({ errorMessage: "Error! failed to add User " + request.body.username + " with password " + request.body.password + " to the database. "});
         }
-        
     }
     catch(err){
         if(err instanceof InvalidInputError){
