@@ -70,7 +70,7 @@ async function addUser(username, password, status, firstName, lastName, biograph
     try{
         if(await validateUtils.isValidForAdd(usersCollection, username, password, status, firstName, lastName, biography)){
             let createDate = Date();
-            password = await hashPassword(username, password);
+            password = await hashPassword(createDate, password);
             let newUser = { username: username, password: password, create_date: createDate, status: status, firstName: firstName, lastName: lastName, biography: biography, image: image};
             await usersCollection.insertOne(newUser);
             return newUser;
@@ -91,8 +91,8 @@ async function addUser(username, password, status, firstName, lastName, biograph
     }
 }
 
-async function hashPassword(username, password) {
-    const hashed = await bcrypt.hash(password + username + process.env.PASSWORD_PEPPER, saltRounds)
+async function hashPassword(create_date, password) {
+    const hashed = await bcrypt.hash(password + create_date + process.env.PASSWORD_PEPPER, saltRounds)
     return hashed;
 }
 
@@ -112,7 +112,7 @@ async function checkCredentials(username, password) {
             return false;
         }
 
-        let passMatch = await bcrypt.compare(password + username + process.env.PASSWORD_PEPPER, user.password)
+        let passMatch = await bcrypt.compare(password + user.create_date + process.env.PASSWORD_PEPPER, user.password)
 
         return passMatch;
         
@@ -229,14 +229,14 @@ async function getAllUsers() {
  * @param {string} newImage New Image of the user that will be updated.
  * @throws {InvalidInputError} If the either the old username, new username or new password are invalid this error is thrown.
  * @throws {DatabaseError} If there is an error updating the user this error is thrown.
- * @returns An object containing the new username and password
+ * @returns The updated user object with the new values.
  */
 async function updateUser(id, newUsername, newPassword, newStatus, newFirstName, newLastName, newBiography, newImage) {
     try{
         if(validateUtils.isValidForEdit(newUsername, newPassword, newStatus, newFirstName, newLastName, newBiography)){
             let object_id = new ObjectId(id);
 
-            newPassword = await hashPassword(newUsername, newPassword);
+            //newPassword = await hashPassword(newUsername, newPassword);
             let updatedUser = await usersCollection.updateOne({ _id: object_id }, { $set: { password: newPassword, username: newUsername, status: newStatus, firstName: newFirstName, lastName: newLastName, biography: newBiography} });
             
             if(updatedUser.modifiedCount <= 0){

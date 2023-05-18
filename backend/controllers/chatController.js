@@ -1,6 +1,7 @@
 const express = require('express');
 const { DatabaseError } = require('../models/DatabaseError');
 const { InvalidInputError } = require('../models/InvalidInputError');
+const { refreshSession } = require('./sessionController');
 const router = express.Router();
 const routeRoot = '/chats';
 const ChatsModelMongoDb = require("../models/chatModel");
@@ -19,6 +20,7 @@ module.exports = {
 router.post("/", createChat);
 async function createChat(req, res) { 
     try {
+        refreshSession(req, res);
         let chat = await ChatsModelMongoDb.addChat(req.body.userSenderId, req.body.userRecipientId);
         if(chat) {
             res.status(200);
@@ -58,6 +60,7 @@ async function createChat(req, res) {
 router.get("/", getChats)
 async function getChats(req, res) {
     try {
+        refreshSession(req, res);
         let chats = await ChatsModelMongoDb.getAllChats();
         res.status(200);
         res.json(chats);
@@ -92,6 +95,7 @@ async function getChats(req, res) {
 router.get("/:id", getChat);
 async function getChat(req, res) {
     try {
+        refreshSession(req, res);
         let chat = await ChatsModelMongoDb.getSingleChat(req.params.id);
         if(chat) {
             res.status(200);
@@ -132,6 +136,7 @@ async function getChat(req, res) {
 router.delete("/", deleteChat);
 async function deleteChat(req, res) {
     try {
+        refreshSession(req, res);
         const deletedChat = await ChatsModelMongoDb.deleteChat(req.body._id);
         res.status(200)
         res.json(deletedChat);
@@ -164,6 +169,7 @@ async function deleteChat(req, res) {
 router.get("/chatsBySenderId/:senderId", getChatsBySenderId);
 async function getChatsBySenderId(req, res) {
     try {
+        refreshSession(req, res);
         let chats = await ChatsModelMongoDb.getChatsBySenderId(req.params.senderId);
         if(chats && chats.length > 0) {
             res.status(200);
