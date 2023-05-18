@@ -352,5 +352,3 @@ test("DELETE /messages/ 500 fail case", async () => {
 
     expect(testResponse.status).toBe(500);
 });
-
-

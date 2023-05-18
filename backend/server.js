@@ -16,5 +16,4 @@ async function initializeModels() {
     await userModel.initialize("Message_App", url, false);
     await chatModel.initialize("Message_App", url, false);
     await app.listen(port3); // Run the server
-
 }
