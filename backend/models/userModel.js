@@ -112,11 +112,10 @@ async function checkCredentials(username, password) {
             return false;
         }
 
-        if(await bcrypt.compare(user.password, password + username + process.env.PASSWORD_PEPPER)) {
-            return false;
-        }
+        let passMatch = await bcrypt.compare(password + username + process.env.PASSWORD_PEPPER, user.password)
 
-        return true;
+        return passMatch;
+        
     }
     catch(err){
         logger.error("Error! There was an issue trying to find the user with ID " + id + " in the " + database + " database.")

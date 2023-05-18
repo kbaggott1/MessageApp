@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import { LoggedInContext } from "../App.js"
 
 export function LoginForm() {
@@ -49,10 +49,16 @@ export function LoginForm() {
                 <input type="text" placeholder='Username Goes here' onChange={(e) => setUsername(e.target.value)}/>
                 <br/>
                 <label htmlFor='password'> Password </label>
-                <input type="text" placeholder='Password Goes here' onChange={(e) => setPassword(e.target.value)}/>
+                <input type="password" placeholder='Password Goes here' onChange={(e) => setPassword(e.target.value)}/>
                 {username && password && <button type="submit"> Login </button>} 
             </div>
         </form>
+
+        <NavLink to="/register">
+            <button>
+                Sign Up!
+            </button>
+        </NavLink>
 
         <div>
             {isLoggedin ? <h1> bruh </h1> : <h1> not brtuh </h1>}
