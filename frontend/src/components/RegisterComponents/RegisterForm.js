@@ -1,27 +1,27 @@
 import { useContext, useState } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
-import { LoggedInContext, LoggedInUserContext } from "../App.js"
-
+import { LoggedInContext, LoggedInUserContext } from "../App.js";
+import './RegisterForm.css';
 
 export function RegisterForm() {
-    const [username, setUsername] = useState(null);
-    const [password, setPassword] = useState(null);
-    const [password2, setPassword2] = useState(null);
-    const [biography, setBiography] = useState(null);
-    const [firstName, setFirstName] = useState(null);
-    const [lastName, setLastName] = useState(null);
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [password2, setPassword2] = useState("");
+    const [biography, setBiography] = useState("");
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
     const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
+    const [buttonDisabled, setButtonDisabled] = useState(true);
     const navigate = useNavigate();
+
 
     //Handles the request to create a user
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-
             //create user
-
             if(validateInputs(username, password, password2, firstName, lastName, biography)) {
                 //login after account created
                 let requestOptions = {
@@ -74,10 +74,7 @@ export function RegisterForm() {
                     navigate('/');
                 }
                 console.log(response.status);
-
-
             }
-
         }
         catch(err){
             alert("Error Loggin in! " + err.message);
@@ -87,39 +84,45 @@ export function RegisterForm() {
 
     return(
         <>
-        <form onSubmit={handleSubmit}>
-            <div className='LoginInputBox'>
-                <label htmlFor='username'> Username </label>
-                <input type="text" placeholder='Username...' onChange={(e) => setUsername(e.target.value)}/>
-                <br/>
-                <label htmlFor='password'> Password </label>
-                <input type="password" placeholder='Password...' onChange={(e) => setPassword(e.target.value)}/>
-                <br/>
-                <label> Re-type Password </label>
-                <input type="password" placeholder='Re-type password...' onChange={(e) => setPassword2(e.target.value)}/>
-                <br/>
-                <label> First Name </label>
-                <input type="text" placeholder='First Name' onChange={(e) => setFirstName(e.target.value)}/>
-                <br/>
-                <label> Last Name </label>
-                <input type="text" placeholder='Last Name' onChange={(e) => setLastName(e.target.value)}/>
-                <br/>
-                <label> Biography </label>
-                <input type="text" placeholder='Biography' onChange={(e) => setBiography(e.target.value)}/>
-                <br/>
-                {username && password && password2 && firstName && lastName && biography && <button type="submit"> Login </button>} 
+        <form onSubmit={handleSubmit} className='SignUpInformationBox'>
+            <label htmlFor='username' className='RegistrationHeaderLabels'> Username </label>
+            <input type="text" className='RegistrationInputBox' placeholder='Username...' onChange={(e) => {setUsername(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            
+            <label htmlFor='password' className='RegistrationHeaderLabels'> Password </label>
+            <input type="password" className='RegistrationInputBox' placeholder='Password...' onChange={(e) => {setPassword(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            
+            <label className='RegistrationHeaderLabels'> Re-type  Password</label>
+            <input type="password" className='RegistrationInputBox' placeholder='Re-type password...' onChange={(e) => {setPassword2(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            
+            <label className='RegistrationHeaderLabels'> First Name </label>
+            <input type="text" className='RegistrationInputBox' placeholder='First Name' onChange={(e) => {setFirstName(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+                
+            <label className='RegistrationHeaderLabels'> Last Name </label>
+            <input type="text" className='RegistrationInputBox' placeholder='Last Name' onChange={(e) => {setLastName(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+
+            <label className='RegistrationHeaderLabels'> Biography </label>
+            <input type="text" className='RegistrationInputBox' placeholder='Biography' onChange={(e) => {setBiography(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            <br/>
+
+            <button type="submit" className={buttonDisabled ? 'RegistrationSubmitButtonDisabled' : 'RegistrationSubmitButtonActive' } disabled={buttonDisabled}> Register </button>
+            
+            <div className='IAlreadyHaveAnAccountLabel'>
+                Press 'Log In' If You Have An Account
             </div>
+
+            <div className='BoxAroundTheIAlreadyHaveAnAccountButton'>
+            <NavLink to="/login">
+                <button className='AlreadyHaveAnAccountButton'>
+                    Log In
+                </button>
+            </NavLink>
+            </div>
+
+
+
         </form>
 
-        <NavLink to="/login">
-            <button>
-                I already have an account.
-            </button>
-        </NavLink>
 
-        <div>
-            {isLoggedin ? <h1> bruh </h1> : <h1> not brtuh </h1>}
-        </div>
         </>
 
     )
