@@ -9,7 +9,6 @@ export function ChatsContainer() {
 
     
     useEffect(() => {
-        
         getChats(userData, setChats);
         const interval = setInterval(() => {
             getChats(userData, setChats);
@@ -17,7 +16,7 @@ export function ChatsContainer() {
         }, 1000)
 
         return ()=> clearInterval(interval);
-    }, [chats.length]);
+    }, [userData]);
 
 
 
@@ -38,7 +37,7 @@ export async function getChats(user, setChats) {
             mode: 'cors', 
         };
 
-        const response = await fetch("http://localhost:1337/chats/chatsBySenderId/" + user._id.toString(), requestOptions);
+        const response = await fetch("http://localhost:1337/chats/chatsBySenderId/" + user._id, requestOptions);
 
         if(response.status === 400) { // not really users fault, shouldnt be a 400
             //console.log("No chats found for user.");

@@ -52,10 +52,10 @@ async function handleAddSingleUser(request, response) {
 
 
 /**
- * Finds a user in the database. The ID of the user needs to be provided through the request body. Whether or not
+ * Finds a user in the database. The ID of the user needs to be provided through the request params. Whether or not
  * the user is found an appropriate message is sent back and the status of the response is also modified to reflect 
  * the outcome of the read operation.
- * @param {*} request The request object. Should contain the ID of the user in the body
+ * @param {*} request The request object. Should contain the ID of the user in the params
  * @param {*} response If the user was successfully found they are returned in the response
  *                     as a JSON. Otherwise the response contains a descriptive error message
  */

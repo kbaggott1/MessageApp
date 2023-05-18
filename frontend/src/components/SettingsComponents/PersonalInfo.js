@@ -13,6 +13,7 @@ export function PersonalInfo(props) {
     const [biography, setBiography] = useState(userData.biography);
     const navigate = useNavigate();
 
+
     const handleSubmit = async (event) => {
         try {
             //Stops the page from re-loading

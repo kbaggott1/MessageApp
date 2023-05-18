@@ -51,6 +51,21 @@ function logoutUser(request, response) {
     return;
 }
 
+router.get("/auth", authUser);
+function authUser(request, response) {
+  try {
+    const authenticatedSession = authenticateUser(request);
+    if (!authenticatedSession) {
+      response.sendStatus(401);
+    } else {
+      response.sendStatus(200);
+    }
+  } catch (error) {
+    response.sendStatus(401);
+  }
+}
+
+
 function authenticateUser(request) {
     // If this request doesn't have any cookies, that means it isn't authenticated. Return null
     if(!request.cookies) {
