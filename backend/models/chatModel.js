@@ -58,9 +58,10 @@ async function addChat(userSenderId, userRecipientId){
         throw new InvalidInputError('Sender and Receiver IDs must be provided.');
     }
     if(await validateUtils.isValid(userSenderId, userRecipientId)){
-        const chat = await chatCollection.insertOne({ userSenderId, userRecipientId }); 
-        logger.info(`Added chat: userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
-        return chat;
+      let chat = {userSenderId, userRecipientId};
+      await chatCollection.insertOne(chat); 
+      logger.info(`Added chat: userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
+      return chat;
     }
     else {
         throw new InvalidInputError(`Invalid sender or recipient Id. Passed userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
