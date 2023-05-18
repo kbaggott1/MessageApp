@@ -30,7 +30,6 @@ export function LoginForm() {
             const response = await fetch("http://localhost:1337/session/login", requestOptions);
             if(response.status === 200){
                 alert("Success! You have been logged in");
-                console.log(response);
                 const userByUsername = await getUserByUsername(username);
                 setUserData(userByUsername);
                 setIsLoggedIn(true);
