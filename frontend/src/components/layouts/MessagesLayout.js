@@ -2,7 +2,7 @@ import React from "react";
 import './MessagesLayout.css'
 import { Outlet } from 'react-router-dom'
 import { NavBar } from '../navigationBar/NavBar';
-import { Chats } from '../MessageComponents/Chats/Chats';
+import { ChatsContainer } from '../MessageComponents/Chats/ChatsContainer';
 import { Message } from "../MessageComponents/Message";
 import { Messages } from "../../pages/Messages";
 
@@ -16,7 +16,7 @@ export function MessagesLayout() {
         <>
         <div className="container">
             <div className="chats">
-                <Chats/>
+                <ChatsContainer/>
             </div>
             <div className="messagesContent">
                 <Messages/>

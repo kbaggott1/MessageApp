@@ -80,6 +80,7 @@ async function logout(setIsLoggedIn, setUserData) {
         },
     }
     const response = await fetch("http://localhost:1337/session/logout/", requestOptions);
+
     setIsLoggedIn(false);
     setUserData(null);
     

@@ -5,6 +5,8 @@
     background: #2E4F4F;
     border: 1px solid #000000;
     padding-top: 20px;
+    overflow-y: auto;
+
 }
 .messagesContent {
     min-height: 100%;
