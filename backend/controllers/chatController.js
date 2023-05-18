@@ -173,18 +173,17 @@ async function deleteChat(req, res) {
 router.get("/chatsBySenderId/:senderId", getChatsBySenderId);
 async function getChatsBySenderId(req, res) {
     try {
-        if(refreshSession(req, res) != null){
-            let chats = await ChatsModelMongoDb.getChatsBySenderId(req.params.senderId);
-            if(chats && chats.length > 0) {
-                res.status(200);
-                res.json(chats);
-            } else {
-                let message = `Unable to find chats with senderId: ${req.params.senderId}`;
-                res.status(400);
-                res.send(message);
-                logger.error("In controller: " + message);
-            }
+        let chats = await ChatsModelMongoDb.getChatsBySenderId(req.params.senderId);
+        if(chats && chats.length > 0) {
+            res.status(200);
+            res.json(chats);
+        } else {
+            let message = `Unable to find chats with senderId: ${req.params.senderId}`;
+            res.status(400);
+            res.send(message);
+            logger.error("In controller: " + message);
         }
+        
     }
     catch(err) {
         if(err instanceof DatabaseError) {

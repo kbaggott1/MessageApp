@@ -58,7 +58,12 @@ async function deleteChat(chat, refreshChats, isLinkedChat = false) {
 
 async function getLinkedChat(userRecipientId, userSenderId) {
     try {
-        const response = await fetch("http://localhost:1337/chats/chatsBySenderId/" + userRecipientId);
+        const requestOptions = {
+            method: "GET",
+            credentials: "include",
+            mode: 'cors', 
+        };
+        const response = await fetch("http://localhost:1337/chats/chatsBySenderId/" + userRecipientId, requestOptions);
 
         if(response.status === 400) { // not really users fault, shouldnt be a 400
             console.log("No chats found for user.");
@@ -83,7 +88,14 @@ async function getLinkedChat(userRecipientId, userSenderId) {
 
 async function getUsername(chat, setUser) {
     try {
-        const response = await fetch("http://localhost:1337/users/user/" + chat.userRecipientId);
+
+        const requestOptions = {
+            method: "GET",
+            credentials: "include",
+            mode: 'cors', 
+        };
+
+        const response = await fetch("http://localhost:1337/users/user/" + chat.userRecipientId, requestOptions);
         if(response.status === 200) {
             const result = await response.json();
             setUser(result);

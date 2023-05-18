@@ -20,10 +20,6 @@ const logger = require("../logs/logger.js");
 router.post('/', handleAddSingleUser);
 async function handleAddSingleUser(request, response) {
     try{
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
         const user = await models.addUser(request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
         if(user){
             response.status("200");
@@ -67,18 +63,16 @@ async function handleAddSingleUser(request, response) {
 router.get('/user/:userId', handleReadSingleUser);
 async function handleReadSingleUser(request, response) {
     try{
-        if(refreshSession(request, response) != null){
-            let foundUser = await models.getUser(request.body.userId);
+            let foundUser = await models.getUser(request.params.userId);
             if(foundUser){
                 response.status("200");
                 response.json(foundUser);
             }
             else{
-                logger.error("User with ID " + request.body.userId + " was not found in the database for unknown reasons.");
+                logger.error("User with ID " + request.params.userId + " was not found in the database for unknown reasons.");
                 response.status("400");
-                response.send({ errorMessage: "Error! Failed to find user with ID " + request.body.userId + " in the database."});
+                response.send({ errorMessage: "Error! Failed to find user with ID " + request.params.userId + " in the database."});
             }
-        }
     }
     catch(err){
         if(err instanceof InvalidInputError){
