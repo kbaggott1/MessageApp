@@ -2,6 +2,7 @@ const e = require('express');
 const express = require('express');
 const { DatabaseError } = require('../models/DatabaseError');
 const { InvalidInputError } = require('../models/InvalidInputError');
+const { refreshSession } = require('./sessionController');
 const router = express.Router();
 const routeRoot = '/users';
 const models = require('../models/userModel.js');
@@ -19,6 +20,7 @@ const logger = require("../logs/logger.js");
 router.post('/', handleAddSingleUser);
 async function handleAddSingleUser(request, response) {
     try{
+        refreshSession(request, response);
         const user = await models.addUser(request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
         if(user){
             response.status("200");
@@ -61,6 +63,7 @@ async function handleAddSingleUser(request, response) {
 router.get('/user', handleReadSingleUser);
 async function handleReadSingleUser(request, response) {
     try{
+        refreshSession(request, response);
         let foundUser = await models.getUser(request.body.userId);
         if(foundUser){
             response.status("200");
@@ -102,6 +105,7 @@ async function handleReadSingleUser(request, response) {
 router.get('/:username', handleReadSingleUserByUsername);
 async function handleReadSingleUserByUsername(request, response) {
     try{
+        refreshSession(request, response);
         let foundUser = await models.getUserByUsername(request.params.username);
         if(foundUser){
             response.status("200");
@@ -145,6 +149,7 @@ async function handleReadSingleUserByUsername(request, response) {
 router.get('/', handleReadAllUsers);
 async function handleReadAllUsers(request, response){
     try{
+        refreshSession(request, response);
         let foundUsers = await models.getAllUsers();
         if(foundUsers.length > 0){
             response.status("200");
@@ -189,15 +194,17 @@ async function handleReadAllUsers(request, response){
 router.put('/', handleUpdateSingleUser);
 async function handleUpdateSingleUser(request, response){
     try{
-        const updatedUser = await models.updateUser(request.body.userId, request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
-        if(updatedUser){
-            response.status("200");
-            response.json(updatedUser);
-        }
-        else{
-            logger.error("User with ID '" + request.body.userId + "' failed to be updated for an unknown reasons.");
-            response.status("400");
-            response.send({ errorMessage: "Error! Failed to update user with ID '" + request.body.userId + "'. "});
+        if(refreshSession(request, response) != null){
+            const updatedUser = await models.updateUser(request.body.userId, request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
+            if(updatedUser){
+                response.status("200");
+                response.json(updatedUser);
+            }
+            else{
+                logger.error("User with ID '" + request.body.userId + "' failed to be updated for an unknown reasons.");
+                response.status("400");
+                response.send({ errorMessage: "Error! Failed to update user with ID '" + request.body.userId + "'. "});
+            }
         }
     }
     catch(err){
@@ -232,6 +239,7 @@ async function handleUpdateSingleUser(request, response){
 router.delete('/', handleDeleteSingleUser);
 async function handleDeleteSingleUser(request, response){
     try{
+        refreshSession(request, response);
         const deletedUser = await models.deleteUser(request.body.userId);
         if(deletedUser){
             response.status("200");

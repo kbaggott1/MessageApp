@@ -5,59 +5,78 @@ import { LoggedInContext, LoggedInUserContext } from "../App.js"
 
 export function PersonalInfo(props) {
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
+    const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
     const [firstName, setFirstName] = useState(userData.firstName);
     const [lastName, setLastName] = useState(userData.lastName);
     const [username, setUsername] = useState(userData.username);
     const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
-        //Stops the page from re-loading
-        event.preventDefault();
+        try {
+            //Stops the page from re-loading
+            event.preventDefault();
 
-        let modifedUsername = userData.username;
-        let modifiedFirstName = userData.firstName;
-        let modifedLastName = userData.lastName;
-        if(username != undefined && username != null && username != "" && username != " "){
-            modifedUsername = username;
-        }
-        if(firstName != undefined && firstName != null && firstName != "" && firstName != " "){
-            modifiedFirstName = firstName;
-        }
-        if(lastName != undefined && lastName != null && lastName != "" && lastName != " "){
-            modifedLastName = lastName
-        }
+            let modifedUsername = userData.username;
+            let modifiedFirstName = userData.firstName;
+            let modifedLastName = userData.lastName;
+            if(username != undefined && username != null && username != "" && username != " "){
+                modifedUsername = username;
+            }
+            if(firstName != undefined && firstName != null && firstName != "" && firstName != " "){
+                modifiedFirstName = firstName;
+            }
+            if(lastName != undefined && lastName != null && lastName != "" && lastName != " "){
+                modifedLastName = lastName
+            }
 
-        //Setting up the request options
-        const requestOptions = {
-            method: "PUT",
-            credentials : "include",
-            body: JSON.stringify({
-                userId: userData._id,
-                username: userData.username,
-                password: userData.password,
-                status: userData.status,
-                firstName: modifiedFirstName,
-                lastName: modifedLastName,
-                biography: userData.biography,
-                image: userData.image,
-            }),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        };
+            //Setting up the request options
+            const requestOptions = {
+                method: "PUT",
+                credentials : "include",
+                body: JSON.stringify({
+                    userId: userData._id,
+                    username: userData.username,
+                    password: userData.password,
+                    status: userData.status,
+                    firstName: modifiedFirstName,
+                    lastName: modifedLastName,
+                    biography: userData.biography,
+                    image: userData.image,
+                }),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            };
         
-        const response = await fetch("http://localhost:1337/users/", requestOptions)
-        const result = await response.json();
-        if(response.status === 200){
-            setUserData(result);
+            const response = await fetch("http://localhost:1337/users/", requestOptions)
+            const result = await response.json();
+            console.log("If statement time");
+            if(response.status === 200){
+                setUserData(result);
+                navigate('/');
+                navigate('/settings');//Doing this to 'refresh' the page
+            }
+            if(response.status === 401){
+                console.log("Inside of 401 error response");
+                alert("Your session has expired! Please Login again to continue")
+                setUserData(null);
+                setIsLoggedIn(false);
+                navigate('/');
+            }
+            else {
+                console.log("Inside of 401 error response");
+                alert("Your session has expired! Please Login again to continue")
+                setUserData(null);
+                setIsLoggedIn(false);
+                navigate('/');
+            }
+            
+        }catch(err){
+            console.log("Inside of 401 error response");
+            alert("Your session has expired! Please Login again to continue")
+            setUserData(null);
+            setIsLoggedIn(false);
             navigate('/');
-            navigate('/settings');//Doing this to 'refresh' the page
-        }
-        if(response.status === 400){
-            //DO SMTH
-        }
-        if(response.status === 500){
-            //DO SMTH ELSE
         }
     }
 

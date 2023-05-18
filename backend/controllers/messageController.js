@@ -1,6 +1,7 @@
 const express = require('express');
 const { DatabaseError } = require('../models/DatabaseError');
 const { InvalidInputError } = require('../models/InvalidInputError');
+const { refreshSession } = require('./sessionController');
 const router = express.Router();
 const routeRoot = '/messages';
 const MessagesModelMongoDb = require("../models/messageModel");
@@ -22,6 +23,7 @@ router.post("/", createMessage);
  */
 async function createMessage(req, res) { 
     try {
+        refreshSession(req, res);
         let message = await MessagesModelMongoDb.postMessage(req.body.messageBody, req.body.authorId, req.body.chatId);
         if(message) {
             res.status("200");
@@ -62,7 +64,7 @@ router.get("/", getMessages)
  */
 async function getMessages(req, res) {
     try {
-
+        refreshSession(req, res);
         let messages = await MessagesModelMongoDb.getMessagesByChatId(req.body.chatId);
         if(Array.from(messages).length == 0) {
             res.status(400);
@@ -98,6 +100,7 @@ router.get("/:id", getMessage);
  */
 async function getMessage(req, res) {
     try {
+        refreshSession(req, res);
         let message = await MessagesModelMongoDb.getMessageById(req.params.id);
 
         if(message) {
@@ -139,6 +142,7 @@ router.put("/", updateMessage);
  */
 async function updateMessage(req, res) {
     try {
+        refreshSession(req, res);
         let message = await MessagesModelMongoDb.editMessage(req.body.messageId, req.body.messageBody);
         if(message) {
             res.status("200");
@@ -179,6 +183,7 @@ router.delete("/", deleteMessage);
  */
 async function deleteMessage(req, res) {
     try {
+        refreshSession(req, res);
         await MessagesModelMongoDb.deleteMessageById(req.body.messageId);
         res.status("200");
         res.send("Deleted message of id: " + req.body.messageId);

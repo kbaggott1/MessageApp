@@ -30,6 +30,7 @@ export function LoginForm() {
             const response = await fetch("http://localhost:1337/session/login", requestOptions);
             if(response.status === 200){
                 alert("Success! You have been logged in");
+                console.log(response);
                 const userByUsername = await getUserByUsername(username);
                 setUserData(userByUsername);
                 setIsLoggedIn(true);
@@ -75,7 +76,13 @@ export function LoginForm() {
 
 
 async function getUserByUsername(findThisUser) {
-    const response = await fetch("http://localhost:1337/users/"+ findThisUser);
+    const requestOptions = {
+        method: "GET",
+        credentials: "include",
+        mode: 'cors', // this cannot be 'no-cors'
+    };
+    const response = await fetch("http://localhost:1337/users/"+ findThisUser, requestOptions);
     const result = await response.json();
+    console.log(result);
     return result;
 }
