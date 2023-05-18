@@ -54,7 +54,7 @@ beforeEach(async () => {
         mongod = await MongoMemoryServer.create();
         const url = await mongod.getUri();
 
-        await chatModel.initialize(url,"Test_Message_App", true);
+        await chatModel.initialize("Test_Message_App", url, true);
         await userModel.initialize("Test_Message_App", url, true);
         console.log("Mongo mock started!");
     }
@@ -80,7 +80,7 @@ test("Adding chat with valid user data", async () => {
     
     let addedChat = await chatModel.addChat(addedUser1._id, addedUser2._id);
 
-    let retrievedChat = await chatModel.getSingleChat(addedChat.insertedId);
+    let retrievedChat = await chatModel.getSingleChat(addedChat._id);
     expect(retrievedChat.userSenderId.toString()).toBe(addedUser1._id.toString());
     expect(retrievedChat.userRecipientId.toString()).toBe(addedUser2._id.toString());
 });
@@ -131,7 +131,7 @@ test("Get single chat from the database", async () => {
 
     const addedChat = await chatModel.addChat(addedUser1._id, addedUser2._id);
 
-    const foundChat = await chatModel.getSingleChat(addedChat.insertedId);
+    const foundChat = await chatModel.getSingleChat(addedChat._id);
 
     expect(foundChat.userSenderId).toEqual(addedUser1._id);
     expect(foundChat.userRecipientId).toEqual(addedUser2._id);
@@ -152,7 +152,7 @@ test("Delete chat successfully", async () => {
 
     const addedChat = await chatModel.addChat(addedUser1._id, addedUser2._id);
 
-    const deletedChat = await chatModel.deleteChat(addedChat.insertedId);
+    const deletedChat = await chatModel.deleteChat(addedChat._id);
 
     expect(deletedChat.deletedCount).toEqual(1);
 
@@ -182,12 +182,12 @@ test("Get all chats successfully", async () => {
 
     expect(allChats.length).toBe(2);
 
-    expect(allChats.some(chat => chat._id.toString() === addedChat1.insertedId.toString())).toBeTruthy();
-    expect(allChats.some(chat => chat._id.toString() === addedChat2.insertedId.toString())).toBeTruthy();
+    expect(allChats.some(chat => chat._id.toString() === addedChat1._id.toString())).toBeTruthy();
+    expect(allChats.some(chat => chat._id.toString() === addedChat2._id.toString())).toBeTruthy();
 });
 
 test("Get all chats when there are no chats in the database", async () => {
-    await chatModel.initialize(url,"Message_App", true);
+    await chatModel.initialize("Test_Message_App", url, true);
 
     await expect(chatModel.getAllChats()).rejects.toThrow(InvalidInputError);
 });

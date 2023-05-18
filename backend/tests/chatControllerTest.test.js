@@ -53,7 +53,7 @@ beforeEach(async () => {
         mongod = await MongoMemoryServer.create();
         const url = await mongod.getUri();
 
-        await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
+        await ChatsModelMongoDb.initialize("Test_Message_App",url, true);
         await UserModelMongoDb.initialize("Test_Message_App", url, true);
         console.log("Mongo mock started!");
     }
@@ -131,7 +131,7 @@ test("POST /chats failure database error failure case", async () => {
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
+    await ChatsModelMongoDb.initialize("Test_Message_App", url, true);
 });
 
 test("GET /chats/:id success case", async () => {
@@ -143,10 +143,10 @@ test("GET /chats/:id success case", async () => {
 
     const addedChat = await ChatsModelMongoDb.addChat(user1Response._id, user2Response._id);
 
-    const testResponse = await testRequest.get(`/chats/${addedChat.insertedId}`);
+    const testResponse = await testRequest.get(`/chats/${addedChat._id}`);
 
     expect(testResponse.status).toBe(200);
-    expect(testResponse.body._id).toBe(addedChat.insertedId.toString());
+    expect(testResponse.body._id).toBe(addedChat._id.toString());
     expect(testResponse.body.userSenderId).toBe(user1Response._id.toString());
     expect(testResponse.body.userRecipientId).toBe(user2Response._id.toString());
 });
@@ -169,13 +169,13 @@ test("GET /chats/:id failure database error", async () => {
 
     await mongod.stop();
 
-    const testResponse = await testRequest.get(`/chats/${addedChat.insertedId}`);
+    const testResponse = await testRequest.get(`/chats/${addedChat._id}`);
 
     expect(testResponse.status).toBe(500);
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
+    await ChatsModelMongoDb.initialize("Test_Message_App", url, true);
 });
 
 test('GET /chats success case', async () => {
@@ -236,7 +236,7 @@ test('GET /chats failure database error', async () => {
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
+    await ChatsModelMongoDb.initialize("Test_Message_App", url, true);
 });
 
 test('DELETE /chats success case', async () => {
@@ -289,7 +289,7 @@ test('DELETE /chats failure database error', async () => {
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
-    await ChatsModelMongoDb.initialize(url,"Test_Message_App", true);
+    await ChatsModelMongoDb.initialize("Test_Message_App", url, true);
 
     expect(testResponse.status).toBe(500);
 });

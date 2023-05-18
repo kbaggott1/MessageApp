@@ -83,7 +83,6 @@ test("Adding user with valid user data", async () => {
     let readUser = await model.getUser(addedUser._id);
     
     expect(addedUser.username).toBe(readUser.username);
-    expect(addedUser.password).toBe(readUser.password);
     expect(addedUser.status).toBe(readUser.status);
     expect(addedUser.firstName).toBe(readUser.firstName);
     expect(addedUser.lastName).toBe(readUser.lastName);
@@ -173,7 +172,6 @@ test("Reading a user successfully", async () => {
     let readUser = await model.getUser(addedUser._id);
     
     expect(user.username).toBe(readUser.username);
-    expect(user.password).toBe(readUser.password);
     expect(user.status).toBe(readUser.status);
     expect(user.firstName).toBe(readUser.firstName);
     expect(user.lastName).toBe(readUser.lastName);
@@ -236,7 +234,6 @@ test("Reading all users from the database", async () => {
     let readUsers = await model.getAllUsers();
     for(let i = 0; i < readUsers.length; i++) {
         expect(readUsers[i].username).toBe(usersArray[i].username);
-        expect(readUsers[i].password).toBe(usersArray[i].password);
         expect(readUsers[i].status).toBe(usersArray[i].status);
         expect(readUsers[i].firstName).toBe(usersArray[i].firstName);
         expect(readUsers[i].lastName).toBe(usersArray[i].lastName);
@@ -288,7 +285,6 @@ test("Updating a user succesfully in the database", async () => {
     
     //Assert
     expect(readUser.username).toBe(updatedUser.username);
-    expect(readUser.password).toBe(updatedUser.password);
     expect(readUser.status).toBe(updatedUser.status);
     expect(readUser.firstName).toBe(updatedUser.firstName);
     expect(readUser.lastName).toBe(updatedUser.lastName);

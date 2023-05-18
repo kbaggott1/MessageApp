@@ -235,6 +235,8 @@ async function updateUser(id, newUsername, newPassword, newStatus, newFirstName,
     try{
         if(validateUtils.isValidForEdit(newUsername, newPassword, newStatus, newFirstName, newLastName, newBiography)){
             let object_id = new ObjectId(id);
+
+            newPassword = await hashPassword(newUsername, newPassword);
             let updatedUser = await usersCollection.updateOne({ _id: object_id }, { $set: { password: newPassword, username: newUsername, status: newStatus, firstName: newFirstName, lastName: newLastName, biography: newBiography} });
             
             if(updatedUser.modifiedCount <= 0){
