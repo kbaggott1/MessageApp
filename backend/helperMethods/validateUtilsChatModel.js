@@ -3,9 +3,9 @@ const userModel = require("../models/userModel");
 const logger = require("../logs/logger.js");
 
 /**
- * 
- * @param {*} 
- * @param {*} 
+ * Checks if both the userSenderId and the userRecipientId are in the database. Returns true or false and logs error otherwise.
+ * @param {*} userSenderId of chat.
+ * @param {*} userRecipientId of chat.
  * 
  */
 async function isValid(userSenderId, userRecipientId)
@@ -15,13 +15,11 @@ async function isValid(userSenderId, userRecipientId)
         await userModel.getUser(userRecipientId);  
         logger.info("userSenderId: " + userSenderId + " and" + "userRecipientId: " + userRecipientId + " sucessfully validated.")
         return true;
-    }
-    catch(err)
-    {
+    } catch(err) {
         logger.error("Invalid userSenderId: " + userSenderId + " or" + "userRecipientId: " + userRecipientId);
-        return false;
+        throw err;
     }
-     
 }
+
 
 module.exports = { isValid };

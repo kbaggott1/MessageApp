@@ -11,7 +11,7 @@
 .messagesContent {
     min-height: 100%;
     width: 100%;
-
+    
     background: #2E4F4F;
     border: 1px solid #000000;
     padding-top: 20px;
@@ -19,5 +19,5 @@
 
 .container {
     display: flex;
-    height: 100%;
+   
 }

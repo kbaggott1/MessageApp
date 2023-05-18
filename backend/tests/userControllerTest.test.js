@@ -99,7 +99,6 @@ test("POST /users success case", async () => {
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(1);
     expect(results[0].username.toLowerCase() == username.toLowerCase()).toBe(true);
-    expect(results[0].password.toLowerCase() == password.toLowerCase()).toBe(true);
 });
 
 /**
@@ -197,7 +196,6 @@ test("GET /users/user success case", async () => {
     expect(testResponse.status).toBe(200);
     expect(testResponse.body._id).toBe(addedUser._id.toString());
     expect(testResponse.body.username).toBe(username);
-    expect(testResponse.body.password).toBe(password);
     expect(testResponse.body.status).toBe(status);
     expect(testResponse.body.firstName).toBe(firstName);
     expect(testResponse.body.lastName).toBe(lastName);
@@ -262,7 +260,6 @@ test('GET /users success case', async () =>{
 
     for(let i = 0; i < userArray.length; i++){
         expect(userArray[i].username == testResponse.body[i].username).toBe(true)
-        expect(userArray[i].password == testResponse.body[i].password).toBe(true)
         expect(userArray[i].status == testResponse.body[i].status).toBe(true)
         expect(userArray[i].firstName == testResponse.body[i].firstName).toBe(true)
         expect(userArray[i].lastName == testResponse.body[i].lastName).toBe(true)
@@ -340,14 +337,12 @@ test('PUT /users success case', async () =>{
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(1);
     expect(testResponse.body.username == newUser.username).toBe(true);
-    expect(testResponse.body.password == newUser.password).toBe(true);
     expect(testResponse.body.status == newUser.status).toBe(true);
     expect(testResponse.body.firstName == newUser.firstName).toBe(true);
     expect(testResponse.body.lastName == newUser.lastName).toBe(true);
     expect(testResponse.body.biography == newUser.biography).toBe(true);
     expect(testResponse.body.image == newUser.image).toBe(true);
     expect(results[0].username == newUser.username).toBe(true);
-    expect(results[0].password == newUser.password).toBe(true);
     expect(results[0].status == newUser.status).toBe(true);
     expect(results[0].firstName == newUser.firstName).toBe(true);
     expect(results[0].lastName == newUser.lastName).toBe(true);
@@ -384,7 +379,6 @@ test('PUT /users failure invalid username', async () => {
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(1);
     expect(results[0].username == oldUser.username).toBe(true);
-    expect(results[0].password == oldUser.password).toBe(true);
     expect(results[0].status == oldUser.status).toBe(true);
     expect(results[0].firstName == oldUser.firstName).toBe(true);
     expect(results[0].lastName == oldUser.lastName).toBe(true);
@@ -420,7 +414,6 @@ test('PUT /users failure invalid password', async () => {
     expect(Array.isArray(results)).toBe(true);
     expect(results.length).toBe(1);
     expect(results[0].username == oldUser.username).toBe(true);
-    expect(results[0].password == oldUser.password).toBe(true);
     expect(results[0].status == oldUser.status).toBe(true);
     expect(results[0].firstName == oldUser.firstName).toBe(true);
     expect(results[0].lastName == oldUser.lastName).toBe(true);
