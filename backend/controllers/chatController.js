@@ -20,16 +20,17 @@ module.exports = {
 router.post("/", createChat);
 async function createChat(req, res) { 
     try {
-        refreshSession(req, res);
-        let chat = await ChatsModelMongoDb.addChat(req.body.userSenderId, req.body.userRecipientId);
-        if(chat) {
-            res.status(200);
-            res.send(chat);
-        } else {
-            let message = `Could not add chat to database with senderId: ${req.body.userSenderId}, recipientId: ${req.body.userRecipientId}`;
-            res.status(400);
-            res.send(message);
-            logger.error("In controller: " + message);
+        if(refreshSession(req, res) != null){
+            let chat = await ChatsModelMongoDb.addChat(req.body.userSenderId, req.body.userRecipientId);
+            if(chat) {
+                res.status(200);
+                res.send(chat);
+            } else {
+                let message = `Could not add chat to database with senderId: ${req.body.userSenderId}, recipientId: ${req.body.userRecipientId}`;
+                res.status(400);
+                res.send(message);
+                logger.error("In controller: " + message);
+            }
         }
     }
     catch(err) {
@@ -60,10 +61,11 @@ async function createChat(req, res) {
 router.get("/", getChats)
 async function getChats(req, res) {
     try {
-        refreshSession(req, res);
-        let chats = await ChatsModelMongoDb.getAllChats();
-        res.status(200);
-        res.json(chats);
+        if(refreshSession(req, res) != null){
+            let chats = await ChatsModelMongoDb.getAllChats();
+            res.status(200);
+            res.json(chats);
+        }
     }
     catch(err) {
         if(err instanceof DatabaseError) {
@@ -95,16 +97,17 @@ async function getChats(req, res) {
 router.get("/:id", getChat);
 async function getChat(req, res) {
     try {
-        refreshSession(req, res);
-        let chat = await ChatsModelMongoDb.getSingleChat(req.params.id);
-        if(chat) {
-            res.status(200);
-            res.json(chat);
-        } else {
-            let message = `Unable to find chat with id: ${req.params.id}`;
-            res.status(400);
-            res.send(message);
-            logger.error("In controller: " + message);
+        if(refreshSession(req, res) != null){
+            let chat = await ChatsModelMongoDb.getSingleChat(req.params.id);
+            if(chat) {
+                res.status(200);
+                res.json(chat);
+            } else {
+                let message = `Unable to find chat with id: ${req.params.id}`;
+                res.status(400);
+                res.send(message);
+                logger.error("In controller: " + message);
+            }
         }
     }
     catch(err) {
@@ -136,10 +139,11 @@ async function getChat(req, res) {
 router.delete("/", deleteChat);
 async function deleteChat(req, res) {
     try {
-        refreshSession(req, res);
-        const deletedChat = await ChatsModelMongoDb.deleteChat(req.body._id);
-        res.status(200)
-        res.json(deletedChat);
+        if(refreshSession(req, res) != null){
+            const deletedChat = await ChatsModelMongoDb.deleteChat(req.body._id);
+            res.status(200)
+            res.json(deletedChat);
+        }
     }
     catch(err) {
         if(err instanceof DatabaseError) {
@@ -169,16 +173,17 @@ async function deleteChat(req, res) {
 router.get("/chatsBySenderId/:senderId", getChatsBySenderId);
 async function getChatsBySenderId(req, res) {
     try {
-        refreshSession(req, res);
-        let chats = await ChatsModelMongoDb.getChatsBySenderId(req.params.senderId);
-        if(chats && chats.length > 0) {
-            res.status(200);
-            res.json(chats);
-        } else {
-            let message = `Unable to find chats with senderId: ${req.params.senderId}`;
-            res.status(400);
-            res.send(message);
-            logger.error("In controller: " + message);
+        if(refreshSession(req, res) != null){
+            let chats = await ChatsModelMongoDb.getChatsBySenderId(req.params.senderId);
+            if(chats && chats.length > 0) {
+                res.status(200);
+                res.json(chats);
+            } else {
+                let message = `Unable to find chats with senderId: ${req.params.senderId}`;
+                res.status(400);
+                res.send(message);
+                logger.error("In controller: " + message);
+            }
         }
     }
     catch(err) {
