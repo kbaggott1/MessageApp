@@ -32,16 +32,24 @@ export function ChatsContainer() {
 
 export async function getChats(user, setChats) {
     try {
-        const response = await fetch("http://localhost:1337/chats/chatsBySenderId/" + user._id.toString());
+        const requestOptions = {
+            method: "GET",
+            credentials: "include",
+            mode: 'cors', 
+        };
+
+        const response = await fetch("http://localhost:1337/chats/chatsBySenderId/" + user._id.toString(), requestOptions);
 
         if(response.status === 400) { // not really users fault, shouldnt be a 400
-            console.log("No chats found for user.");
+            //console.log("No chats found for user.");
             setChats([]);
         }
         else {
-            const result = await response.json();
-            
-            setChats(result);
+            if(response.status === 200) {
+                const result = await response.json();
+                setChats(result);
+            }
+
             
         }
     }

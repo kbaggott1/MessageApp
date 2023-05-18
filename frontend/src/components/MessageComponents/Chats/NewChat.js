@@ -9,9 +9,15 @@ export function NewChat({refreshChats}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
+        const requestOptions = {
+            method: "GET",
+            credentials: "include",
+            mode: 'cors', // this cannot be 'no-cors'
+            };
+
         if(username != "") {
             try {
-                const response = await fetch("http://localhost:1337/users/"+ username);
+                const response = await fetch("http://localhost:1337/users/"+ username, requestOptions);
                 const result = await response.json();
 
                 if(response.status === 200) {
