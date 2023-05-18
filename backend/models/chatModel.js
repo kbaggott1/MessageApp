@@ -16,7 +16,7 @@ let database;
  * @param {*} url The url to the mongodb.
  * @throws Database error if there was an issue connecting to the database
  */
-async function initialize(url, dbName, reset = false) {
+async function initialize(dbName, url, reset = false) {
   try{
       client = new MongoClient(url);
       database = dbName;

@@ -14,7 +14,7 @@ initializeModels();
 async function initializeModels() {
     await messageModel.initialize("Message_App", url, false);
     await userModel.initialize("Message_App", url, false);
-    await chatModel.initialize(url, "Message_App", false);
+    await chatModel.initialize("Message_App", url, false);
     await app.listen(port3); // Run the server
     await chatModel.addChat('645af9717cc81875398495a7','645af97e7cc81875398495a8')
 }

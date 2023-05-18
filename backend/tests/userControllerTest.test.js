@@ -1,3 +1,4 @@
+
 require('dotenv').config();
 jest.setTimeout(1000000);//Increase the timeout since the database connection may take time 5000
 const { MongoMemoryServer } = require('mongodb-memory-server');
@@ -547,3 +548,4 @@ test('DELETE /users failure database error', async () => {
 
     expect(testResponse.status).toBe(500);
 })
+
