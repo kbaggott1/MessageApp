@@ -1,11 +1,12 @@
 import { useContext, useState } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
-import { LoggedInContext } from "../App.js"
+import { LoggedInContext, LoggedInUserContext } from "../App.js"
 
 export function LoginForm() {
     const [username, setUsername] = useState(null);
     const [password, setPassword] = useState(null);
     const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
+    const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const navigate = useNavigate();
 
     //Handles the request to create a user
@@ -29,6 +30,9 @@ export function LoginForm() {
             const response = await fetch("http://localhost:1337/session/login", requestOptions);
             if(response.status === 200){
                 alert("Success! You have been logged in");
+                const userByUsername = await getUserByUsername(username);
+                setUserData(userByUsername);
+                console.log(userData);
                 setIsLoggedIn(true);
                 navigate('/');
             }
@@ -68,6 +72,25 @@ export function LoginForm() {
         </>
 
     )
+}
 
 
+async function getUserByUsername(findThisUser) {
+    /*
+    const requestOptions = {
+        method: "GET",
+        credentials: "include",
+        mode: 'cors', // this cannot be 'no-cors'
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            username: findThisUser,
+        }),
+    };
+    */
+
+    const response = await fetch("http://localhost:1337/users/"+ findThisUser);
+    const result = await response.json();
+    return result;
 }

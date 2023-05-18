@@ -11,7 +11,4 @@ export function Settings() {
             <PersonalInfo />
         </>
     )
-
-    
-
 }
