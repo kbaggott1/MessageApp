@@ -32,6 +32,9 @@ export function LoginForm() {
                 setIsLoggedIn(true);
                 navigate('/');
             }
+            else {
+                alert("Username or Password are incorrect");
+            }
             console.log(response.status);
         }
         catch(err){
@@ -60,7 +63,7 @@ export function LoginForm() {
         </NavLink>
 
         <div>
-            {isLoggedin ? <h1> bruh </h1> : <h1> not brtuh </h1>}
+            {isLoggedin ? <h1> bruh </h1> : <h1> not bruh </h1>}
         </div>
         </>
 
