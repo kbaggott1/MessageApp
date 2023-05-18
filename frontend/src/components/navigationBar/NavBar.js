@@ -72,7 +72,7 @@ export function NavBar(){
 
 async function logout(setIsLoggedIn, setUserData) {
     
-    const response = await fetch("http://localhost:1337/logout/");
+    const response = await fetch("http://localhost:1337/session/logout/");
     setIsLoggedIn(false);
     setUserData(null);
     
