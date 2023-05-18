@@ -20,6 +20,10 @@ const logger = require("../logs/logger.js");
 router.post('/', handleAddSingleUser);
 async function handleAddSingleUser(request, response) {
     try{
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         const user = await models.addUser(request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
         if(user){
             response.status("200");
@@ -106,17 +110,15 @@ async function handleReadSingleUser(request, response) {
 router.get('/:username', handleReadSingleUserByUsername);
 async function handleReadSingleUserByUsername(request, response) {
     try{
-        if(refreshSession(request, response) != null){
-            let foundUser = await models.getUserByUsername(request.params.username);
-            if(foundUser){
-                response.status("200");
-                response.json(foundUser);
-            }
-            else{
-                logger.error("User with username " + request.params.username + " was not found in the database for unknown reasons.");
-                response.status("400");
-                response.send({ errorMessage: "Error! Failed to find user with username " + request.params.username + " in the database."});
-            }
+        let foundUser = await models.getUserByUsername(request.params.username);
+        if(foundUser){
+            response.status("200");
+            response.json(foundUser);
+        }
+        else{
+            logger.error("User with username " + request.params.username + " was not found in the database for unknown reasons.");
+            response.status("400");
+            response.send({ errorMessage: "Error! Failed to find user with username " + request.params.username + " in the database."});
         }
     }
     catch(err){
