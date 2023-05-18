@@ -7,6 +7,7 @@ import { Home } from '../pages/Home';
 import { Messages } from '../pages/Messages';
 import { Settings } from '../pages/Settings';
 import { LoginPage } from '../pages/LoginPage';
+import { Register } from '../pages/Register';
 
 const LoggedInContext = createContext({
   isLoggedin: false,
@@ -38,6 +39,7 @@ function App() {
           <Route path="/login" element={ <LoginPage/> } />
           <Route path="/messages" element={ <MessagesLayout/>} />
           <Route path="/settings" element={ <Settings/> } />
+          <Route path="/register" element={<Register />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
