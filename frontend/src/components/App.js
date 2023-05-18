@@ -16,7 +16,7 @@ const LoggedInContext = createContext({
 
 const LoggedInUserContext = createContext({
   userdata: null,
-  setUserdata: () => {}
+  setUserData: () => {}
 })
 
 function App() {

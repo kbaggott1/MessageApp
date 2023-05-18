@@ -23,7 +23,7 @@ async function loginUser(request, response) {
             return;
         }
         else {
-            console.log("Unsuccessful login: invalid username / password given for user " + username);
+            console.log("Unsuccessful login: invalid username / password given for user " + username + " with password " + password);
         }
     }
     else {

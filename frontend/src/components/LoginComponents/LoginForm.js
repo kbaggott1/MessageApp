@@ -75,20 +75,6 @@ export function LoginForm() {
 
 
 async function getUserByUsername(findThisUser) {
-    /*
-    const requestOptions = {
-        method: "GET",
-        credentials: "include",
-        mode: 'cors', // this cannot be 'no-cors'
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            username: findThisUser,
-        }),
-    };
-    */
-
     const response = await fetch("http://localhost:1337/users/"+ findThisUser);
     const result = await response.json();
     return result;
