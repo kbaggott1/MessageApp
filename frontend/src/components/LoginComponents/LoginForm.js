@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
 import { LoggedInContext, LoggedInUserContext } from "../App.js"
 import { useCookies } from 'react-cookie';
+import './LoginForm.css';
 
 export function LoginForm() {
     const [username, setUsername] = useState(null);
@@ -9,6 +10,7 @@ export function LoginForm() {
     const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const [cookies, setCookie, removeCookie ] = useCookies(['username']);
+    const [buttonDisabled, setButtonDisabled] = useState(true);
     const navigate = useNavigate();
 
     //Handles the request to create a user
@@ -51,26 +53,31 @@ export function LoginForm() {
 
     return(
         <>
-        <form onSubmit={handleSubmit}>
-            <div className='LoginInputBox'>
-                <label htmlFor='username'> Username </label>
-                <input type="text" placeholder='Username Goes here' onChange={(e) => setUsername(e.target.value)}/>
-                <br/>
-                <label htmlFor='password'> Password </label>
-                <input type="password" placeholder='Password Goes here' onChange={(e) => setPassword(e.target.value)}/>
-                {username && password && <button type="submit"> Login </button>} 
-            </div>
-        </form>
+        <div className='LoginInformationBox'>
+            <form onSubmit={handleSubmit}>
+                <div className='LoginInputBox'>
+                    <label htmlFor='username' className='UsernameAndPasswordSignInLabel'> Username </label>
+                    <input type="text" className='UsernameAndPasswordSignInInputBox' placeholder='Username Goes here' onChange={(e) => {setUsername(e.target.value); (e.target.value == "" || password == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+                    <br/>
+                    <br/>
+                    <label htmlFor='password' className='UsernameAndPasswordSignInLabel'> Password </label>
+                    <input type="password" className='UsernameAndPasswordSignInInputBox' placeholder='Password Goes here' onChange={(e) => {setPassword(e.target.value); (e.target.value == "" || username == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+                    <br/>
+                    <br/>
+                    <button type="submit" className={buttonDisabled ? 'ModifyNamesSubmitButtonDisabled' : 'ModifyNamesSubmitButtonActive' } disabled={buttonDisabled}> Log In </button>
+                </div>
+            </form>
 
-        <NavLink to="/register">
-            <button>
-                Sign Up!
-            </button>
-        </NavLink>
-
-        <div>
-            {isLoggedin ? <h1> bruh </h1> : <h1> not bruh </h1>}
+            <br/>
+            <br/>
+            <div className='DontHaveAnAccountLabel'> Don't have an account? </div>
+            <NavLink to="/register">
+                <button className='DontHaveAnAccountButton'>
+                    Sign Up!
+                </button>
+            </NavLink>
         </div>
+
         </>
 
     )
