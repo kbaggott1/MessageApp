@@ -9,7 +9,7 @@ export function Home() {
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
     return (
         <>
-            {userData.firstName ? <h1> {userData.firstName} </h1> : <h1> bruh </h1>}
+            {userData && userData.firstName ? <h1> {userData.firstName} </h1> : <h1> bruh </h1>}
         </>
     )
 }

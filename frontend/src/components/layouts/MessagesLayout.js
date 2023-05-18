@@ -2,7 +2,12 @@ import './MessagesLayout.css'
 import { ChatsContainer , getChats} from '../MessageComponents/Chats/ChatsContainer';
 import { Messages } from "../../pages/Messages";
 import { LoggedInUserContext } from "../App"
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect, createContext } from "react";
+
+const ChatContext = createContext({
+    selectedChat: false,
+    setSelectedChat: () => {},
+  })
 
 /**
  * A component that contains the layout for the react app.
@@ -10,27 +15,26 @@ import { useContext, useState, useEffect } from "react";
  */
 export function MessagesLayout() {
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
-    const [chats, setChats] = useState();
+    const [selectedChat, setSelectedChat] = useState();
 
-    /*
-    useEffect(() => {
-        getChats(userData, setChats);
-    }, [chats]); //doesnt refresh on add
 
-    */
 
     return (
         <>
-        <div className="container">
-            <div className="chats">
-                <ChatsContainer />
+        <ChatContext.Provider>
+            <div className="container">
+                <div className="chats">
+                    <ChatsContainer />
+                </div>
+                <div className="messagesContent">
+                    <Messages />
+                </div>
             </div>
-            <div className="messagesContent">
-                <Messages />
-            </div>
-        </div>
+        </ChatContext.Provider>
 
         </>
 
     )
 }
+
+export {ChatContext}
