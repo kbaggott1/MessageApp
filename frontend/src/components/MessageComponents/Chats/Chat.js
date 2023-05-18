@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function Chat({chat}) {
+export function Chat({chat, refreshChats}) {
     const [visibility, setVisibility] = useState("hidden");
     
     const [user, setUser] = useState([]);
@@ -17,7 +17,7 @@ export function Chat({chat}) {
                     <h3>{user.firstName + " " + user.lastName}</h3>
                 </div>
                 
-                <button style={{visibility: visibility}} className="deleteButton" onClick={() => {deleteChat(chat)}}>Delete</button>
+                <button style={{visibility: visibility}} className="deleteButton" onClick={() => {deleteChat(chat, refreshChats)}}>Delete</button>
             </div>
         
 
@@ -25,11 +25,11 @@ export function Chat({chat}) {
     
 }
 
-async function deleteChat(chat, isLinkedChat = false) {
+async function deleteChat(chat, refreshChats, isLinkedChat = false) {
     try {
         if(!isLinkedChat) {
             const linkedChat = await getLinkedChat(chat.userRecipientId, chat.userSenderId);
-            await deleteChat(linkedChat, true);
+            await deleteChat(linkedChat, refreshChats, true);
         }
 
         const requestOptions = {
@@ -45,7 +45,9 @@ async function deleteChat(chat, isLinkedChat = false) {
         };
 
         await fetch("http://localhost:1337/chats", requestOptions);
-
+        if(!isLinkedChat) {
+            refreshChats();
+        }
 
     }
     catch(err) {
