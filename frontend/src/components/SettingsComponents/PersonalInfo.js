@@ -9,6 +9,7 @@ export function PersonalInfo(props) {
     const [firstName, setFirstName] = useState(userData.firstName);
     const [lastName, setLastName] = useState(userData.lastName);
     const [username, setUsername] = useState(userData.username);
+    const [biography, setBiography] = useState(userData.biography);
     const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
@@ -19,14 +20,18 @@ export function PersonalInfo(props) {
             let modifedUsername = userData.username;
             let modifiedFirstName = userData.firstName;
             let modifedLastName = userData.lastName;
-            if(username != undefined && username != null && username != "" && username != " "){
+            let modifiedBiography = userData.biography;
+            if(username !== undefined && username !== null && username !== "" && username !== " "){
                 modifedUsername = username;
             }
-            if(firstName != undefined && firstName != null && firstName != "" && firstName != " "){
+            if(firstName !== undefined && firstName !== null && firstName !== "" && firstName !== " "){
                 modifiedFirstName = firstName;
             }
-            if(lastName != undefined && lastName != null && lastName != "" && lastName != " "){
-                modifedLastName = lastName
+            if(lastName !== undefined && lastName !== null && lastName !== "" && lastName !== " "){
+                modifedLastName = lastName;
+            }
+            if(biography !== undefined && biography !== null && biography !== "" && biography !== " "){
+                modifiedBiography = biography;
             }
 
             //Setting up the request options
@@ -35,12 +40,12 @@ export function PersonalInfo(props) {
                 credentials : "include",
                 body: JSON.stringify({
                     userId: userData._id,
-                    username: userData.username,
+                    username: modifedUsername,
                     password: userData.password,
                     status: userData.status,
                     firstName: modifiedFirstName,
                     lastName: modifedLastName,
-                    biography: userData.biography,
+                    biography: modifiedBiography,
                     image: userData.image,
                 }),
                 headers: {
@@ -50,33 +55,26 @@ export function PersonalInfo(props) {
         
             const response = await fetch("http://localhost:1337/users/", requestOptions)
             const result = await response.json();
-            console.log("If statement time");
+
             if(response.status === 200){
                 setUserData(result);
-                navigate('/');
-                navigate('/settings');//Doing this to 'refresh' the page
+                alert("Successfully updated user data!");
             }
-            if(response.status === 401){
-                console.log("Inside of 401 error response");
+            else if(response.status === 401){
                 alert("Your session has expired! Please Login again to continue")
                 setUserData(null);
                 setIsLoggedIn(false);
                 navigate('/');
             }
             else {
-                console.log("Inside of 401 error response");
-                alert("Your session has expired! Please Login again to continue")
-                setUserData(null);
-                setIsLoggedIn(false);
-                navigate('/');
+                alert("Invalid Input, first Name and last Name cannot contain numbers or symbols.")
             }
             
         }catch(err){
-            console.log("Inside of 401 error response");
             alert("Your session has expired! Please Login again to continue")
             setUserData(null);
             setIsLoggedIn(false);
-            navigate('/');
+            navigate('/login');
         }
     }
 
@@ -87,9 +85,11 @@ export function PersonalInfo(props) {
             <input type="text" placeholder={userData.firstName}  className='FirstAndLastNameInputBox' onChange={(e) => setFirstName(e.target.value)}/>
             <input type="text" placeholder={userData.lastName}  className='FirstAndLastNameInputBox' onChange={(e) => setLastName(e.target.value)}/>
 
-
             <label htmlFor='username' className='UsernameInputBoxLabel'> Username </label>
             <input type="text" placeholder={userData.username}  className='UsernameInputBox' onChange={(e) => setUsername(e.target.value)}/>
+
+            <label htmlFor='biography' className='BiographyInputBoxLabel'> Biography </label>
+            <input type="text" placeholder={userData.biography}  className='BiographyInputBox' onChange={(e) => setBiography(e.target.value)}/>
 
             <button type="submit" className='ModifyNamesSubmitButton'> Modify Settings </button>
         </form>
