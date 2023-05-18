@@ -16,7 +16,7 @@ let database;
  * @param {*} url The url to the mongodb.
  * @throws Database error if there was an issue connecting to the database
  */
-async function initialize(url, dbName, reset = false) {
+async function initialize(dbName, url, reset = false) {
   try{
       client = new MongoClient(url);
       database = dbName;
@@ -58,7 +58,8 @@ async function addChat(userSenderId, userRecipientId){
             throw new InvalidInputError('Sender and Receiver IDs must be provided.');
         }
       if(validateUtils.isValid(userSenderId, userRecipientId)){
-          const chat = await chatCollection.insertOne({ userSenderId, userRecipientId }); 
+          let chat = {userSenderId, userRecipientId};
+          await chatCollection.insertOne(chat); 
           logger.info(`Added chat: userSenderId: ${userSenderId} userRecipientId: ${userRecipientId}`);
           return chat;
       }

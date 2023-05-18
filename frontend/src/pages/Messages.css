@@ -1,0 +1,64 @@
+.refreshButton{
+    background-color: #2E4F4F;;
+    color: whitesmoke;
+    border-style: none;
+    width: 10vh;
+    height: 4vh;
+    margin: 3vh;
+}
+
+.refreshButton:hover {
+    background-color: #243d3d;
+    cursor: pointer;
+}
+
+.refreshButton:active {
+    cursor:default;
+}
+
+.sendButton{
+    background-color: #3f6b6b;
+    color: whitesmoke;
+    border-style: none;
+    width: 10vh;
+    height: 4vh;
+    margin-left: 2vh;
+}
+
+.sendButton:hover {
+    background-color: #243d3d;
+    cursor: pointer;
+}
+
+.sendButton:active {
+    cursor:default;
+}
+
+.sendMessageForm {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3d6868;
+    margin: 1vh;
+    background-color: #2E4F4F;
+    padding-bottom: 2vh;
+}
+
+input {
+    height: 4vh;
+    margin: 1vh;
+    font-size:medium
+}
+
+.userControlDiv {
+    
+}
+
+.miscControls {
+    display: flex;
+    justify-content: center;
+}
+
+.errorBox {
+    margin-left: 1vh;
+    margin-right: 1vh;
+}

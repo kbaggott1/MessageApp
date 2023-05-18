@@ -1,0 +1,18 @@
+.navigationBar {
+    height: 100%;
+    width: 125px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #2E4F4F;
+    border: 1px solid #000000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.mainContent {
+    margin-left: 125px;
+    min-height: 100%;
+    
+}

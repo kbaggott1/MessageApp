@@ -25,4 +25,3 @@ async function isValid(userSenderId, userRecipientId)
 }
 
 module.exports = { isValid };
-
