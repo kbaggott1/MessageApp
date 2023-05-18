@@ -24,7 +24,6 @@ export function LoginForm() {
                     username: username,
                     password: password,
                 }),
-
             };
             
             const response = await fetch("http://localhost:1337/session/login", requestOptions);
