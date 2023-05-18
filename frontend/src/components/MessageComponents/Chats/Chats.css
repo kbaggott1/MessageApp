@@ -1,0 +1,29 @@
+.chatButton {
+    height: 75px;
+    text-align: center;
+
+    width: 100%;
+}
+
+.chat:hover {
+    cursor: pointer;
+    background-color: #0b6568;
+}
+
+.chat {
+    min-width: 100%;
+    display: flex;
+    background-color: #0e8388;
+    justify-content: space-between;
+}
+
+.deleteButton {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border-style: none;
+}
+
+.deleteButton:hover {
+    cursor: pointer;
+    background-color: rgb(117, 117, 117);
+}

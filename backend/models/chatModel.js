@@ -156,16 +156,17 @@ async function deleteChat(id) {
   }
 }
 
+/**
+ * Gets chats by sender id.
+ * @param {*} senderId The id of the sender 
+ * @returns An array of chats.
+ */
 async function getChatsBySenderId(senderId) {
     try {
         let chats = await chatCollection
             .find({userSenderId: senderId})
             .toArray();
 
-        if(chats.length == 0)
-        {
-          throw new InvalidInputError("Could not find chats with sender id: " + senderId);
-        }
 
         return chats;
     }

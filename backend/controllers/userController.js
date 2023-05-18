@@ -58,28 +58,28 @@ async function handleAddSingleUser(request, response) {
  * @param {*} response If the user was successfully found they are returned in the response
  *                     as a JSON. Otherwise the response contains a descriptive error message
  */
-router.get('/user', handleReadSingleUser);
+router.get('/user/:userId', handleReadSingleUser);
 async function handleReadSingleUser(request, response) {
     try{
-        let foundUser = await models.getUser(request.body.userId);
+        let foundUser = await models.getUser(request.params.userId);
         if(foundUser){
             response.status("200");
             response.json(foundUser);
         }
         else{
-            logger.error("User with ID " + request.body.userId + " was not found in the database for unknown reasons.");
+            logger.error("User with ID " + request.params.userId + " was not found in the database for unknown reasons.");
             response.status("400");
-            response.send({ errorMessage: "Error! Failed to find user with ID " + request.body.userId + " in the database."});
+            response.send({ errorMessage: "Error! Failed to find user with ID " + request.params.userId + " in the database."});
         }
     }
     catch(err){
         if(err instanceof InvalidInputError){
-            logger.error("User with ID " + request.body.userId + " could not be found in the database. ");
+            logger.error("User with ID " + request.params.userId + " could not be found in the database. ");
             response.status("400");
-            response.send({ errorMessage: "Error! the user with ID " + request.body.userId + " could not be found in the database " + err.message});
+            response.send({ errorMessage: "Error! the user with ID " + request.params.userId + " could not be found in the database " + err.message});
         }
         else if(err instanceof DatabaseError){
-            logger.error("Database error was encountered while trying to find user with ID " + request.body.userId + " in the database");
+            logger.error("Database error was encountered while trying to find user with ID " + request.params.userId + " in the database");
             response.status("500");
             response.send({ errorMessage: "Error! There was an error connecting the database while trying to find user with ID " + request.params.userId + ". " + err.message});
         }

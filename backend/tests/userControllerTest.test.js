@@ -189,9 +189,7 @@ test("GET /users/user success case", async () => {
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
     const addedUser = await model.addUser(username, password, status, firstName, lastName, biography, image);
 
-    const testResponse = await testRequest.get("/users/user/").send({
-        userId: addedUser._id
-    });
+    const testResponse = await testRequest.get("/users/user/" + addedUser._id);
 
     expect(testResponse.status).toBe(200);
     expect(testResponse.body._id).toBe(addedUser._id.toString());
@@ -209,9 +207,7 @@ test("GET /users/user success case", async () => {
  * for a user that does not exist
  */
 test("GET /users/user failure user does not exist", async () => {
-    const testResponse = await testRequest.get("/users/user/").send({
-        userId: "87132568"
-    });
+    const testResponse = await testRequest.get("/users/user/" + "87132568");
 
     expect(testResponse.status).toBe(500);
 })
@@ -225,9 +221,7 @@ test("GET /users/user failure database error", async () => {
     addedUser = await model.addUser(username, password, status, firstName, lastName, biography, image);
     await mongod.stop();
 
-    const testResponse = await testRequest.get("/users/user/").send({
-        userId: addedUser._id
-    });
+    const testResponse = await testRequest.get("/users/user/" + addedUser._id);
     expect(testResponse.status).toBe(500);
 
     mongod = await MongoMemoryServer.create();

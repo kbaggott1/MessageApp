@@ -76,21 +76,13 @@ export function LoginForm() {
 
 
 async function getUserByUsername(findThisUser) {
-    /*
-    const requestOptions = {
-        method: "GET",
-        credentials: "include",
-        mode: 'cors', // this cannot be 'no-cors'
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            username: findThisUser,
-        }),
-    };
-    */
+    try {
+        const response = await fetch("http://localhost:1337/users/"+ findThisUser);
+        const result = await response.json();
+        return result;
+    }
+    catch(err) {
+        alert("Could not get user: " +findThisUser + " Error: " + err.message);
+    }
 
-    const response = await fetch("http://localhost:1337/users/"+ findThisUser);
-    const result = await response.json();
-    return result;
 }
