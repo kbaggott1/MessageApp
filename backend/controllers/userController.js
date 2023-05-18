@@ -20,10 +20,6 @@ const logger = require("../logs/logger.js");
 router.post('/', handleAddSingleUser);
 async function handleAddSingleUser(request, response) {
     try{
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
         const user = await models.addUser(request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
         if(user){
             response.status("200");
@@ -34,7 +30,6 @@ async function handleAddSingleUser(request, response) {
             response.status("400");
             response.send({ errorMessage: "Error! failed to add User " + request.body.username + " with password " + request.body.password + " to the database. "});
         }
-        
     }
     catch(err){
         if(err instanceof InvalidInputError){
