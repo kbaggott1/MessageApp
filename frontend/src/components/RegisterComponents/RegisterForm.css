@@ -1,0 +1,151 @@
+.SignUpInformationBox {
+    background-color: #0e8388;
+    display: grid;
+    grid-template-columns: 1fr 8fr; /* Two columns */
+    columns: 2;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto; /* idk how many rows */
+    gap: 10px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    border-left: 200px;
+    border-color: black;
+}
+
+
+.ReTypePasswordBecauseItIsSpceicalAndLong {
+    text-align: right;
+    vertical-align: top;
+    padding: 5px;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+    font-size: 15px;
+}
+
+.RegistrationHeaderLabels {
+    text-align: right;
+    vertical-align: middle;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+    font-size: 15px;
+}
+.RegistrationInputBox {
+    grid-column: 2 / 13;
+    min-height: 10px;
+    max-height: 20px;
+    
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+    background-color: #2E4F4F;
+    color: black;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    width: 95%;
+    padding: 1.5%;
+}
+
+.BoxInsideAnotherBoxWhichIsKindaCrazy {
+    vertical-align: middle;
+}
+
+
+.RegistrationSubmitButtonActive {
+    grid-column: 1 / 13;
+    height: 30px;
+    width: 99%;
+
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+    color: #0e8388;
+    font-size: large;
+    text-decoration: underline;
+    font-weight: bold;
+
+    background-color: #2C3333;
+}
+.RegistrationSubmitButtonActive:hover {
+    cursor: pointer;
+}
+
+.RegistrationSubmitButtonDisabled {
+    grid-column: 1 / 13;
+    height: 30px;
+    width: 99%;
+
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+    color: white;
+    font-size: large;
+    text-decoration: underline;
+    font-weight: bold;
+
+    background-color: darkgray;
+}
+
+.BoxAroundTheIAlreadyHaveAnAccountButton {
+    grid-column: 1 / 13;
+    margin-top: 10px;
+}
+
+.IAlreadyHaveAnAccountLabel {
+    grid-column: 1 / 13;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.DontHaveAnAccountLabel {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+.AlreadyHaveAnAccountButton{
+    grid-column: 1 / 4;
+    height: 30px;
+    width: 99%;
+
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+    color: #0e8388;
+    font-size: large;
+    text-decoration: underline;
+    font-weight: bold;
+
+    background-color: #2C3333;
+}
+.AlreadyHaveAnAccountButton:hover {
+    cursor: pointer;
+}
+

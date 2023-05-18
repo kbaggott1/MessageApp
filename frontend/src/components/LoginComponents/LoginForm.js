@@ -71,6 +71,7 @@ export function LoginForm() {
             <br/>
             <br/>
             <div className='DontHaveAnAccountLabel'> Don't have an account? </div>
+
             <NavLink to="/register">
                 <button className='DontHaveAnAccountButton'>
                     Sign Up!
