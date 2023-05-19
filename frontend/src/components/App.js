@@ -46,7 +46,6 @@ function App() {
         if (response.status === 200) {
           setIsLoggedIn(true);
           setUserData(await loginAs(cookies.username));
-          console.log(userData);
         } else {
           setIsLoggedIn(false); // may be unnecessary, but do this just in case to be more secure
           removeCookie('username');
@@ -95,7 +94,6 @@ async function loginAs(username) {
     };
     const response = await fetch("http://localhost:1337/users/"+ username, requestOptions);
     const result = await response.json();
-    console.log(result);
     return result;
   }
   catch(err) {
