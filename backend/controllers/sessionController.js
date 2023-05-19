@@ -6,7 +6,7 @@ const router = express.Router();
 const routeRoot = '/session';
 
 /**
- * Verfifies the that the username and password provided through the request body parameters
+ * Verifies the that the username and password provided through the request body parameters
  * exist and are linked to the same user. If the are valid a session cookie is returned to allow
  * the user to be signed in, other wise a status of 401 is returned will no cookie.
  * @param {*} request Request should contain username and password body parameters
@@ -90,9 +90,9 @@ function authUser(request, response) {
 }
 
 /**
- * Autheticates a user. The request is checked for a valid session cookie. If the cookie is valid then
- * and object is returned containg the sessionId and userSession, otherwise null is returned.
- * @param {*} request The request that is authenitcated. Needs to contain a valid session cookie in order
+ * Authenticates a user. The request is checked for a valid session cookie. If the cookie is valid then
+ * and object is returned contains the sessionId and userSession, otherwise null is returned.
+ * @param {*} request The request that is authenticated. Needs to contain a valid session cookie in order
  *                    to be considered valid.
  * @returns Object containing SessionId and userSession if the request contained a valid session cookie.
  *          Otherwise null is returned.
@@ -122,7 +122,7 @@ function authenticateUser(request) {
         return null;
     }
 
-    return {sessionId, userSession};//Succesfully validated
+    return {sessionId, userSession};//Successfully validated
 }
 
 /**
@@ -148,7 +148,7 @@ function refreshSession(request, response) {
     // Delete the old entry in the session map
     deleteSession(authenticatedSession.sessionId);
 
-    // Set the session cookie to the new id we genrated, with a
+    // Set the session cookie to the new id we generated, with a
     // renewed expiration time
     response.cookie("sessionId", newSessionId, { expires: getSession(newSessionId).expiresAt, httpOnly: true });
     return newSessionId;
