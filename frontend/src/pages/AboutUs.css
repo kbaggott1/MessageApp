@@ -1,4 +1,33 @@
 .description{
     color:aqua;
-    margin-left: 1200px;
+    padding: 50px;
+}
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.Kevin{
+    width: 60%; 
+    max-width: 250px;
+    height: 50%; 
+    object-fit: cover;
+}
+.Cristiano{
+    width: 60%; 
+    max-width: 250px;
+    height: 50%;
+    object-fit:cover;
+    
+}
+.Sebastian{
+    width: 60%; 
+    max-width: 250px;
+    height: 60%;
+    object-fit:cover;
+}
+.images{
+    display: flex;
+    justify-content: center;
 }
