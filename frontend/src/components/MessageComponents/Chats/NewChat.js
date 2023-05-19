@@ -3,6 +3,11 @@ import { LoggedInContext, LoggedInUserContext } from "../../App";
 import { useContext, useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 
+/**
+ * A New Chat contains user controls to start a new chat using one text field and a button.
+ * @prop {*} refreshChats A method that when called refreshes the chats container component.
+ * @returns A JSX Component containing a form to get user input.
+ */
 export function NewChat({refreshChats}) {
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const [isLoggedin, setIsLoggedIn] = useContext(LoggedInContext);

@@ -4,6 +4,10 @@ import './ChatBox.css';
 import { useContext, useState, useEffect } from 'react';
 import { LoggedInUserContext } from '../../App';
 
+/**
+ * The chat box component contains all the messages for the selected chat if a chat is selected.
+ * @returns A JSX Component containing a chat box div that either has a header or messages in it.
+ */
 export function ChatBox() {
     const [selectedChat, setSelectedChat] = useContext(ChatContext);
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
@@ -44,15 +48,12 @@ async function getMessages(selectedChat, setMessages) {
 
         if(selectedChat._id) {
             const response = await fetch("http://localhost:1337/messages/chatid/" + selectedChat._id, requestOptions);
-            console.log(response.status)
             if(response.status === 400) { // not really users fault, shouldnt be a 400
-                //console.log("No chats found for user.");
                 setMessages([]);
             }
             else {
                 if(response.status === 200) {
                     const result = await response.json();
-                    console.log(result);
                     setMessages(result.length == 0 ? [] : result);
                 }
             }

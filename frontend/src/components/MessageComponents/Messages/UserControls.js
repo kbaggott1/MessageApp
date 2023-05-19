@@ -29,7 +29,13 @@ export function UserControls() {
                 alert("You cannot send an empty message.");
             }
             else {
-                await addMessage(userData, messageBody, navigate, selectedChat, setUserData, setIsLoggedIn);
+                if(messageBody.length > 250) {
+                    alert("Message cannot be more than 250 characters long.");
+                }
+                else {
+                    await addMessage(userData, messageBody, navigate, selectedChat, setUserData, setIsLoggedIn);
+                }
+                
             }  
         }
     }

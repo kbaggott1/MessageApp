@@ -3,6 +3,13 @@ import { LoggedInUserContext } from "../../App"
 import { useContext, useState, useEffect } from "react";
 import { Chat } from "./Chat";
 
+/**
+ * The chats container holds user controls related to chats and the individual chats
+ * which are retrieved from the database every second.
+ * @returns A JSX Object contains a div with user controls for adding new chats
+ *          and a list of chat components.
+ */
+
 export function ChatsContainer() {
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const [chats, setChats] = useState([]);

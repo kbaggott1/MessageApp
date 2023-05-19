@@ -4,9 +4,11 @@ import { ChatContext } from "../../App";
 import { LoggedInContext, LoggedInUserContext } from "../../App";
 
 /**
- * 
- * @param {*} param 
- * @returns 
+ * The component displays the name of the recipiant of the chat. It contains a clickable div to select the chat and a 
+ * button that appears on hover to delete the chat and all it's messages associated with it.
+ * @prop {*} chat The chat object from the database.
+ * @prop {*} refreshChats A method to be called that refreshes the chats container.
+ * @returns A JSX Component which has the chat.
  */
 export function Chat({chat, refreshChats}) {
     const [visibility, setVisibility] = useState("hidden");
