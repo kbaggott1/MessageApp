@@ -50,8 +50,11 @@ export function NewChat({refreshChats}) {
     return (
         <>
         <form onSubmit={handleSubmit}>
-            <input type='text' placeholder='New chat with user...' onChange={(e) => setUsername(e.target.value)}></input>
-            <button type="submit">+</button>
+            <div className="userControl">
+                <input className="chatTextBox" type='text' placeholder='New chat with user...' onChange={(e) => setUsername(e.target.value)}></input>
+                <button className="chatAddButton" type="submit">+</button>
+            </div>
+
         </form>
         </>
     )

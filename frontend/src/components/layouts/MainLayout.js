@@ -13,12 +13,12 @@ export function MainLayout() {
     return (
         <>
         <div className="WholePageContainer">
-        <div className="navigationBar">
-            <NavBar/>
-        </div>
-        <div className="mainContent">
-            <Outlet/>
-        </div>
+            <div className="navigationBar">
+                <NavBar/>
+            </div>
+            <div className="mainContent">
+                <Outlet/>
+            </div>
         </div>
 
         </>
