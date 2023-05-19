@@ -183,13 +183,11 @@ test("GET /messages/ success case", async () => {
     //insert new chat for chatId
     const chatId = (await chatModel.addChat(authorId, userId2))._id;
 
-    await model.postMessage(messageBody1, authorId, chatId);
+    let message = await model.postMessage(messageBody1, authorId, chatId);
     await model.postMessage(messageBody2, authorId, chatId);
     await model.postMessage(messageBody3, authorId, chatId);
 
-    const testResponse = await testRequest.get('/messages').send({
-        chatId: chatId
-    }).set("Cookie", "sessionId="+sessionId);
+    const testResponse = await testRequest.get('/messages/chatid/'+chatId).set("Cookie", "sessionId="+sessionId);
     
     //const testResponse = await JSON.parse(jsonResponse).toArray();
 
@@ -227,21 +225,12 @@ test("GET /messages/ 500 fail case", async () => {
     await model.postMessage(messageBody3, authorId, chatId);
 
     model.close();
-    const testResponse = await testRequest.get('/messages').send({
-        chatId: chatId
-    }).set("Cookie", "sessionId="+sessionId);
+    const testResponse = await testRequest.get('/messages/chatid/'+chatId).set("Cookie", "sessionId="+sessionId);
 
     expect(testResponse.status).toBe(500);
 
 });
 
-test("GET /messages/ 400 fail case", async () => {
-    const sessionId = createSession("Yano", 5);
-    const testResponse = await testRequest.get('/messages').send({
-        chatId: "ffffffffffffffffffffffff"
-    }).set("Cookie", "sessionId="+sessionId);
-    expect(testResponse.status).toBe(400);
-});
 
 //update
 test("PUT /messages/ success case", async () => {

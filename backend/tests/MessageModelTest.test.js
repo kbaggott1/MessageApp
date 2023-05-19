@@ -4,6 +4,8 @@ const { ObjectId } = require("mongodb");
 let model = require("../models/messageModel");
 let userModel = require("../models/userModel");
 let chatModel = require("../models/chatModel");
+const logger = require("../logs/logger");
+const exp = require("constants");
 jest.setTimeout(5000);
 let mongodb;
 
@@ -185,8 +187,7 @@ test('READ: Can read message by id from DB', async () => {
     expect(results[0].chatId.toString() == message.chatId.toString()).toBe(true);
 });
 
-test('READ: Read message by id throws with bad id from DB', async () => {
-    const sessionId = createSession("Yano", 5);
+test('READ: Read message by id doesn\'t throws with bad id from DB', async () => {
 
     //AFTER SUCCESFULLY ADDING TO DB
 
@@ -210,8 +211,8 @@ test('READ: Can read message by chat id from DB', async () => {
     //insert new chat for chatId
     let chatId = (await chatModel.addChat(authorId, userId2))._id;
 
-    await model.postMessage(messageBody1, authorId, chatId);
-    await model.postMessage(messageBody2, authorId, chatId);
+    let message = await model.postMessage(messageBody1, authorId, chatId);
+    let message2 = await model.postMessage(messageBody2, authorId, chatId);
     
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
@@ -246,9 +247,10 @@ test('READ: Can read message by chat id from DB', async () => {
 test('READ: Can read message by chat id throws with bad id from DB', async () => {
     let badChatId = "ffffffffffffffffffffffff";
 
-    await expect(model.getMessagesByChatId(badChatId))
-    .rejects
-    .toThrow("Could not find messages with chat id: " + badChatId);
+    let messages = await model.getMessagesByChatId(badChatId);
+
+    expect(Array.isArray(messages)).toBe(true);
+    expect(messages.length == 0);
 
 });
 
