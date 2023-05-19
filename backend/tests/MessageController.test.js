@@ -10,6 +10,7 @@ let userModel = require("../models/userModel");
 let chatModel = require("../models/chatModel");
 jest.setTimeout(500000);
 let mongodb;
+const { Session, createSession, getSession, deleteSession } = require("../models/Session.js");
 
 
 beforeAll(async () => {
@@ -59,7 +60,7 @@ afterAll(async () => {
     
 //create
 test("POST /messages success case", async () => {
-
+    const sessionId = createSession("Yano", 5);
     const messageBody = "hello!"
 
     //insert new user for authorId
@@ -73,7 +74,7 @@ test("POST /messages success case", async () => {
         messageBody: messageBody,
         authorId: authorId,
         chatId: chatId
-    })
+    }).set("Cookie", "sessionId="+sessionId);
 
     cursor = await model.getCollection().find();
     results = await cursor.toArray();
@@ -86,7 +87,7 @@ test("POST /messages success case", async () => {
 });
 
 test("POST /messages 400 fail case", async () => {
-
+    const sessionId = createSession("Yano", 5);
     //insert new user for authorId
     const authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
     const userId2 = (await userModel.addUser("username21", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
@@ -98,12 +99,12 @@ test("POST /messages 400 fail case", async () => {
         messageBody: "",
         authorId: authorId,
         chatId: chatId
-    })
+    }).set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(400);
 });
 
 test("POST /messages 500 fail case", async () => {
-
+    const sessionId = createSession("Yano", 5);
     const messageBody = "hello!"
 
     //insert new user for authorId
@@ -118,21 +119,22 @@ test("POST /messages 500 fail case", async () => {
         messageBody: messageBody,
         authorId: authorId,
         chatId: chatId
-    })
+    }).set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(500);
 
 });
     
 //read
 test("GET /messages/:id 400 fail case", async () => {
+    const sessionId = createSession("Yano", 5);
     await model.getCollection().insertOne({messageBody: "hellooooo", authorId: 0, chatId: 0});
-    const testResponse = await testRequest.get('/messages/' + "ffffffffffffffffffffffff");
+    const testResponse = await testRequest.get('/messages/' + "ffffffffffffffffffffffff").set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(400);
 
 });
     
 test("GET /messages/:id 500 fail case", async () => {
-
+    const sessionId = createSession("Yano", 5);
     const messageBody = "hello!"
 
     //insert new user for authorId
@@ -145,13 +147,13 @@ test("GET /messages/:id 500 fail case", async () => {
     let messageId = (await model.postMessage(messageBody, authorId, chatId))._id;
 
     model.close();
-    const testResponse = await testRequest.get('/messages/' + messageId);
+    const testResponse = await testRequest.get('/messages/' + messageId).set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(500);
 
 });
     
 test("GET /messages/:id success case", async () => {
-
+    const sessionId = createSession("Yano", 5);
     const messageBody = "hello!"
 
     //insert new user for authorId
@@ -163,13 +165,14 @@ test("GET /messages/:id success case", async () => {
 
     let messageId = (await model.postMessage(messageBody, authorId, chatId))._id;
 
-    const testResponse = await testRequest.get('/messages/' + messageId);
+    const testResponse = await testRequest.get('/messages/' + messageId).set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(200);
 
 });
 
 
 test("GET /messages/ success case", async () => {
+    const sessionId = createSession("Yano", 5);
     const messageBody1 = "hello!";
     const messageBody2 = "testing";
     const messageBody3 = "HOPE IT WORKS";
@@ -186,7 +189,7 @@ test("GET /messages/ success case", async () => {
 
     const testResponse = await testRequest.get('/messages').send({
         chatId: chatId
-    })
+    }).set("Cookie", "sessionId="+sessionId);
     
     //const testResponse = await JSON.parse(jsonResponse).toArray();
 
@@ -208,6 +211,7 @@ test("GET /messages/ success case", async () => {
 });
 
 test("GET /messages/ 500 fail case", async () => {
+    const sessionId = createSession("Yano", 5);
     const messageBody1 = "hello!";
     const messageBody2 = "testing";
     const messageBody3 = "HOPE IT WORKS";
@@ -225,21 +229,23 @@ test("GET /messages/ 500 fail case", async () => {
     model.close();
     const testResponse = await testRequest.get('/messages').send({
         chatId: chatId
-    })
+    }).set("Cookie", "sessionId="+sessionId);
 
     expect(testResponse.status).toBe(500);
 
 });
 
 test("GET /messages/ 400 fail case", async () => {
+    const sessionId = createSession("Yano", 5);
     const testResponse = await testRequest.get('/messages').send({
         chatId: "ffffffffffffffffffffffff"
-    })
+    }).set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(400);
 });
 
 //update
 test("PUT /messages/ success case", async () => {
+    const sessionId = createSession("Yano", 5);
     const messageBody = "hello!";
     const newMessage = "world";
 
@@ -255,7 +261,7 @@ test("PUT /messages/ success case", async () => {
     const testResponse = await testRequest.put('/messages').send({
         messageId: messageId,
         messageBody: newMessage,
-    })
+    }).set("Cookie", "sessionId="+sessionId);
 
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
@@ -268,6 +274,7 @@ test("PUT /messages/ success case", async () => {
 });
 
 test("PUT /messages/ 500 fail case", async () => {
+    const sessionId = createSession("Yano", 5);
     const messageBody = "hello!";
     const newMessage = "world";
 
@@ -285,25 +292,27 @@ test("PUT /messages/ 500 fail case", async () => {
     const testResponse = await testRequest.put('/messages').send({
         messageId: messageId,
         messageBody: newMessage,
-    })
+    }).set("Cookie", "sessionId="+sessionId);
 
     expect(testResponse.status).toBe(500);
 });
 
 test("PUT /messages/ 400 fail case", async () => {
+    const sessionId = createSession("Yano", 5);
     const badId = "ffffffffffffffffffffffff";
     const newMessage = "new message!!!";
 
     const testResponse = await testRequest.put('/messages').send({
         messageId: badId,
         messageBody: newMessage,
-    })
+    }).set("Cookie", "sessionId="+sessionId);
 
     expect(testResponse.status).toBe(400);
 });
 
 //delete
 test("DELETE /messages/success case", async () => {
+    const sessionId = createSession("Yano", 5);
     const messageBody1 = "hello!"
     const messageBody2 = "I like dogs!"
     const messageBody3 = "I hate dogs!"
@@ -320,7 +329,7 @@ test("DELETE /messages/success case", async () => {
 
     const testResponse = await testRequest.delete('/messages').send({
         messageId: messageId
-    })
+    }).set("Cookie", "sessionId="+sessionId);
 
 
     const cursor = await model.getCollection().find();
@@ -331,10 +340,10 @@ test("DELETE /messages/success case", async () => {
     expect(results[0].messageBody).toBe(messageBody2);
 
     expect(results[1].messageBody).toBe(messageBody3);
-
 });
 
 test("DELETE /messages/ 500 fail case", async () => {
+    const sessionId = createSession("Yano", 5);
     const messageBody = "hello!"
     //insert new user for authorId
     const authorId = (await userModel.addUser("username12", "superSafePassword123", "online", "tester", "guy", "hello world", "sample"))._id;
@@ -348,7 +357,7 @@ test("DELETE /messages/ 500 fail case", async () => {
     model.close();
     const testResponse = await testRequest.delete('/messages').send({
         messageId: messageId
-    })
+    }).set("Cookie", "sessionId="+sessionId);
 
     expect(testResponse.status).toBe(500);
 });

@@ -65,7 +65,6 @@ test('ADD: Can add message to DB', async () => {
 });
      
 test("ADD: message at max characters passes", async () => {
-
     const messageBody = "expansedawdd galaxies collide, unveiling the secrets of the universe. Through the eons, civilizations rise and fall, leaving traces of their existence. We ponder the mysteries of life, searching for meaning in the infinite tapestry of time and space.";
 
     //insert new user for authorId
@@ -187,6 +186,8 @@ test('READ: Can read message by id from DB', async () => {
 });
 
 test('READ: Read message by id throws with bad id from DB', async () => {
+    const sessionId = createSession("Yano", 5);
+
     //AFTER SUCCESFULLY ADDING TO DB
 
     let badMessageId = "ffffffffffffffffffffffff";
@@ -243,7 +244,6 @@ test('READ: Can read message by chat id from DB', async () => {
 });
 
 test('READ: Can read message by chat id throws with bad id from DB', async () => {
-
     let badChatId = "ffffffffffffffffffffffff";
 
     await expect(model.getMessagesByChatId(badChatId))

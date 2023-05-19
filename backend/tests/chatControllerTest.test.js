@@ -6,6 +6,7 @@ const app = require('../app');
 jest.setTimeout(1000000);//Increase the timeout since the database connection may take time 5000
 const testRequest = request(app);
 const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;
+const { Session, createSession, getSession, deleteSession } = require("../models/Session.js");
 
 const userData = [
     { username: "admin", password: "superSafePassword123", status: 'online', firstName: 'admin', lastName: 'admin' , biography: 'Admin of the page', image:'placeholder'},
@@ -71,6 +72,7 @@ afterEach(async () => {
 });
 
 test("POST /chats success case", async () => {
+    const sessionId = createSession("Yano", 5);
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
@@ -80,7 +82,7 @@ test("POST /chats success case", async () => {
     const chatResponse = await testRequest.post("/chats/").send({
         userSenderId: user1Response._id,
         userRecipientId: user2Response._id
-    });
+    }).set("Cookie", "sessionId="+sessionId);;
 
     const cursor = await ChatsModelMongoDb.getCollection().find();
     const results = await cursor.toArray();
@@ -93,6 +95,7 @@ test("POST /chats success case", async () => {
 });
 
 test("POST /chats failure invalid userSenderId failure case", async () => {
+    const sessionId = createSession("Yano", 5);
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
@@ -102,7 +105,7 @@ test("POST /chats failure invalid userSenderId failure case", async () => {
     const chatResponse = await testRequest.post("/chats/").send({
         userSenderId: null,
         userRecipientId: user2Response._id
-    });
+    }).set("Cookie", "sessionId="+sessionId);;
 
     const cursor = await ChatsModelMongoDb.getCollection().find();
     const results = await cursor.toArray();
@@ -113,6 +116,7 @@ test("POST /chats failure invalid userSenderId failure case", async () => {
 });
 
 test("POST /chats failure database error failure case", async () => {
+    const sessionId = createSession("Yano", 5);
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
@@ -125,7 +129,7 @@ test("POST /chats failure database error failure case", async () => {
     const testResponse = await testRequest.post("/chats/").send({
         userSenderId: user1Response._id,
         userRecipientId: user1Response._id
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     expect(testResponse.status).toBe(500);
 
@@ -135,6 +139,7 @@ test("POST /chats failure database error failure case", async () => {
 });
 
 test("GET /chats/:id success case", async () => {
+    const sessionId = createSession("Yano", 5);
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
@@ -143,7 +148,7 @@ test("GET /chats/:id success case", async () => {
 
     const addedChat = await ChatsModelMongoDb.addChat(user1Response._id, user2Response._id);
 
-    const testResponse = await testRequest.get(`/chats/${addedChat._id}`);
+    const testResponse = await testRequest.get(`/chats/${addedChat._id}`).set("Cookie", "sessionId="+sessionId);;
 
     expect(testResponse.status).toBe(200);
     expect(testResponse.body._id).toBe(addedChat._id.toString());
@@ -153,23 +158,24 @@ test("GET /chats/:id success case", async () => {
 
 
 test("GET /chats/:id failure chat does not exist", async () => {
-    const testResponse = await testRequest.get("/chats/87132568");
+    const sessionId = createSession("Yano", 5);
+    const testResponse = await testRequest.get("/chats/87132568").set("Cookie", "sessionId="+sessionId);
 
     expect(testResponse.status).toBe(500);
 });
 
 test("GET /chats/:id failure database error", async () => {
+    const sessionId = createSession("Yano", 5);
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
     const user1Response = await UserModelMongoDb.addUser(user1.username, user1.password, user1.status, user1.firstName, user1.lastName, user1.biography, user1.image);
     const user2Response = await UserModelMongoDb.addUser(user2.username, user2.password, user2.status, user2.firstName, user2.lastName, user2.biography, user2.image);
-
     const addedChat = await ChatsModelMongoDb.addChat(user1Response._id, user2Response._id);
 
     await mongod.stop();
 
-    const testResponse = await testRequest.get(`/chats/${addedChat._id}`);
+    const testResponse = await testRequest.get(`/chats/${addedChat._id}`).set("Cookie", "sessionId="+sessionId);
 
     expect(testResponse.status).toBe(500);
 
@@ -179,6 +185,7 @@ test("GET /chats/:id failure database error", async () => {
 });
 
 test('GET /chats success case', async () => {
+    const sessionId = createSession("Yano", 5);
     const userArray = [];
     userArray[0] = generateValidUserData();
     userArray[1] = generateValidUserData();
@@ -196,7 +203,7 @@ test('GET /chats success case', async () => {
     await ChatsModelMongoDb.addChat(userResponseArray[2]._id, userResponseArray[3]._id);
     await ChatsModelMongoDb.addChat(userResponseArray[3]._id, userResponseArray[0]._id);
 
-    const testResponse = await testRequest.get("/chats/");
+    const testResponse = await testRequest.get("/chats/").set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(200);
 
     const userIds = userResponseArray.map(user => String(user._id));
@@ -215,12 +222,14 @@ test('GET /chats success case', async () => {
 
 
 test('GET /chats failure no chats in the database', async () => {
-    const testResponse = await testRequest.get("/chats/");
+    const sessionId = createSession("Yano", 5);
+    const testResponse = await testRequest.get("/chats/").set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(400);
     
 });
 
 test('GET /chats failure database error', async () => {
+    const sessionId = createSession("Yano", 5);
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
@@ -231,7 +240,7 @@ test('GET /chats failure database error', async () => {
 
     await mongod.stop();
 
-    const testResponse = await testRequest.get("/chats/");
+    const testResponse = await testRequest.get("/chats/").set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(500);
 
     mongod = await MongoMemoryServer.create();
@@ -240,6 +249,7 @@ test('GET /chats failure database error', async () => {
 });
 
 test('DELETE /chats success case', async () => {
+    const sessionId = createSession("Yano", 5);
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
@@ -250,7 +260,7 @@ test('DELETE /chats success case', async () => {
 
     const testResponse = await testRequest.delete("/chats/").send({
         _id: addedChat._id
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     const cursor = await ChatsModelMongoDb.getCollection().find();
     const results = await cursor.toArray();
@@ -261,9 +271,10 @@ test('DELETE /chats success case', async () => {
 });
 
 test('DELETE /chats failure chat does not exist', async () => {
+    const sessionId = createSession("Yano", 5);
     const testResponse = await testRequest.delete("/chats/").send({
         chatId: "WF12085124",
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     const cursor = await ChatsModelMongoDb.getCollection().find();
     const results = await cursor.toArray();
@@ -274,6 +285,7 @@ test('DELETE /chats failure chat does not exist', async () => {
 });
 
 test('DELETE /chats failure database error', async () => {
+    const sessionId = createSession("Yano", 5);
     const user1 = generateValidUserData();
     const user2 = generateValidUserData();
 
@@ -285,7 +297,7 @@ test('DELETE /chats failure database error', async () => {
 
     const testResponse = await testRequest.delete("/chats/").send({
         _id: addedChat._id
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
