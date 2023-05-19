@@ -8,6 +8,7 @@
 .sendMessageTextBox {
     height: 50px;
     margin: 5px;
+    width: 80%;
     font-size: larger;
     border-radius: 15px;
     padding-left: 15px;
