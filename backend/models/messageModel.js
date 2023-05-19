@@ -73,7 +73,7 @@ async function postMessage(messageBody, authorId, chatId) {
         let month = date.getMonth() + 1;
         let year = date.getFullYear();
         let hour = date.getHours();
-        let minutes = date.getMinutes();
+        let minutes = date.getMinutes().toString();
 
         let currentDate = day +"/"+month+"/"+year+" "+hour+":"+ (minutes.length == 1 ? "0"+minutes : minutes);
 

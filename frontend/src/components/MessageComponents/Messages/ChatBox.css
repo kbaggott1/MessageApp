@@ -1,11 +1,11 @@
 .chatBox {
     display: flex;
     border-style: solid;
-    border-color: #3d6868;
+    border-color: #879797;
     margin: 12px;
     flex-direction: column;
-    background-color: #2E4F4F;
-    height: 50vh;
+    background-color: #3e6868;
+    height: 70vh;
     overflow-y: scroll;
     border-width: 1px;
 }
