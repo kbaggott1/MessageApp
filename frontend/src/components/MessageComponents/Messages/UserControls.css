@@ -1,0 +1,30 @@
+.userControlsSend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sendMessageTextBox {
+    height: 50px;
+    margin: 5px;
+    font-size: larger;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+
+.sendMessageButton {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+    background-color:#0e8388;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+}
+
+.sendMessageButton:hover {
+    cursor: pointer;
+    background-color: #0b6568;
+}

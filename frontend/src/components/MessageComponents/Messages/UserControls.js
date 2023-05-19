@@ -43,8 +43,11 @@ export function UserControls() {
     return (
     <div>
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="message..." onChange={(e) => {setMessageBody(e.target.value)}}></input>
-            <button type="submit">Send</button>
+            <div className='userControlsSend'>
+                <input type="text" className='sendMessageTextBox' placeholder="message..." onChange={(e) => {setMessageBody(e.target.value)}}></input>
+                <button type="submit" className='sendMessageButton'>Send</button>
+            </div>
+
         </form>
     </div>
     )
