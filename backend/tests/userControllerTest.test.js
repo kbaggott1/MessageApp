@@ -6,6 +6,7 @@ const model = require("../models/userModel.js");
 const app = require("../app.js");
 const supertest = require("supertest");
 const testRequest = supertest(app);
+const { Session, createSession, getSession, deleteSession } = require("../models/Session.js");
 
 
 //Valid user data used for testing
@@ -81,8 +82,10 @@ beforeEach(async () => {
  * new user is present in the collection.
  */
 test("POST /users success case", async () => {
+    const sessionId = createSession("Yano", 5);
+
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
-    const testResponse = await testRequest.post("/users/").send({
+    const testResponse = await testRequest.post("/users/").set("sessionId", sessionId).send({
         username: username,
         password: password,
         status: status,
@@ -90,7 +93,7 @@ test("POST /users success case", async () => {
         lastName: lastName,
         biography: biography,
         image: image
-    });
+    }).set("Cookie", "sessionId="+sessionId);;
 
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
@@ -106,6 +109,8 @@ test("POST /users success case", async () => {
  * the status code returned should be 404.
  */
 test("POST /users failure invalid username failure case", async () =>{
+    const sessionId = createSession("Yano", 5);
+
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
     const testResponse = await testRequest.post("/users/").send({
         username: null,
@@ -115,7 +120,7 @@ test("POST /users failure invalid username failure case", async () =>{
         lastName: lastName,
         biography: biography,
         image: image
-    });
+    }).set("Cookie", "sessionId="+sessionId);;
 
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
@@ -130,6 +135,8 @@ test("POST /users failure invalid username failure case", async () =>{
  * the status code returned should be 400.
  */
 test("POST /users failure invalid password failure case", async () => {
+    const sessionId = createSession("Yano", 5);
+
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
     const testResponse = await testRequest.post("/users/").send({
         username: username,
@@ -139,7 +146,7 @@ test("POST /users failure invalid password failure case", async () => {
         lastName: lastName,
         biography: biography,
         image: image
-    });
+    }).set("Cookie", "sessionId="+sessionId);;
 
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
@@ -155,6 +162,8 @@ test("POST /users failure invalid password failure case", async () => {
  * the status code of the response is 500 and then re-establishes the connection to the database
  */
 test("POST /users failure database error failure case", async () =>{
+    const sessionId = createSession("Yano", 5);
+
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
     await mongod.stop();
 
@@ -166,7 +175,7 @@ test("POST /users failure database error failure case", async () =>{
         lastName: lastName,
         biography: biography,
         image: image
-    });
+    }).set("Cookie", "sessionId="+sessionId);;
 
     expect(testResponse.status).toBe(500);
 
@@ -185,11 +194,12 @@ test("POST /users failure database error failure case", async () =>{
  * the json object contains the correct username and password.
  */
 test("GET /users/user success case", async () => {
+    const sessionId = createSession("Yano", 5);
     
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
     const addedUser = await model.addUser(username, password, status, firstName, lastName, biography, image);
 
-    const testResponse = await testRequest.get("/users/user/" + addedUser._id);
+    const testResponse = await testRequest.get("/users/user/" + addedUser._id).set("Cookie", "sessionId="+sessionId);;
 
     expect(testResponse.status).toBe(200);
     expect(testResponse.body._id).toBe(addedUser._id.toString());
@@ -217,11 +227,13 @@ test("GET /users/user failure user does not exist", async () => {
  * when the database has failed
  */
 test("GET /users/user failure database error", async () => {
+    const sessionId = createSession("Yano", 5);
+
     const { username, password, status, firstName, lastName, biography, image } = generateUserData();
     addedUser = await model.addUser(username, password, status, firstName, lastName, biography, image);
     await mongod.stop();
 
-    const testResponse = await testRequest.get("/users/user/" + addedUser._id);
+    const testResponse = await testRequest.get("/users/user/" + addedUser._id).set("Cookie", "sessionId="+sessionId);;
     expect(testResponse.status).toBe(500);
 
     mongod = await MongoMemoryServer.create();
@@ -239,6 +251,8 @@ test("GET /users/user failure database error", async () => {
  * and the status code is expected to be 200 as well.
  */
 test('GET /users success case', async () =>{
+    const sessionId = createSession("Yano", 5);
+
     const userArray = [];
     userArray[0] = generateUserData();
     userArray[1] = generateUserData();
@@ -249,7 +263,7 @@ test('GET /users success case', async () =>{
     await model.addUser(userArray[2].username, userArray[2].password, userArray[2].status, userArray[2].firstName, userArray[2].lastName, userArray[2].biography, userArray[2].image);
     await model.addUser(userArray[3].username, userArray[3].password, userArray[3].status, userArray[3].firstName, userArray[3].lastName, userArray[3].biography, userArray[3].image);
 
-    const testResponse = await testRequest.get("/users/");
+    const testResponse = await testRequest.get("/users/").set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(200);
 
     for(let i = 0; i < userArray.length; i++){
@@ -270,7 +284,9 @@ test('GET /users success case', async () =>{
  * is present in the response.
  */
 test('GET /users failure no users in the database', async () => {
-    const testResponse = await testRequest.get("/users/");
+    const sessionId = createSession("Yano", 5);
+
+    const testResponse = await testRequest.get("/users/").set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(400);
 })
 
@@ -280,6 +296,8 @@ test('GET /users failure no users in the database', async () => {
  * the correct error code to make sure the program didn't misinterpret the error.
  */
 test('GET /users failure database error', async () => {
+    const sessionId = createSession("Yano", 5);
+
     const userArray = [];
     userArray[0] = generateUserData();
     userArray[1] = generateUserData();
@@ -292,7 +310,7 @@ test('GET /users failure database error', async () => {
     
     await mongod.stop();
 
-    const testResponse = await testRequest.get("/users/");
+    const testResponse = await testRequest.get("/users/").set("Cookie", "sessionId="+sessionId);;
     expect(testResponse.status).toBe(500);
 
     mongod = await MongoMemoryServer.create();
@@ -310,6 +328,8 @@ test('GET /users failure database error', async () => {
  * checking to see if their username and password are the new ones.
  */
 test('PUT /users success case', async () =>{
+    const sessionId = createSession("Yano", 5);
+
     const oldUser = generateUserData();
     const newUser = generateUserData();
     const addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
@@ -323,7 +343,7 @@ test('PUT /users success case', async () =>{
         lastName: newUser.lastName,
         biography: newUser.biography,
         image: newUser.image
-    });
+    }).set("Cookie", "sessionId="+sessionId);;
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
 
@@ -350,6 +370,8 @@ test('PUT /users success case', async () =>{
  * response to have a 400 status and that the old user should not be updated.
  */
 test('PUT /users failure invalid username', async () => {
+    const sessionId = createSession("Yano", 5);
+
     const oldUser = generateUserData();
     const newUser = { username: "", password: 'Password123', status:'offline', firstName: 'John', lastName: 'Doe', biography:'This is a test', image:'placeholder'};
     const addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
@@ -363,7 +385,7 @@ test('PUT /users failure invalid username', async () => {
         lastName: newUser.lastName,
         biography: newUser.biography,
         image: newUser.image
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
 
     const cursor = await model.getCollection().find();
@@ -386,6 +408,8 @@ test('PUT /users failure invalid username', async () => {
  * response to have a 400 status and that the old user should not be updated.
  */
 test('PUT /users failure invalid password', async () => {
+    const sessionId = createSession("Yano", 5);
+
     const oldUser = generateUserData();
     const newUser = { username: 'username', password: null, status:'offline', firstName: 'John', lastName: 'Doe', biography:'This is a test', image:'placeholder'};
     const addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
@@ -399,7 +423,7 @@ test('PUT /users failure invalid password', async () => {
         lastName: newUser.lastName,
         biography: newUser.biography,
         image: newUser.image
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
@@ -421,6 +445,8 @@ test('PUT /users failure invalid password', async () => {
  * checking the collection and ensuring that the error code is 400.
  */
 test('PUT /users failure old user does not exist', async () => {
+    const sessionId = createSession("Yano", 5);
+
     const newUser = generateUserData();
 
     const testResponse = await testRequest.put("/users/").send({
@@ -432,7 +458,7 @@ test('PUT /users failure old user does not exist', async () => {
         lastName: newUser.lastName,
         biography: newUser.biography,
         image: newUser.image
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
@@ -449,6 +475,8 @@ test('PUT /users failure old user does not exist', async () => {
  * a 500 level server side error.
  */
 test('PUT /users failure database error', async () => {
+    const sessionId = createSession("Yano", 5);
+
     const oldUser = generateUserData();
     const newUser = generateUserData();
     const addedUser = await model.addUser(oldUser.username, oldUser.password, oldUser.status, oldUser.firstName, oldUser.lastName, oldUser.biography, oldUser.image);
@@ -463,7 +491,7 @@ test('PUT /users failure database error', async () => {
         lastName: newUser.lastName,
         biography: newUser.biography,
         image: newUser.image
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
@@ -482,12 +510,14 @@ test('PUT /users failure database error', async () => {
  * well as the collection to ensure the user was actually deleted. 
  */
 test('DELETE /users success case', async () => {
+    const sessionId = createSession("Yano", 5);
+
     const user = generateUserData();
     const addedUser = await model.addUser(user.username, user.password, user.status, user.firstName, user.lastName, user.biography, user.image);
 
     const testResponse = await testRequest.delete("/users/").send({
         userId: addedUser._id
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
@@ -503,9 +533,11 @@ test('DELETE /users success case', async () => {
  * of 400 and verifies the size of the collection is still 0.
  */
 test('DELETE /users failure user does not exist', async () => {
+    const sessionId = createSession("Yano", 5);
+
     const testResponse = await testRequest.delete("/users/").send({
         userId: "WF12085124",
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();
@@ -521,13 +553,15 @@ test('DELETE /users failure user does not exist', async () => {
  * checked for a 500 level status code.
  */
 test('DELETE /users failure database error', async () => {
+    const sessionId = createSession("Yano", 5);
+
     const user = generateUserData();
     const addedUser = await model.addUser(user.username, user.password, user.status, user.firstName, user.lastName, user.biography, user.image);
     await mongod.stop();
     
     const testResponse = await testRequest.delete("/users/").send({
         userId: addedUser._id,
-    });
+    }).set("Cookie", "sessionId="+sessionId);
 
     mongod = await MongoMemoryServer.create();
     const url = await mongod.getUri();
