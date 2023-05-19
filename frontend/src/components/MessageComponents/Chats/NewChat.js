@@ -1,10 +1,13 @@
 import './Chats.css'
-import { LoggedInUserContext } from "../../App";
+import { LoggedInContext, LoggedInUserContext } from "../../App";
 import { useContext, useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export function NewChat({refreshChats}) {
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
+    const [isLoggedin, setIsLoggedIn] = useContext(LoggedInContext);
     const [ username, setUsername ] = useState("");
+    const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -21,7 +24,7 @@ export function NewChat({refreshChats}) {
                 const result = await response.json();
 
                 if(response.status === 200) {
-                    addChat(userData._id, result._id);
+                    addChat(userData._id, result._id, navigate, setUserData, setIsLoggedIn );
                     refreshChats();
                 }
                 else {
@@ -50,7 +53,7 @@ export function NewChat({refreshChats}) {
 
 }
 
-async function addChat(userSenderId, userRecipientId, flip = false) {
+async function addChat(userSenderId, userRecipientId, navigate, setUserData, setIsLoggedIn, flip = false) {
 
     const requestOptions = {
         method: "POST",
@@ -69,8 +72,14 @@ async function addChat(userSenderId, userRecipientId, flip = false) {
         const response = await fetch("http://localhost:1337/chats", requestOptions);
         if(response.status === 200) {
             if(!flip) {
-                addChat(userRecipientId, userSenderId, true);
+                addChat(userRecipientId, userSenderId, navigate, setUserData, setIsLoggedIn, true);
             }
+        }
+        else if(response.status === 401) {
+            alert("Your session has expired! Please Login again to continue")
+            setUserData(null);
+            setIsLoggedIn(false);
+            navigate('/');
         }
 
         

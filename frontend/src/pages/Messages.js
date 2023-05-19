@@ -1,18 +1,22 @@
-import { ChatBox } from "../components/MessageComponents/ChatBox"
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { LoggedInContext, LoggedInUserContext, ChatContext } from "../components/App";
+import { ChatBox} from "../components/MessageComponents/Messages/ChatBox";
+import { UserControls } from "../components/MessageComponents/Messages/UserControls";
 import './Messages.css';
-import { UserControls } from "../components/MessageComponents/UserControls";
 /**
  * Component of the messages page
  * @returns A JSX component containing the messages page
  */
 export function Messages() {
-    const [messages, setMessages] = useState([]);
-    const [chatBoxError, setChatBoxError] = useState(false);
-    const [chatBoxErrorMessage, setChatBoxErrorMessage] = useState();
+    const [selectedChat, setSelectedChat] = useContext(ChatContext);
+    const [userData, setUserData] = useContext(LoggedInUserContext);
+
+
     return <div>
         <h1>Messages</h1>
-        <ChatBox messages={messages} setMessages={setMessages} chatBoxError={chatBoxError} setChatBoxError={setChatBoxError} chatBoxErrorMessage={chatBoxErrorMessage} setChatBoxErrorMessage={setChatBoxErrorMessage}/>
-        <UserControls messages={messages} setMessages={setMessages} setChatBoxError={setChatBoxError} setChatBoxErrorMessage={setChatBoxErrorMessage}/>
+        <div>
+            <ChatBox />
+            <UserControls />
+        </div>
     </div>
 }

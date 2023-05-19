@@ -17,6 +17,17 @@
     justify-content: space-between;
 }
 
+.selectedChat {
+    min-width: 100%;
+    display: flex;
+    background-color: #0b6568;
+    justify-content: space-between;
+}
+
+.selectedChat:hover {
+    cursor: pointer;
+}
+
 .deleteButton {
     background-color: rgb(37, 37, 37);
     color: white;
