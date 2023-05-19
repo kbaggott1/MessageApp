@@ -15,6 +15,7 @@
 }
 
 .messageBox {
+    display: inline-block;
     border-style: solid;
     border-radius: 20px;
     min-width: 150px;
