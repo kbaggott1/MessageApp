@@ -1,0 +1,24 @@
+.messageBoxSender {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+    margin-top: 25px;
+}
+
+.messageBoxRecipient {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.messageBox {
+    border-style: solid;
+    border-radius: 20px;
+    min-width: 150px;
+    max-width: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    word-wrap: break-word;
+    text-align: left;
+}

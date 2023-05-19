@@ -56,7 +56,7 @@ async function createMessage(req, res) {
     }
 }
 
-router.get("/", getMessages)
+router.get("/chatid/:id", getMessages)
 /**
  * Called on get to retrieve all messages from a specific chatId
  * @param {*} req Request with body params chatId.
@@ -65,16 +65,13 @@ router.get("/", getMessages)
  */
 async function getMessages(req, res) {
     try {
-        if(refreshSession(req, res) != null){
-            let messages = await MessagesModelMongoDb.getMessagesByChatId(req.body.chatId);
-            if(Array.from(messages).length == 0) {
-                res.status(400);
-            }
-            else {
-                res.status("200");
-                res.json(messages);
-            }
-        } 
+        let messages = await MessagesModelMongoDb.getMessagesByChatId(req.params.id);
+        if(messages) {
+            res.status("200");
+            res.json(messages);
+        }
+
+            
     }
     catch(err) {
         if(err instanceof InvalidInputError) {

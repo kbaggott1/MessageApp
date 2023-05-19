@@ -9,6 +9,7 @@ import { Settings } from '../pages/Settings';
 import { LoginPage } from '../pages/LoginPage';
 import { Register } from '../pages/Register';
 import {useCookies} from 'react-cookie';
+import { Chat } from './MessageComponents/Chats/Chat';
 
 const LoggedInContext = createContext({
   isLoggedin: false,
@@ -20,14 +21,21 @@ const LoggedInUserContext = createContext({
   setUserData: () => {}
 })
 
+const ChatContext = createContext({
+  selectedChat: {},
+  setSelectedChat: () => {},
+})
+
 function App() {
   const [isLoggedin, setIsLoggedIn] = useState(false);
   const [userData, setUserData] = useState({});
+  const [selectedChat, setSelectedChat] = useState({});
   const navigate = useNavigate();
   const [cookies, setCookie, removeCookie] = useCookies(['username']);
 
   const loggedInValueAndSetter = [isLoggedin, setIsLoggedIn];
   const userDataGetterAndSetter = [userData, setUserData];
+  const chatGetterAndSetter =[selectedChat, setSelectedChat]
 
   useEffect(() => {
     async function checkForLoggedIn() {
@@ -53,6 +61,7 @@ function App() {
 
   return (
     <div className='App'>
+            <ChatContext.Provider value={chatGetterAndSetter} >
           <LoggedInUserContext.Provider value={userDataGetterAndSetter}>
         <LoggedInContext.Provider value={loggedInValueAndSetter}>
       <Routes>
@@ -67,12 +76,13 @@ function App() {
       </Routes>
         </LoggedInContext.Provider>
           </LoggedInUserContext.Provider>
+            </ChatContext.Provider>
     </div>
   );
 }
 
 export default App;
-export {LoggedInContext, LoggedInUserContext}
+export {LoggedInContext, LoggedInUserContext, ChatContext}
 
 async function loginAs(username) {
   try {

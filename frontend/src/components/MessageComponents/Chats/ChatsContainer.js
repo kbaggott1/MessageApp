@@ -46,7 +46,7 @@ export async function getChats(user, setChats) {
         else {
             if(response.status === 200) {
                 const result = await response.json();
-                setChats(result);
+                setChats(result.length == 0 ? [] : result);
             }
 
             
