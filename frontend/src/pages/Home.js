@@ -9,5 +9,10 @@ import { useState } from 'react';
  * @returns A JSX component containing the home page
  */
 export function Home() {
-    return <h1>Home</h1>
+    return (
+        <>
+        <AboutUs/>
+        <AboutImages/>
+        </>
+    )
 }
