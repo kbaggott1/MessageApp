@@ -1,7 +1,7 @@
 import { ChatContext } from '../../App';
 import { Message } from './Message';
 import './ChatBox.css';
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useState, useEffect, useRef } from 'react';
 import { LoggedInUserContext } from '../../App';
 
 /**
@@ -12,12 +12,19 @@ export function ChatBox() {
     const [selectedChat, setSelectedChat] = useContext(ChatContext);
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const [messages, setMessages] = useState([]);
+    const divRef = useRef(null);
+
+    
+    useEffect(() => {
+        const divElement = divRef.current;
+        divElement.scrollTop = divElement.scrollHeight;
+    }, [messages.length]);
+    
 
     useEffect(() => {
         getMessages(selectedChat, setMessages);
         const interval = setInterval(() => {
-            getMessages(selectedChat, setMessages);
-            
+        getMessages(selectedChat, setMessages);
         }, 1000)
 
         return ()=> clearInterval(interval);
@@ -25,7 +32,7 @@ export function ChatBox() {
 
     return (
         
-        <div className='chatBox'>
+        <div className='chatBox' ref={divRef}>
             {
                 selectedChat._id ? 
                 messages.length == 0 ? <h2>No messages yet</h2> :

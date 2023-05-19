@@ -7,5 +7,6 @@
     background-color: #3e6868;
     height: 70vh;
     overflow-y: scroll;
+    white-space:nowrap;
     border-width: 1px;
 }
