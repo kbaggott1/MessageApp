@@ -201,7 +201,7 @@ test('READ: Read message by id doesn\'t throws with bad id from DB', async () =>
 
 
 //READ
-test('READ: Can read message by chat id from DB', async () => {
+test('READ: Can read messages by chat id from DB', async () => {
     const messageBody1 = "hello";
     const messageBody2 = "world!";
     //insert new user for authorId
