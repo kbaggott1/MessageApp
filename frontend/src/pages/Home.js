@@ -8,7 +8,7 @@ import { useState } from 'react';
 export function Home() {
     return (
         <>
-            {userData && userData.firstName ? <h1> {userData.firstName} </h1> : <h1> bruh </h1>}
+            <h1> Home </h1>
         </>
     )
 }
