@@ -3,6 +3,19 @@ import { useNavigate, NavLink } from 'react-router-dom';
 import { LoggedInContext, LoggedInUserContext } from "../App.js";
 import './RegisterForm.css';
 
+/**
+ * The Registration form contains 6 input fields and two buttons. The user must indicated
+ * their username which must be both greater than three characters long as well as no greater
+ * than 30 characters long. They must input a password which must be greater than 8 characters
+ * long. They must input both a first name and last name and finally a biography. Only once
+ * all the fields contain some form of user input will the register button become available to
+ * the user. Otherwise it is greyed out and disabled. At the bottom of the page the user is
+ * prompted to the press the 'Log In' Button if they already have an account. This button brings
+ * them to the 'Log In' Page.
+ * @returns JSX Component containing a form prompting the user for a username, password, re-typed password, first
+ * name, last name and biography. A button at the buttom prompts the user to Log In if they
+ * already have an account 
+ */
 export function RegisterForm() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -16,14 +29,20 @@ export function RegisterForm() {
     const navigate = useNavigate();
 
 
-    //Handles the request to create a user
+    /**
+     * Verifies that all inputed user data is valid and conforms to the standards set out
+     * on the server. A POST request is then made to the server to create the user. Followed
+     * by a POST request to login in the newly created user. If both operations were successful
+     * the now logged in user is redirected the home page. They will then have access to other,
+     * previously unavailable pages such as messages and settings.
+     * @param {*} event The submit event from the 'SignUpInformationBox' form.
+     */
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-            //create user
             if(await validateInputs(username, password, password2, firstName, lastName, biography)) {
-                //login after account created
+                //create user
                 let requestOptions = {
                     method: "POST",
                     credentials: "include",
@@ -42,12 +61,10 @@ export function RegisterForm() {
                     }),
 
                 };
-
                 let response = await fetch("http://localhost:1337/users/", requestOptions);
                 if(response.status === 200){
                     alert("Successfully created an account!");
                 }
-                console.log(response.status);
 
 
                 //login after account created
@@ -83,7 +100,6 @@ export function RegisterForm() {
     }
 
     return(
-        <>
         <form onSubmit={handleSubmit} className='SignUpInformationBox'>
             <label htmlFor='username' className='RegistrationHeaderLabels'> Username </label>
             <input type="text" className='RegistrationInputBox' placeholder='Username...' onChange={(e) => {setUsername(e.target.value); checkInputsEntered(setButtonDisabled, e.target.value, password, password2, firstName, lastName, biography)}}/>
@@ -117,19 +133,21 @@ export function RegisterForm() {
                 </button>
             </NavLink>
             </div>
-
-
-
         </form>
-
-
-        </>
-
     )
-
-
 }
 
+/**
+ * Verifies that all provided inputs are not empty strings. If any one of the parameters provided are an empty string
+ * the 'setButtonDisabled' react hook is set to false, otherwise it is set to true.
+ * @param {*} setButtonDisabled A React Hook that is set to false if any one of the other values is an empty string
+ * @param {*} username Username being verified.
+ * @param {*} password Password being verified.
+ * @param {*} password2 Re-typed password being verified.
+ * @param {*} firstName First name being verified.
+ * @param {*} lastName Last name being verified.
+ * @param {*} biography Biography being verified.
+ */
 function checkInputsEntered(setButtonDisabled, username, password, password2, firstName, lastName, biography) {
     if(username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName === "") {
         setButtonDisabled(true);
@@ -137,10 +155,23 @@ function checkInputsEntered(setButtonDisabled, username, password, password2, fi
     else {
        setButtonDisabled(false); 
     }
-
-    
 }
 
+
+/**
+ * Verifies that the provided data is valid. If any of the data provided is false, a corresponding error message
+ * is shown to the user and alert and a value of false is returned to indicated failure.
+ * @param {string} username Username of the user attempting to register. Must be greater than 3 characters long
+ *                          as well as less than 30 characetrs long. Username cannot already be taken as it must
+ *                          be unique to every individual user       
+ * @param {string} password Password of the user attmepting to register. Must be greater than 9 characters long.
+ * @param {string} password2 Re-typed password  of the user attmepting to register. Must be the exact 
+ *                           same string as the password parameter                     
+ * @param {string} firstName First Name of the user attmepting to register. Cannot contain numbers.
+ * @param {string} lastName Last Name of the user attmepting to register. Cannot contain numbers.
+ * @param {string} biography Biography of the user attmepting to register. Cannot be an empty string.
+ * @returns {boolean} Returns true if all parameter values are valid, false otherwise.
+ */
 async function validateInputs(username, password, password2, firstName, lastName, biography) {
     if(await getUserByUsername(username)) {
         alert("Username already taken.");
@@ -178,8 +209,14 @@ async function validateInputs(username, password, password2, firstName, lastName
     return true;
 }
 
-async function getUserByUsername(findThisUser) {
 
+/**
+ * Makes a GET request to the server trying to retrieve a user based on their unique username.
+ * @param {*} findThisUser The user being searched for.
+ * @returns If the user exists an object of the user is returned, if they do not already exist null is returned
+ *          and if an error was thrown nothing is return and an alert is shown to the user informing them.
+ */
+async function getUserByUsername(findThisUser) {
     try {
         const response = await fetch("http://localhost:1337/users/"+ findThisUser);
         if(response.status === 200) {
@@ -193,5 +230,4 @@ async function getUserByUsername(findThisUser) {
     catch(err) {
         alert("Could not get user: " + err.message);
     }
-
 }

@@ -57,7 +57,6 @@ async function getMessages(selectedChat, setMessages) {
                 }
             }
         }
-
     }
     catch(err) {
         alert("Error trying to get chats: " + err.message);

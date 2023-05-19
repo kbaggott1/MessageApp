@@ -3,6 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { ChatContext } from "../../App";
 import { LoggedInContext, LoggedInUserContext } from "../../App";
 
+/**
+ * 
+ * @param {*} param 
+ * @returns 
+ */
 export function Chat({chat, refreshChats}) {
     const [visibility, setVisibility] = useState("hidden");
     const [user, setUser] = useState([]);
@@ -31,6 +36,16 @@ export function Chat({chat, refreshChats}) {
     
 }
 
+/**
+ * Deletes a chat along with all the associated messages. 
+ * @param {*} chat Chat object of the chat that will be deleted. Must contain '_id', 'userRecipientId'
+ *                 'userSenderId' fields.
+ * @param {*} refreshChats 
+ * @param {*} navigate 
+ * @param {*} setUserData 
+ * @param {*} setIsLoggedIn 
+ * @param {*} isLinkedChat 
+ */
 async function deleteChat(chat, refreshChats, navigate, setUserData, setIsLoggedIn, isLinkedChat = false) {
     try {
         if(!isLinkedChat) {
@@ -67,19 +82,20 @@ async function deleteChat(chat, refreshChats, navigate, setUserData, setIsLogged
     catch(err) {
         isLinkedChat ? alert("Could not delete linked chat: " + err.message) : alert("Could not delete chat: " + err.message);
     }
-
 }
 
+/**
+ * Deletes all messages that were sent in a specific chat. Makes a GET request to the server to verify
+ * that the chat exists, if it does, a all of the messages are iterated over and each of them is deleted.
+ * @param {*} chat Chat object representing that chat that will be deleted. Must contain an '_id' field.
+ */
 async function deleteMessages(chat) {
     try {
-
-
         let requestOptions = {
             method: "GET",
             credentials: "include",
             mode: 'cors', 
         };
-
 
         let response = await fetch("http://localhost:1337/messages/chatid/" + chat._id, requestOptions);
         if(response.status === 200) {
@@ -100,15 +116,14 @@ async function deleteMessages(chat) {
 
                 response = await fetch("http://localhost:1337/messages", requestOptions);
             }
-
         }
-        
     }
     catch(err) {
         alert("Could not delete chat: " + err.message);
     }
-
 }
+
+
 async function getLinkedChat(userRecipientId, userSenderId) {
     try {
         const requestOptions = {
@@ -137,9 +152,15 @@ async function getLinkedChat(userRecipientId, userSenderId) {
     }
 }
 
+/**
+ * Gets a user based on the recipentId present in the chat. A GET request is made to ther server
+ * requesting a user based on the userRecipientId field inside of the chat object.
+ * @param {*} chat A Chat object, must contain a 'userRecipientId' field
+ * @param {*} setUser React hook that is set the user with an ID matching the 'userRecipientId'
+ *                    field of the chat object provided the to the method.
+ */
 async function getUsername(chat, setUser) {
     try {
-
         const requestOptions = {
             method: "GET",
             credentials: "include",
@@ -151,7 +172,6 @@ async function getUsername(chat, setUser) {
             const result = await response.json();
             setUser(result);
         }
-
     }
     catch(err) {
         alert("Could not get username for chat: " + err.message);

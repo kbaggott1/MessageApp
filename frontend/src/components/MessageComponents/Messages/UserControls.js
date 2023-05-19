@@ -12,7 +12,6 @@ import './UserControls.css';
  * @returns A JSX component containing a div with user controls
  */
 export function UserControls() {
-
     const [selectedChat, setSelectedChat] = useContext(ChatContext);
     const [userData, setUserData] = useContext(LoggedInUserContext);
     const [isLoggedin, setIsLoggedIn] = useContext(LoggedInContext);
@@ -33,20 +32,16 @@ export function UserControls() {
                 await addMessage(userData, messageBody, navigate, selectedChat, setUserData, setIsLoggedIn);
             }  
         }
-
-        
-        
-
     }
 
-    return <>
+    return (
     <div>
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder="message..." onChange={(e) => {setMessageBody(e.target.value)}}></input>
             <button type="submit">Send</button>
         </form>
     </div>
-    </>
+    )
 }
 
 async function addMessage(userData, messageBody, navigate, selectedChat, setUserData, setIsLoggedIn, flip = false) {

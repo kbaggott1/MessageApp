@@ -4,6 +4,14 @@ import { LoggedInContext, LoggedInUserContext } from "../App.js"
 import { useCookies } from 'react-cookie';
 import './LoginForm.css';
 
+/**
+ * The Login form has two buttons and two input fields. It prompts the user for a username
+ * and password. If both the username and password field do not have user input the button
+ * to login will be greyed out and will be disabled. Only once they hav entred both a 
+ * username and password will it become available to them. At the bottom of the form is a
+ * register button which takes them to the register page.
+ * @returns JSX component containg a form that prompts the user for a username and password
+ */
 export function LoginForm() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -13,7 +21,12 @@ export function LoginForm() {
     const [buttonDisabled, setButtonDisabled] = useState(true);
     const navigate = useNavigate();
 
-    //Handles the request to create a user
+    /**
+     * Most a POST request to the server to log in the user. If the user is scuccesfully logged
+     * in the 'setIsLoggedIn' context is set to true, the 'setUserData' is set to their user 
+     * data and they are redirected to the home page of the site.
+     * @param {*} event The submit event recieved from the 'LoginInformationBox' form
+     */
     const handleSubmit = async (event) => {
         event.preventDefault();
 
@@ -43,12 +56,10 @@ export function LoginForm() {
             else {
                 alert("Username or Password are incorrect");
             }
-            console.log(response.status);
         }
         catch(err){
             alert("Error Loggin in! " + err.message);
         }
-
     }
 
     return(
@@ -78,27 +89,34 @@ export function LoginForm() {
                 </button>
             </NavLink>
         </div>
-
         </>
-
     )
 }
 
 
+/**
+ * Makes a GET request to the server trying to retrieve a user based on their unique username.
+ * @param {*} findThisUser The user being searched for.
+ * @returns If the user exists an object of the user is returned, if they do not already exist null is returned
+ *          and if an error was thrown nothing is return and an alert is shown to the user informing them.
+ */
 async function getUserByUsername(findThisUser) {
     try {
         const requestOptions = {
-        method: "GET",
-        credentials: "include",
-        mode: 'cors', // this cannot be 'no-cors'
-        };
+            method: "GET",
+            credentials: "include",
+            mode: 'cors', // this cannot be 'no-cors'
+            };
         const response = await fetch("http://localhost:1337/users/"+ findThisUser, requestOptions);
-        const result = await response.json();
-        console.log(result);
-        return result;
+        if(response.status === 200) {
+            const result = await response.json();
+            return result;  
+        }
+        else {
+            return null;
+        }
     }
     catch(err) {
-        alert("Could not get user: " +findThisUser + " Error: " + err.message);
+        alert("Could not get user: " + err.message);
     }
-
 }

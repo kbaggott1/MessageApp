@@ -3,7 +3,6 @@ import { AboutImages } from './AboutImages';
 import './AboutUs.css';
 
 
-
 /**
  * A component for the home page
  * @returns A JSX component containing the home page
@@ -31,8 +30,6 @@ export function Home() {
                 <AboutImages />
             </div>
         </div>
-
-
         </>
     )
 }

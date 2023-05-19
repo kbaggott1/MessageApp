@@ -1,8 +1,8 @@
 import { RegisterForm } from '../components/RegisterComponents/RegisterForm';
 
 /**
- * A component for the login page
- * @returns A JSX component containing the home page
+ * A component for the register page
+ * @returns A JSX component containing the register page
  */
 export function Register() {
     return (
@@ -10,6 +10,5 @@ export function Register() {
             <h1>Register</h1>
             <RegisterForm />
         </>
-
     )
 }

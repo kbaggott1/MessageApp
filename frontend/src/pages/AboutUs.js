@@ -6,7 +6,7 @@ import './AboutUs.css';
  */
 export function AboutUs() {
     return (
-        <>
+    <>
     <div>
         <p className="description">Our message service began as an idea in theminds of three bright computer scientists 
         studying at John Abbott College. All three of 

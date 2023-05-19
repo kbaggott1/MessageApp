@@ -4,23 +4,24 @@ import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
 import { MainLayout } from './layouts/MainLayout.js'; 
 import {MessagesLayout} from './layouts/MessagesLayout'
 import { Home } from '../pages/Home';
-import { Messages } from '../pages/Messages';
 import { Settings } from '../pages/Settings';
 import { LoginPage } from '../pages/LoginPage';
 import { Register } from '../pages/Register';
 import {useCookies} from 'react-cookie';
-import { Chat } from './MessageComponents/Chats/Chat';
 
+//Context that stores a boolean indicating if a user is logged in or not
 const LoggedInContext = createContext({
   isLoggedin: false,
   setIsLoggedIn: () => {},
 })
 
+//Context containing the user data of the user currently logged in
 const LoggedInUserContext = createContext({
   userdata: {},
   setUserData: () => {}
 })
 
+//Context containg chat data of the use currently logged in
 const ChatContext = createContext({
   selectedChat: {},
   setSelectedChat: () => {},
@@ -84,6 +85,7 @@ function App() {
 export default App;
 export {LoggedInContext, LoggedInUserContext, ChatContext}
 
+
 async function loginAs(username) {
   try {
     const requestOptions = {
@@ -95,9 +97,8 @@ async function loginAs(username) {
     const result = await response.json();
     console.log(result);
     return result;
-}
-catch(err) {
+  }
+  catch(err) {
     alert("Could not get user: " +username + " Error: " + err.message);
-}
-
+  }
 }

@@ -1,5 +1,5 @@
 const express = require("express");
-const REFESHTIME = 10;
+const REFESHTIME = 20;
 const { Session, createSession, getSession, deleteSession } = require("../models/Session.js");
 const { checkCredentials } = require("../models/userModel.js");
 const router = express.Router();
