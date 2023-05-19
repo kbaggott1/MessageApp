@@ -5,8 +5,8 @@ import { useCookies } from 'react-cookie';
 import './LoginForm.css';
 
 export function LoginForm() {
-    const [username, setUsername] = useState(null);
-    const [password, setPassword] = useState(null);
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
     const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const [cookies, setCookie, removeCookie ] = useCookies(['username']);

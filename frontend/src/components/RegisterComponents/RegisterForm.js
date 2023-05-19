@@ -22,7 +22,7 @@ export function RegisterForm() {
 
         try {
             //create user
-            if(validateInputs(username, password, password2, firstName, lastName, biography)) {
+            if(await validateInputs(username, password, password2, firstName, lastName, biography)) {
                 //login after account created
                 let requestOptions = {
                     method: "POST",
@@ -86,22 +86,22 @@ export function RegisterForm() {
         <>
         <form onSubmit={handleSubmit} className='SignUpInformationBox'>
             <label htmlFor='username' className='RegistrationHeaderLabels'> Username </label>
-            <input type="text" className='RegistrationInputBox' placeholder='Username...' onChange={(e) => {setUsername(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            <input type="text" className='RegistrationInputBox' placeholder='Username...' onChange={(e) => {setUsername(e.target.value); checkInputsEntered(setButtonDisabled, e.target.value, password, password2, firstName, lastName, biography)}}/>
             
             <label htmlFor='password' className='RegistrationHeaderLabels'> Password </label>
-            <input type="password" className='RegistrationInputBox' placeholder='Password...' onChange={(e) => {setPassword(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            <input type="password" className='RegistrationInputBox' placeholder='Password...' onChange={(e) => {setPassword(e.target.value); checkInputsEntered(setButtonDisabled, username, e.target.value, password2, firstName, lastName, biography)}}/>
             
             <label className='RegistrationHeaderLabels'> Re-type  Password</label>
-            <input type="password" className='RegistrationInputBox' placeholder='Re-type password...' onChange={(e) => {setPassword2(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            <input type="password" className='RegistrationInputBox' placeholder='Re-type password...' onChange={(e) => {setPassword2(e.target.value); checkInputsEntered(setButtonDisabled, username, password, e.target.value, firstName, lastName, biography)}}/>
             
             <label className='RegistrationHeaderLabels'> First Name </label>
-            <input type="text" className='RegistrationInputBox' placeholder='First Name' onChange={(e) => {setFirstName(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            <input type="text" className='RegistrationInputBox' placeholder='First Name' onChange={(e) => {setFirstName(e.target.value); checkInputsEntered(setButtonDisabled, username, password, password2, e.target.value, lastName, biography)}}/>
                 
             <label className='RegistrationHeaderLabels'> Last Name </label>
-            <input type="text" className='RegistrationInputBox' placeholder='Last Name' onChange={(e) => {setLastName(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            <input type="text" className='RegistrationInputBox' placeholder='Last Name' onChange={(e) => {setLastName(e.target.value); checkInputsEntered(setButtonDisabled, username, password, password2, firstName, e.target.value, biography)}}/>
 
             <label className='RegistrationHeaderLabels'> Biography </label>
-            <input type="text" className='RegistrationInputBox' placeholder='Biography' onChange={(e) => {setBiography(e.target.value); (username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName == "") ?  setButtonDisabled(true) : setButtonDisabled(false)}}/>
+            <input type="text" className='RegistrationInputBox' placeholder='Biography' onChange={(e) => {setBiography(e.target.value); checkInputsEntered(setButtonDisabled, username, password, password2, firstName, lastName, e.target.value)}}/>
             <br/>
 
             <button type="submit" className={buttonDisabled ? 'RegistrationSubmitButtonDisabled' : 'RegistrationSubmitButtonActive' } disabled={buttonDisabled}> Register </button>
@@ -130,9 +130,33 @@ export function RegisterForm() {
 
 }
 
-function validateInputs(username, password, password2, firstName, lastName, biography) {
+function checkInputsEntered(setButtonDisabled, username, password, password2, firstName, lastName, biography) {
+    if(username == "" || password == "" || password2 == "" || biography == "" || firstName == "" || lastName === "") {
+        setButtonDisabled(true);
+    }
+    else {
+       setButtonDisabled(false); 
+    }
+
+    
+}
+
+async function validateInputs(username, password, password2, firstName, lastName, biography) {
+    if(await getUserByUsername(username)) {
+        alert("Username already taken.");
+        return false;
+    }
+
     if(username == "") {
-        alert("Username cannot be empty");
+        alert("Username cannot be empty.");
+        return false;
+    }
+    if(username.length < 3 || username.length > 30) {
+        alert("username must be between 3 and 30 characters long.");
+        return false;
+    }
+    if(password.length < 8) {
+        alert("password must be atleast 8 characters long.");
         return false;
     }
     if(password != password2) {
@@ -155,21 +179,19 @@ function validateInputs(username, password, password2, firstName, lastName, biog
 }
 
 async function getUserByUsername(findThisUser) {
-    /*
-    const requestOptions = {
-        method: "GET",
-        credentials: "include",
-        mode: 'cors', // this cannot be 'no-cors'
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            username: findThisUser,
-        }),
-    };
-    */
 
-    const response = await fetch("http://localhost:1337/users/"+ findThisUser);
-    const result = await response.json();
-    return result;
+    try {
+        const response = await fetch("http://localhost:1337/users/"+ findThisUser);
+        if(response.status === 200) {
+            const result = await response.json();
+            return result;  
+        }
+        else {
+            return null;
+        }
+    }
+    catch(err) {
+        alert("Could not get user: " + err.message);
+    }
+
 }

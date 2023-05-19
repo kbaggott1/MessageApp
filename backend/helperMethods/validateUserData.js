@@ -14,12 +14,12 @@ const logger = require("../logs/logger.js");
  * @returns True if both the username, password, status, first name, last name and biography are valid, false otherwise
  */
 async function isValidForAdd(collection, username, password, status, firstName, lastName, biography) {
-    if(username === undefined || username === null || username === "" || username.length < 3) {
+    if(username === undefined || username === null || username === "" || username.length < 3 || username.length > 30) {
         logger.error("User being added had an Invalid username " + username);
         return false;
     }
 
-    if(password === undefined || password === null || password === "" || password.length < 6) {
+    if(password === undefined || password === null || password === "" || password.length < 8) {
         logger.error("User being added had an Invalid password " + password);
         return false;
     }

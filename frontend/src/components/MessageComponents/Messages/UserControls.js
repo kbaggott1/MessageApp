@@ -22,7 +22,20 @@ export function UserControls() {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        await addMessage(userData, messageBody, navigate, selectedChat, setUserData, setIsLoggedIn)
+        if(!selectedChat._id) {
+            alert("You must select a chat before sending a message.");
+        }
+        else {
+            if(messageBody == "") {
+                alert("You cannot send an empty message.");
+            }
+            else {
+                await addMessage(userData, messageBody, navigate, selectedChat, setUserData, setIsLoggedIn);
+            }  
+        }
+
+        
+        
 
     }
 
@@ -59,10 +72,13 @@ async function addMessage(userData, messageBody, navigate, selectedChat, setUser
             }
         }
         else if(response.status === 401) {
-            alert("Your session has expired! Please Login again to continue")
+            alert("Your session has expired! Please Login again to continue");
             setUserData(null);
             setIsLoggedIn(false);
             navigate('/');
+        }
+        else if (response.status === 400){
+            alert("Invalid input.");
         }
 
         

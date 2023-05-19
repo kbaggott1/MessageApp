@@ -23,7 +23,9 @@ export function ChatBox() {
         
         <div className='chatBox'>
             {
-                selectedChat._id ? messages.map(message => (
+                selectedChat._id ? 
+                messages.length == 0 ? <h2>No messages yet</h2> :
+                messages.map(message => (
                     <Message key={message._id} message={message} />
                 )) : <h2>No chat selected</h2>
             }

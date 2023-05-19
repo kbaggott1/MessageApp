@@ -23,7 +23,7 @@ export function Chat({chat, refreshChats}) {
                     <h3>{user.firstName + " " + user.lastName}</h3>
                 </div>
                 
-                <button style={{visibility: visibility}} className="deleteButton" onClick={() => {deleteChat(chat, refreshChats, navigate, setUserData, setIsLoggedIn )}}>Delete</button>
+                <button style={{visibility: visibility}} className="deleteButton" onClick={() => {deleteChat(chat, refreshChats, navigate, setUserData, setIsLoggedIn ); setSelectedChat({})}}>Delete</button>
             </div>
         
 

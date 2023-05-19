@@ -72,8 +72,10 @@ async function postMessage(messageBody, authorId, chatId) {
         let day = date.getDate();
         let month = date.getMonth() + 1;
         let year = date.getFullYear();
+        let hour = date.getHours();
+        let minutes = date.getMinutes();
 
-        let currentDate = day +"/"+month+"/"+year;
+        let currentDate = day +"/"+month+"/"+year+" "+hour+":"+minutes;
 
         let message = {messageBody: messageBody, authorId: authorId, chatId: chatId, sentDate: currentDate};
         await messageCollection.insertOne(message);
