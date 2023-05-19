@@ -14,14 +14,16 @@ export function MessagesLayout() {
 
     return (
         <>
-            <div className="container">
-                <div className="chats">
-                    <ChatsContainer />
-                </div>
-                <div className="messagesContent">
-                    <Messages />
+        <div className='containerContainer' >
+                <div className="container">
+                    <div className="chats">
+                        <ChatsContainer />
+                    </div>
+                    <div className="messagesContent">
+                        <Messages />
                 </div>
             </div>
+        </div>
 
         </>
 

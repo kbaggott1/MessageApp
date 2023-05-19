@@ -38,3 +38,31 @@
     cursor: pointer;
     background-color: rgb(117, 117, 117);
 }
+
+.chatAddButton {
+    height: 50px;
+    width: 50px;
+    font-size: xx-large;
+    margin: 5px;
+    background-color:#0e8388;
+    color: white;
+    border-style: none;
+}
+
+.chatAddButton:hover {
+    cursor: pointer;
+    background-color: #0b6568;
+}
+
+.chatTextBox {
+    height: 50px;
+    margin: 5px;
+    font-size: larger;
+}
+
+.userControl {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
