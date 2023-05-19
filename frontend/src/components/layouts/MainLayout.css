@@ -1,3 +1,7 @@
+.WholePageContainer {
+    height: 100%;
+}
+
 .navigationBar {
     height: 100%;
     width: 125px;
@@ -14,5 +18,4 @@
 .mainContent {
     margin-left: 125px;
     min-height: 100%;
-    
 }
