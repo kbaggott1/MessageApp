@@ -1,6 +1,7 @@
 const express = require('express');
 const { DatabaseError } = require('../models/DatabaseError');
 const { InvalidInputError } = require('../models/InvalidInputError');
+const { refreshSession } = require('./sessionController');
 const router = express.Router();
 const routeRoot = '/chats';
 const ChatsModelMongoDb = require("../models/chatModel");
@@ -19,15 +20,17 @@ module.exports = {
 router.post("/", createChat);
 async function createChat(req, res) { 
     try {
-        let chat = await ChatsModelMongoDb.addChat(req.body.userSenderId, req.body.userRecipientId);
-        if(chat) {
-            res.status(200);
-            res.send(chat);
-        } else {
-            let message = `Could not add chat to database with senderId: ${req.body.userSenderId}, recipientId: ${req.body.userRecipientId}`;
-            res.status(400);
-            res.send(message);
-            logger.error("In controller: " + message);
+        if(refreshSession(req, res) != null){
+            let chat = await ChatsModelMongoDb.addChat(req.body.userSenderId, req.body.userRecipientId);
+            if(chat) {
+                res.status(200);
+                res.send(chat);
+            } else {
+                let message = `Could not add chat to database with senderId: ${req.body.userSenderId}, recipientId: ${req.body.userRecipientId}`;
+                res.status(400);
+                res.send(message);
+                logger.error("In controller: " + message);
+            }
         }
     }
     catch(err) {
@@ -58,9 +61,11 @@ async function createChat(req, res) {
 router.get("/", getChats)
 async function getChats(req, res) {
     try {
-        let chats = await ChatsModelMongoDb.getAllChats();
-        res.status(200);
-        res.json(chats);
+        if(refreshSession(req, res) != null){
+            let chats = await ChatsModelMongoDb.getAllChats();
+            res.status(200);
+            res.json(chats);
+        }
     }
     catch(err) {
         if(err instanceof DatabaseError) {
@@ -92,15 +97,17 @@ async function getChats(req, res) {
 router.get("/:id", getChat);
 async function getChat(req, res) {
     try {
-        let chat = await ChatsModelMongoDb.getSingleChat(req.params.id);
-        if(chat) {
-            res.status(200);
-            res.json(chat);
-        } else {
-            let message = `Unable to find chat with id: ${req.params.id}`;
-            res.status(400);
-            res.send(message);
-            logger.error("In controller: " + message);
+        if(refreshSession(req, res) != null){
+            let chat = await ChatsModelMongoDb.getSingleChat(req.params.id);
+            if(chat) {
+                res.status(200);
+                res.json(chat);
+            } else {
+                let message = `Unable to find chat with id: ${req.params.id}`;
+                res.status(400);
+                res.send(message);
+                logger.error("In controller: " + message);
+            }
         }
     }
     catch(err) {
@@ -132,9 +139,11 @@ async function getChat(req, res) {
 router.delete("/", deleteChat);
 async function deleteChat(req, res) {
     try {
-        const deletedChat = await ChatsModelMongoDb.deleteChat(req.body._id);
-        res.status(200)
-        res.json(deletedChat);
+        if(refreshSession(req, res) != null){
+            const deletedChat = await ChatsModelMongoDb.deleteChat(req.body._id);
+            res.status(200)
+            res.json(deletedChat);
+        }
     }
     catch(err) {
         if(err instanceof DatabaseError) {
@@ -174,6 +183,7 @@ async function getChatsBySenderId(req, res) {
             res.send(message);
             logger.error("In controller: " + message);
         }
+        
     }
     catch(err) {
         if(err instanceof DatabaseError) {

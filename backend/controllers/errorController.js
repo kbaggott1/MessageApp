@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const routeRoot = '*';
+const { refreshSession } = require('./sessionController');
 
 router.get('*', showErrorPage);
 async function showErrorPage(request, response){

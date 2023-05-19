@@ -2,6 +2,7 @@ const e = require('express');
 const express = require('express');
 const { DatabaseError } = require('../models/DatabaseError');
 const { InvalidInputError } = require('../models/InvalidInputError');
+const { refreshSession } = require('./sessionController');
 const router = express.Router();
 const routeRoot = '/users';
 const models = require('../models/userModel.js');
@@ -51,35 +52,35 @@ async function handleAddSingleUser(request, response) {
 
 
 /**
- * Finds a user in the database. The ID of the user needs to be provided through the request body. Whether or not
+ * Finds a user in the database. The ID of the user needs to be provided through the request params. Whether or not
  * the user is found an appropriate message is sent back and the status of the response is also modified to reflect 
  * the outcome of the read operation.
- * @param {*} request The request object. Should contain the ID of the user in the body
+ * @param {*} request The request object. Should contain the ID of the user in the params
  * @param {*} response If the user was successfully found they are returned in the response
  *                     as a JSON. Otherwise the response contains a descriptive error message
  */
-router.get('/user', handleReadSingleUser);
+router.get('/user/:userId', handleReadSingleUser);
 async function handleReadSingleUser(request, response) {
     try{
-        let foundUser = await models.getUser(request.body.userId);
-        if(foundUser){
-            response.status("200");
-            response.json(foundUser);
-        }
-        else{
-            logger.error("User with ID " + request.body.userId + " was not found in the database for unknown reasons.");
-            response.status("400");
-            response.send({ errorMessage: "Error! Failed to find user with ID " + request.body.userId + " in the database."});
-        }
+            let foundUser = await models.getUser(request.params.userId);
+            if(foundUser){
+                response.status("200");
+                response.json(foundUser);
+            }
+            else{
+                logger.error("User with ID " + request.params.userId + " was not found in the database for unknown reasons.");
+                response.status("400");
+                response.send({ errorMessage: "Error! Failed to find user with ID " + request.params.userId + " in the database."});
+            }
     }
     catch(err){
         if(err instanceof InvalidInputError){
-            logger.error("User with ID " + request.body.userId + " could not be found in the database. ");
+            logger.error("User with ID " + request.params.userId + " could not be found in the database. ");
             response.status("400");
-            response.send({ errorMessage: "Error! the user with ID " + request.body.userId + " could not be found in the database " + err.message});
+            response.send({ errorMessage: "Error! the user with ID " + request.params.userId + " could not be found in the database " + err.message});
         }
         else if(err instanceof DatabaseError){
-            logger.error("Database error was encountered while trying to find user with ID " + request.body.userId + " in the database");
+            logger.error("Database error was encountered while trying to find user with ID " + request.params.userId + " in the database");
             response.status("500");
             response.send({ errorMessage: "Error! There was an error connecting the database while trying to find user with ID " + request.params.userId + ". " + err.message});
         }
@@ -145,15 +146,17 @@ async function handleReadSingleUserByUsername(request, response) {
 router.get('/', handleReadAllUsers);
 async function handleReadAllUsers(request, response){
     try{
-        let foundUsers = await models.getAllUsers();
-        if(foundUsers.length > 0){
-            response.status("200");
-            response.json(foundUsers);
-        }
-        else{
-            logger.error("Couldn't find any users");
-            response.status("400");
-            response.send({ errorMessage: "Error! Failed to find any users in the database"});
+        if(refreshSession(request, response) != null){
+            let foundUsers = await models.getAllUsers();
+            if(foundUsers.length > 0){
+                response.status("200");
+                response.json(foundUsers);
+            }
+            else{
+                logger.error("Couldn't find any users");
+                response.status("400");
+                response.send({ errorMessage: "Error! Failed to find any users in the database"});
+            }
         }
     }
     catch(err){
@@ -189,15 +192,17 @@ async function handleReadAllUsers(request, response){
 router.put('/', handleUpdateSingleUser);
 async function handleUpdateSingleUser(request, response){
     try{
-        const updatedUser = await models.updateUser(request.body.userId, request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
-        if(updatedUser){
-            response.status("200");
-            response.json(updatedUser);
-        }
-        else{
-            logger.error("User with ID '" + request.body.userId + "' failed to be updated for an unknown reasons.");
-            response.status("400");
-            response.send({ errorMessage: "Error! Failed to update user with ID '" + request.body.userId + "'. "});
+        if(refreshSession(request, response) != null){
+            const updatedUser = await models.updateUser(request.body.userId, request.body.username, request.body.password, request.body.status, request.body.firstName, request.body.lastName, request.body.biography, request.body.image);
+            if(updatedUser){
+                response.status("200");
+                response.json(updatedUser);
+            }
+            else{
+                logger.error("User with ID '" + request.body.userId + "' failed to be updated for an unknown reasons.");
+                response.status("400");
+                response.send({ errorMessage: "Error! Failed to update user with ID '" + request.body.userId + "'. "});
+            }
         }
     }
     catch(err){
@@ -232,15 +237,17 @@ async function handleUpdateSingleUser(request, response){
 router.delete('/', handleDeleteSingleUser);
 async function handleDeleteSingleUser(request, response){
     try{
-        const deletedUser = await models.deleteUser(request.body.userId);
-        if(deletedUser){
-            response.status("200");
-            response.json(deletedUser);
-        }
-        else{
-            logger.error("User with id '" + request.body.userId + "' failed to be deleted from the database for an unknown reasons.");
-            response.status("400");
-            response.send({ errorMessage: "Error! failed to delete with id '" + request.body.userId + "' from the database. "});
+        if(refreshSession(request, response) != null){
+            const deletedUser = await models.deleteUser(request.body.userId);
+            if(deletedUser){
+                response.status("200");
+                response.json(deletedUser);
+            }
+            else{
+                logger.error("User with id '" + request.body.userId + "' failed to be deleted from the database for an unknown reasons.");
+                response.status("400");
+                response.send({ errorMessage: "Error! failed to delete with id '" + request.body.userId + "' from the database. "});
+            }
         }
     }
     catch(err){

@@ -1,4 +1,5 @@
 const express = require("express");
+const REFESHTIME = 10;
 const { Session, createSession, getSession, deleteSession } = require("../models/Session.js");
 const { checkCredentials } = require("../models/userModel.js");
 const router = express.Router();
@@ -15,7 +16,7 @@ async function loginUser(request, response) {
             console.log("Successful login for user " + username);
 
             // Create a session object that will expire in 2 minutes
-            const sessionId = await createSession(username, 5);
+            const sessionId = await createSession(username, REFESHTIME);
 
             //Save cookie that will expire
             response.cookie("sessionId", sessionId, { expires: getSession(sessionId).expiresAt , httpOnly: true });
@@ -23,7 +24,7 @@ async function loginUser(request, response) {
             return;
         }
         else {
-            console.log("Unsuccessful login: invalid username / password given for user " + username);
+            console.log("Unsuccessful login: invalid username / password given for user " + username + " with password " + password);
         }
     }
     else {
@@ -49,6 +50,21 @@ function logoutUser(request, response) {
     response.sendStatus(200);
     return;
 }
+
+router.get("/auth", authUser);
+function authUser(request, response) {
+  try {
+    const authenticatedSession = authenticateUser(request);
+    if (!authenticatedSession) {
+      response.sendStatus(401);
+    } else {
+      response.sendStatus(200);
+    }
+  } catch (error) {
+    response.sendStatus(401);
+  }
+}
+
 
 function authenticateUser(request) {
     // If this request doesn't have any cookies, that means it isn't authenticated. Return null
@@ -82,11 +98,11 @@ function refreshSession(request, response) {
     const authenticatedSession = authenticateUser(request);
     if (!authenticatedSession) {
         response.sendStatus(401); //Unauthorized access
-        return;
+        return null;
     }
 
     //Create and store a new Session object that will expire in 2 minutes
-    const newSessionId = createSession(authenticatedSession.userSession.username, 2);
+    const newSessionId = createSession(authenticatedSession.userSession.username, REFESHTIME);
 
     // Delete the old entry in the session map
     deleteSession(authenticatedSession.sessionId);
@@ -94,7 +110,7 @@ function refreshSession(request, response) {
     // Set the session cookie to the new id we genrated, with a
     // renewed expiration time
     response.cookie("sessionId", newSessionId, { expires: getSession(newSessionId).expiresAt, httpOnly: true });
-    response.sendStatus(200);
+    //response.sendStatus(200);
     return newSessionId;
 }
 
