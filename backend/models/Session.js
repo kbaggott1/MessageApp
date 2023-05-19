@@ -23,7 +23,7 @@ function createSession(username, numMinutes){
     const sessionId = uuid.v4();
 
     // Set the expiry time as numMinutes (in miliseconds) after the current time
-    const expiresAt = new Date(Date.now() + numMinutes * 6000);
+    const expiresAt = new Date(Date.now() + numMinutes * 60000);
 
     // Create a session object containing information about the user and expiry time
     const thisSession = new Session(username, expiresAt);
