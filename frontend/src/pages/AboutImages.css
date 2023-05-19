@@ -1,0 +1,20 @@
+.Kevin{
+    width: 400px; /* adjust the width as per requirement */
+    height: 400px; /* adjust the height as per requirement */
+    object-fit: cover;
+    margin-left: -515px;
+}
+.Cristiano{
+    width: 400px;
+    height: 400px;
+    object-fit:cover;
+    
+}
+.Sebastian{
+    width: 400px;
+    height: 400px;
+    object-fit:cover;
+}
+.images{
+    margin-top: -550px;
+}
