@@ -1,8 +1,8 @@
 import './AboutUs.css';
 
 /**
- * 
- * @returns 
+ * About us text.
+ * @returns About us text.
  */
 export function AboutUs() {
     return (

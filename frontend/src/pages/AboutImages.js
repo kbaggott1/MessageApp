@@ -1,8 +1,8 @@
 import './AboutImages.css'
 
 /**
- * 
- * @returns 
+ * Images of the 3 founders. 
+ * @returns Images of the 3 founders. 
  */
 export function AboutImages() {
     return (
