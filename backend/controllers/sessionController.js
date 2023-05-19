@@ -1,11 +1,18 @@
 const express = require("express");
-const REFESHTIME = 20;
+const REFESHTIME = 10;
 const { Session, createSession, getSession, deleteSession } = require("../models/Session.js");
 const { checkCredentials } = require("../models/userModel.js");
 const router = express.Router();
 const routeRoot = '/session';
 
-/** Log a user in and create a session cookie that will expire in 2 minutes */
+/**
+ * Verfifies the that the username and password provided through the request body parameters
+ * exist and are linked to the same user. If the are valid a session cookie is returned to allow
+ * the user to be signed in, other wise a status of 401 is returned will no cookie.
+ * @param {*} request Request should contain username and password body parameters
+ * @param {*} response Response will contain a status of 201 and a cookie if successful and 
+ *                     a 401 status and not body if the login was a failure
+ */
 router.post('/login', loginUser);
 async function loginUser(request, response) {
     const username = request.body.username;
@@ -35,6 +42,16 @@ async function loginUser(request, response) {
     return;
 }
 
+/**
+ * Logs out a user by deleting their session cookie. First, the methods verifies that the user has a
+ * valid cookie. If they do not, a 401 status is returned. Otherwise the user's session cookie is
+ * deleted and a status of 200 is returned.
+ * @param {*} request Request should contain a valid session cookie.
+ * @param {*} response Response will have a status of 200 if the logout was a success and the session 
+ *                     cookie will be set to set to expire at the time of the request, deleting it.
+ *                     If the request does contain a valid session cookie the response will be sent
+ *                     back with a 401 status.
+ */
 router.get('/logout', logoutUser);
 function logoutUser(request, response) {
     const authenticatedSession = authenticateUser(request);
@@ -51,6 +68,13 @@ function logoutUser(request, response) {
     return;
 }
 
+/**
+ * Verifies that a request has a valid session cookie. Returns a status of 200 if the request
+ * had a valid cookie. Returns 401 if it did not have a valid cookie.
+ * @param {*} request The request who's session cookie is being verified
+ * @param {*} response Response will contain a status of 200 if the request had a valid cookie
+ *                     and a response of 401 if the request did not have a valid cookie
+ */
 router.get("/auth", authUser);
 function authUser(request, response) {
   try {
@@ -65,7 +89,14 @@ function authUser(request, response) {
   }
 }
 
-
+/**
+ * Autheticates a user. The request is checked for a valid session cookie. If the cookie is valid then
+ * and object is returned containg the sessionId and userSession, otherwise null is returned.
+ * @param {*} request The request that is authenitcated. Needs to contain a valid session cookie in order
+ *                    to be considered valid.
+ * @returns Object containing SessionId and userSession if the request contained a valid session cookie.
+ *          Otherwise null is returned.
+ */
 function authenticateUser(request) {
     // If this request doesn't have any cookies, that means it isn't authenticated. Return null
     if(!request.cookies) {
@@ -94,6 +125,16 @@ function authenticateUser(request) {
     return {sessionId, userSession};//Succesfully validated
 }
 
+/**
+ * Refreshes a user session. Takes in a request and if the request has a valid session at the time
+ * the method is run, the session time is reset. If the request does not contain a valid session
+ * cookie the session is not refreshed and the response is given a 401 status and null us returned
+ * @param {*} request A valid request contains a valid session cookie.
+ * @param {*} response Response status will be 401 if the refresh failed. Otherwise it will contain
+ *                     a status of 401
+ * @returns newSessionId if the refresh was successful, a new cookie is added to the response. 
+ *          If it failed null is returned and the response has it's status changed to 401.
+ */
 function refreshSession(request, response) {
     const authenticatedSession = authenticateUser(request);
     if (!authenticatedSession) {
@@ -110,9 +151,7 @@ function refreshSession(request, response) {
     // Set the session cookie to the new id we genrated, with a
     // renewed expiration time
     response.cookie("sessionId", newSessionId, { expires: getSession(newSessionId).expiresAt, httpOnly: true });
-    //response.sendStatus(200);
     return newSessionId;
 }
-
 
 module.exports = { router, routeRoot, loginUser, authenticateUser, refreshSession };
