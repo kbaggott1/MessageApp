@@ -211,8 +211,8 @@ test('READ: Can read messages by chat id from DB', async () => {
     //insert new chat for chatId
     let chatId = (await chatModel.addChat(authorId, userId2))._id;
 
-    let message = await model.postMessage(messageBody1, authorId, chatId);
-    let message2 = await model.postMessage(messageBody2, authorId, chatId);
+    let message = await model.postMessage(messageBody1, authorId, chatId.toString());
+    let message2 = await model.postMessage(messageBody2, authorId, chatId.toString());
     
     const cursor = await model.getCollection().find();
     const results = await cursor.toArray();

@@ -44,7 +44,7 @@ async function getMessages(selectedChat, setMessages) {
 
         if(selectedChat._id) {
             const response = await fetch("http://localhost:1337/messages/chatid/" + selectedChat._id, requestOptions);
-
+            console.log(response.status)
             if(response.status === 400) { // not really users fault, shouldnt be a 400
                 //console.log("No chats found for user.");
                 setMessages([]);
@@ -52,6 +52,7 @@ async function getMessages(selectedChat, setMessages) {
             else {
                 if(response.status === 200) {
                     const result = await response.json();
+                    console.log(result);
                     setMessages(result.length == 0 ? [] : result);
                 }
             }

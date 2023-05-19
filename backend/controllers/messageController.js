@@ -65,7 +65,7 @@ router.get("/chatid/:id", getMessages)
  */
 async function getMessages(req, res) {
     try {
-        let messages = await MessagesModelMongoDb.getMessagesByChatId(req.params.id);
+        let messages = await MessagesModelMongoDb.getMessagesByChatId(req.params.id.toString());
         if(messages) {
             res.status("200");
             res.json(messages);

@@ -163,7 +163,7 @@ test("GET /messages/:id success case", async () => {
     //insert new chat for chatId
     const chatId = (await chatModel.addChat(authorId, userId2))._id;
 
-    let messageId = (await model.postMessage(messageBody, authorId, chatId))._id;
+    let messageId = (await model.postMessage(messageBody, authorId, chatId.toString()))._id;
 
     const testResponse = await testRequest.get('/messages/' + messageId).set("Cookie", "sessionId="+sessionId);
     expect(testResponse.status).toBe(200);
@@ -183,9 +183,9 @@ test("GET /messages/ success case", async () => {
     //insert new chat for chatId
     const chatId = (await chatModel.addChat(authorId, userId2))._id;
 
-    let message = await model.postMessage(messageBody1, authorId, chatId);
-    await model.postMessage(messageBody2, authorId, chatId);
-    await model.postMessage(messageBody3, authorId, chatId);
+    let message = await model.postMessage(messageBody1, authorId, chatId.toString());
+    await model.postMessage(messageBody2, authorId, chatId.toString());
+    await model.postMessage(messageBody3, authorId, chatId.toString());
 
     const testResponse = await testRequest.get('/messages/chatid/'+chatId).set("Cookie", "sessionId="+sessionId);
     

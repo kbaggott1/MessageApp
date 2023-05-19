@@ -128,7 +128,7 @@ async function getMessagesByChatId(chatId) {
     try {
         chatId = new ObjectId(chatId);
         let messages = await messageCollection
-            .find({chatId: chatId}) //{chatId: chatId.toString()}
+            .find({chatId: chatId.toString()}) //{chatId: chatId.toString()}
             .toArray();
 
         return messages;

@@ -24,61 +24,62 @@ export function PersonalInfo(props) {
             let modifiedFirstName = userData.firstName;
             let modifedLastName = userData.lastName;
             let modifiedBiography = userData.biography;
-            if(username !== undefined && username !== null && username !== "" && username !== " "){
+            if(username != ""){
                 modifedUsername = username;
             }
-            if(firstName !== undefined && firstName !== null && firstName !== "" && firstName !== " "){
+            if(firstName != ""){
                 modifiedFirstName = firstName;
             }
-            if(lastName !== undefined && lastName !== null && lastName !== "" && lastName !== " "){
+            if(lastName != ""){
                 modifedLastName = lastName;
             }
-            if(biography !== undefined && biography !== null && biography !== "" && biography !== " "){
+            if(biography != ""){
                 modifiedBiography = biography;
             }
+            
 
-            if(modifedUsername != userData.username) {
-                if(modifedUsername.length < 3 || modifedUsername.length > 30) {
-                    alert("username must be between 3 and 30 characters long.");
+            if((modifedUsername != userData.username) && (modifedUsername.length < 3 || modifedUsername.length > 30)) {
+                alert("username must be between 3 and 30 characters long.");
+            }
+            else {
+                //Setting up the request options
+                const requestOptions = {
+                    method: "PUT",
+                    credentials : "include",
+                    body: JSON.stringify({
+                        userId: userData._id,
+                        username: modifedUsername,
+                        password: userData.password,
+                        status: userData.status,
+                        firstName: modifiedFirstName,
+                        lastName: modifedLastName,
+                        biography: modifiedBiography,
+                        image: userData.image,
+                    }),
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                };
+            
+                const response = await fetch("http://localhost:1337/users/", requestOptions)
+                const result = await response.json();
+                console.log(response.status);
+
+                if(response.status === 200){
+                    setUserData(result);
+                    alert("Successfully updated user data!");
+                }
+                else if(response.status === 401){
+                    alert("Your session has expired! Please Login again to continue")
+                    setUserData(null);
+                    setIsLoggedIn(false);
+                    navigate('/');
                 }
                 else {
-                    //Setting up the request options
-                    const requestOptions = {
-                        method: "PUT",
-                        credentials : "include",
-                        body: JSON.stringify({
-                            userId: userData._id,
-                            username: modifedUsername,
-                            password: userData.password,
-                            status: userData.status,
-                            firstName: modifiedFirstName,
-                            lastName: modifedLastName,
-                            biography: modifiedBiography,
-                            image: userData.image,
-                        }),
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                    };
-                
-                    const response = await fetch("http://localhost:1337/users/", requestOptions)
-                    const result = await response.json();
-
-                    if(response.status === 200){
-                        setUserData(result);
-                        alert("Successfully updated user data!");
-                    }
-                    else if(response.status === 401){
-                        alert("Your session has expired! Please Login again to continue")
-                        setUserData(null);
-                        setIsLoggedIn(false);
-                        navigate('/');
-                    }
-                    else {
-                        alert("Invalid Input, first Name and last Name cannot contain numbers or symbols.")
-                    }
+                    alert("Invalid Input, first Name and last Name cannot contain numbers or symbols.")
                 }
             }
+            
             
 
 
