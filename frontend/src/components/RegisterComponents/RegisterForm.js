@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
 import { LoggedInContext, LoggedInUserContext } from "../App.js";
 import './RegisterForm.css';
+import { useCookies } from 'react-cookie';
 
 /**
  * The Registration form contains 6 input fields and two buttons. The user must indicated
@@ -24,6 +25,7 @@ export function RegisterForm() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [ isLoggedin, setIsLoggedIn ] = useContext(LoggedInContext);
+    const [cookies, setCookie, removeCookie ] = useCookies(['username']);
     const [ userData, setUserData ] = useContext(LoggedInUserContext);
     const [buttonDisabled, setButtonDisabled] = useState(true);
     const navigate = useNavigate();
@@ -87,6 +89,7 @@ export function RegisterForm() {
                     alert("Success! You have been logged in");
                     const userByUsername = await getUserByUsername(username);
                     setUserData(userByUsername);
+                    setCookie('username', username);
                     setIsLoggedIn(true);
                     navigate('/');
                 }
